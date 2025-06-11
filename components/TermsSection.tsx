@@ -1,0 +1,389 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { 
+  Scale, 
+  CheckCircle, 
+  ArrowRight, 
+  Shield, 
+  FileText, 
+  Mail, 
+  Phone, 
+  Download,
+  Calendar,
+  User,
+  Database,
+  Settings,
+  Globe,
+  AlertCircle,
+  Info,
+  Book,
+  Clock,
+  DollarSign,
+  Target,
+  Award,
+  Headphones,
+  Lock,
+  Eye,
+  Zap
+} from 'lucide-react';
+import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
+export default function TermsSection() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  const serviceFeatures = [
+    {
+      title: 'Document Processing',
+      description: 'AI-powered OCR and intelligent document recognition',
+      icon: FileText
+    },
+    {
+      title: 'Data Management',
+      description: 'Intelligent organization and workflow automation',
+      icon: Database
+    },
+    {
+      title: 'Process Automation',
+      description: 'Custom integrations and automated workflows',
+      icon: Settings
+    },
+    {
+      title: 'API Access',
+      description: 'RESTful APIs for seamless integration',
+      icon: Globe
+    }
+  ];
+
+  const warranties = [
+    {
+      title: '99.9% Uptime',
+      description: 'Guaranteed service availability with SLA protection',
+      icon: Clock,
+      metric: '99.9%'
+    },
+    {
+      title: 'Processing Accuracy',
+      description: 'Minimum 99% accuracy in document processing',
+      icon: Target,
+      metric: '99%+'
+    },
+    {
+      title: 'Technical Support',
+      description: '24/7 technical assistance and expert guidance',
+      icon: Headphones,
+      metric: '24/7'
+    },
+    {
+      title: 'Response Time',
+      description: 'Maximum 2-hour response for critical issues',
+      icon: Zap,
+      metric: '<2hrs'
+    }
+  ];
+
+  const customerResponsibilities = [
+    'Providing accurate data and maintaining data quality',
+    'Securing access credentials and user account management',
+    'Using services according to provided documentation',
+    'Complying with applicable laws regarding processed data',
+    'Maintaining backup copies of critical business data',
+    'Reporting security incidents or system issues promptly'
+  ];
+
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen bg-gradient-to-br from-white via-ai-light/10 to-white">
+        {/* Hero Section */}
+        <section className="pt-20 lg:pt-32 pb-20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-20 w-96 h-96 bg-ai-blue rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 right-20 w-96 h-96 bg-ai-green rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="flex items-center justify-center mb-8">
+                <div className="w-16 h-16 bg-gradient-ai rounded-2xl flex items-center justify-center mr-4">
+                  <Scale className="w-8 h-8 text-white" />
+                </div>
+                <div className="h-px bg-gradient-ai w-32"></div>
+              </div>
+
+              <h1 
+                className={`text-4xl sm:text-5xl lg:text-6xl font-bold text-ai-dark leading-tight mb-8 transition-all duration-1000 ${
+                  isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+                }`}
+              >
+                ITCygnus{' '}
+                <span className="bg-gradient-ai bg-clip-text text-transparent">
+                  Terms of Service
+                </span>
+              </h1>
+              
+              <p 
+                className={`text-lg text-ai-medium mb-6 transition-all duration-1000 delay-200 ${
+                  isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+                }`}
+              >
+                <strong>Last updated: June 8, 2025</strong>
+              </p>
+
+              <p 
+                className={`text-xl text-ai-medium leading-relaxed max-w-3xl mx-auto transition-all duration-1000 delay-400 ${
+                  isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+                }`}
+              >
+                These terms govern the use of our services and platform. By using our services, 
+                you agree to these terms and our privacy policy.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Main Content */}
+        <section className="py-20 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Service Description */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
+                <FileText className="w-8 h-8 text-ai-blue mr-4" />
+                Service Description
+              </h2>
+              <p className="text-lg text-ai-medium leading-relaxed mb-8">
+                ITCygnus provides enterprise artificial intelligence solutions, including document processing, 
+                intelligent data management, and process automation. Our services are provided through APIs, 
+                web interfaces, and custom integrations.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {serviceFeatures.map((feature, index) => {
+                  const Icon = feature.icon;
+                  return (
+                    <Card key={index} className="shadow-lg border-ai-light/50 text-center">
+                      <CardContent className="p-6">
+                        <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                          <Icon className="w-6 h-6 text-ai-blue" />
+                        </div>
+                        <h3 className="text-lg font-bold text-ai-dark mb-2">{feature.title}</h3>
+                        <p className="text-sm text-ai-medium">{feature.description}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Customer Responsibilities */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
+                <User className="w-8 h-8 text-ai-green mr-4" />
+                Customer Responsibilities
+              </h2>
+              <p className="text-lg text-ai-medium leading-relaxed mb-8">
+                The customer is responsible for providing accurate data, maintaining security of access 
+                credentials, using services according to provided documentation, and complying with all 
+                applicable laws regarding processed data.
+              </p>
+
+              <div className="bg-ai-light/20 rounded-2xl p-8">
+                <h3 className="text-xl font-bold text-ai-dark mb-6">Your Responsibilities Include:</h3>
+                <div className="space-y-3">
+                  {customerResponsibilities.map((responsibility, index) => (
+                    <div key={index} className="flex items-start space-x-3">
+                      <CheckCircle className="w-5 h-5 text-ai-green mt-1 flex-shrink-0" />
+                      <span className="text-ai-dark">{responsibility}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Warranties and Limitations */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
+                <Award className="w-8 h-8 text-ai-blue mr-4" />
+                Warranties and Limitations
+              </h2>
+              <p className="text-lg text-ai-medium leading-relaxed mb-8">
+                We guarantee 99.9% uptime for our services, minimum 99% accuracy in document processing, 
+                and 24/7 technical support. Our liability is limited to the amount paid for services 
+                in the 12-month period.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {warranties.map((warranty, index) => {
+                  const Icon = warranty.icon;
+                  return (
+                    <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-shadow">
+                      <CardContent className="p-6 text-center">
+                        <div className="w-16 h-16 bg-ai-green/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                          <Icon className="w-8 h-8 text-ai-green" />
+                        </div>
+                        <div className="text-2xl font-bold text-ai-blue mb-2">{warranty.metric}</div>
+                        <h3 className="text-lg font-bold text-ai-dark mb-2">{warranty.title}</h3>
+                        <p className="text-sm text-ai-medium">{warranty.description}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Additional Terms */}
+            <div className="space-y-12">
+              {/* Acceptable Use */}
+              <div>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                  <Shield className="w-6 h-6 text-ai-blue mr-3" />
+                  Acceptable Use Policy
+                </h3>
+                <p className="text-ai-medium leading-relaxed mb-6">
+                  You agree to use our services only for lawful purposes and in accordance with these Terms. 
+                  Prohibited uses include, but are not limited to:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    'Processing illegal or harmful content',
+                    'Attempting to breach system security',
+                    'Interfering with service availability',
+                    'Violating intellectual property rights',
+                    'Sharing access credentials with unauthorized users',
+                    'Using services for competitive intelligence'
+                  ].map((prohibition, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <AlertCircle className="w-4 h-4 text-red-500 flex-shrink-0" />
+                      <span className="text-ai-dark text-sm">{prohibition}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Data Protection */}
+              <div className="bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                  <Lock className="w-6 h-6 text-ai-green mr-3" />
+                  Data Protection and Privacy
+                </h3>
+                <p className="text-ai-medium leading-relaxed mb-4">
+                  We are committed to protecting your data and maintaining compliance with applicable privacy laws:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    'GDPR and CCPA compliance',
+                    'SOC 2 Type II certification',
+                    'End-to-end data encryption',
+                    'Regular security audits',
+                    'Data residency options',
+                    'Right to data portability'
+                  ].map((protection, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-ai-green flex-shrink-0" />
+                      <span className="text-ai-dark text-sm">{protection}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Intellectual Property */}
+              <div>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                  <Book className="w-6 h-6 text-ai-blue mr-3" />
+                  Intellectual Property
+                </h3>
+                <p className="text-ai-medium leading-relaxed">
+                  All rights, title, and interest in and to the services, including all intellectual property 
+                  rights, remain with ITCygnus. You retain ownership of your data and content processed 
+                  through our services. We grant you a limited, non-exclusive license to use our services 
+                  in accordance with these Terms.
+                </p>
+              </div>
+
+              {/* Termination */}
+              <div>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                  <AlertCircle className="w-6 h-6 text-ai-green mr-3" />
+                  Termination
+                </h3>
+                <p className="text-ai-medium leading-relaxed">
+                  Either party may terminate this agreement with 7 Days written notice. We may immediately 
+                  terminate or suspend access for violations of these Terms or non-payment. Upon termination, 
+                  you will have 90 days to export your data before it is permanently deleted.
+                </p>
+              </div>
+
+              {/* Limitation of Liability */}
+              <div>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                  <DollarSign className="w-6 h-6 text-ai-blue mr-3" />
+                  Limitation of Liability
+                </h3>
+                <p className="text-ai-medium leading-relaxed">
+                  To the maximum extent permitted by law, ITCygnus's total liability for any claims arising 
+                  from or related to the services shall not exceed the amount paid by you for the services 
+                  in the 12 months preceding the incident. We are not liable for indirect, incidental, 
+                  or consequential damages.
+                </p>
+              </div>
+
+              {/* Updates to Terms */}
+              <div>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                  <Calendar className="w-6 h-6 text-ai-green mr-3" />
+                  Updates to Terms
+                </h3>
+                <p className="text-ai-medium leading-relaxed">
+                  We may update these Terms from time to time. If we make material changes, we will notify 
+                  you at least 7 Days before the changes take effect. Your continued use of the services 
+                  after the effective date constitutes acceptance of the updated Terms.
+                </p>
+              </div>
+            </div>
+
+            {/* Contact Information */}
+            <div className="mt-16 bg-ai-dark rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Mail className="w-6 h-6 text-ai-green mr-3" />
+                Questions About These Terms?
+              </h3>
+              <p className="text-white/80 mb-6 leading-relaxed">
+                If you have any questions about these Terms of Service or need clarification 
+                on any provisions, please contact our legal team:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-ai-green flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold">Email</div>
+                    <a href="mailto:legal@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                      legal@itcygnus.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-ai-blue flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold">Phone</div>
+                    <a href="tel:+1-305-555-0123" className="text-ai-blue hover:text-ai-blue/80 transition-colors">
+                      +1 (305) 555-0123
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

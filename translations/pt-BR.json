@@ -1,0 +1,387 @@
+{
+  "header": {
+    "solutions": "Soluções",
+    "industries": "Setores",
+    "resources": "Recursos",
+    "company": "Empresa",
+    "signIn": "Entrar",
+    "requestDemo": "Solicitar Demo"
+  },
+  "hero": {
+    "title": "Transforme Sua",
+    "titleHighlight": "Empresa",
+    "titleEnd": "com IA Que Entrega",
+    "titleResults": "Resultados Mensuráveis",
+    "subtitle": "A única plataforma de IA empresarial que reduz o tempo de processamento manual em {percentage}%, com implementação em {days} dias e ROI comprovado. Mais de {companies} empresas confiam na ITCygnus para automatizar seus processos críticos de negócio.",
+    "benefits": {
+      "implementation": "Implementação em 30 dias",
+      "accuracy": "99,9% de precisão garantida",
+      "support": "Suporte empresarial 24/7",
+      "compliance": "Conformidade regulatória completa"
+    },
+    "cta": {
+      "requestDemo": "Solicitar Demo Gratuito",
+      "calculateROI": "Calcular Meu ROI"
+    }
+  },
+  "metrics": {
+    "title": "Resultados Comprovados Que Impulsionam",
+    "titleHighlight": "o Crescimento Empresarial",
+    "subtitle": "Nossa plataforma de IA entrega resultados mensuráveis que transformam como as empresas lidam com seus processos mais críticos.",
+    "items": {
+      "timeReduction": {
+        "value": "75%",
+        "label": "Redução do Tempo de Processamento",
+        "description": "Redução média no tempo de processamento manual"
+      },
+      "implementation": {
+        "value": "30",
+        "label": "Dias de Implementação",
+        "description": "Da configuração até o deployment completo"
+      },
+      "accuracy": {
+        "value": "99,9%",
+        "label": "Taxa de Precisão",
+        "description": "Precisão garantida para todos os processos"
+      },
+      "clients": {
+        "value": "100+",
+        "label": "Clientes Empresariais",
+        "description": "Empresas confiam em nossa plataforma"
+      }
+    }
+  },
+  "solutions": {
+    "title": "Nossas Soluções de",
+    "titleHighlight": "IA Empresarial",
+    "subtitle": "Uma plataforma abrangente que automatiza tudo, desde reconhecimento de documentos até tomada de decisões inteligentes, personalizada para suas necessidades específicas de negócio.",
+    "items": {
+      "aiOCR": {
+        "title": "AI.OCR",
+        "subtitle": "Reconhecimento Inteligente",
+        "description": "Transforme qualquer documento físico ou digital em dados estruturados com mais de 99,9% de precisão. Nossa tecnologia de OCR com IA processa contratos, faturas, relatórios médicos e formulários em segundos, eliminando erros humanos e reduzindo custos operacionais.",
+        "benefits": [
+          "Processamento 50x mais rápido que digitação manual",
+          "Integração nativa com sistemas ERP e CRM",
+          "Suporte para mais de 40 idiomas",
+          "Validação automática de dados extraídos"
+        ]
+      },
+      "aiDOC": {
+        "title": "AI.DOC",
+        "subtitle": "Gestão Inteligente de Documentos",
+        "description": "Organize, classifique e gerencie milhões de documentos automaticamente. Nossa solução usa machine learning para categorizar, indexar e disponibilizar informações críticas quando você precisa, transformando o caos documental em conhecimento estruturado.",
+        "benefits": [
+          "Classificação automática por tipo e conteúdo",
+          "Busca semântica avançada",
+          "Controle de versão completo e trilha de auditoria",
+          "Fluxos de aprovação automatizados"
+        ]
+      },
+      "aiDATA": {
+        "title": "AI.DATA",
+        "subtitle": "Processamento de Sinistros de Saúde",
+        "description": "Revolucione seu processo de sinistros de saúde com automação completa. Do recebimento do documento até a aprovação final, nossa IA analisa, valida e processa sinistros com precisão médica, reduzindo o tempo de processamento de semanas para horas.",
+        "benefits": [
+          "Análise automática de elegibilidade",
+          "Detecção de fraude em tempo real",
+          "Integração com operadoras e prestadores",
+          "Conformidade regulatória completa"
+        ]
+      },
+      "aiPRICEINSIGHTS": {
+        "title": "AI.PRICEINSIGHTS",
+        "subtitle": "Inteligência de Preços",
+        "description": "Otimize sua estratégia de preços com analytics preditivos avançados. Nossa IA monitora mercado, concorrência e demanda em tempo real, sugerindo preços ótimos que maximizam tanto margem quanto competitividade simultaneamente.",
+        "benefits": [
+          "Análise de mercado em tempo real",
+          "Previsão de demanda com 95% de precisão",
+          "Otimização automática de margem",
+          "Alertas de oportunidades de preço"
+        ]
+      },
+      "aiAGENTS": {
+        "title": "AI.AGENTS",
+        "subtitle": "Agentes Autônomos",
+        "description": "Implemente assistentes virtuais que realmente funcionam. Nossos agentes de IA executam tarefas complexas, tomam decisões baseadas em regras de negócio e interagem naturalmente com clientes e sistemas, operando 24/7 sem supervisão.",
+        "benefits": [
+          "Atendimento automatizado 24/7",
+          "Processamento autônomo de tarefas",
+          "Escalabilidade infinita",
+          "Aprendizado contínuo"
+        ]
+      },
+      "echoAIHub": {
+        "title": "Echo AI Hub",
+        "subtitle": "Contact Center Inteligente",
+        "description": "Transforme seu atendimento ao cliente com IA conversacional de próxima geração. Nossa plataforma integra voz, texto e dados para entregar experiências personalizadas que resolvem 90% das solicitações automaticamente.",
+        "benefits": [
+          "Resolução automática de 90% dos casos",
+          "Integração omnichannel completa",
+          "Análise de sentimento em tempo real",
+          "Escalação inteligente para humanos"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para Transformar Seus Processos de Negócio?",
+      "subtitle": "Descubra como nossas soluções de IA podem ser personalizadas para seu setor e casos de uso específicos. Agende uma demonstração personalizada para ver a tecnologia em ação.",
+      "customDemo": "Agendar Demo Personalizado",
+      "downloadBrief": "Baixar Resumo de Soluções"
+    }
+  },
+  "features": {
+    "title": "Recursos de Nível Empresarial Construídos para",
+    "titleHighlight": "Escala",
+    "subtitle": "Cada recurso é projetado para atender aos requisitos exigentes de ambientes empresariais, mantendo a simplicidade que suas equipes precisam.",
+    "items": {
+      "automation": {
+        "title": "Automação Inteligente",
+        "description": "Algoritmos avançados de IA que aprendem e se adaptam aos seus processos de negócio, melhorando continuamente a eficiência e precisão.",
+        "benefits": ["Algoritmos auto-aprendizes", "Otimização de processos", "Fluxos de trabalho adaptativos"]
+      },
+      "security": {
+        "title": "Segurança Empresarial",
+        "description": "Segurança nível bancário com conformidade regulatória completa incluindo SOC 2, HIPAA e requisitos GDPR.",
+        "benefits": ["SOC 2 compatível", "HIPAA certificado", "GDPR pronto"]
+      },
+      "deployment": {
+        "title": "Implementação Rápida",
+        "description": "Coloque em funcionamento em 30 dias com nossa metodologia comprovada de implementação e equipe de suporte dedicada.",
+        "benefits": ["Implementação em 30 dias", "Suporte dedicado", "Migração sem tempo de inatividade"]
+      },
+      "analytics": {
+        "title": "Analytics em Tempo Real",
+        "description": "Dashboards abrangentes e ferramentas de relatório que fornecem insights instantâneos sobre o desempenho de seus processos.",
+        "benefits": ["Dashboards ao vivo", "Relatórios personalizados", "Insights de desempenho"]
+      },
+      "integration": {
+        "title": "Integração Perfeita",
+        "description": "Conecte-se aos seus sistemas existentes através de nossa API robusta e integrações pré-construídas com as principais plataformas.",
+        "benefits": ["Design API-first", "100+ integrações", "Conectores personalizados"]
+      },
+      "support": {
+        "title": "Suporte 24/7",
+        "description": "Suporte empresarial 24 horas por dia com gerentes de conta dedicados e especialistas técnicos.",
+        "benefits": ["Disponibilidade 24/7", "Gerentes dedicados", "Equipe técnica especializada"]
+      }
+    }
+  },
+  "guarantees": {
+    "title": "Nossas Garantias",
+    "titleHighlight": "Férreas",
+    "subtitle": "Estamos tão confiantes em nossa plataforma que apoiamos cada implementação com garantias abrangentes. Seu sucesso é nossa garantia.",
+    "items": {
+      "implementation": {
+        "title": "Implementação em 30 dias ou seu dinheiro de volta",
+        "description": "Garantimos implementação completa em 30 dias ou receba reembolso total. Nossa metodologia comprovada garante implementação rápida sem comprometer a qualidade.",
+        "badge": "Reembolso 100%"
+      },
+      "roi": {
+        "title": "ROI positivo em 6 meses ou ajustamos sem custo",
+        "description": "Se você não vir retornos positivos em 6 meses, otimizaremos até conseguir. Nosso compromisso com seu sucesso é inabalável.",
+        "badge": "Garantia de ROI"
+      },
+      "support": {
+        "title": "Suporte 24/7 durante todo o projeto",
+        "description": "Suporte técnico e estratégico 24 horas por dia de nossa equipe especializada. Nunca enfrente desafios de implementação sozinho.",
+        "badge": "Sempre Disponível"
+      },
+      "migration": {
+        "title": "Migração gratuita de sistemas legados",
+        "description": "Migração completa de dados e integração de sistemas sem custo adicional. Nós cuidamos da complexidade técnica para que você não precise.",
+        "badge": "Sem Custo Extra"
+      }
+    },
+    "trial": {
+      "title": "Teste Sem Riscos",
+      "subtitle": "Experimente a ITCygnus com zero risco. Nosso teste inclui tudo que você precisa para avaliar nossa plataforma completamente antes de fazer qualquer compromisso.",
+      "features": [
+        { "title": "Prova de conceito gratuita por 1 semana", "description": "Teste nossa IA com seus documentos e processos reais" },
+        { "title": "Sem compromisso de contrato", "description": "Termos flexíveis que se adaptam às suas necessidades de negócio" },
+        { "title": "Cancele a qualquer momento", "description": "Liberdade completa sem obrigações de longo prazo" },
+        { "title": "Migração gratuita de dados", "description": "Transição perfeita de seus sistemas atuais" }
+      ]
+    },
+    "cta": {
+      "title": "Pronto para Experimentar a Transformação de IA Sem Riscos?",
+      "subtitle": "Comece sua jornada com total tranquilidade. Nossas garantias asseguram que seu investimento está protegido a cada passo do caminho.",
+      "startTrial": "Iniciar Teste Gratuito",
+      "viewGuarantees": "Ver Todas as Garantias"
+    }
+  },
+  "cta": {
+    "title": "Pronto para Transformar Sua",
+    "titleHighlight": "Empresa?",
+    "subtitle": "Junte-se a mais de 500 empresas que já revolucionaram seus processos de negócio com a ITCygnus. Comece sua transformação hoje.",
+    "trustIndicators": ["Sem Taxas de Configuração", "Migração Gratuita", "Garantia de 30 Dias", "Cancele a Qualquer Momento"],
+    "buttons": {
+      "requestDemo": "Solicitar Demo Gratuito",
+      "calculateROI": "Calcular Meu ROI"
+    },
+    "contact": "Dúvidas? Ligue para nós em {phone} ou envie um email para {email}"
+  },
+  "roiCalculator": {
+    "title": "Calcule Seu ROI com",
+    "titleHighlight": "ITCygnus",
+    "subtitle": "Descubra quanto sua empresa pode economizar automatizando processos com nossa plataforma de IA. Nossa calculadora considera seus dados específicos para gerar uma projeção personalizada de retorno sobre investimento.",
+    "steps": {
+      "currentAnalysis": "Análise Atual",
+      "calculateROI": "Calcular ROI",
+      "viewResults": "Ver Resultados"
+    },
+    "typeSelection": {
+      "title": "Escolha o Tipo de Cálculo",
+      "subtitle": "Selecione o setor ou tipo de processo para obter um cálculo mais preciso",
+      "types": {
+        "healthcare": {
+          "title": "Healthcare - Análise de Glosas",
+          "description": "Calcule o ROI da automação de análise de glosas hospitalares"
+        },
+        "automation": {
+          "title": "Automação Geral",
+          "description": "ROI para automação de processos documentais gerais"
+        },
+        "financial": {
+          "title": "Setor Financeiro",
+          "description": "Automação de processos financeiros e bancários"
+        },
+        "insurance": {
+          "title": "Seguros",
+          "description": "Processamento automatizado de sinistros e apólices"
+        },
+        "legal": {
+          "title": "Jurídico",
+          "description": "Análise automatizada de contratos e documentos legais"
+        }
+      }
+    },
+    "form": {
+      "title": "Insira os Dados do Seu Processo Atual",
+      "healthcare": {
+        "monthlyGlosas": "Glosas Mensais para Análise",
+        "monthlyGlosasHelp": "Número de glosas que precisam ser analisadas mensalmente",
+        "avgAnalysisTime": "Tempo Médio de Análise (minutos)",
+        "avgAnalysisTimeHelp": "Tempo que um analista leva para analisar uma glosa",
+        "analystHourlyRate": "Custo Hora do Analista ($)",
+        "analystHourlyRateHelp": "Custo por hora do profissional que analisa glosas",
+        "glosaValue": "Valor Médio por Glosa ($)",
+        "glosaValueHelp": "Valor médio em dólares de cada glosa",
+        "recoveryRate": "Taxa de Recuperação Atual (%)",
+        "recoveryRateHelp": "Percentual de glosas que conseguem ser revertidas atualmente",
+        "storageCosts": "Custos de Armazenamento Mensal ($)",
+        "storageCostsHelp": "Custos mensais com armazenamento de documentos"
+      },
+      "general": {
+        "monthlyDocuments": "Documentos Processados Mensalmente",
+        "avgProcessingTime": "Tempo Médio de Processamento (minutos)",
+        "hourlyRate": "Taxa Horária ($)",
+        "errorRate": "Taxa de Erro (%)",
+        "reworkCost": "Custo de Retrabalho por Erro ($)",
+        "storageCosts": "Custos Mensais de Armazenamento ($)"
+      },
+      "continue": "Continuar para Cálculo"
+    },
+    "howItWorks": {
+      "title": "Como Funciona",
+      "steps": [
+        {
+          "title": "Análise Atual",
+          "description": "Insira dados sobre seus processos manuais atuais"
+        },
+        {
+          "title": "Projeção Automatizada",
+          "description": "Veja como a automação impactaria seus números"
+        },
+        {
+          "title": "Relatório Detalhado",
+          "description": "Receba análise completa com cronograma de retorno"
+        },
+        {
+          "title": "Consulta Personalizada",
+          "description": "Agende reunião para validar resultados"
+        }
+      ]
+    },
+    "factorsConsidered": {
+      "title": "Fatores Considerados",
+      "healthcare": [
+        "Volume mensal de glosas para análise",
+        "Custo base de $0.34 por documento analisado",
+        "Taxa de recuperação atual de glosas",
+        "Valor médio por glosa processada",
+        "Custos de armazenamento e infraestrutura",
+        "Oportunidades perdidas por análise manual"
+      ],
+      "general": [
+        "Volume mensal de documentos processados",
+        "Tempo médio de processamento por documento",
+        "Custo horário da equipe envolvida",
+        "Taxa de erro atual e custo de retrabalho",
+        "Custos de armazenamento e infraestrutura",
+        "Tempo de implementação e treinamento"
+      ]
+    },
+    "calculating": {
+      "title": "Calculando Seu ROI...",
+      "subtitle": "Nossa IA analisa seus dados e aplica conhecimento de implementação do mundo real para entregar projeções precisas e acionáveis.",
+      "button": "Gerar Relatório de ROI",
+      "buttonCalculating": "Calculando..."
+    },
+    "results": {
+      "metrics": {
+        "annualSavings": {
+          "title": "Economia Anual",
+          "description": "Redução total de custos por ano"
+        },
+        "paybackPeriod": {
+          "title": "Período de Retorno",
+          "description": "Tempo para recuperar o investimento"
+        },
+        "threeYearROI": {
+          "title": "ROI de 3 Anos",
+          "description": "Retorno sobre investimento em 3 anos"
+        },
+        "hoursFreed": {
+          "title": "Horas Liberadas",
+          "description": "Tempo da equipe disponível para trabalho estratégico"
+        }
+      },
+      "costComparison": {
+        "title": "Comparação de Custos",
+        "currentAnnualCost": "Custo Anual Atual",
+        "automatedAnnualCost": "Custo Anual Automatizado",
+        "annualSavings": "Economia Anual"
+      },
+      "processImprovements": {
+        "title": "Melhorias de Processo",
+        "processingTimeReduction": "Redução do Tempo de Processamento",
+        "errorRateReduction": "Redução da Taxa de Erro",
+        "staffHoursFreed": "Horas da Equipe Liberadas Mensalmente"
+      },
+      "comparison": {
+        "title": "Seus Resultados vs. Cliente Típico da ITCygnus",
+        "yourProjectedSavings": "Suas Economias Projetadas",
+        "typicalCustomer": "Cliente Típico",
+        "yourROI": "Seu ROI",
+        "annualCostReduction": "Redução anual de custos",
+        "averageAnnualSavings": "Economia anual média",
+        "threeYearReturn": "Retorno de 3 anos"
+      },
+      "cta": {
+        "title": "Pronto para Alcançar Esses Resultados?",
+        "subtitle": "Agende uma consulta personalizada para validar essas projeções e criar um plano de implementação customizado para sua organização.",
+        "scheduleConsultation": "Agendar Consulta",
+        "downloadReport": "Baixar Relatório Completo",
+        "contact": "Dúvidas? Ligue para nós em {phone}"
+      }
+    }
+  },
+  "footer": {
+    "description": "Transformando empresas com soluções de automação baseadas em IA. Confiança de mais de 500 empresas em todo o mundo.",
+    "solutions": "Soluções",
+    "industries": "Setores",
+    "company": "Empresa",
+    "copyright": "© 2024 ITCygnus. Todos os direitos reservados."
+  }
+}
