@@ -21,7 +21,8 @@
     },
     "cta": {
       "requestDemo": "Request Free Demo",
-      "calculateROI": "Calculate My ROI"
+      "calculateROI": "Calculate ROI",
+      "exploreSolutions": "Explore Our Solution Suite"
     }
   },
   "metrics": {
@@ -217,7 +218,7 @@
     "trustIndicators": ["No Setup Fees", "Free Migration", "30-Day Guarantee", "Cancel Anytime"],
     "buttons": {
       "requestDemo": "Request Free Demo",
-      "calculateROI": "Calculate My ROI"
+      "calculateROI": "Calculate ROI"
     },
     "contact": "Questions? Call us at {phone} or email {email}"
   },
@@ -263,22 +264,22 @@
         "monthlyGlosasHelp": "Number of claims that need to be analyzed monthly",
         "avgAnalysisTime": "Average Analysis Time (minutes)",
         "avgAnalysisTimeHelp": "Time an analyst takes to analyze one claim",
-        "analystHourlyRate": "Analyst Hourly Cost ($)",
+        "analystHourlyRate": "Analyst Hourly Cost (R$)",
         "analystHourlyRateHelp": "Hourly cost of the professional analyzing claims",
-        "glosaValue": "Average Claim Value ($)",
+        "glosaValue": "Average Claim Value (R$)",
         "glosaValueHelp": "Average dollar value of each claim",
         "recoveryRate": "Current Recovery Rate (%)",
         "recoveryRateHelp": "Percentage of claims that can currently be recovered",
-        "storageCosts": "Monthly Storage Costs ($)",
+        "storageCosts": "Monthly Storage Costs (R$)",
         "storageCostsHelp": "Monthly costs for document storage"
       },
       "general": {
         "monthlyDocuments": "Monthly Documents Processed",
         "avgProcessingTime": "Avg. Processing Time (minutes)",
-        "hourlyRate": "Hourly Rate ($)",
+        "hourlyRate": "Hourly Rate (R$)",
         "errorRate": "Error Rate (%)",
-        "reworkCost": "Rework Cost per Error ($)",
-        "storageCosts": "Monthly Storage Costs ($)"
+        "reworkCost": "Rework Cost per Error (R$)",
+        "storageCosts": "Monthly Storage Costs (R$)"
       },
       "continue": "Continue to Calculation"
     },
@@ -307,7 +308,7 @@
       "title": "Factors Considered",
       "healthcare": [
         "Monthly volume of claims for analysis",
-        "Base cost of $0.34 per document analyzed",
+        "Base cost of R$0.34 per document analyzed",
         "Current claim recovery rate",
         "Average value per claim processed",
         "Storage and infrastructure costs",
@@ -382,6 +383,6 @@
     "solutions": "Solutions",
     "industries": "Industries", 
     "company": "Company",
-    "copyright": "© 2024 ITCygnus. All rights reserved."
+    "copyright": "© 2012 ITCygnus. All rights reserved."
   }
 }

@@ -62,33 +62,33 @@ export default function HealthcareIndustrySection() {
   }, []);
 
   const keyBenefits = [
-    { icon: ShieldCheck, text: 'Full compliance with medical regulations' },
-    { icon: Database, text: 'Integration with hospital systems' },
-    { icon: FileText, text: 'Processing of reports and medical records' },
-    { icon: Search, text: 'Automatic medical fraud detection' }
+    { icon: ShieldCheck, text: 'Conformidade total com regulamentações médicas' },
+    { icon: Database, text: 'Integração com sistemas hospitalares' },
+    { icon: FileText, text: 'Processamento de laudos e prontuários' },
+    { icon: Search, text: 'Detecção automática de fraudes médicas' }
   ];
 
   const healthcareSolutions = [
     {
-      title: 'Intelligent Medical Records Processing',
-      description: 'Our specialized AI.OCR solution processes medical records, exam reports, and prescriptions with over 99.5% accuracy, recognizing even complex medical handwriting. The system automatically validates critical information like dosages, allergies, and contraindications.',
-      details: 'Native integration with hospital systems like Epic, Cerner, and Allscripts allows information to be automatically entered into electronic health records, eliminating rework and reducing transcription errors.',
+      title: 'Processamento Inteligente de Prontuários',
+      description: 'Nossa solução AI.OCR especializada processa prontuários, laudos e receitas com mais de 99,5% de precisão, reconhecendo até mesmo caligrafia médica complexa. O sistema valida automaticamente informações críticas como dosagens, alergias e contraindicações.',
+      details: 'A integração nativa com sistemas hospitalares como Epic, Cerner e Allscripts permite que as informações sejam automaticamente inseridas em prontuários eletrônicos, eliminando retrabalho e reduzindo erros de transcrição.',
       icon: FileText,
       product: 'AI.OCR',
       link: '/solutions/ai-ocr'
     },
     {
-      title: 'Medical Claims Automation',
-      description: 'AI.DATA revolutionizes claims processing, automatically analyzing procedure eligibility, validating procedure codes, and detecting possible fraud in real-time. Our AI understands the complex rules of each health plan.',
-      details: 'The system integrates with providers, laboratories, and pharmacies, creating an automated flow that reduces reimbursement time from weeks to hours, improving beneficiary satisfaction.',
+      title: 'Automação de Reembolsos Médicos',
+      description: 'O AI.SAUDE revoluciona o processamento de reembolsos, analisando automaticamente a elegibilidade de procedimentos, validando códigos e detectando possíveis fraudes em tempo real. Nossa IA compreende as regras complexas de cada plano de saúde.',
+      details: 'O sistema integra-se com provedores, laboratórios e farmácias, criando um fluxo automatizado que reduz o tempo de reembolso de semanas para horas, melhorando a satisfação dos beneficiários.',
       icon: Heart,
-      product: 'AI.DATA',
-      link: '/solutions/ai-data'
+      product: 'AI.SAUDE',
+      link: '/solutions/ai-saude'
     },
     {
-      title: 'Intelligent Medical Document Management',
-      description: 'AI.DOC automatically organizes and classifies millions of medical documents, from imaging exams to surgical reports. Our semantic search allows doctors to quickly find relevant histories and critical information.',
-      details: 'The system maintains complete audit trails of access and modifications, ensuring compliance with medical regulations and facilitating hospital accreditation processes.',
+      title: 'Gestão Inteligente de Documentos Médicos',
+      description: 'O AI.DOC organiza e classifica automaticamente milhões de documentos médicos, desde exames de imagem até relatórios cirúrgicos. Nossa busca semântica permite que médicos encontrem rapidamente históricos relevantes e informações críticas.',
+      details: 'O sistema mantém trilhas completas de auditoria de acessos e modificações, garantindo conformidade com regulamentações médicas e facilitando processos de acreditação hospitalar.',
       icon: FolderOpen,
       product: 'AI.DOC',
       link: '/solutions/ai-doc'
@@ -96,21 +96,21 @@ export default function HealthcareIndustrySection() {
   ];
 
   const useCases = [
+    // {
+    //   title: 'Transformação de Rede Hospitalar',
+    //   description: 'Uma rede com 25 hospitais implementou nosso pacote completo de IA para automatizar prontuários, processamento de reembolsos e gestão documental. O sistema processa mais de 50.000 interações diárias com integração total ao Epic.',
+    //   result: 'Redução de custos administrativos em $12M anuais enquanto melhorava os índices de qualidade em 35%. Tempo de processamento de reembolsos caiu de 7 dias para 4 horas, com 99,8% de precisão na codificação médica.',
+    //   icon: Hospital,
+    //   industry: 'Rede Hospitalar',
+    //   stats: { savings: '$12M', quality: '35%', time: '4 horas' }
+    // },
     {
-      title: 'Large Hospital Network Transformation',
-      description: 'A 25-hospital network implemented our complete AI suite to automate patient records, claims processing, and document management. The system processes 50,000+ patient interactions daily with full Epic integration.',
-      result: 'Reduced administrative costs by $12M annually while improving patient care quality scores by 35%. Claims processing time decreased from 7 days to 4 hours, with 99.8% accuracy in medical coding.',
-      icon: Hospital,
-      industry: 'Hospital Network',
-      stats: { savings: '$12M', quality: '35%', time: '4 hours' }
-    },
-    {
-      title: 'Health Insurance Provider Innovation',
-      description: 'A major health insurer serving 3M+ members deployed AI.DATA for automated claims processing, fraud detection, and prior authorization. The AI handles complex medical necessity determinations automatically.',
-      result: 'Detected $1M+ in fraudulent claims annually while reducing claim denials by 45%. Member satisfaction increased 40% due to faster approvals and fewer administrative delays.',
+      title: 'Inovação em Operadora de Saúde',
+      description: 'Uma grande operadora com 3M+ beneficiários implementou o AI.SAUDE para automação de reembolsos e detecção de fraudes. A IA processa automaticamente determinações de necessidade médica complexas.',
+      result: 'Detectou mais de R$1M+ em fraudes anualmente enquanto reduzia negativas em 45%. Satisfação dos beneficiários aumentou 40% devido a aprovações mais rápidas e menos atrasos administrativos.',
       icon: Building2,
-      industry: 'Health Insurance',
-      stats: { fraud_detection: '$1M+', denials: '45%', satisfaction: '40%' }
+      industry: 'Operadora de Saúde',
+      stats: { fraud_detection: 'R$1M+', denials: '45%', satisfaction: '40%' }
     },
     // {
     //   title: 'Specialty Medical Practice Efficiency',
@@ -123,68 +123,72 @@ export default function HealthcareIndustrySection() {
   ];
 
   const problemStats = [
-    { icon: Clock, stat: '40%', label: 'Of physician time spent on paperwork' },
-    { icon: DollarSign, stat: '$375B', label: 'Annual healthcare administrative costs' },
-    { icon: AlertTriangle, stat: '25%', label: 'Claims require manual review' }
+    { icon: Clock, stat: '40%', label: 'Do tempo dos médicos gasto com burocracia' },
+    { icon: DollarSign, stat: 'R$80B', label: 'Custos administrativos anuais em saúde' },
+    { icon: AlertTriangle, stat: '25%', label: 'Reembolsos exigem revisão manual' }
   ];
 
   const solutionBenefits = [
-    { icon: CheckCircle, benefit: 'HIPAA-compliant AI processing' },
-    { icon: CheckCircle, benefit: 'Real-time EMR integration' },
-    { icon: CheckCircle, benefit: 'Medical terminology understanding' },
-    { icon: CheckCircle, benefit: 'Automated regulatory compliance' }
-  ];
+  { icon: CheckCircle, benefit: 'Processamento de IA com conformidade à LGPD' },
+  { icon: CheckCircle, benefit: 'Integração em tempo real com prontuários eletrônicos' },
+  { icon: CheckCircle, benefit: 'Interpretação avançada de terminologia médica' },
+  { icon: CheckCircle, benefit: 'Automação de conformidade regulatória' },
+  { icon: CheckCircle, benefit: 'Conectividade com mais de 300 prefeituras' },
+  { icon: CheckCircle, benefit: 'Análise e identificação de glosas em qualquer tipo de documento' },
+  { icon: CheckCircle, benefit: 'Integração com principais bureaus de dados' },
+  { icon: CheckCircle, benefit: 'Agentes autônomos executando fluxos completos de análise' }
+];
 
   const medicalCapabilities = [
     {
-      title: 'Medical Handwriting Recognition',
-      description: 'AI trained on physician handwriting patterns',
+      title: 'Reconhecimento de Caligrafia Médica',
+      description: 'IA treinada em padrões de escrita de médicos',
       icon: FileCheck
     },
     {
-      title: 'ICD-10 Code Validation',
-      description: 'Automatic diagnosis and procedure coding',
+      title: 'Validação de Códigos CID-10',
+      description: 'Codificação automática de diagnósticos e procedimentos',
       icon: Clipboard
     },
     {
-      title: 'Drug Interaction Analysis',
-      description: 'Real-time prescription safety checking',
+      title: 'Análise de Interações Medicamentosas',
+      description: 'Verificação em tempo real de segurança de prescrições',
       icon: Pill
     },
     {
-      title: 'Medical Imaging Integration',
-      description: 'DICOM file processing and analysis',
+      title: 'Integração de Imagens Médicas',
+      description: 'Processamento e análise de arquivos DICOM',
       icon: Scan
     },
     {
-      title: 'Clinical Decision Support',
-      description: 'Evidence-based treatment recommendations',
+      title: 'Suporte a Decisão Clínica',
+      description: 'Recomendações de tratamento baseadas em evidências',
       icon: Brain
     },
     {
-      title: 'Patient Risk Assessment',
-      description: 'Predictive analytics for health outcomes',
+      title: 'Avaliação de Risco do Paciente',
+      description: 'Análise preditiva de resultados de saúde',
       icon: Activity
     },
     {
-      title: 'Appointment Optimization',
-      description: 'Intelligent scheduling and resource allocation',
+      title: 'Otimização de Agendamentos',
+      description: 'Alocação inteligente de recursos e horários',
       icon: Calendar
     },
     {
-      title: 'Quality Metrics Tracking',
-      description: 'Automated compliance and quality reporting',
+      title: 'Monitoramento de Métricas de Qualidade',
+      description: 'Relatórios automatizados de conformidade e qualidade',
       icon: BarChart3
     },
     {
-      title: 'Prior Authorization Automation',
-      description: 'Streamlined insurance approval processes',
+      title: 'Automação de Autorizações Prévia',
+      description: 'Processos simplificados de aprovação por operadoras',
       icon: UserCheck
     }
   ];
 
   const complianceFeatures = [
-    'HIPAA Compliant',
+    'LGPD Compliant',
     'SOC 2 Type II',
     'HL7 FHIR',
     'FDA 21 CFR Part 11',
@@ -233,9 +237,9 @@ export default function HealthcareIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Specialized AI for{' '}
+                  IA Especializada para{' '}
                   <span className="bg-gradient-to-r from-red-500 to-ai-blue bg-clip-text text-transparent">
-                    Healthcare
+                    Saúde
                   </span>
                 </h1>
                 
@@ -244,9 +248,9 @@ export default function HealthcareIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Transform operational efficiency of your hospital, clinic, or health plan 
-                  with AI solutions developed specifically for the medical environment.{' '}
-                  <span className="text-red-500 font-bold">Full compliance</span> with healthcare regulations.
+                  Transforme a eficiência operacional do seu hospital, clínica ou operadora de saúde 
+                  com soluções de IA desenvolvidas especificamente para o ambiente médico.{' '}
+                  <span className="text-red-500 font-bold">Conformidade total</span> com regulamentações de saúde.
                 </p>
 
                 {/* Key Benefits */}
@@ -273,13 +277,13 @@ export default function HealthcareIndustrySection() {
                   }`}
                 >
                   <Button onClick={handleClick} variant="ai_primary" size="xl" className="group shadow-2xl bg-red-500 hover:bg-red-600">
-                    Schedule Medical Demo
+                    Agendar Demonstração
                     <Stethoscope className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
-                  <Button variant="ai_outline" size="xl" className="group border-red-500 text-red-500 hover:bg-red-500 hover:text-white">
-                    Download Clinical Case
+                  {/* <Button variant="ai_outline" size="xl" className="group border-red-500 text-red-500 hover:bg-red-500 hover:text-white">
+                    Baixar Caso Clínico
                     <FileText className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
 
@@ -324,21 +328,21 @@ export default function HealthcareIndustrySection() {
                           <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <FileText className="w-4 h-4 text-red-500" />
                           </div>
-                          <div className="text-xs text-ai-medium">Medical Records</div>
+                          <div className="text-xs text-ai-medium">Documentos</div>
                         </div>
                         <ArrowRight className="w-6 h-6 text-ai-blue animate-pulse" />
                         <div>
                           <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <Brain className="w-4 h-4 text-ai-blue" />
                           </div>
-                          <div className="text-xs text-ai-medium">AI Processing</div>
+                          <div className="text-xs text-ai-medium">Processamento por IA</div>
                         </div>
                         <ArrowRight className="w-6 h-6 text-ai-green animate-pulse" />
                         <div>
                           <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <CheckCircle className="w-4 h-4 text-ai-green" />
                           </div>
-                          <div className="text-xs text-ai-medium">Automated</div>
+                          <div className="text-xs text-ai-medium">Automatizado</div>
                         </div>
                       </div>
                     </div>
@@ -347,11 +351,11 @@ export default function HealthcareIndustrySection() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-red-500 mb-1">99.5%</div>
-                        <div className="text-xs text-ai-medium">Medical Accuracy</div>
+                        <div className="text-xs text-ai-medium">Precisão Médica</div>
                       </div>
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                        <div className="text-2xl font-bold text-ai-blue mb-1">HIPAA</div>
-                        <div className="text-xs text-ai-medium">Compliant</div>
+                        <div className="text-2xl font-bold text-ai-blue mb-1">LGPD</div>
+                        <div className="text-xs text-ai-medium">Conformidade</div>
                       </div>
                     </div>
 
@@ -376,25 +380,25 @@ export default function HealthcareIndustrySection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Healthcare's Unique Challenges</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Desafios Únicos da Saúde</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    The healthcare sector faces growing pressure to reduce costs while improving care quality. 
-                    Hospitals process thousands of documents daily - from medical records to test results - 
-                    but still rely on manual processes that consume precious time from healthcare professionals.
+                    O setor de saúde enfrenta pressão crescente para reduzir custos enquanto melhora a qualidade do atendimento.
+                    Hospitais processam milhares de documentos diariamente - desde prontuários até resultados de exames -
+                    mas ainda dependem de processos manuais que consomem tempo precioso dos profissionais de saúde.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    The complexity of medical terminology, need for absolute precision, and strict sector 
-                    regulations make automation a unique challenge. Generic AI solutions simply don't understand 
-                    medical context, generating errors that can have serious consequences.
+                    A complexidade da terminologia médica, a necessidade de precisão absoluta e as rigorosas regulamentações
+                    do setor tornam a automação um desafio único. Soluções genéricas de IA simplesmente não entendem
+                    o contexto médico, gerando erros que podem ter consequências graves.
                   </p>
 
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Health plans face the additional challenge of processing millions of claims monthly, 
-                    validating procedures, detecting fraud, and ensuring regulatory compliance.
+                    Operadoras de saúde enfrentam o desafio adicional de processar milhões de reembolsos mensalmente,
+                    validando procedimentos, detectando fraudes e garantindo conformidade regulatória.
                   </p>
 
                   {/* Problem Stats */}
@@ -421,20 +425,20 @@ export default function HealthcareIndustrySection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Our Medical Specialization</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Especialização Médica</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    ITCygnus developed healthcare-specific solutions, trained on millions of real medical 
-                    documents and validated by healthcare professionals. Our AI understands medical 
-                    terminology, procedure codes, ICD-10, and the particularities of healthcare systems.
+                    A ITCygnus desenvolveu soluções específicas para saúde, treinadas em milhões de documentos
+                    médicos reais e validadas por profissionais da área. Nossa IA compreende terminologia médica,
+                    códigos de procedimento, CID-10 e as particularidades dos sistemas de saúde.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    We work with reference hospitals, major health plans, and specialized clinics to create 
-                    solutions that not only automate processes but improve care quality and reduce operational 
-                    risks. Our technology is certified for medical use and meets all sector regulations.
+                    Trabalhamos com hospitais de referência, grandes operadoras e clínicas especializadas para criar
+                    soluções que não apenas automatizam processos, mas melhoram a qualidade do atendimento e reduzem
+                    riscos operacionais. Nossa tecnologia é certificada para uso médico e atende a todas as regulamentações do setor.
                   </p>
 
                   {/* Solution Benefits */}
@@ -460,14 +464,14 @@ export default function HealthcareIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Advanced Medical{' '}
+                Capacidades Avançadas de{' '}
                 <span className="bg-gradient-to-r from-red-500 to-ai-blue bg-clip-text text-transparent">
-                  AI Capabilities
+                  IA Médica
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Comprehensive AI capabilities specifically designed for healthcare workflows, 
-                medical terminology, and regulatory compliance requirements.
+                Capacidades abrangentes de IA projetadas especificamente para fluxos de trabalho em saúde,
+                terminologia médica e requisitos de conformidade regulatória.
               </p>
             </div>
 
@@ -493,13 +497,13 @@ export default function HealthcareIndustrySection() {
             </div>
 
             {/* Hospital System Integrations */}
-            <div className="bg-gradient-to-br from-red-50 to-blue-50 rounded-2xl p-8 mb-16">
+            {/* <div className="bg-gradient-to-br from-red-50 to-blue-50 rounded-2xl p-8 mb-16">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Hospital System Integrations
+                  Integrações com Sistemas Hospitalares
                 </h3>
                 <p className="text-ai-medium">
-                  Native integration with major Electronic Medical Record (EMR) systems
+                  Integração nativa com os principais sistemas de Prontuário Eletrônico (EMR)
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -514,7 +518,7 @@ export default function HealthcareIndustrySection() {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
 
             {/* Compliance Features */}
             {/* <div className="bg-white rounded-2xl p-8 shadow-lg border border-ai-light/50">
@@ -543,14 +547,14 @@ export default function HealthcareIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Healthcare{' '}
+                Soluções de{' '}
                 <span className="bg-gradient-to-r from-red-500 to-ai-blue bg-clip-text text-transparent">
-                  AI Solutions
+                  IA para Saúde
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Specialized AI solutions designed specifically for healthcare workflows, 
-                from patient records to claims processing and document management.
+                Soluções especializadas de IA projetadas especificamente para fluxos de trabalho em saúde,
+                desde prontuários até processamento de reembolsos e gestão documental.
               </p>
             </div>
 
@@ -586,7 +590,7 @@ export default function HealthcareIndustrySection() {
 
                         <Link href={solution.link}>
                           <Button variant="ai_outline" className="group">
-                            Learn More About {solution.product}
+                            Saiba Mais Sobre {solution.product}
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                           </Button>
                         </Link>
@@ -620,18 +624,18 @@ export default function HealthcareIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Healthcare{' '}
+                Casos de{' '}
                 <span className="bg-gradient-to-r from-red-500 to-ai-blue bg-clip-text text-transparent">
-                  Success Stories
+                  Sucesso em Saúde
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                See how healthcare organizations are transforming operations and improving 
-                patient care with ITCygnus specialized AI solutions.
+                Veja como organizações de saúde estão transformando operações e melhorando
+                o atendimento ao paciente com nossas soluções especializadas de IA.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
               {useCases.map((useCase, index) => {
                 const Icon = useCase.icon;
                 
@@ -671,7 +675,7 @@ export default function HealthcareIndustrySection() {
                       <div className="bg-ai-green/10 rounded-xl p-4 border-l-4 border-ai-green">
                         <h4 className="font-bold text-ai-green text-sm mb-2 flex items-center">
                           <Award className="w-4 h-4 mr-2" />
-                          Results Achieved:
+                          Resultados Alcançados:
                         </h4>
                         <p className="text-sm text-ai-dark leading-relaxed">
                           {useCase.result}
@@ -696,24 +700,24 @@ export default function HealthcareIndustrySection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your{' '}
+              Pronto para Transformar suas{' '}
               <span className="bg-gradient-to-r from-red-400 to-ai-blue bg-clip-text text-transparent">
-                Healthcare Operations?
+                Operações de Saúde?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join leading healthcare organizations that have already revolutionized their operations 
-              with ITCygnus specialized AI solutions. Start improving patient care while reducing costs today.
+              Junte-se às principais organizações de saúde que já revolucionaram suas operações
+              com nossas soluções especializadas de IA. Comece a melhorar o atendimento ao paciente enquanto reduz custos hoje.
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-              {[
-                { icon: Heart, value: '99.5%', label: 'Medical Accuracy' },
-                { icon: Shield, value: 'HIPAA', label: 'Compliant' },
-                { icon: Clock, value: '75%', label: 'Time Savings' },
-                { icon: Users, value: '1000+', label: 'Healthcare Providers' }
+                {[
+                  { icon: Heart, value: '99.5%', label: 'Precisão Médica' },
+                  { icon: Shield, value: 'LGPD', label: 'Conformidade' },
+                  { icon: Clock, value: '75%', label: 'Economia de Tempo' },
+                  { icon: Users, value: '10+', label: 'Provedores de Saúde' }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -736,7 +740,7 @@ export default function HealthcareIndustrySection() {
                 size="xl" 
                 className="bg-red-500 hover:bg-red-600 text-white shadow-2xl group"
               >
-                Schedule Medical Demo
+                Agendar Demonstração
                 <Stethoscope className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
               {/* <Button 
@@ -747,27 +751,27 @@ export default function HealthcareIndustrySection() {
                 Download Clinical Case
                 <FileText className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button> */}
-              <Link href="/roi-calculator?type=healthcare">
+              {/* <Link href="/roi-calculator?type=healthcare">
                 <Button 
                   variant="ghost" 
                   size="xl" 
                   className="text-white hover:bg-white/10 group"
                 >
-                  Healthcare ROI Calculator
+                  Calculadora de ROI
                   <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
-              </Link>
+              </Link> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our healthcare specialists at{' '}
+              Dúvidas? Fale com nossos especialistas em saúde pelo{' '}
               <a href="tel:+1-800-123-4567" className="text-red-400 hover:text-red-300 transition-colors">
-                +1 (800) 123-4567
+                +55 (11) 5039-4877
               </a>{' '}
               or{' '}
-              <a href="mailto:healthcare@itcygnus.com" className="text-red-400 hover:text-red-300 transition-colors">
-                healthcare@itcygnus.com
+              <a href="mailto:contact@itcygnus.com" className="text-red-400 hover:text-red-300 transition-colors">
+                contact@itcygnus.com
               </a>
             </p>
           </div>

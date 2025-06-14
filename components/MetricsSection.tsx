@@ -7,29 +7,29 @@ const metrics = [
   {
     icon: TrendingUp,
     value: '75%',
-    label: 'Processing Time Reduction',
-    description: 'Average reduction in manual processing time',
+    label: 'Redução do Tempo de Processamento',
+    description: 'Redução média no tempo de processamento manual',
     color: 'ai-green'
   },
   {
     icon: Clock,
     value: '30',
-    label: 'Days Implementation',
-    description: 'From setup to full deployment',
+    label: 'Dias de Implementação',
+    description: 'Da configuração à implantação completa',
     color: 'ai-blue'
   },
   {
     icon: Target,
     value: '99.9%',
-    label: 'Accuracy Rate',
-    description: 'Guaranteed accuracy for all processes',
+    label: 'Taxa de Precisão',
+    description: 'Precisão garantida para todos os processos',
     color: 'ai-green'
   },
   {
     icon: Users,
     value: '10+',
-    label: 'Enterprise Clients',
-    description: 'Companies trust our platform',
+    label: 'Clientes Empresariais',
+    description: 'Empresas confiam em nossa plataforma',
     color: 'ai-blue'
   }
 ];
@@ -60,14 +60,14 @@ export default function MetricsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-4">
-            Proven Results That Drive{' '}
+            Resultados Comprovados que Impulsionam{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              Business Growth
+              o Crescimento dos Negócios
             </span>
           </h2>
           <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-            Our AI platform delivers measurable outcomes that transform how enterprises 
-            handle their most critical processes.
+            Nossa plataforma de IA entrega resultados mensuráveis que transformam como as empresas 
+            lidam com seus processos mais críticos.
           </p>
         </div>
 

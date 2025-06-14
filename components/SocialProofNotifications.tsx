@@ -20,44 +20,30 @@ export default function SocialProofNotifications() {
     {
       type: 'demo' as const,
       messages: [
-        'John Smith (Memorial Hospital) just scheduled a demo',
-        'Sarah Williams (Aetna Insurance) requested a healthcare demo',
-        'Michael Chen (Wells Fargo) booked a financial services demo',
-        'Lisa Rodriguez (Boeing) scheduled a manufacturing demo',
-        'David Thompson (State of California) requested a government demo'
+        'Fernando Paiva (SSD Seguros e Saúde) agendou uma demonstração de AI.OCR',
+        'Caio Felipe (Elite Seguros) solicitou uma demonstração de AI.DOC',
       ],
       icon: Calendar
     },
     {
       type: 'savings' as const,
       messages: [
-        '100+ employee company saved $180,000 this month',
-        'Healthcare network reduced costs by $2.3M annually',
-        'Insurance provider detected $45M in fraud',
-        'Regional bank saved 75% processing time',
-        'Manufacturing plant increased efficiency by 40%'
+        '100+ demonstrações de AI.OCR agendadas esta semana',
+        'Saude Seguros reduziu custos em 30% com AI.DOC'
       ],
       icon: TrendingUp
     },
     {
       type: 'implementation' as const,
       messages: [
-        '15 new clients implemented AI.OCR in the last 48h',
-        '8 companies deployed AI.DATA this week',
-        '12 organizations started AI.DOC implementation',
-        '6 enterprises launched Echo AI Hub',
-        '10 businesses activated AI.AGENTS'
+        'João Silva (Seguros) implementou AI.OCR com sucesso',
       ],
       icon: CheckCircle
     },
     {
       type: 'download' as const,
       messages: [
-        'Sarah Williams (Aetna Insurance) downloaded ROI guide 2 minutes ago',
-        'Technology Director at Fortune 500 downloaded implementation guide',
-        'CTO at regional bank accessed compliance whitepaper',
-        'Healthcare CIO downloaded AI transformation template',
-        'VP Operations downloaded success case study'
+        ''
       ],
       icon: Download
     }

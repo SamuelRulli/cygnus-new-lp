@@ -129,20 +129,21 @@ export default function UrgencyElements({ type = 'countdown', className = '' }: 
 
   if (type === 'poc_slots') {
     return (
-      <div className={`bg-gradient-to-r from-purple-500/10 to-ai-blue/10 border border-purple-200 rounded-xl p-4 ${className}`}>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Zap className="w-5 h-5 text-purple-500" />
-            <span className="text-sm font-medium text-ai-dark">
-              Only 3 slots available for free Proof of Concept
-            </span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <AlertCircle className="w-4 h-4 text-purple-500" />
-            <span className="text-xs text-purple-600 font-medium">Limited time</span>
-          </div>
-        </div>
-      </div>
+      null
+      // <div className={`bg-gradient-to-r from-purple-500/10 to-ai-blue/10 border border-purple-200 rounded-xl p-4 ${className}`}>
+      //   <div className="flex items-center justify-between">
+      //     <div className="flex items-center space-x-2">
+      //       <Zap className="w-5 h-5 text-purple-500" />
+      //       <span className="text-sm font-medium text-ai-dark">
+      //         Only 3 slots available for free Proof of Concept
+      //       </span>
+      //     </div>
+      //     <div className="flex items-center space-x-2">
+      //       <AlertCircle className="w-4 h-4 text-purple-500" />
+      //       <span className="text-xs text-purple-600 font-medium">Limited time</span>
+      //     </div>
+      //   </div>
+      // </div>
     );
   }
 

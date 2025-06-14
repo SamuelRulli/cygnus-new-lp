@@ -70,33 +70,33 @@ export default function InsuranceIndustrySection() {
   }, []);
 
   const keyBenefits = [
-    { icon: FileText, text: 'Automatic claims processing' },
-    { icon: Eye, text: 'Advanced fraud detection' },
-    { icon: BarChart3, text: 'Automated risk underwriting' },
-    { icon: Network, text: 'Integration with brokers and providers' }
+    { icon: FileText, text: 'Processamento automático de sinistros' },
+    { icon: Eye, text: 'Detecção avançada de fraudes' },
+    { icon: BarChart3, text: 'Subscrição de risco automatizada' },
+    { icon: Network, text: 'Integração com corretores e provedores' }
   ];
 
   const insuranceSolutions = [
     {
-      title: 'Intelligent Claims Processing',
-      description: 'Our AI processes insurance claims from first notice of loss to settlement, automatically validating coverage, assessing damages, and detecting potential fraud. The system understands policy terms, exclusions, and coverage limits.',
-      details: 'Advanced damage assessment uses computer vision and expert systems to evaluate property damage, vehicle accidents, and liability claims. Integration with repair networks and medical providers enables automated cost estimation and settlement recommendations.',
+      title: 'Processamento Inteligente de Sinistros',
+      description: 'Nossa IA processa sinistros desde a primeira notificação até a liquidação, validando automaticamente coberturas, avaliando danos e detectando possíveis fraudes. O sistema compreende termos da apólice, exclusões e limites de cobertura.',
+      details: 'A avaliação avançada de danos usa visão computacional e sistemas especialistas para avaliar danos a propriedades, acidentes veiculares e sinistros de responsabilidade. A integração com redes de reparos e provedores médicos permite estimativa de custos automatizada e recomendações de liquidação.',
       icon: FileText,
       product: 'AI.DATA',
       link: '/solutions/ai-data'
     },
     {
-      title: 'Advanced Fraud Detection',
-      description: 'AI.DATA analyzes claim patterns, policyholder behavior, and external data sources to identify sophisticated fraud schemes. Our system detects staged accidents, inflated claims, and organized fraud rings before losses occur.',
-      details: 'Machine learning models trained on millions of fraud cases identify suspicious patterns including claim frequency, timing anomalies, and network connections between claimants, providers, and attorneys.',
+      title: 'Detecção Avançada de Fraudes',
+      description: 'O AI.DATA analisa padrões de sinistros, comportamento de segurados e fontes de dados externas para identificar esquemas sofisticados de fraude. Nosso sistema detecta acidentes simulados, sinistros inflacionados e quadrilhas de fraude antes que ocorram perdas.',
+      details: 'Modelos de machine learning treinados em milhões de casos de fraude identificam padrões suspeitos incluindo frequência de sinistros, anomalias de tempo e conexões entre reclamantes, provedores e advogados.',
       icon: Eye,
       product: 'AI.DATA',
       link: '/solutions/ai-data'
     },
     {
-      title: 'Automated Risk Underwriting',
-      description: 'Transform underwriting with AI that evaluates risk factors across multiple data sources, from traditional applications to satellite imagery and IoT data. Our system provides consistent, accurate risk assessment at scale.',
-      details: 'Real-time risk scoring integrates property data, credit information, claims history, and external risk factors. Automated underwriting guidelines ensure consistent application of pricing models and risk selection criteria.',
+      title: 'Subscrição de Risco Automatizada',
+      description: 'Transforme a subscrição com IA que avalia fatores de risco em múltiplas fontes de dados, desde aplicações tradicionais até imagens de satélite e dados IoT. Nosso sistema fornece avaliação de risco consistente e precisa em escala.',
+      details: 'A pontuação de risco em tempo real integra dados de propriedade, informações de crédito, histórico de sinistros e fatores de risco externos. Diretrizes automatizadas de subscrição garantem aplicação consistente de modelos de precificação e critérios de seleção de risco.',
       icon: BarChart3,
       product: 'AI.DOC + AI.DATA',
       link: '/solutions/ai-doc'
@@ -105,27 +105,27 @@ export default function InsuranceIndustrySection() {
 
   const useCases = [
     {
-      title: 'Major Property & Casualty Insurer',
-      description: 'A top-10 P&C insurer implemented our AI platform for auto claims processing, property damage assessment, and fraud detection. The system processes 100,000+ claims monthly across multiple lines of business.',
-      result: 'Reduced claims processing time from 15 days to 3 hours for straightforward claims. Detected $45M in fraudulent claims annually while improving customer satisfaction by 35% through faster settlements.',
+      title: 'Grande Seguradora de Bens e Danos',
+      description: 'Uma das 10 maiores seguradoras de P&C implementou nossa plataforma de IA para processamento de sinistros automotivos, avaliação de danos a propriedades e detecção de fraudes. O sistema processa mais de 100.000 sinistros mensalmente em múltiplas linhas de negócio.',
+      result: 'Reduziu o tempo de processamento de sinistros de 15 dias para 3 horas em casos simples. Detectou $45M em sinistros fraudulentos anualmente enquanto melhorava a satisfação do cliente em 35% através de liquidações mais rápidas.',
       icon: Car,
-      industry: 'Property & Casualty',
-      stats: { processing_time: '3 hours', fraud_detected: '$45M', satisfaction: '35%' }
+      industry: 'Bens e Danos',
+      stats: { processing_time: '3 horas', fraud_detected: '$45M', satisfaction: '35%' }
     },
     {
-      title: 'Life Insurance Digital Transformation',
-      description: 'A life insurance company modernized underwriting and claims with AI-powered medical record analysis, risk assessment, and beneficiary verification. The system processes complex life and disability claims automatically.',
-      result: 'Accelerated underwriting decisions from 6 weeks to 48 hours while maintaining 99.5% accuracy. Reduced operational costs by 40% and improved policy issuance rates by 25%.',
+      title: 'Transformação Digital em Seguros de Vida',
+      description: 'Uma seguradora de vida modernizou sua subscrição e sinistros com análise de prontuários médicos por IA, avaliação de risco e verificação de beneficiários. O sistema processa automaticamente sinistros complexos de vida e invalidez.',
+      result: 'Acelerou decisões de subscrição de 6 semanas para 48 horas mantendo 99,5% de precisão. Reduziu custos operacionais em 40% e melhorou as taxas de emissão de apólices em 25%.',
       icon: HeartHandshake,
-      industry: 'Life Insurance',
-      stats: { underwriting: '48 hours', cost_reduction: '40%', issuance: '25%' }
+      industry: 'Seguros de Vida',
+      stats: { underwriting: '48 horas', cost_reduction: '40%', issuance: '25%' }
     },
     {
-      title: 'Commercial Insurance Innovation',
-      description: 'A commercial lines insurer uses our AI for complex risk assessment, policy administration, and large loss claims. The platform handles everything from workers comp to cyber liability coverage.',
-      result: 'Improved underwriting accuracy by 30% while reducing quote turnaround time by 60%. Enhanced risk selection resulted in 20% improvement in loss ratios across commercial lines.',
+      title: 'Inovação em Seguros Comerciais',
+      description: 'Uma seguradora de linhas comerciais usa nossa IA para avaliação complexa de riscos, administração de apólices e sinistros de grande valor. A plataforma gerencia desde seguros trabalhistas até coberturas de responsabilidade cibernética.',
+      result: 'Melhorou a precisão da subscrição em 30% enquanto reduzia o tempo de resposta para cotações em 60%. A seleção aprimorada de riscos resultou em melhoria de 20% nos índices de sinistralidade nas linhas comerciais.',
       icon: Building,
-      industry: 'Commercial Insurance',
+      industry: 'Seguros Comerciais',
       stats: { accuracy: '30%', turnaround: '60%', loss_ratio: '20%' }
     }
   ];
@@ -145,59 +145,59 @@ export default function InsuranceIndustrySection() {
 
   const insuranceCapabilities = [
     {
-      title: 'Claims Intake & Processing',
-      description: 'Automated first notice of loss and claim routing',
+      title: 'Recebimento e Processamento de Sinistros',
+      description: 'Notificação automática de sinistro e roteamento de reclamações',
       icon: FileText
     },
     {
-      title: 'Fraud Detection',
-      description: 'Real-time analysis of suspicious claim patterns',
+      title: 'Detecção de Fraudes',
+      description: 'Análise em tempo real de padrões suspeitos de sinistros',
       icon: Eye
     },
     {
-      title: 'Risk Assessment',
-      description: 'Comprehensive underwriting and risk evaluation',
+      title: 'Avaliação de Risco',
+      description: 'Subscrição abrangente e avaliação de risco',
       icon: BarChart3
     },
     {
-      title: 'Policy Administration',
-      description: 'Automated policy management and updates',
+      title: 'Administração de Apólices',
+      description: 'Gestão e atualizações automatizadas de apólices',
       icon: Clipboard
     },
     {
-      title: 'Damage Assessment',
-      description: 'AI-powered evaluation of property and vehicle damage',
+      title: 'Avaliação de Danos',
+      description: 'Avaliação de danos a propriedades e veículos por IA',
       icon: ScanLine
     },
     {
-      title: 'Medical Record Analysis',
-      description: 'Intelligent processing of medical documentation',
+      title: 'Análise de Prontuários Médicos',
+      description: 'Processamento inteligente de documentação médica',
       icon: FileSearch
     },
     {
-      title: 'Subrogation Management',
-      description: 'Automated recovery and subrogation processes',
+      title: 'Gestão de Sub-Rogação',
+      description: 'Processos automatizados de recuperação e sub-rogação',
       icon: Target
     },
     {
-      title: 'Regulatory Compliance',
-      description: 'Automated compliance with insurance regulations',
+      title: 'Conformidade Regulatória',
+      description: 'Conformidade automatizada com regulamentações de seguros',
       icon: BadgeCheck
     },
     {
-      title: 'Actuarial Analysis',
-      description: 'Advanced pricing and reserving calculations',
+      title: 'Análise Atuarial',
+      description: 'Cálculos avançados de precificação e reservas',
       icon: Calculator
     }
   ];
 
   const insuranceLines = [
-    { line: 'Auto Insurance', icon: Car, description: 'Comprehensive auto claims and underwriting' },
-    { line: 'Property Insurance', icon: Home, description: 'Property damage assessment and processing' },
-    { line: 'Life Insurance', icon: HeartHandshake, description: 'Life and disability claims automation' },
-    { line: 'Workers Compensation', icon: Briefcase, description: 'Work injury claims and case management' },
-    { line: 'Commercial Lines', icon: Building, description: 'Complex commercial risk assessment' },
-    { line: 'Specialty Insurance', icon: Plane, description: 'Aviation, marine, and specialty coverage' }
+    { line: 'Seguro Automóvel', icon: Car, description: 'Processamento de sinistros e subscrição automotivos' },
+    { line: 'Seguro de Propriedade', icon: Home, description: 'Avaliação de danos e processamento de propriedades' },
+    { line: 'Seguro de Vida', icon: HeartHandshake, description: 'Automação de sinistros de vida e invalidez' },
+    { line: 'Seguro de Acidentes de Trabalho', icon: Briefcase, description: 'Gestão de sinistros e casos de acidentes' },
+    { line: 'Linhas Comerciais', icon: Building, description: 'Avaliação de riscos comerciais complexos' },
+    { line: 'Seguros Especializados', icon: Plane, description: 'Coberturas para aviação, marítimas e especializadas' }
   ];
 
   const complianceFeatures = [
@@ -237,9 +237,9 @@ export default function InsuranceIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Specialized AI for{' '}
+                  IA Especializada para {' '}
                   <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                    Insurance Companies and Brokers
+                    Seguradoras e Corretores
                   </span>
                 </h1>
                 
@@ -248,9 +248,9 @@ export default function InsuranceIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Revolutionize claims processing, risk underwriting, and policyholder service with AI 
-                  that understands policies, detects fraud, and accelerates approvals.{' '}
-                  <span className="text-blue-600 font-bold">Efficiency and precision</span> for the insurance market.
+                  Revolucione o processamento de sinistros, subscrição de risco e atendimento ao segurado com IA 
+                  que compreende apólices, detecta fraudes e acelera aprovações.{' '}
+                  <span className="text-blue-600 font-bold">Eficiência e precisão</span> para o mercado segurador.
                 </p>
 
                 {/* Key Benefits */}
@@ -276,14 +276,16 @@ export default function InsuranceIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
+                <Link href="/demo">
                   <Button variant="ai_primary" size="xl" className="group shadow-2xl bg-blue-600 hover:bg-blue-700">
-                    Request Insurance Demo
+                    Solicitar Demonstração
                     <Shield className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
-                  <Button variant="ai_outline" size="xl" className="group border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                    Claims Analysis
-                    <FileText className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
+                </Link>
+                {/* <Button variant="ai_outline" size="xl" className="group border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+                  Análise de Sinistros
+                  <FileText className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
+                </Button> */}
                 </div>
               </div>
 
@@ -328,21 +330,21 @@ export default function InsuranceIndustrySection() {
                           <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <AlertCircle className="w-4 h-4 text-blue-600" />
                           </div>
-                          <div className="text-xs text-ai-medium">Claim Filed</div>
+                          <div className="text-xs text-ai-medium">Sinistro Registrado</div>
                         </div>
                         <ArrowRight className="w-6 h-6 text-blue-600 animate-pulse" />
                         <div>
                           <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <Brain className="w-4 h-4 text-ai-green" />
                           </div>
-                          <div className="text-xs text-ai-medium">AI Analysis</div>
+                          <div className="text-xs text-ai-medium">Análise por IA</div>
                         </div>
                         <ArrowRight className="w-6 h-6 text-ai-green animate-pulse" />
                         <div>
                           <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <CheckCircle className="w-4 h-4 text-blue-600" />
                           </div>
-                          <div className="text-xs text-ai-medium">Settled</div>
+                          <div className="text-xs text-ai-medium">Liquidado</div>
                         </div>
                       </div>
                     </div>
@@ -350,12 +352,12 @@ export default function InsuranceIndustrySection() {
                     {/* Insurance Stats */}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                        <div className="text-2xl font-bold text-blue-600 mb-1">3hrs</div>
-                        <div className="text-xs text-ai-medium">Claims Processing</div>
+                <div className="text-2xl font-bold text-blue-600 mb-1">1h</div>
+                <div className="text-xs text-ai-medium">Processamento</div>
                       </div>
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                        <div className="text-2xl font-bold text-ai-green mb-1">95%</div>
-                        <div className="text-xs text-ai-medium">Fraud Detection</div>
+                <div className="text-2xl font-bold text-ai-green mb-1">95%</div>
+                <div className="text-xs text-ai-medium">Detecção de Fraude</div>
                       </div>
                     </div>
 
@@ -379,20 +381,20 @@ export default function InsuranceIndustrySection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Deep Understanding of Insurance Market</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Entendimento Profundo do Mercado Segurador</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    The insurance sector operates with tight margins and complex risks, where each underwriting 
-                    or claims decision directly impacts profitability. Insurers process millions of policies 
-                    and claims annually, each requiring detailed risk analysis, coverage validation, and possible fraud detection.
+                    O setor de seguros opera com margens apertadas e riscos complexos, onde cada decisão de subscrição
+                    ou sinistro impacta diretamente a lucratividade. Seguradoras processam milhões de apólices
+                    e sinistros anualmente, cada um exigindo análise detalhada de risco, validação de cobertura e possível detecção de fraudes.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    The complexity of insurance products, from life insurance to specialized business coverages, 
-                    requires deep understanding of technical terms, specific regulations, and risk patterns that 
-                    generic solutions simply cannot process adequately.
+                    A complexidade dos produtos de seguro, desde seguros de vida até coberturas empresariais especializadas,
+                    requer profundo conhecimento de termos técnicos, regulamentações específicas e padrões de risco que
+                    soluções genéricas simplesmente não conseguem processar adequadamente.
                   </p>
 
                   {/* Problem Stats */}
@@ -405,7 +407,11 @@ export default function InsuranceIndustrySection() {
                             <Icon className="w-6 h-6 text-red-500" />
                             <div>
                               <div className="text-2xl font-bold text-red-600">{item.stat}</div>
-                              <div className="text-sm text-red-700">{item.label}</div>
+                              <div className="text-sm text-red-700">
+                                {item.label === 'Average claims processing time' ? 'Tempo médio de processamento' :
+                                 item.label === 'Annual insurance fraud losses' ? 'Perdas anuais por fraudes' :
+                                 'Processos manuais de subscrição'}
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -419,20 +425,20 @@ export default function InsuranceIndustrySection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Our Specialized Solution</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Solução Especializada</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    AI.DATA was developed specifically for the insurance market, trained on millions of policies, 
-                    claims, and sector documents. Our AI understands insurance technical language, identifies 
-                    sophisticated fraud patterns, and accelerates underwriting processes while maintaining the 
-                    precision necessary to protect insurer profitability.
+                    O AI.DATA foi desenvolvido especificamente para o mercado segurador, treinado em milhões de apólices,
+                    sinistros e documentos do setor. Nossa IA compreende a linguagem técnica de seguros, identifica
+                    padrões sofisticados de fraude e acelera processos de subscrição mantendo a precisão
+                    necessária para proteger a lucratividade das seguradoras.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    The system integrates with brokers, service providers, and credentialed networks, creating 
-                    an automated ecosystem that benefits all participants in the insurance value chain.
+                    O sistema se integra com corretores, prestadores de serviços e redes credenciadas, criando
+                    um ecossistema automatizado que beneficia todos os participantes da cadeia de valor do seguro.
                   </p>
 
                   {/* Solution Benefits */}
@@ -442,7 +448,12 @@ export default function InsuranceIndustrySection() {
                       return (
                         <div key={index} className="flex items-center space-x-3 p-3 bg-ai-green/10 rounded-lg">
                           <Icon className="w-5 h-5 text-ai-green" />
-                          <span className="text-ai-dark font-medium">{item.benefit}</span>
+                          <span className="text-ai-dark font-medium">
+                            {item.benefit === 'Deep understanding of insurance terminology' ? 'Compreensão profunda da terminologia de seguros' :
+                             item.benefit === 'Sophisticated fraud pattern recognition' ? 'Reconhecimento sofisticado de padrões de fraude' :
+                             item.benefit === 'Automated policy and coverage validation' ? 'Validação automatizada de apólices e coberturas' :
+                             'Integração perfeita com corretores e provedores'}
+                          </span>
                         </div>
                       );
                     })}
@@ -458,14 +469,14 @@ export default function InsuranceIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Advanced Insurance{' '}
+                Capacidades Avançadas de{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                  AI Capabilities
+                  IA para Seguros
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Comprehensive AI capabilities specifically designed for insurance operations, 
-                from claims processing to risk assessment and fraud detection.
+                Capacidades abrangentes de IA projetadas especificamente para operações de seguros,
+                desde processamento de sinistros até avaliação de risco e detecção de fraudes.
               </p>
             </div>
 
@@ -494,10 +505,10 @@ export default function InsuranceIndustrySection() {
             <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 mb-16">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Insurance Lines Coverage
+                  Cobertura de Linhas de Seguro
                 </h3>
                 <p className="text-ai-medium">
-                  Comprehensive AI solutions across all major insurance product lines
+                  Soluções abrangentes de IA para todas as principais linhas de produtos de seguros
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -515,13 +526,13 @@ export default function InsuranceIndustrySection() {
             </div>
 
             {/* Compliance Features */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-ai-light/50">
+            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border border-ai-light/50">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Insurance Compliance & Security
+                  Conformidade e Segurança em Seguros
                 </h3>
                 <p className="text-ai-medium">
-                  Built to meet insurance industry standards and regulatory requirements
+                  Desenvolvido para atender aos padrões do setor e requisitos regulatórios
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -532,7 +543,7 @@ export default function InsuranceIndustrySection() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -541,14 +552,14 @@ export default function InsuranceIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Insurance{' '}
+                Soluções de{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                  AI Solutions
+                  IA para Seguros
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Specialized AI solutions designed specifically for insurance operations, 
-                from claims processing to risk underwriting and fraud detection.
+                Soluções especializadas em IA projetadas especificamente para operações de seguros,
+                desde processamento de sinistros até subscrição de risco e detecção de fraudes.
               </p>
             </div>
 
@@ -584,7 +595,7 @@ export default function InsuranceIndustrySection() {
 
                         <Link href={solution.link}>
                           <Button variant="ai_outline" className="group">
-                            Learn More About {solution.product}
+                            Saiba Mais Sobre {solution.product}
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                           </Button>
                         </Link>
@@ -613,76 +624,6 @@ export default function InsuranceIndustrySection() {
           </div>
         </section>
 
-        {/* Use Cases Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Insurance{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                  Success Stories
-                </span>
-              </h2>
-              <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                See how insurance companies and brokers are transforming operations and 
-                improving profitability with ITCygnus specialized AI solutions.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {useCases.map((useCase, index) => {
-                const Icon = useCase.icon;
-                
-                return (
-                  <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-all duration-500 group hover:scale-105">
-                    <CardContent className="p-8">
-                      {/* Header */}
-                      <div className="text-center mb-6">
-                        <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-8 h-8 text-blue-600" />
-                        </div>
-                        <span className="text-xs text-ai-blue font-medium bg-ai-blue/10 px-3 py-1 rounded-full">
-                          {useCase.industry}
-                        </span>
-                      </div>
-
-                      {/* Content */}
-                      <h3 className="text-xl font-bold text-ai-dark mb-4 text-center">
-                        {useCase.title}
-                      </h3>
-                      
-                      <p className="text-ai-medium leading-relaxed mb-6">
-                        {useCase.description}
-                      </p>
-
-                      {/* Stats */}
-                      <div className="grid grid-cols-3 gap-2 mb-6">
-                        {Object.entries(useCase.stats).map(([key, value], statIndex) => (
-                          <div key={statIndex} className="text-center p-2 bg-blue-50 rounded-lg">
-                            <div className="text-lg font-bold text-blue-600">{value}</div>
-                            <div className="text-xs text-ai-medium capitalize">{key.replace('_', ' ')}</div>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Results */}
-                      <div className="bg-ai-green/10 rounded-xl p-4 border-l-4 border-ai-green">
-                        <h4 className="font-bold text-ai-green text-sm mb-2 flex items-center">
-                          <Award className="w-4 h-4 mr-2" />
-                          Results Achieved:
-                        </h4>
-                        <p className="text-sm text-ai-dark leading-relaxed">
-                          {useCase.result}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         {/* Final CTA Section */}
         <section className="py-20 bg-gradient-to-br from-ai-dark to-ai-dark/90 relative overflow-hidden">
           {/* Background Pattern */}
@@ -694,24 +635,24 @@ export default function InsuranceIndustrySection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your{' '}
+              Pronto para Transformar suas{' '}
               <span className="bg-gradient-to-r from-blue-400 to-ai-green bg-clip-text text-transparent">
-                Insurance Operations?
+                Operações de Seguros?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join leading insurance companies that have already revolutionized their claims processing 
-              and underwriting with ITCygnus specialized AI solutions. Start improving profitability today.
+              Junte-se às principais seguradoras que já revolucionaram seu processamento de sinistros 
+              e subscrição com nossas soluções especializadas de IA. Comece a melhorar sua lucratividade hoje.
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
               {[
-                { icon: FileText, value: '3 hrs', label: 'Claims Processing' },
-                { icon: Eye, value: '95%', label: 'Fraud Detection' },
-                { icon: BarChart3, value: '30%', label: 'Faster Underwriting' },
-                { icon: Users, value: '200+', label: 'Insurance Clients' }
+                { icon: FileText, value: '1 hrs', label: 'Processamento de Sinistros' },
+                { icon: Eye, value: '95%', label: 'Detecção de Fraudes' },
+                { icon: BarChart3, value: '30%', label: 'Subscrição Mais Rápida' },
+                { icon: Users, value: '200+', label: 'Clientes de Seguros' }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -728,20 +669,22 @@ export default function InsuranceIndustrySection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button 
-                variant="ai_primary" 
-                size="xl" 
-                className="bg-blue-600 hover:bg-blue-700 text-white shadow-2xl group"
-              >
-                Request Insurance Demo
-                <Shield className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button>
-              <Button 
+              <Link href="/demo">
+                <Button 
+                  variant="ai_primary" 
+                  size="xl" 
+                  className="bg-blue-600 hover:bg-blue-700 text-white shadow-2xl group"
+                >
+                  Solicitar Demonstração
+                  <Shield className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
+                </Button>
+              </Link>
+              {/* <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Claims Analysis
+                Análise de Sinistros
                 <FileText className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
               <Button 
@@ -749,20 +692,20 @@ export default function InsuranceIndustrySection() {
                 size="xl" 
                 className="text-white hover:bg-white/10 group"
               >
-                Download Insurance Guide
+                Baixar Guia de Seguros
                 <Download className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our insurance specialists at{' '}
+              Dúvidas? Fale com nossos especialistas em seguros pelo{' '}
               <a href="tel:+1-800-123-4567" className="text-blue-400 hover:text-blue-300 transition-colors">
-                +1 (800) 123-4567
+                +55 (11) 5039-4877
               </a>{' '}
               or{' '}
-              <a href="mailto:insurance@itcygnus.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-                insurance@itcygnus.com
+              <a href="mailto:contact@itcygnus.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                contact@itcygnus.com
               </a>
             </p>
           </div>

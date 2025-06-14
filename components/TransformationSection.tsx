@@ -36,53 +36,53 @@ export default function TransformationSection() {
   const nextSteps = [
     {
       step: 1,
-      title: 'Schedule a free demo and see our platform in action',
-      description: 'Get a personalized demonstration tailored to your industry and use cases',
+      title: 'Agende uma demonstração gratuita e veja nossa plataforma em ação',
+      description: 'Obtenha uma demonstração personalizada adaptada ao seu setor e casos de uso',
       icon: Play,
-      duration: '30 minutes'
+      duration: '30 minutos'
     },
     {
       step: 2,
-      title: 'Calculate your ROI with our personalized tool',
-      description: 'Understand the exact financial impact and savings potential for your organization',
+      title: 'Calcule seu ROI com nossa ferramenta personalizada',
+      description: 'Entenda o impacto financeiro exato e o potencial de economia para sua organização',
       icon: BarChart3,
-      duration: '10 minutes'
+      duration: '10 minutos'
     },
     {
       step: 3,
-      title: 'Start a pilot with low risk and high impact',
-      description: 'Begin with a focused implementation to prove value before full deployment',
+      title: 'Inicie um piloto com baixo risco e alto impacto',
+      description: 'Comece com uma implementação focada para provar valor antes da implantação completa',
       icon: Rocket,
-      duration: '7 Days'
+      duration: '7 Dias'
     },
     {
       step: 4,
-      title: 'Scale enterprise-wide with our proven methodology',
-      description: 'Expand across all departments using our battle-tested implementation framework',
+      title: 'Escale para toda a empresa com nossa metodologia comprovada',
+      description: 'Expanda para todos os departamentos usando nossa estrutura de implementação testada em batalha',
       icon: Globe,
-      duration: '90 days'
+      duration: '90 dias'
     }
   ];
 
   const guarantees = [
     {
-      title: '30-day implementation or your money back',
-      description: 'We guarantee full deployment within 7 Days or receive a complete refund',
+      title: 'Implementação em 30 dias',
+      description: 'Garantimos implantação completa com nosso time de engenharia',
       icon: Clock
     },
     {
-      title: 'Positive ROI in 6 months or we adjust at no cost',
-      description: 'If you don\'t see positive returns within 6 months, we\'ll optimize until you do',
+      title: 'ROI positivo em 6 meses ou ajustamos sem custo',
+      description: 'Se você não ver retornos positivos em 6 meses, otimizaremos até conseguir',
       icon: TrendingUp
     },
     {
-      title: '24/7 support throughout the entire project',
-      description: 'Round-the-clock technical and strategic support from our expert team',
+      title: 'Suporte 24/7 durante todo o projeto',
+      description: 'Suporte técnico e estratégico 24 horas por dia da nossa equipe especializada',
       icon: Shield
     },
     {
-      title: 'Free migration from legacy systems',
-      description: 'Complete data migration and system integration at no additional charge',
+      title: 'Migração gratuita de sistemas legados',
+      description: 'Migração completa de dados e integração de sistemas sem custo adicional',
       icon: Award
     }
   ];
@@ -107,9 +107,9 @@ export default function TransformationSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Ready to Transform Your{' '}
+                Pronto para Transformar Sua{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Enterprise?
+                  Empresa?
                 </span>
               </h1>
               
@@ -118,8 +118,8 @@ export default function TransformationSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Join over <span className="text-ai-green font-bold">500 companies</span> that have already revolutionized their processes with 
-                ITCygnus. Start your digital transformation journey today.
+                Junte-se a mais de <span className="text-ai-green font-bold">500 empresas</span> que já revolucionaram seus processos com a 
+                ITCygnus. Comece sua jornada de transformação digital hoje.
               </p>
 
               {/* Stats Grid */}
@@ -129,9 +129,9 @@ export default function TransformationSection() {
                 }`}
               >
                 {[
-                  { value: '100+', label: 'Companies Transformed', icon: Users },
-                  { value: '40%', label: 'Faster Growth Rate', icon: TrendingUp },
-                  { value: '75%', label: 'Cost Reduction', icon: Target }
+                  { value: '100+', label: 'Empresas Transformadas', icon: Users },
+                  { value: '40%', label: 'Taxa de Crescimento Mais Rápida', icon: TrendingUp },
+                  { value: '75%', label: 'Redução de Custos', icon: Target }
                 ].map((stat, index) => {
                   const Icon = stat.icon;
                   return (
@@ -155,15 +155,15 @@ export default function TransformationSection() {
             >
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-2xl lg:text-3xl font-bold text-ai-dark mb-6">
-                  Digital transformation is no longer an option - it's a competitive necessity.
+                  A transformação digital não é mais uma opção - é uma necessidade competitiva.
                 </h2>
                 <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                  Companies automating their processes with AI are growing <span className="text-ai-green font-bold">40% faster</span> than competitors, 
-                  reducing costs and improving customer experience simultaneously. Our platform was designed to deliver results from day one.
+                  Empresas que automatizam seus processos com IA estão crescendo <span className="text-ai-green font-bold">40% mais rápido</span> que os concorrentes, 
+                  reduzindo custos e melhorando a experiência do cliente simultaneamente. Nossa plataforma foi projetada para entregar resultados desde o primeiro dia.
                 </p>
                 <p className="text-lg text-ai-medium leading-relaxed">
-                  With <span className="text-ai-blue font-bold">30-day implementation</span>, specialized support, and ROI guarantee, 
-                  you have everything needed to lead transformation in your industry.
+                  Com <span className="text-ai-blue font-bold">implementação em 30 dias</span>, suporte especializado e garantia de ROI, 
+                  você tem tudo o que precisa para liderar a transformação em seu setor.
                 </p>
               </div>
             </div>
@@ -175,13 +175,13 @@ export default function TransformationSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Your Path to{' '}
+                Seu Caminho para a{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Digital Excellence
+                  Excelência Digital
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Follow our proven 4-step methodology, designed to transform enterprise operations with precision and impact.
+                Siga nossa metodologia comprovada de 4 etapas, projetada para transformar operações empresariais com precisão e impacto.
               </p>
             </div>
 
@@ -227,13 +227,13 @@ export default function TransformationSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Our{' '}
+                Nossas{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Ironclad Guarantees
+                  Garantias Sólidas
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                We're so confident in our platform that we back every implementation with comprehensive guarantees.
+                Estamos tão confiantes em nossa plataforma que apoiamos cada implementação com garantias abrangentes.
               </p>
             </div>
 
@@ -276,15 +276,15 @@ export default function TransformationSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Take the First Step Towards{' '}
+              Dê o Primeiro Passo Rumo à{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Transformation
+                Transformação
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Don't let your competitors gain the advantage. Start your digital transformation journey today 
-              with the platform trusted by industry leaders worldwide.
+              Não deixe seus concorrentes ganharem vantagem. Comece sua jornada de transformação digital hoje 
+              com a plataforma confiada por líderes da indústria em todo o mundo.
             </p>
 
             {/* Primary CTAs */}
@@ -295,7 +295,7 @@ export default function TransformationSection() {
                 className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
               >
                 <Link href="/demo" className="flex items-center">
-                  Request Free Demo
+                  Solicitar Demo Gratuita
                   <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Link>
               </Button>
@@ -306,26 +306,26 @@ export default function TransformationSection() {
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
                 <Link href="#" className="flex items-center">
-                  Speak with Specialist
+                  Falar com Especialista
                   <Phone className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Link>
               </Button>
               
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 size="xl" 
                 className="text-white hover:bg-white/10 group"
               >
                 <Link href="#" className="flex items-center">
-                  Download Success Story
+                  Baixar Caso de Sucesso
                   <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
                 </Link>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Secondary CTAs */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 size="lg" 
                 className="text-white/80 hover:text-white hover:bg-white/10 group"
@@ -334,35 +334,35 @@ export default function TransformationSection() {
                   <BarChart3 className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                   Calculate My ROI
                 </Link>
-              </Button>
+              </Button> */}
               
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 size="lg" 
                 className="text-white/80 hover:text-white hover:bg-white/10 group"
               >
                 <Link href="#" className="flex items-center">
                   <FileText className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                  View Case Studies
+                  Ver Casos de Estudo
                 </Link>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Contact Info */}
             <div className="border-t border-white/20 pt-8">
               <p className="text-white/60 mb-4 text-sm">
-                Questions? Our transformation experts are standing by
+                Dúvidas? Nossos especialistas em transformação estão prontos para ajudar
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-sm">
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4 text-ai-green" />
-                  <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                    +1 (800) 123-4567
+                  <a href="tel:+55-11-5190-0860" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                    +55 (11) 5039-4877
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-4 h-4 text-ai-green" />
-                  <span className="text-white/80">Available 24/7</span>
+                  <span className="text-white/80">Disponível 24/7</span>
                 </div>
               </div>
             </div>

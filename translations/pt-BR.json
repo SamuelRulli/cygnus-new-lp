@@ -8,10 +8,10 @@
     "requestDemo": "Solicitar Demo"
   },
   "hero": {
-    "title": "Transforme Sua",
+    "title": "Transforme sua",
     "titleHighlight": "Empresa",
-    "titleEnd": "com IA Que Entrega",
-    "titleResults": "Resultados Mensuráveis",
+    "titleEnd": "com IA que entrega",
+    "titleResults": "resultados mensuráveis",
     "subtitle": "A única plataforma de IA empresarial que reduz o tempo de processamento manual em {percentage}%, com implementação em {days} dias e ROI comprovado. Mais de {companies} empresas confiam na ITCygnus para automatizar seus processos críticos de negócio.",
     "benefits": {
       "implementation": "Implementação em 30 dias",
@@ -21,7 +21,8 @@
     },
     "cta": {
       "requestDemo": "Solicitar Demo Gratuito",
-      "calculateROI": "Calcular Meu ROI"
+      "calculateROI": "Calcular ROI",
+      "exploreSolutions": "Conheça nossa Suite de Soluções"
     }
   },
   "metrics": {
@@ -78,16 +79,25 @@
           "Fluxos de aprovação automatizados"
         ]
       },
-      "aiDATA": {
-        "title": "AI.DATA",
-        "subtitle": "Processamento de Sinistros de Saúde",
-        "description": "Revolucione seu processo de sinistros de saúde com automação completa. Do recebimento do documento até a aprovação final, nossa IA analisa, valida e processa sinistros com precisão médica, reduzindo o tempo de processamento de semanas para horas.",
+      "aiSAUDE": {
+        "title": "AI.SAUDE",
+        "subtitle": "Processamento de Reembolsos de Saúde",
+        "description": "Revolucione seu processo de reembolsos de saúde com automação completa. Somos o maior portal integrador de prefeituras do Brasil, com mais de 350 prefeituras validando notas fiscais e combatendo fraude no processo de reembolso através da nossa tecnologia AI.SAUDE.",
         "benefits": [
-          "Análise automática de elegibilidade",
+          "Processamento automático de sinistros",
           "Detecção de fraude em tempo real",
           "Integração com operadoras e prestadores",
           "Conformidade regulatória completa"
-        ]
+        ],
+        "leadership": {
+          "title": "Líder no Setor Público Brasileiro",
+          "description": "Somos o maior portal integrador de prefeituras do Brasil, com mais de 350 prefeituras validando notas fiscais e combatendo fraude no processo de reembolso através da nossa tecnologia AI.SAUDE.",
+          "stats": {
+            "municipalities": "350+ Prefeituras Conectadas",
+            "fraudDetection": "99,2% Detecção de Fraudes",
+            "notesValidated": "R$ 2,8B Notas Validadas"
+          }
+        }
       },
       "aiPRICEINSIGHTS": {
         "title": "AI.PRICEINSIGHTS",
@@ -217,7 +227,7 @@
     "trustIndicators": ["Sem Taxas de Configuração", "Migração Gratuita", "Garantia de 30 Dias", "Cancele a Qualquer Momento"],
     "buttons": {
       "requestDemo": "Solicitar Demo Gratuito",
-      "calculateROI": "Calcular Meu ROI"
+      "calculateROI": "Calcular ROI"
     },
     "contact": "Dúvidas? Ligue para nós em {phone} ou envie um email para {email}"
   },
@@ -235,7 +245,7 @@
       "subtitle": "Selecione o setor ou tipo de processo para obter um cálculo mais preciso",
       "types": {
         "healthcare": {
-          "title": "Healthcare - Análise de Glosas",
+          "title": "Saúde - Análise de Glosas",
           "description": "Calcule o ROI da automação de análise de glosas hospitalares"
         },
         "automation": {
@@ -263,22 +273,22 @@
         "monthlyGlosasHelp": "Número de glosas que precisam ser analisadas mensalmente",
         "avgAnalysisTime": "Tempo Médio de Análise (minutos)",
         "avgAnalysisTimeHelp": "Tempo que um analista leva para analisar uma glosa",
-        "analystHourlyRate": "Custo Hora do Analista ($)",
+        "analystHourlyRate": "Custo Hora do Analista (R$)",
         "analystHourlyRateHelp": "Custo por hora do profissional que analisa glosas",
-        "glosaValue": "Valor Médio por Glosa ($)",
+        "glosaValue": "Valor Médio por Glosa (R$)",
         "glosaValueHelp": "Valor médio em dólares de cada glosa",
         "recoveryRate": "Taxa de Recuperação Atual (%)",
         "recoveryRateHelp": "Percentual de glosas que conseguem ser revertidas atualmente",
-        "storageCosts": "Custos de Armazenamento Mensal ($)",
+        "storageCosts": "Custos de Armazenamento Mensal (R$)",
         "storageCostsHelp": "Custos mensais com armazenamento de documentos"
       },
       "general": {
         "monthlyDocuments": "Documentos Processados Mensalmente",
         "avgProcessingTime": "Tempo Médio de Processamento (minutos)",
-        "hourlyRate": "Taxa Horária ($)",
+        "hourlyRate": "Taxa Horária (R$)",
         "errorRate": "Taxa de Erro (%)",
-        "reworkCost": "Custo de Retrabalho por Erro ($)",
-        "storageCosts": "Custos Mensais de Armazenamento ($)"
+        "reworkCost": "Custo de Retrabalho por Erro (R$)",
+        "storageCosts": "Custos Mensais de Armazenamento (R$)"
       },
       "continue": "Continuar para Cálculo"
     },
@@ -307,7 +317,7 @@
       "title": "Fatores Considerados",
       "healthcare": [
         "Volume mensal de glosas para análise",
-        "Custo base de $0.34 por documento analisado",
+        "Custo base de R$0.34 por documento analisado",
         "Taxa de recuperação atual de glosas",
         "Valor médio por glosa processada",
         "Custos de armazenamento e infraestrutura",
@@ -378,10 +388,10 @@
     }
   },
   "footer": {
-    "description": "Transformando empresas com soluções de automação baseadas em IA. Confiança de mais de 500 empresas em todo o mundo.",
+    "description": "Transformando empresas com soluções de automação baseadas em IA.",
     "solutions": "Soluções",
     "industries": "Setores",
     "company": "Empresa",
-    "copyright": "© 2024 ITCygnus. Todos os direitos reservados."
+    "copyright": "© 2012 ITCygnus. Todos os direitos reservados."
   }
 }

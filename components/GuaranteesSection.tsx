@@ -18,9 +18,14 @@ import {
   Target,
   Star
 } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useRouter } from 'next/navigation';
 
 export default function GuaranteesSection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
+  const router = useRouter();
+
 
   useEffect(() => {
     setIsVisible(true);
@@ -28,57 +33,39 @@ export default function GuaranteesSection() {
 
   const guarantees = [
     {
-      title: '30-day implementation or your money back',
-      description: 'We guarantee full deployment within 7 Days or receive a complete refund. Our proven methodology ensures rapid implementation without compromising quality.',
+      title: t('guarantees.items.implementation.title'),
+      description: t('guarantees.items.implementation.description'),
       icon: Clock,
       color: 'ai-blue',
-      badge: '100% Refund'
+      badge: t('guarantees.items.implementation.badge')
     },
     {
-      title: 'Positive ROI in 6 months or we adjust at no cost',
-      description: 'If you don\'t see positive returns within 6 months, we\'ll optimize until you do. Our commitment to your success is unwavering.',
+      title: t('guarantees.items.roi.title'),
+      description: t('guarantees.items.roi.description'),
       icon: TrendingUp,
       color: 'ai-green',
-      badge: 'ROI Guarantee'
+      badge: t('guarantees.items.roi.badge')
     },
     {
-      title: '24/7 support throughout the entire project',
-      description: 'Round-the-clock technical and strategic support from our expert team. Never face implementation challenges alone.',
+      title: t('guarantees.items.support.title'),
+      description: t('guarantees.items.support.description'),
       icon: Headphones,
       color: 'ai-blue',
-      badge: 'Always Available'
+      badge: t('guarantees.items.support.badge')
     },
     {
-      title: 'Free migration from legacy systems',
-      description: 'Complete data migration and system integration at no additional charge. We handle the technical complexity so you don\'t have to.',
+      title: t('guarantees.items.migration.title'),
+      description: t('guarantees.items.migration.description'),
       icon: Database,
       color: 'ai-green',
-      badge: 'No Extra Cost'
+      badge: t('guarantees.items.migration.badge')
     }
   ];
 
-  const riskFreeFeatures = [
-    {
-      title: 'Free proof of concept for 1 week',
-      description: 'Test our AI with your actual documents and processes',
-      icon: Zap
-    },
-    {
-      title: 'No contract commitment',
-      description: 'Flexible terms that adapt to your business needs',
-      icon: RefreshCw
-    },
-    {
-      title: 'Cancel anytime',
-      description: 'Complete freedom with no long-term obligations',
-      icon: CheckCircle
-    },
-    {
-      title: 'Free data migration',
-      description: 'Seamless transition from your current systems',
-      icon: Database
-    }
-  ];
+  const riskFreeFeatures = (t('guarantees.trial.features') as unknown as Array<{title: string, description: string}>).map((feature, index) => ({
+    ...feature,
+    icon: [Zap, RefreshCw, CheckCircle, Database][index]
+  }));
 
   const trustIndicators = [
     { metric: '99.9%', label: 'Uptime SLA', icon: Shield },
@@ -103,9 +90,9 @@ export default function GuaranteesSection() {
               isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
             }`}
           >
-            Our Ironclad{' '}
+            {t('guarantees.title')}{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              Guarantees
+              {t('guarantees.titleHighlight')}
             </span>
           </h2>
           
@@ -114,8 +101,7 @@ export default function GuaranteesSection() {
               isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
             }`}
           >
-            We're so confident in our platform that we back every implementation with 
-            comprehensive guarantees. Your success is our guarantee.
+            {t('guarantees.subtitle')}
           </p>
 
           {/* Trust Indicators */}
@@ -189,11 +175,10 @@ export default function GuaranteesSection() {
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-ai-dark mb-6">
-              Risk-Free Trial
+              {t('guarantees.trial.title')}
             </h3>
             <p className="text-lg text-ai-medium max-w-2xl mx-auto leading-relaxed">
-              Try ITCygnus with zero risk. Our trial includes everything you need to evaluate 
-              our platform thoroughly before making any commitment.
+              {t('guarantees.trial.subtitle')}
             </p>
           </div>
 
@@ -217,21 +202,19 @@ export default function GuaranteesSection() {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-ai-dark to-ai-dark/90 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Experience Risk-Free AI Transformation?
+              {t('guarantees.cta.title')}
             </h3>
             <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-              Start your journey with complete peace of mind. Our guarantees ensure 
-              your investment is protected every step of the way.
+              {t('guarantees.cta.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-ai-dark px-8 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors">
-                Start Free Trial
-              </button>
-              <button className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
-                View All Guarantees
-              </button>
-            </div>
+            <button
+              onClick={() => router.push('/demo')}
+              className="bg-white text-ai-dark px-8 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors"
+            >
+              {t('guarantees.cta.startTrial')}
+            </button>
           </div>
+          <br />
         </div>
       </div>
     </section>

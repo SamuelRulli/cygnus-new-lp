@@ -7,6 +7,7 @@ import GuaranteesSection from '@/components/GuaranteesSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import SocialProofNotifications from '@/components/SocialProofNotifications';
+import TypebotBubble from '@/components/TypebotBubble';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <CTASection />
       </main>
       <Footer />
+      <TypebotBubble />
     </>
   );
 }

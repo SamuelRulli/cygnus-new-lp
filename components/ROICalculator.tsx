@@ -76,7 +76,7 @@ const defaultInputs: ROIInputs = {
 const calculationTypes = [
   {
     id: 'healthcare',
-    title: 'Healthcare - Análise de Glosas',
+    title: 'Saúde - Análise de Glosas',
     description: 'Calcule o ROI da automação de análise de glosas hospitalares',
     icon: Heart,
     color: 'red'
@@ -168,6 +168,19 @@ export default function ROICalculator() {
     }
   ];
 
+  // Function to calculate cost per document based on volume ranges
+  const getCostPerDocument = (monthlyVolume: number): number => {
+    if (monthlyVolume <= 50000) {
+      return 0.52; // Range 1: 1 to 50k
+    } else if (monthlyVolume <= 500000) {
+      return 0.43; // Range 2: 51k to 500k
+    } else if (monthlyVolume <= 1000000) {
+      return 0.35; // Range 3: 501k to 1000k
+    } else {
+      return 0.25; // Range 4: 1001k+
+    }
+  };
+
   const calculateROI = () => {
     setIsCalculating(true);
     
@@ -186,8 +199,8 @@ export default function ROICalculator() {
           storageCosts = 0
         } = inputs;
 
-        // Base cost per document analysis: $0.34
-        const costPerDocumentAnalysis = 0.34;
+        // Dynamic cost per document analysis based on volume
+        const costPerDocumentAnalysis = getCostPerDocument(monthlyGlosas);
         
         // Current state calculations for healthcare
         const monthlyAnalysisCost = monthlyGlosas * costPerDocumentAnalysis;
@@ -240,7 +253,7 @@ export default function ROICalculator() {
         errorReduction = 85; // 85% reduction in analysis errors
 
       } else {
-        // General automation calculations
+        // General automation calculations for all other sectors
         const {
           monthlyDocuments,
           avgProcessingTime,
@@ -250,24 +263,30 @@ export default function ROICalculator() {
           storageCosts
         } = inputs;
 
+        // Dynamic cost per document analysis based on volume
+        const costPerDocumentAnalysis = getCostPerDocument(monthlyDocuments);
+
         // Current state calculations
         const monthlyProcessingHours = (monthlyDocuments * avgProcessingTime) / 60;
         const monthlyLaborCost = monthlyProcessingHours * hourlyRate;
         const monthlyErrorCost = (monthlyDocuments * errorRate / 100) * reworkCost;
-        const currentMonthlyCost = monthlyLaborCost + monthlyErrorCost + storageCosts;
+        const monthlyDocumentAnalysisCost = monthlyDocuments * costPerDocumentAnalysis;
+        const currentMonthlyCost = monthlyLaborCost + monthlyErrorCost + monthlyDocumentAnalysisCost + storageCosts;
         currentAnnualCost = currentMonthlyCost * 12;
 
         // Automated state calculations (based on typical improvements)
-        const automationReduction = 0.75; // 75% reduction
+        const automationReduction = 0.75; // 75% reduction in processing time
         const errorReductionRate = 0.90; // 90% error reduction
         const storageReduction = 0.60; // 60% storage cost reduction
+        const analysisReduction = 0.80; // 80% reduction in analysis cost
         
         const automatedMonthlyLaborCost = monthlyLaborCost * (1 - automationReduction);
         const automatedMonthlyErrorCost = monthlyErrorCost * (1 - errorReductionRate);
         const automatedStorageCosts = storageCosts * (1 - storageReduction);
+        const automatedDocumentAnalysisCost = monthlyDocumentAnalysisCost * (1 - analysisReduction);
         const platformCost = 5000; // Monthly platform cost
         
-        const automatedMonthlyCost = automatedMonthlyLaborCost + automatedMonthlyErrorCost + automatedStorageCosts + platformCost;
+        const automatedMonthlyCost = automatedMonthlyLaborCost + automatedMonthlyErrorCost + automatedDocumentAnalysisCost + automatedStorageCosts + platformCost;
         automatedAnnualCost = automatedMonthlyCost * 12;
 
         // ROI calculations
@@ -299,16 +318,16 @@ export default function ROICalculator() {
   };
 
   const formatCurrency = (value: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('pt-br', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'BRL',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0,
     }).format(value);
   };
 
   const formatNumber = (value: number) => {
-    return new Intl.NumberFormat('en-US').format(Math.round(value));
+    return new Intl.NumberFormat('pt-br').format(Math.round(value));
   };
 
   return (
@@ -317,15 +336,17 @@ export default function ROICalculator() {
       <header className="bg-ai-dark text-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-ai rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IT</span>
-              </div>
-              <span className="text-xl font-bold">ITCygnus</span>
+            <Link href="/" className="flex items-center space-x-3">
+              <img
+                src="https://storage.googleapis.com/agentpro-cdn/cygnus/logotipo%20cygnus-01.png"
+                alt="Logo Cygnus"
+                className="w-22 h-20 object-contain"
+              />
+              {/* <span className="text-xl font-bold text-white">ITCygnus</span> */}
             </Link>
             <div className="flex items-center space-x-4">
               <Calculator className="w-6 h-6 text-ai-green" />
-              <span className="text-lg font-semibold">ROI Calculator</span>
+              <span className="text-lg font-semibold">Calculadora de Retorno sobre Investimento</span>
             </div>
           </div>
         </div>
@@ -337,7 +358,7 @@ export default function ROICalculator() {
           <h1 className="text-4xl lg:text-5xl font-bold text-ai-dark mb-6">
             {t('roiCalculator.title')}{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              {t('roiCalculator.titleHighlight')}
+              Demonstração Personalizada
             </span>
           </h1>
           <p className="text-lg lg:text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed">
@@ -434,7 +455,7 @@ export default function ROICalculator() {
                 <CardHeader className="bg-gradient-to-r from-ai-blue/5 to-ai-green/5">
                   <CardTitle className="flex items-center space-x-2 text-ai-dark">
                     <FileText className="w-6 h-6 text-ai-blue" />
-                    <span>Enter Your Current Process Data</span>
+                    <span>Insira os Dados do Seu Processo Atual</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="p-8 space-y-6">
@@ -443,7 +464,7 @@ export default function ROICalculator() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <Label htmlFor="monthlyGlosas" className="text-ai-dark font-medium">
-                          Glosas Mensais para Análise
+                          Volume Mensal para Análise
                         </Label>
                         <Input
                           id="monthlyGlosas"
@@ -471,7 +492,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="analystHourlyRate" className="text-ai-dark font-medium">
-                          Custo Hora do Analista ($)
+                          Custo Hora do Analista (R$)
                         </Label>
                         <Input
                           id="analystHourlyRate"
@@ -485,7 +506,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="glosaValue" className="text-ai-dark font-medium">
-                          Valor Médio por Glosa ($)
+                          Valor Médio por Glosa (R$)
                         </Label>
                         <Input
                           id="glosaValue"
@@ -513,7 +534,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="storageCosts" className="text-ai-dark font-medium">
-                          Custos de Armazenamento Mensal ($)
+                          Custos de Armazenamento Mensal (R$)
                         </Label>
                         <Input
                           id="storageCosts"
@@ -530,7 +551,7 @@ export default function ROICalculator() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <Label htmlFor="monthlyDocuments" className="text-ai-dark font-medium">
-                          Monthly Documents Processed
+                          Documentos Processados Mensalmente
                         </Label>
                         <Input
                           id="monthlyDocuments"
@@ -543,7 +564,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="avgProcessingTime" className="text-ai-dark font-medium">
-                          Avg. Processing Time (minutes)
+                          Tempo Médio de Processamento (minutos)
                         </Label>
                         <Input
                           id="avgProcessingTime"
@@ -556,7 +577,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="hourlyRate" className="text-ai-dark font-medium">
-                          Hourly Rate ($)
+                          Custo por Hora (R$)
                         </Label>
                         <Input
                           id="hourlyRate"
@@ -569,7 +590,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="errorRate" className="text-ai-dark font-medium">
-                          Error Rate (%)
+                          Taxa de Erros (%)
                         </Label>
                         <Input
                           id="errorRate"
@@ -582,7 +603,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="reworkCost" className="text-ai-dark font-medium">
-                          Rework Cost per Error ($)
+                          Custo por Retrabalho (R$)
                         </Label>
                         <Input
                           id="reworkCost"
@@ -595,7 +616,7 @@ export default function ROICalculator() {
                       
                       <div>
                         <Label htmlFor="storageCosts" className="text-ai-dark font-medium">
-                          Monthly Storage Costs ($)
+                          Custos Mensais de Armazenamento (R$)
                         </Label>
                         <Input
                           id="storageCosts"
@@ -613,7 +634,7 @@ export default function ROICalculator() {
                     className="w-full bg-ai-blue hover:bg-ai-blue/90 text-white"
                     size="lg"
                   >
-                    Continue to Calculation
+                    Continuar para Cálculo
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </CardContent>
@@ -626,15 +647,15 @@ export default function ROICalculator() {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2 text-ai-dark">
                     <Target className="w-6 h-6 text-ai-green" />
-                    <span>How It Works</span>
+                    <span>Como Funciona</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {[
-                    { step: 1, title: 'Current Analysis', desc: 'Enter data about your current manual processes' },
-                    { step: 2, title: 'Automated Projection', desc: 'See how automation would impact your numbers' },
-                    { step: 3, title: 'Detailed Report', desc: 'Receive complete analysis with return timeline' },
-                    { step: 4, title: 'Personalized Consultation', desc: 'Schedule meeting to validate results' }
+                    { step: 1, title: 'Análise Atual', desc: 'Insira dados sobre seus processos manuais atuais' },
+                    { step: 2, title: 'Projeção Automatizada', desc: 'Veja como a automação impactaria seus números' },
+                    { step: 3, title: 'Relatório Detalhado', desc: 'Receba análise completa com cronograma de retorno' },
+                    { step: 4, title: 'Consulta Personalizada', desc: 'Agende reunião para validar resultados' }
                   ].map((item) => (
                     <div key={item.step} className="flex items-start space-x-3">
                       <div className="w-6 h-6 bg-ai-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -653,25 +674,25 @@ export default function ROICalculator() {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2 text-ai-dark">
                     <CheckCircle className="w-6 h-6 text-ai-green" />
-                    <span>Factors Considered</span>
+                    <span>Fatores Considerados</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-ai-medium">
                     {(inputs.calculationType === 'healthcare' ? [
                       'Volume mensal de glosas para análise',
-                      'Custo base de $0.34 por documento analisado',
+                      // 'Custo base de R$0.34 por documento analisado',
                       'Taxa de recuperação atual de glosas',
                       'Valor médio por glosa processada',
                       'Custos de armazenamento e infraestrutura',
                       'Oportunidades perdidas por análise manual'
                     ] : [
-                      'Monthly volume of processed documents',
-                      'Average processing time per document',
-                      'Hourly cost of involved team',
-                      'Current error rate and rework cost',
-                      'Storage and infrastructure costs',
-                      'Implementation and training time'
+                      'Volume mensal de documentos processados',
+                      'Tempo médio de processamento por documento',
+                      'Custo horário da equipe envolvida',
+                      'Taxa de erro atual e custo de retrabalho',
+                      'Custos de armazenamento e infraestrutura',
+                      'Tempo de implementação e treinamento'
                     ]).map((factor, index) => (
                       <li key={index} className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-ai-green rounded-full"></div>
@@ -693,10 +714,10 @@ export default function ROICalculator() {
                 <Calculator className="w-12 h-12 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-ai-dark mb-4">
-                Calculating Your ROI...
+                Calculando seu ROI...
               </h2>
               <p className="text-lg text-ai-medium mb-8">
-                Our AI analyzes your data and applies real-world implementation knowledge to deliver precise, actionable projections.
+                Nossa IA analisa seus dados e aplica conhecimento de implementação do mundo real para entregar projeções precisas e acionáveis.
               </p>
               <div className="flex justify-center space-x-4 mb-8">
                 {[...Array(3)].map((_, i) => (
@@ -713,7 +734,7 @@ export default function ROICalculator() {
                 className="bg-ai-green hover:bg-ai-green/90 text-white"
                 size="lg"
               >
-                {isCalculating ? 'Calculating...' : 'Generate ROI Report'}
+                {isCalculating ? 'Calculando...' : 'Gerar Relatório de ROI'}
                 <Zap className="w-5 h-5 ml-2" />
               </Button>
             </div>
@@ -728,28 +749,28 @@ export default function ROICalculator() {
               {[
                 {
                   icon: DollarSign,
-                  title: 'Annual Savings',
+                  title: 'Economia Anual',
                   value: formatCurrency(results.annualSavings),
                   color: 'ai-green',
                   description: 'Total cost reduction per year'
                 },
                 {
                   icon: Calendar,
-                  title: 'Payback Period',
+                  title: 'Período de Retorno',
                   value: `${Math.round(results.paybackMonths)} months`,
                   color: 'ai-blue',
                   description: 'Time to recover investment'
                 },
                 {
                   icon: TrendingUp,
-                  title: '3-Year ROI',
+                  title: 'ROI em 3 Anos',
                   value: `${Math.round(results.threeYearROI)}%`,
                   color: 'ai-green',
                   description: 'Return on investment over 3 years'
                 },
                 {
                   icon: Clock,
-                  title: 'Hours Freed',
+                  title: 'Horas Liberadas',
                   value: `${formatNumber(results.hoursFreedMonthly)}/month`,
                   color: 'ai-blue',
                   description: 'Staff time available for strategic work'
@@ -769,7 +790,10 @@ export default function ROICalculator() {
                         {metric.title}
                       </h3>
                       <p className="text-sm text-ai-medium">
-                        {metric.description}
+                        {metric.title === 'Annual Savings' ? 'Redução de custo anual' : 
+                         metric.title === 'Payback Period' ? 'Tempo para recuperar investimento' :
+                         metric.title === '3-Year ROI' ? 'Retorno sobre investimento em 3 anos' :
+                         'Tempo disponível para trabalho estratégico'}
                       </p>
                     </CardContent>
                   </Card>
@@ -781,27 +805,27 @@ export default function ROICalculator() {
             <div className="grid lg:grid-cols-2 gap-8">
               <Card className="shadow-xl border-ai-light/50">
                 <CardHeader>
-                  <CardTitle className="flex items-center space-x-2 text-ai-dark">
+                    <CardTitle className="flex items-center space-x-2 text-ai-dark">
                     <BarChart3 className="w-6 h-6 text-ai-blue" />
-                    <span>Cost Comparison</span>
+                    <span>Comparação de Custos</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center p-4 bg-red-50 rounded-lg">
-                      <span className="font-medium text-ai-dark">Current Annual Cost</span>
+                      <span className="font-medium text-ai-dark">Custo Anual Atual</span>
                       <span className="text-xl font-bold text-red-600">
                         {formatCurrency(results.currentAnnualCost)}
                       </span>
                     </div>
                     <div className="flex justify-between items-center p-4 bg-green-50 rounded-lg">
-                      <span className="font-medium text-ai-dark">Automated Annual Cost</span>
+                      <span className="font-medium text-ai-dark">Custo Anual Automatizado</span>
                       <span className="text-xl font-bold text-green-600">
                         {formatCurrency(results.automatedAnnualCost)}
                       </span>
                     </div>
                     <div className="flex justify-between items-center p-4 bg-ai-blue/10 rounded-lg border-2 border-ai-blue/20">
-                      <span className="font-bold text-ai-dark">Annual Savings</span>
+                      <span className="font-bold text-ai-dark">Economia Anual</span>
                       <span className="text-2xl font-bold text-ai-blue">
                         {formatCurrency(results.annualSavings)}
                       </span>
@@ -812,25 +836,25 @@ export default function ROICalculator() {
 
               <Card className="shadow-xl border-ai-light/50">
                 <CardHeader>
-                  <CardTitle className="flex items-center space-x-2 text-ai-dark">
+                    <CardTitle className="flex items-center space-x-2 text-ai-dark">
                     <Target className="w-6 h-6 text-ai-green" />
-                    <span>Process Improvements</span>
+                    <span>Melhorias no Processo</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {[
                     {
-                      title: 'Processing Time Reduction',
+                      title: 'Redução no Tempo de Processamento',
                       value: `${Math.round(results.processingTimeReduction)}%`,
                       color: 'ai-blue'
                     },
                     {
-                      title: 'Error Rate Reduction',
+                      title: 'Redução na Taxa de Erros',
                       value: `${Math.round(results.errorReduction)}%`,
                       color: 'ai-green'
                     },
                     {
-                      title: 'Staff Hours Freed Monthly',
+                      title: 'Horas Liberadas Mensalmente',
                       value: formatNumber(results.hoursFreedMonthly),
                       color: 'ai-blue'
                     }
@@ -849,30 +873,30 @@ export default function ROICalculator() {
             {/* Example Comparison */}
             <Card className="shadow-xl border-ai-light/50 bg-gradient-to-r from-ai-blue/5 to-ai-green/5">
               <CardHeader>
-                <CardTitle className="text-center text-ai-dark">
-                  Your Results vs. Typical ITCygnus Customer
-                </CardTitle>
+                    <CardTitle className="text-center text-ai-dark">
+                      Seus Resultados vs. Cliente Típico ITCygnus
+                    </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-6 text-center">
                   <div className="p-6 bg-white rounded-xl shadow-lg">
-                    <h4 className="font-bold text-ai-dark mb-2">Your Projected Savings</h4>
+                    <h4 className="font-bold text-ai-dark mb-2">Sua Economia Projetada</h4>
                     <div className="text-3xl font-bold text-ai-green mb-2">
                       {formatCurrency(results.annualSavings)}
                     </div>
-                    <p className="text-sm text-ai-medium">Annual cost reduction</p>
+                    <p className="text-sm text-ai-medium">Redução de custo anual</p>
                   </div>
                   <div className="p-6 bg-white rounded-xl shadow-lg">
-                    <h4 className="font-bold text-ai-dark mb-2">Typical Customer</h4>
+                    <h4 className="font-bold text-ai-dark mb-2">Cliente Típico</h4>
                     <div className="text-3xl font-bold text-ai-blue mb-2">$480,000</div>
-                    <p className="text-sm text-ai-medium">Average annual savings</p>
+                    <p className="text-sm text-ai-medium">Economia média anual</p>
                   </div>
                   <div className="p-6 bg-white rounded-xl shadow-lg">
-                    <h4 className="font-bold text-ai-dark mb-2">Your ROI</h4>
+                    <h4 className="font-bold text-ai-dark mb-2">Seu ROI</h4>
                     <div className="text-3xl font-bold text-ai-green mb-2">
                       {Math.round(results.threeYearROI)}%
                     </div>
-                    <p className="text-sm text-ai-medium">3-year return</p>
+                    <p className="text-sm text-ai-medium">Retorno em 3 anos</p>
                   </div>
                 </div>
               </CardContent>
@@ -882,26 +906,26 @@ export default function ROICalculator() {
             <Card className="shadow-xl border-ai-light/50 bg-ai-dark text-white">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">
-                  Ready to Achieve These Results?
+                  Pronto para alcançar esses resultados?
                 </h3>
                 <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-                  Schedule a personalized consultation to validate these projections and create 
-                  a customized implementation plan for your organization.
+                  Agende uma consulta personalizada para validar essas projeções e criar
+                  um plano de implementação customizado para sua organização.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="ai_primary" size="lg" className="bg-white text-ai-dark hover:bg-white/90 group">
-                    Schedule Consultation
+                    Agendar Consulta
                     <Phone className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
                   <Button variant="ai_outline" size="lg" className="border-white text-white hover:bg-white hover:text-ai-dark group">
-                    Download Full Report
+                    Baixar Relatório Completo
                     <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
                   </Button>
                 </div>
                 <p className="text-white/60 mt-6 text-sm">
                   Questions? Call us at{' '}
                   <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                    +1 (800) 123-4567
+                    +55 (11) 5039-4877
                   </a>
                 </p>
               </CardContent>

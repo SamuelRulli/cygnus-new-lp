@@ -84,11 +84,28 @@ export default function DemoRequestForm() {
   const handleSubmit = async () => {
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/send-demo-request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        console.error('Erro ao enviar formulário');
+        // Aqui você pode adicionar uma notificação de erro para o usuário
+        alert('Erro ao enviar formulário. Tente novamente.');
+      }
+    } catch (error) {
+      console.error('Erro na requisição:', error);
+      alert('Erro ao enviar formulário. Tente novamente.');
+    } finally {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 2000);
+    }
   };
 
   const isStepValid = (step: number) => {
@@ -117,23 +134,23 @@ export default function DemoRequestForm() {
               </div>
               
               <h1 className="text-4xl lg:text-5xl font-bold text-ai-dark mb-6">
-                Demo Request Submitted{' '}
+                Demonstração Solicitada com{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Successfully!
+                  Sucesso!
                 </span>
               </h1>
               
               <p className="text-lg lg:text-xl text-ai-medium mb-12 leading-relaxed max-w-3xl mx-auto">
-                Thank you for your interest in ITCygnus. Our enterprise AI specialists will contact you within 
-                24 hours to schedule your personalized demonstration.
+                Obrigado pelo seu interesse na ITCygnus. Nossos especialistas em IA empresarial entrarão em contato
+                em até 24 horas para agendar sua demonstração personalizada.
               </p>
 
               {/* Success Metrics */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 {[
-                  { icon: Clock, title: '24 Hours', desc: 'Response time guarantee' },
-                  { icon: Users, title: '100+', desc: 'Successful implementations' },
-                  { icon: Target, title: '75%', desc: 'Average time savings' }
+                  { icon: Clock, title: '24 Horas', desc: 'Tempo de resposta garantido' },
+                  { icon: Users, title: '100+', desc: 'Implementações bem-sucedidas' },
+                  { icon: Target, title: '75%', desc: 'Economia média de tempo' }
                 ].map((metric, index) => {
                   const Icon = metric.icon;
                   return (
@@ -149,13 +166,13 @@ export default function DemoRequestForm() {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-xl border border-ai-light/50 mb-12">
-                <h3 className="text-2xl font-bold text-ai-dark mb-6">What Happens Next?</h3>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6">O Que Acontece Depois?</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                   {[
-                    { step: 1, title: 'Initial Contact', desc: 'Our specialist will call you within 24 hours', time: '24 hours', icon: Phone },
-                    { step: 2, title: 'Needs Assessment', desc: 'Brief discussion about your specific requirements', time: '30 minutes', icon: FileText },
-                    { step: 3, title: 'Custom Demo', desc: 'Personalized demonstration with your use cases', time: '45 minutes', icon: Play },
-                    { step: 4, title: 'ROI Analysis', desc: 'Detailed projection of benefits for your organization', time: '1 week', icon: BarChart3 }
+                    { step: 1, title: 'Contato Inicial', desc: 'Nosso especialista entrará em contato em até 24 horas', time: '24 horas', icon: Phone },
+                    { step: 2, title: 'Avaliação de Necessidades', desc: 'Discussão breve sobre seus requisitos específicos', time: '30 minutos', icon: FileText },
+                    { step: 3, title: 'Demonstração Personalizada', desc: 'Apresentação personalizada com seus casos de uso', time: '45 minutos', icon: Play },
+                    { step: 4, title: 'Análise de ROI', desc: 'Projeção detalhada de benefícios para sua organização', time: '1 semana', icon: BarChart3 }
                   ].map((item) => {
                     const Icon = item.icon;
                     return (
@@ -181,16 +198,16 @@ export default function DemoRequestForm() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/">
                   <Button variant="ai_outline" size="lg" className="group">
-                    Back to Homepage
+                    Voltar à Página Inicial
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <Link href="/roi-calculator">
+                {/* <Link href="/roi-calculator">
                   <Button variant="ai_primary" size="lg" className="group">
-                    Calculate Your ROI
+                    Calcular Seu ROI
                     <Target className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -217,7 +234,7 @@ export default function DemoRequestForm() {
               </Link>
               <div className="flex items-center space-x-4">
                 <Play className="w-6 h-6 text-ai-green" />
-                <span className="text-lg font-semibold">Request Demo</span>
+                <span className="text-lg font-semibold">Solicitar Demonstração</span>
               </div>
             </div>
           </div>
@@ -233,41 +250,41 @@ export default function DemoRequestForm() {
           {/* Hero Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold text-ai-dark mb-6">
-              See ITCygnus in Action with a{' '}
+              Veja a ITCygnus em Ação com uma{' '}
               <span className="bg-gradient-ai bg-clip-text text-transparent">
-                Personalized Demo
+                Demonstração Personalizada
               </span>
             </h1>
             <p className="text-lg lg:text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed">
-              Get a customized demonstration of our AI platform tailored to your specific business needs. 
-              Our experts will show you exactly how ITCygnus can transform your document processing workflows.
+              Obtenha uma demonstração personalizada da nossa plataforma de IA adaptada às necessidades do seu negócio.
+              Nossos especialistas mostrarão exatamente como a ITCygnus pode transformar seus fluxos de trabalho de processamento de documentos.
             </p>
           </div>
 
           {/* Demo Types */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {[
-              { 
-                title: 'General Demo', 
-                desc: 'Quick, focused presentation', 
-                time: '30 min',
-                icon: Play,
-                popular: false
-              },
-              { 
-                title: 'Industry-Specific Demo', 
-                desc: 'Tailored to your sector', 
-                time: '45 min',
-                icon: Building2,
-                popular: true
-              },
-              { 
-                title: 'Proof of Concept', 
-                desc: 'Test with your data', 
-                time: '1 week',
-                icon: Target,
-                popular: false
-              }
+              {[ 
+                { 
+                  title: 'Demonstração Geral', 
+                  desc: 'Apresentação rápida e focada', 
+                  time: '30 min',
+                  icon: Play,
+                  popular: false
+                },
+                { 
+                  title: 'Demonstração Específica', 
+                  desc: 'Personalizada para seu setor', 
+                  time: '45 min',
+                  icon: Building2,
+                  popular: true
+                },
+                { 
+                  title: 'Prova de Conceito', 
+                  desc: 'Teste com seus dados', 
+                  time: '1 semana',
+                  icon: Target,
+                  popular: false
+                }
             ].map((demo, index) => {
               const Icon = demo.icon;
               return (
@@ -275,7 +292,7 @@ export default function DemoRequestForm() {
                   {demo.popular && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                       <span className="bg-ai-green text-white px-4 py-1 rounded-full text-sm font-semibold">
-                        Most Popular
+                        Mais Popular
                       </span>
                     </div>
                   )}
@@ -298,9 +315,9 @@ export default function DemoRequestForm() {
           <div className="flex justify-center mb-12">
             <div className="flex items-center space-x-4">
               {[
-                { step: 1, title: 'Personal Info', icon: Users },
-                { step: 2, title: 'Company Details', icon: Building2 },
-                { step: 3, title: 'Demo Preferences', icon: FileText }
+                { step: 1, title: 'Informações Pessoais', icon: Users },
+                { step: 2, title: 'Detalhes da Empresa', icon: Building2 },
+                { step: 3, title: 'Preferências da Demo', icon: FileText }
               ].map((item, index) => {
                 const Icon = item.icon;
                 const isActive = currentStep === item.step;
@@ -337,9 +354,9 @@ export default function DemoRequestForm() {
                     {currentStep === 2 && <Building2 className="w-6 h-6 text-ai-blue" />}
                     {currentStep === 3 && <FileText className="w-6 h-6 text-ai-blue" />}
                     <span>
-                      {currentStep === 1 && 'Personal Information'}
-                      {currentStep === 2 && 'Company Details'}
-                      {currentStep === 3 && 'Demo Preferences'}
+                      {currentStep === 1 && 'Informações Pessoais'}
+                      {currentStep === 2 && 'Detalhes da Empresa'}
+                      {currentStep === 3 && 'Preferências da Demo'}
                     </span>
                   </CardTitle>
                 </CardHeader>
@@ -349,34 +366,34 @@ export default function DemoRequestForm() {
                     <div className="space-y-6">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                          <Label htmlFor="firstName\" className="text-ai-dark font-medium">
-                            Full Name *
+                          <Label htmlFor="firstName" className="text-ai-dark font-medium">
+                            Nome Completo *
                           </Label>
                           <Input
                             id="firstName"
                             value={formData.firstName}
                             onChange={(e) => updateFormData('firstName', e.target.value)}
                             className="mt-2"
-                            placeholder="John"
+                            placeholder="João"
                           />
                         </div>
                         <div>
                           <Label htmlFor="lastName" className="text-ai-dark font-medium">
-                            Last Name *
+                            Sobrenome *
                           </Label>
                           <Input
                             id="lastName"
                             value={formData.lastName}
                             onChange={(e) => updateFormData('lastName', e.target.value)}
                             className="mt-2"
-                            placeholder="Smith"
+                            placeholder="Silva"
                           />
                         </div>
                       </div>
                       
                       <div>
                         <Label htmlFor="email" className="text-ai-dark font-medium">
-                          Corporate Email *
+                          E-mail Corporativo *
                         </Label>
                         <Input
                           id="email"
@@ -384,13 +401,13 @@ export default function DemoRequestForm() {
                           value={formData.email}
                           onChange={(e) => updateFormData('email', e.target.value)}
                           className="mt-2"
-                          placeholder="john.smith@company.com"
+                          placeholder="joao.silva@empresa.com"
                         />
                       </div>
                       
                       <div>
                         <Label htmlFor="phone" className="text-ai-dark font-medium">
-                          Phone Number *
+                          Telefone *
                         </Label>
                         <Input
                           id="phone"
@@ -398,7 +415,7 @@ export default function DemoRequestForm() {
                           value={formData.phone}
                           onChange={(e) => updateFormData('phone', e.target.value)}
                           className="mt-2"
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="+55 (11) 5039-4877"
                         />
                       </div>
                     </div>
@@ -409,67 +426,67 @@ export default function DemoRequestForm() {
                     <div className="space-y-6">
                       <div>
                         <Label htmlFor="company" className="text-ai-dark font-medium">
-                          Company *
+                          Empresa *
                         </Label>
                         <Input
                           id="company"
                           value={formData.company}
                           onChange={(e) => updateFormData('company', e.target.value)}
                           className="mt-2"
-                          placeholder="Acme Corporation"
+                          placeholder="Empresa XYZ"
                         />
                       </div>
                       
                       <div>
                         <Label htmlFor="jobTitle" className="text-ai-dark font-medium">
-                          Job Title *
+                          Cargo *
                         </Label>
                         <Input
                           id="jobTitle"
                           value={formData.jobTitle}
                           onChange={(e) => updateFormData('jobTitle', e.target.value)}
                           className="mt-2"
-                          placeholder="Chief Technology Officer"
+                          placeholder="Diretor de Tecnologia"
                         />
                       </div>
                       
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                           <Label htmlFor="industry" className="text-ai-dark font-medium">
-                            Industry *
+                            Setor *
                           </Label>
                           <Select value={formData.industry} onValueChange={(value) => updateFormData('industry', value)}>
                             <SelectTrigger className="mt-2">
-                              <SelectValue placeholder="Select industry" />
+                              <SelectValue placeholder="Selecione o setor" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="healthcare">Healthcare</SelectItem>
-                              <SelectItem value="financial">Financial Services</SelectItem>
-                              <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                              <SelectItem value="retail">Retail & E-commerce</SelectItem>
-                              <SelectItem value="government">Government</SelectItem>
-                              <SelectItem value="education">Education</SelectItem>
-                              <SelectItem value="insurance">Insurance</SelectItem>
-                              <SelectItem value="logistics">Logistics & Supply Chain</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
+                              <SelectItem value="healthcare">Saúde</SelectItem>
+                              <SelectItem value="financial">Serviços Financeiros</SelectItem>
+                              <SelectItem value="manufacturing">Manufatura</SelectItem>
+                              <SelectItem value="retail">Varejo & E-commerce</SelectItem>
+                              <SelectItem value="government">Governo</SelectItem>
+                              <SelectItem value="education">Educação</SelectItem>
+                              <SelectItem value="insurance">Seguros</SelectItem>
+                              <SelectItem value="logistics">Logística & Cadeia de Suprimentos</SelectItem>
+                              <SelectItem value="other">Outro</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                         
                         <div>
                           <Label htmlFor="companySize" className="text-ai-dark font-medium">
-                            Number of Employees *
+                            Número de Funcionários *
                           </Label>
                           <Select value={formData.companySize} onValueChange={(value) => updateFormData('companySize', value)}>
                             <SelectTrigger className="mt-2">
-                              <SelectValue placeholder="Select size" />
+                              <SelectValue placeholder="Selecione o tamanho" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="startup">1-50 employees</SelectItem>
-                              <SelectItem value="small">51-200 employees</SelectItem>
-                              <SelectItem value="medium">201-1000 employees</SelectItem>
-                              <SelectItem value="large">1001-5000 employees</SelectItem>
-                              <SelectItem value="enterprise">5000+ employees</SelectItem>
+                              <SelectItem value="startup">1-50 funcionários</SelectItem>
+                              <SelectItem value="small">51-200 funcionários</SelectItem>
+                              <SelectItem value="medium">201-1000 funcionários</SelectItem>
+                              <SelectItem value="large">1001-5000 funcionários</SelectItem>
+                              <SelectItem value="enterprise">Mais de 5000 funcionários</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -483,61 +500,61 @@ export default function DemoRequestForm() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                           <Label htmlFor="monthlyDocuments" className="text-ai-dark font-medium">
-                            Main Document Challenge *
+                            Principal Desafio com Documentos *
                           </Label>
                           <Select value={formData.monthlyDocuments} onValueChange={(value) => updateFormData('monthlyDocuments', value)}>
                             <SelectTrigger className="mt-2">
-                              <SelectValue placeholder="Select challenge" />
+                              <SelectValue placeholder="Selecione o desafio" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="volume">High document volume</SelectItem>
-                              <SelectItem value="accuracy">Data extraction accuracy</SelectItem>
-                              <SelectItem value="speed">Processing speed</SelectItem>
-                              <SelectItem value="integration">System integration</SelectItem>
-                              <SelectItem value="compliance">Regulatory compliance</SelectItem>
-                              <SelectItem value="costs">Operational costs</SelectItem>
+                              <SelectItem value="volume">Alto volume de documentos</SelectItem>
+                              <SelectItem value="accuracy">Precisão na extração de dados</SelectItem>
+                              <SelectItem value="speed">Velocidade de processamento</SelectItem>
+                              <SelectItem value="integration">Integração com sistemas</SelectItem>
+                              <SelectItem value="compliance">Conformidade regulatória</SelectItem>
+                              <SelectItem value="costs">Custos operacionais</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                         
                         <div>
                           <Label htmlFor="timeline" className="text-ai-dark font-medium">
-                            Implementation Timeline *
+                            Prazo para Implementação *
                           </Label>
                           <Select value={formData.timeline} onValueChange={(value) => updateFormData('timeline', value)}>
                             <SelectTrigger className="mt-2">
-                              <SelectValue placeholder="Select timeline" />
+                              <SelectValue placeholder="Selecione o prazo" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="immediate">Immediate (0-7 Days)</SelectItem>
-                              <SelectItem value="short">Short-term (1-3 months)</SelectItem>
-                              <SelectItem value="medium">Medium-term (3-6 months)</SelectItem>
-                              <SelectItem value="long">Long-term (6+ months)</SelectItem>
-                              <SelectItem value="exploring">Just exploring</SelectItem>
+                              <SelectItem value="immediate">Imediato (0-7 dias)</SelectItem>
+                              <SelectItem value="short">Curto prazo (1-3 meses)</SelectItem>
+                              <SelectItem value="medium">Médio prazo (3-6 meses)</SelectItem>
+                              <SelectItem value="long">Longo prazo (6+ meses)</SelectItem>
+                              <SelectItem value="exploring">Apenas explorando</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                       </div>
                       
                       <div>
-                        <Label htmlFor="demoType" className="text-ai-dark font-medium">
-                          Preferred Demo Type *
-                        </Label>
-                        <Select value={formData.demoType} onValueChange={(value) => updateFormData('demoType', value)}>
-                          <SelectTrigger className="mt-2">
-                            <SelectValue placeholder="Select demo type" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="general">General Demo (30 min)</SelectItem>
-                            <SelectItem value="industry">Industry-Specific Demo (45 min)</SelectItem>
-                            <SelectItem value="poc">Proof of Concept (1 week)</SelectItem>
-                          </SelectContent>
-                        </Select>
+                          <Label htmlFor="demoType" className="text-ai-dark font-medium">
+                            Tipo de Demonstração Preferida *
+                          </Label>
+                          <Select value={formData.demoType} onValueChange={(value) => updateFormData('demoType', value)}>
+                            <SelectTrigger className="mt-2">
+                              <SelectValue placeholder="Selecione o tipo" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="general">Demonstração Geral (30 min)</SelectItem>
+                              <SelectItem value="industry">Demonstração Específica (45 min)</SelectItem>
+                              <SelectItem value="poc">Prova de Conceito (1 semana)</SelectItem>
+                            </SelectContent>
+                          </Select>
                       </div>
                       
                       <div>
                         <Label htmlFor="currentChallenges" className="text-ai-dark font-medium">
-                          Current Challenges & Goals
+                          Desafios Atuais e Objetivos
                         </Label>
                         <Textarea
                           id="currentChallenges"
@@ -545,7 +562,7 @@ export default function DemoRequestForm() {
                           onChange={(e) => updateFormData('currentChallenges', e.target.value)}
                           className="mt-2"
                           rows={4}
-                          placeholder="Tell us about your current document processing challenges and what you hope to achieve with automation..."
+                          placeholder="Conte-nos sobre seus desafios atuais no processamento de documentos e o que você espera alcançar com automação..."
                         />
                       </div>
                       
@@ -558,7 +575,7 @@ export default function DemoRequestForm() {
                             className="mt-1"
                           />
                           <Label htmlFor="newsletter" className="text-sm text-ai-medium leading-relaxed">
-                            I would like to receive updates about ITCygnus products, industry insights, and best practices
+                            Eu gostaria de receber atualizações sobre produtos ITCygnus, insights do setor e melhores práticas
                           </Label>
                         </div>
                         
@@ -570,18 +587,18 @@ export default function DemoRequestForm() {
                             className="mt-1"
                           />
                           <Label htmlFor="privacy" className="text-sm text-ai-medium leading-relaxed">
-                            I agree to the <Link href="/privacy" className="text-ai-blue hover:underline">Privacy Policy</Link> and 
-                            <Link href="/terms" className="text-ai-blue hover:underline ml-1">Terms of Service</Link> *
+                            Eu concordo com a <Link href="/privacy" className="text-ai-blue hover:underline">Política de Privacidade</Link> e 
+                            <Link href="/terms" className="text-ai-blue hover:underline ml-1">Termos de Serviço</Link> *
                           </Label>
                         </div>
                       </div>
 
                       {/* Supporting Text */}
                       <div className="bg-ai-green/10 rounded-lg p-4 border border-ai-green/20">
-                        <p className="text-sm text-ai-dark font-medium mb-2">No commitment. Cancel anytime.</p>
+                        <p className="text-sm text-ai-dark font-medium mb-2">Sem compromisso. Cancele quando quiser.</p>
                         <p className="text-xs text-ai-medium">
-                          Your demo is completely free with no obligations. We respect your time and will provide 
-                          valuable insights regardless of whether you choose to move forward.
+                          Sua demonstração é completamente gratuita e sem obrigações. Respeitamos seu tempo e forneceremos
+                          insights valiosos independentemente de você decidir prosseguir ou não.
                         </p>
                       </div>
                     </div>
@@ -595,7 +612,7 @@ export default function DemoRequestForm() {
                       disabled={currentStep === 1}
                       className="text-ai-medium"
                     >
-                      Previous
+                      Anterior
                     </Button>
                     
                     {currentStep < 3 ? (
@@ -604,7 +621,7 @@ export default function DemoRequestForm() {
                         disabled={!isStepValid(currentStep)}
                         className="bg-ai-blue hover:bg-ai-blue/90 text-white"
                       >
-                        Continue
+                        Continuar
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     ) : (
@@ -613,7 +630,7 @@ export default function DemoRequestForm() {
                         disabled={!isStepValid(currentStep) || isSubmitting}
                         className="bg-ai-green hover:bg-ai-green/90 text-white"
                       >
-                        {isSubmitting ? 'Scheduling...' : 'Schedule Free Demo'}
+                        {isSubmitting ? 'Agendando...' : 'Agendar Demonstração Gratuita'}
                         <Play className="w-4 h-4 ml-2" />
                       </Button>
                     )}
@@ -629,15 +646,15 @@ export default function DemoRequestForm() {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2 text-ai-dark">
                     <Star className="w-6 h-6 text-ai-green" />
-                    <span>What to Expect</span>
+                    <span>O Que Esperar</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {[
-                    { title: 'Personalized Demo', desc: 'See ITCygnus configured for your specific use case' },
-                    { title: 'ROI Analysis', desc: 'Get preliminary cost savings projections' },
-                    { title: 'Technical Q&A', desc: 'Ask our experts about integration and security' },
-                    { title: 'Next Steps', desc: 'Discuss pilot program and implementation timeline' }
+                    { title: 'Demonstração Personalizada', desc: 'Veja a ITCygnus configurada para seu caso de uso específico' },
+                    { title: 'Análise de ROI', desc: 'Obtenha projeções preliminares de economia de custos' },
+                    { title: 'Perguntas Técnicas', desc: 'Tire dúvidas com nossos especialistas sobre integração e segurança' },
+                    { title: 'Próximos Passos', desc: 'Discuta programa piloto e cronograma de implementação' }
                   ].map((item, index) => (
                     <div key={index} className="flex items-start space-x-3">
                       <div className="w-6 h-6 bg-ai-green/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -657,18 +674,19 @@ export default function DemoRequestForm() {
                 <CardContent className="p-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-ai-blue mb-2">100+</div>
-                    <div className="text-sm font-semibold text-ai-dark mb-3">Successful Implementations</div>
+                    <div className="text-sm font-semibold text-ai-dark mb-3">Implementações Bem-Sucedidas</div>
                     <div className="flex justify-center space-x-1 mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 text-ai-green fill-current" />
                       ))}
                     </div>
                     <p className="text-xs text-ai-medium leading-relaxed">
-                      "ITCygnus reduced our document processing time by 80% and saved us $2M annually. 
-                      The implementation was seamless and the support team is exceptional."
+                      "Anteriormente, o processo de digitação dos prontuários médicos em nosso sistema era totalmente manual, o que tornava tudo muito demorado.
+Buscando uma solução para agilizar esse processo e migrar para um modelo digital, encontramos a Cygnus, que oferece tecnologia de OCR.
+A implementação da tecnologia da Cygnus foi fundamental para resolver esse desafio, pois nos atendeu com rapidez, alta eficiência e ainda contribuiu com insights valiosos para o desenvolvimento do projeto."
                     </p>
                     <div className="text-xs text-ai-dark font-medium mt-2">
-                      - Healthcare Fortune 500 Company
+                      - Empresa Fortune 500 do Setor de Saúde
                     </div>
                   </div>
                 </CardContent>
@@ -680,19 +698,15 @@ export default function DemoRequestForm() {
               {/* Contact Info */}
               <Card className="shadow-lg border-ai-light/50">
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-ai-dark mb-4">Need Help?</h3>
+                  <h3 className="font-bold text-ai-dark mb-4">Precisa de Ajuda?</h3>
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center space-x-3">
                       <Phone className="w-4 h-4 text-ai-blue" />
-                      <span className="text-ai-medium">+1 (800) 123-4567</span>
+                      <span className="text-ai-medium">+55 (11) 5039-4877</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-ai-blue" />
-                      <span className="text-ai-medium">sales@itcygnus.com</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Clock className="w-4 h-4 text-ai-blue" />
-                      <span className="text-ai-medium">Mon-Fri: 8AM-6PM EST</span>
+                      <span className="text-ai-medium">contact@itcygnus.com</span>
                     </div>
                   </div>
                 </CardContent>

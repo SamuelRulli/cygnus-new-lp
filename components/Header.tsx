@@ -75,10 +75,10 @@ export default function Header() {
       href: '/solutions/ai-doc'
     },
     {
-      title: 'AI.DATA',
-      subtitle: t('solutions.items.aiDATA.subtitle'),
-      description: t('solutions.items.aiDATA.description').substring(0, 100) + '...',
-      href: '/solutions/ai-data'
+      title: 'AI.SAUDE',
+      subtitle: t('solutions.items.aiSAUDE.subtitle'),
+      description: t('solutions.items.aiSAUDE.description').substring(0, 100) + '...',
+      href: '/solutions/ai-saude'
     },
     {
       title: 'AI.PRICEINSIGHTS',
@@ -92,30 +92,30 @@ export default function Header() {
       description: t('solutions.items.aiAGENTS.description').substring(0, 100) + '...',
       href: '/solutions/ai-agents'
     },
-    {
-      title: 'Echo AI Hub',
-      subtitle: t('solutions.items.echoAIHub.subtitle'),
-      description: t('solutions.items.echoAIHub.description').substring(0, 100) + '...',
-      href: '/solutions/echo-ai-hub'
-    }
+    // {
+    //   title: 'Echo AI Hub',
+    //   subtitle: t('solutions.items.echoAIHub.subtitle'),
+    //   description: t('solutions.items.echoAIHub.description').substring(0, 100) + '...',
+    //   href: '/solutions/echo-ai-hub'
+    // }
   ];
 
   const industries = [
     {
-      title: 'Healthcare',
-      description: 'Specialized AI for hospitals, clinics, and health plans',
-      href: '/industries/healthcare'
-    },
-    {
-      title: 'Financial Services',
-      description: 'Banking-grade AI with regulatory compliance',
+      title: 'Financeiro',
+      description: 'IA com padrão bancário e conformidade regulatória',
       href: '/industries/financial'
     },
     {
-      title: 'Insurance',
-      description: 'Claims processing and fraud detection for insurers',
-      href: '/industries/insurance'
+      title: 'Saúde',
+      description: 'IA especializada para hospitais, clínicas e operadoras de saúde',
+      href: '/industries/healthcare'
     },
+    {
+      title: 'Seguros',
+      description: 'Processamento de sinistros e detecção de fraudes para seguradoras',
+      href: '/industries/insurance'
+    }
     // {
     //   title: 'Manufacturing',
     //   description: 'Optimize production and supply chain processes',
@@ -231,9 +231,9 @@ export default function Header() {
             </div>
 
             {/* Other Links */}
-            <Link href="/resources" className="text-white/80 hover:text-ai-green transition-colors font-medium">
+            {/* <Link href="/resources" className="text-white/80 hover:text-ai-green transition-colors font-medium">
               {t('header.resources')}
-            </Link>
+            </Link> */}
             <Link href="/company" className="text-white/80 hover:text-ai-green transition-colors font-medium">
               {t('header.company')}
             </Link>
@@ -241,8 +241,8 @@ export default function Header() {
 
           {/* Desktop CTA & Language Toggle */}
           <div className="hidden lg:flex items-center space-x-4">
-            <LanguageToggle />
-            {/* <Button variant="ghost" className="text-white/80 hover:text-ai-green">
+            {/* <LanguageToggle />
+            <Button variant="ghost" className="text-white/80 hover:text-ai-green">
               {t('header.signIn')}
             </Button> */}
             <Link href="/demo">
@@ -329,7 +329,7 @@ export default function Header() {
                   {t('header.signIn')}
                 </Button>
                 <Link href="/demo">
-                  <Button 
+                  {/* <Button 
                     variant="ai_primary" 
                     size="lg" 
                     className="w-full bg-white text-ai-dark hover:bg-white/90 group"
@@ -337,7 +337,7 @@ export default function Header() {
                   >
                     {t('header.requestDemo')}
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </Button> */}
                 </Link>
               </div>
             </div>

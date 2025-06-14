@@ -36,53 +36,53 @@ export default function PrivacySection() {
 
   const privacyPrinciples = [
     {
-      title: 'Transparency',
-      description: 'We clearly explain what data we collect and how we use it',
+      title: 'Transparência',
+      description: 'Explicamos claramente quais dados coletamos e como os utilizamos',
       icon: Eye
     },
     {
-      title: 'Minimal Collection',
-      description: 'We only collect data necessary to provide our services',
+      title: 'Coleta Mínima',
+      description: 'Coletamos apenas os dados necessários para fornecer nossos serviços',
       icon: Database
     },
     {
-      title: 'Strong Security',
-      description: 'Your data is protected with enterprise-grade security',
+      title: 'Segurança Robusta',
+      description: 'Seus dados são protegidos com segurança de nível empresarial',
       icon: Lock
     },
     {
-      title: 'Your Control',
-      description: 'You have full control over your personal information',
+      title: 'Seu Controle',
+      description: 'Você tem total controle sobre suas informações pessoais',
       icon: Settings
     }
   ];
 
   const dataTypes = [
     {
-      category: 'Information You Provide',
+      category: 'Informações Fornecidas por Você',
       items: [
-        'Contact information (name, email, phone)',
-        'Company information and job title',
-        'Demo requests and form submissions',
-        'Support tickets and communications'
+        'Informações de contato (nome, e-mail, telefone)',
+        'Informações da empresa e cargo',
+        'Solicitações de demonstração e envios de formulários',
+        'Tickets de suporte e comunicações'
       ]
     },
     {
-      category: 'Technical Information',
+      category: 'Informações Técnicas',
       items: [
-        'IP address and browser information',
-        'Website usage and navigation patterns',
-        'Performance and analytics data',
-        'Cookie and session information'
+        'Endereço IP e informações do navegador',
+        'Padrões de uso e navegação no site',
+        'Dados de desempenho e análises',
+        'Informações de cookies e sessão'
       ]
     },
     {
-      category: 'Service Usage Data',
+      category: 'Dados de Uso do Serviço',
       items: [
-        'Platform usage and feature interactions',
-        'Document processing metrics',
-        'API calls and system performance',
-        'Error logs and diagnostic information'
+        'Uso da plataforma e interações com recursos',
+        'Métricas de processamento de documentos',
+        'Chamadas de API e desempenho do sistema',
+        'Logs de erro e informações de diagnóstico'
       ]
     }
   ];
@@ -147,7 +147,7 @@ export default function PrivacySection() {
               >
                 ITCygnus{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Privacy Policy
+                  Política de Privacidade
                 </span>
               </h1>
               
@@ -156,7 +156,7 @@ export default function PrivacySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                <strong>Last updated: June 8, 2025</strong>
+                <strong>Última atualização: 13 de Junho de 2025</strong>
               </p>
 
               <p 
@@ -164,10 +164,9 @@ export default function PrivacySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                ITCygnus is committed to protecting the privacy and security of personal data from our 
-                users, customers, and visitors. This policy describes how we collect, use, store, and 
-                protect your personal information, in full compliance with applicable data protection 
-                regulations including GDPR.
+                A ITCygnus está comprometida em proteger a privacidade e segurança dos dados pessoais de nossos 
+                usuários, clientes e visitantes. Esta política descreve como coletamos, usamos, armazenamos e 
+                protegemos suas informações pessoais, em total conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei 13.709/2018) e GDPR.
               </p>
             </div>
 
@@ -202,16 +201,44 @@ export default function PrivacySection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <Database className="w-8 h-8 text-ai-blue mr-4" />
-                Information We Collect
+                Informações que Coletamos
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                We collect only information necessary to provide our services and improve your experience. 
-                This includes data voluntarily provided through forms, technical cookies for site functionality, 
-                and usage information for performance optimization.
+                Coletamos apenas informações necessárias para fornecer nossos serviços e melhorar sua experiência. 
+                Isso inclui dados fornecidos voluntariamente através de formulários, cookies técnicos para funcionalidade do site, 
+                e informações de uso para otimização de desempenho.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {dataTypes.map((type, index) => (
+                {[
+                  {
+                    category: 'Informações Fornecidas por Você',
+                    items: [
+                      'Informações de contato (nome, e-mail, telefone)',
+                      'Informações da empresa e cargo',
+                      'Solicitações de demonstração e envios de formulários',
+                      'Tickets de suporte e comunicações'
+                    ]
+                  },
+                  {
+                    category: 'Informações Técnicas',
+                    items: [
+                      'Endereço IP e informações do navegador',
+                      'Padrões de uso e navegação no site',
+                      'Dados de desempenho e análises',
+                      'Informações de cookies e sessão'
+                    ]
+                  },
+                  {
+                    category: 'Dados de Uso do Serviço',
+                    items: [
+                      'Uso da plataforma e interações com recursos',
+                      'Métricas de processamento de documentos',
+                      'Chamadas de API e desempenho do sistema',
+                      'Logs de erro e informações de diagnóstico'
+                    ]
+                  }
+                ].map((type, index) => (
                   <Card key={index} className="shadow-lg border-ai-light/50">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-bold text-ai-dark mb-4">{type.category}</h3>
@@ -233,26 +260,26 @@ export default function PrivacySection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <Settings className="w-8 h-8 text-ai-green mr-4" />
-                How We Use Your Information
+                Como Utilizamos Suas Informações
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                We use your data exclusively to provide our services, respond to your requests, send relevant 
-                communications (only with your consent), and improve our products and services. We never sell 
-                or share personal data with third parties for commercial purposes.
+                Utilizamos seus dados exclusivamente para fornecer nossos serviços, responder a suas solicitações, enviar comunicações 
+                relevantes (apenas com seu consentimento) e melhorar nossos produtos e serviços. Nunca vendemos 
+                ou compartilhamos dados pessoais com terceiros para fins comerciais.
               </p>
 
               <div className="bg-ai-light/20 rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-ai-dark mb-6">Our Data Use Purposes:</h3>
+                <h3 className="text-xl font-bold text-ai-dark mb-6">Finalidades do Tratamento de Dados:</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
-                    'Providing and maintaining our services',
-                    'Processing demo requests and consultations',
-                    'Customer support and technical assistance',
-                    'Service improvement and feature development',
-                    'Security monitoring and fraud prevention',
-                    'Legal compliance and regulatory requirements',
-                    'Marketing communications (with consent)',
-                    'Analytics and performance optimization'
+                    'Fornecimento e manutenção de nossos serviços',
+                    'Processamento de solicitações de demonstração e consultas',
+                    'Suporte ao cliente e assistência técnica',
+                    'Melhoria de serviços e desenvolvimento de recursos',
+                    'Monitoramento de segurança e prevenção de fraudes',
+                    'Conformidade legal e requisitos regulatórios',
+                    'Comunicações de marketing (com consentimento)',
+                    'Análises e otimização de desempenho'
                   ].map((purpose, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
@@ -267,16 +294,45 @@ export default function PrivacySection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <User className="w-8 h-8 text-ai-blue mr-4" />
-                Your Rights
+                Seus Direitos LGPD
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                You have the right to access, correct, delete, or port your personal data at any time. 
-                You can also revoke consents and request information about how we process your data. 
-                To exercise these rights, contact us at <a href="mailto:privacy@itcygnus.com" className="text-ai-blue hover:text-ai-blue/80 transition-colors">privacy@itcygnus.com</a>.
+                Conforme a Lei Geral de Proteção de Dados (LGPD), você tem direito a:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {yourRights.map((right, index) => {
+                {[
+                  {
+                    right: 'Acesso aos Dados',
+                    description: 'Solicitar confirmação e acesso aos seus dados pessoais',
+                    icon: Eye
+                  },
+                  {
+                    right: 'Correção',
+                    description: 'Retificar dados incompletos, inexatos ou desatualizados',
+                    icon: Settings
+                  },
+                  {
+                    right: 'Exclusão',
+                    description: 'Solicitar anonimização, bloqueio ou eliminação de dados desnecessários',
+                    icon: AlertCircle
+                  },
+                  {
+                    right: 'Portabilidade',
+                    description: 'Solicitar a transferência dos seus dados para outro fornecedor',
+                    icon: Download
+                  },
+                  {
+                    right: 'Revogar Consentimento',
+                    description: 'Revogar seu consentimento a qualquer momento',
+                    icon: User
+                  },
+                  {
+                    right: 'Informação',
+                    description: 'Saber com quem compartilhamos seus dados',
+                    icon: Info
+                  }
+                ].map((right, index) => {
                   const Icon = right.icon;
                   return (
                     <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-shadow">
@@ -291,74 +347,77 @@ export default function PrivacySection() {
                   );
                 })}
               </div>
+              <p className="text-lg text-ai-medium leading-relaxed mt-8">
+                Para exercer esses direitos, entre em contato com nosso Encarregado de Dados (DPO) em <a href="mailto:lgpd@itcygnus.com" className="text-ai-blue hover:text-ai-blue/80 transition-colors">lgpd@itcygnus.com</a>.
+              </p>
             </div>
 
             {/* Additional Sections */}
             <div className="space-y-12">
               {/* Data Security */}
               <div className="bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
-                  <Lock className="w-6 h-6 text-ai-blue mr-3" />
-                  Data Security
-                </h3>
-                <p className="text-ai-medium leading-relaxed mb-4">
-                  We implement industry-standard security measures to protect your personal information, including:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {[
-                    'End-to-end encryption for data transmission',
-                    'SOC 2 Type II certified infrastructure',
-                    'Regular security audits and assessments',
-                    'Multi-factor authentication requirements',
-                    'Secure data centers with physical security',
-                    'Employee training on data protection'
-                  ].map((measure, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <Shield className="w-4 h-4 text-ai-green flex-shrink-0" />
-                      <span className="text-ai-dark text-sm">{measure}</span>
-                    </div>
-                  ))}
-                </div>
+              <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                <Lock className="w-6 h-6 text-ai-blue mr-3" />
+                Segurança de Dados
+              </h3>
+              <p className="text-ai-medium leading-relaxed mb-4">
+                Implementamos medidas de segurança padrão do setor para proteger suas informações pessoais, incluindo:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  'Criptografia de ponta a ponta para transmissão de dados',
+                  'Infraestrutura certificada SOC 2 Tipo II',
+                  'Auditorias e avaliações regulares de segurança',
+                  'Requisitos de autenticação multifator',
+                  'Data centers seguros com proteção física',
+                  'Treinamento de funcionários em proteção de dados'
+                ].map((measure, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <Shield className="w-4 h-4 text-ai-green flex-shrink-0" />
+                    <span className="text-ai-dark text-sm">{measure}</span>
+                  </div>
+                ))}
+              </div>
               </div>
 
               {/* Data Retention */}
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
-                  <Calendar className="w-6 h-6 text-ai-green mr-3" />
-                  Data Retention
-                </h3>
-                <p className="text-ai-medium leading-relaxed">
-                  We retain personal information only for as long as necessary to fulfill the purposes outlined 
-                  in this privacy policy, comply with legal obligations, resolve disputes, and enforce our agreements. 
-                  When data is no longer needed, we securely delete or anonymize it according to our data retention schedule.
-                </p>
+              <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                <Calendar className="w-6 h-6 text-ai-green mr-3" />
+                Retenção de Dados
+              </h3>
+              <p className="text-ai-medium leading-relaxed">
+                Mantemos as informações pessoais apenas pelo tempo necessário para cumprir os propósitos descritos 
+                nesta política de privacidade, cumprir obrigações legais, resolver disputas e fazer valer nossos acordos. 
+                Quando os dados não são mais necessários, nós os excluímos ou anonimizamos com segurança de acordo com nosso cronograma de retenção de dados.
+              </p>
               </div>
 
               {/* International Transfers */}
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
-                  <Globe className="w-6 h-6 text-ai-blue mr-3" />
-                  International Data Transfers
-                </h3>
-                <p className="text-ai-medium leading-relaxed">
-                  As we operate globally with offices in Brazil and the United States, your personal information 
-                  may be transferred to and processed in countries other than your own. We ensure appropriate 
-                  safeguards are in place, including Standard Contractual Clauses and adequacy decisions, 
-                  to protect your data during international transfers.
-                </p>
+              <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                <Globe className="w-6 h-6 text-ai-blue mr-3" />
+                Transferência Internacional de Dados
+              </h3>
+              <p className="text-ai-medium leading-relaxed">
+                Como operamos globalmente com escritórios no Brasil e nos Estados Unidos, suas informações pessoais 
+                podem ser transferidas e processadas em outros países. Garantimos que medidas de proteção adequadas 
+                estejam em vigor, incluindo Cláusulas Contratuais Padrão e decisões de adequação, 
+                para proteger seus dados durante transferências internacionais, em conformidade com a LGPD.
+              </p>
               </div>
 
               {/* Cookies */}
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
-                  <Settings className="w-6 h-6 text-ai-green mr-3" />
-                  Cookies and Tracking
-                </h3>
-                <p className="text-ai-medium leading-relaxed">
-                  We use cookies and similar technologies to enhance your browsing experience, analyze website 
-                  traffic, and understand user preferences. You can control cookie settings through your browser 
-                  preferences. Essential cookies required for basic functionality cannot be disabled.
-                </p>
+              <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
+                <Settings className="w-6 h-6 text-ai-green mr-3" />
+                Cookies e Rastreamento
+              </h3>
+              <p className="text-ai-medium leading-relaxed">
+                Utilizamos cookies e tecnologias similares para melhorar sua experiência de navegação, analisar tráfego 
+                do site e entender preferências dos usuários. Você pode controlar as configurações de cookies através 
+                das preferências do seu navegador. Cookies essenciais para funcionalidades básicas não podem ser desativados.
+              </p>
               </div>
             </div>
 
@@ -366,28 +425,28 @@ export default function PrivacySection() {
             <div className="mt-16 bg-ai-dark rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Mail className="w-6 h-6 text-ai-green mr-3" />
-                Privacy Questions?
+                Dúvidas sobre Privacidade?
               </h3>
               <p className="text-white/80 mb-6 leading-relaxed">
-                If you have any questions about this Privacy Policy, need to exercise your rights, 
-                or want to report a privacy concern, please contact our Data Protection Officer:
+                Se tiver qualquer dúvida sobre esta Política de Privacidade, precisar exercer seus direitos
+                ou quiser reportar uma preocupação com privacidade, entre em contato com nosso Encarregado de Dados (DPO):
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-ai-green flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">Email</div>
-                    <a href="mailto:privacy@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                      privacy@itcygnus.com
+                    <div className="font-semibold">E-mail</div>
+                    <a href="mailto:lgpd@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                      lgpd@itcygnus.com
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-ai-blue flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">Phone</div>
-                    <a href="tel:+1-305-555-0123" className="text-ai-blue hover:text-ai-blue/80 transition-colors">
-                      +1 (305) 555-0123
+                    <div className="font-semibold">Telefone</div>
+                    <a href="tel:+55-11-98765-4321" className="text-ai-blue hover:text-ai-blue/80 transition-colors">
+                      +55 (11) 5039-4877
                     </a>
                   </div>
                 </div>

@@ -62,208 +62,208 @@ export default function ComplianceSection() {
   const complianceFrameworks = [
     {
       name: 'GDPR',
-      fullName: 'General Data Protection Regulation',
-      region: 'European Union',
-      status: 'Compliant',
-      description: 'Comprehensive data protection and privacy regulation',
+      fullName: 'Regulamento Geral de Proteção de Dados',
+      region: 'União Europeia',
+      status: 'Conforme',
+      description: 'Regulamentação abrangente de proteção de dados e privacidade',
       icon: Globe,
       color: 'ai-blue',
       flag: '🇪🇺'
     },
     {
       name: 'HIPAA',
-      fullName: 'Health Insurance Portability and Accountability Act',
-      region: 'United States',
-      status: 'Compliant',
-      description: 'Healthcare information privacy and security standards',
+      fullName: 'Lei de Portabilidade e Responsabilidade de Seguros de Saúde',
+      region: 'Estados Unidos',
+      status: 'Conforme',
+      description: 'Padrões de privacidade e segurança de informações de saúde',
       icon: Shield,
       color: 'ai-green',
       flag: '🇺🇸'
     },
-    {
-      name: 'SOX',
-      fullName: 'Sarbanes-Oxley Act',
-      region: 'United States',
-      status: 'Compliant',
-      description: 'Financial reporting and corporate governance standards',
-      icon: BarChart3,
-      color: 'ai-blue',
-      flag: '🇺🇸'
-    },
-    {
-      name: 'CCPA',
-      fullName: 'California Consumer Privacy Act',
-      region: 'California, USA',
-      status: 'Compliant',
-      description: 'Consumer privacy rights and data protection',
-      icon: User,
-      color: 'ai-green',
-      flag: '🇺🇸'
-    },
+    // {
+    //   name: 'SOX',
+    //   fullName: 'Lei Sarbanes-Oxley',
+    //   region: 'Estados Unidos',
+    //   status: 'Conforme',
+    //   description: 'Padrões de relatórios financeiros e governança corporativa',
+    //   icon: BarChart3,
+    //   color: 'ai-blue',
+    //   flag: '🇺🇸'
+    // },
+    // {
+    //   name: 'CCPA',
+    //   fullName: 'Lei de Privacidade do Consumidor da Califórnia',
+    //   region: 'Califórnia, EUA',
+    //   status: 'Conforme',
+    //   description: 'Direitos de privacidade do consumidor e proteção de dados',
+    //   icon: User,
+    //   color: 'ai-green',
+    //   flag: '🇺🇸'
+    // },
     {
       name: 'LGPD',
       fullName: 'Lei Geral de Proteção de Dados',
-      region: 'Brazil',
-      status: 'Compliant',
-      description: 'Brazilian general data protection law',
+      region: 'Brasil',
+      status: 'Conforme',
+      description: 'Lei brasileira de proteção geral de dados',
       icon: Flag,
       color: 'ai-blue',
       flag: '🇧🇷'
     },
-    {
-      name: 'ISO 27001',
-      fullName: 'Information Security Management',
-      region: 'International',
-      status: 'Certified',
-      description: 'Information security management system standard',
-      icon: Award,
-      color: 'ai-green',
-      flag: '🌍'
-    }
+    // {
+    //   name: 'ISO 27001',
+    //   fullName: 'Gestão de Segurança da Informação',
+    //   region: 'Internacional',
+    //   status: 'Certificado',
+    //   description: 'Padrão de sistema de gestão de segurança da informação',
+    //   icon: Award,
+    //   color: 'ai-green',
+    //   flag: '🌍'
+    // }
   ];
 
   const complianceCapabilities = [
     {
-      title: 'Data Governance',
-      description: 'Comprehensive data classification, retention, and lifecycle management',
+      title: 'Governança de Dados',
+      description: 'Classificação abrangente de dados, retenção e gerenciamento do ciclo de vida',
       icon: Database,
       features: [
-        'Automated data classification',
-        'Retention policy enforcement',
-        'Data lineage tracking',
-        'Privacy impact assessments'
+        'Classificação automatizada de dados',
+        'Aplicação de políticas de retenção',
+        'Rastreamento de linhagem de dados',
+        'Avaliações de impacto à privacidade'
       ]
     },
     {
-      title: 'Audit Management',
-      description: 'Complete audit trail and evidence collection for regulatory compliance',
+      title: 'Gestão de Auditoria',
+      description: 'Rastreamento completo de auditoria e coleta de evidências para conformidade regulatória',
       icon: Search,
       features: [
-        'Immutable audit logs',
-        'Automated evidence collection',
-        'Compliance reporting',
-        'Real-time monitoring'
+        'Logs de auditoria imutáveis',
+        'Coleta automatizada de evidências',
+        'Relatórios de conformidade',
+        'Monitoramento em tempo real'
       ]
     },
     {
-      title: 'Risk Assessment',
-      description: 'Continuous compliance risk monitoring and assessment frameworks',
+      title: 'Avaliação de Riscos',
+      description: 'Monitoramento contínuo de riscos de conformidade e estruturas de avaliação',
       icon: AlertTriangle,
       features: [
-        'Risk scoring models',
-        'Compliance gap analysis',
-        'Automated risk alerts',
-        'Mitigation tracking'
+        'Modelos de pontuação de risco',
+        'Análise de lacunas de conformidade',
+        'Alertas automatizados de risco',
+        'Acompanhamento de mitigação'
       ]
     },
     {
-      title: 'Policy Management',
-      description: 'Centralized policy creation, distribution, and compliance tracking',
+      title: 'Gestão de Políticas',
+      description: 'Criação centralizada de políticas, distribuição e acompanhamento de conformidade',
       icon: FileText,
       features: [
-        'Policy versioning',
-        'Automated distribution',
-        'Acknowledgment tracking',
-        'Compliance verification'
+        'Versionamento de políticas',
+        'Distribuição automatizada',
+        'Acompanhamento de reconhecimento',
+        'Verificação de conformidade'
       ]
     }
   ];
 
   const regulatoryRequirements = [
     {
-      regulation: 'GDPR Article 32',
-      requirement: 'Security of Processing',
-      implementation: 'End-to-end encryption, access controls, and regular security assessments',
-      status: 'Implemented',
+      regulation: 'GDPR Artigo 32',
+      requirement: 'Segurança do Processamento',
+      implementation: 'Criptografia ponta a ponta, controles de acesso e avaliações regulares de segurança',
+      status: 'Implementado',
       icon: Lock
     },
     {
       regulation: 'HIPAA 164.312',
-      requirement: 'Technical Safeguards',
-      implementation: 'Multi-factor authentication, audit logs, and data integrity controls',
-      status: 'Implemented',
+      requirement: 'Proteções Técnicas',
+      implementation: 'Autenticação multifator, logs de auditoria e controles de integridade de dados',
+      status: 'Implementado',
       icon: Shield
     },
     {
-      regulation: 'SOX Section 404',
-      requirement: 'Internal Controls',
-      implementation: 'Automated control testing and financial data protection',
-      status: 'Implemented',
+      regulation: 'SOX Seção 404',
+      requirement: 'Controles Internos',
+      implementation: 'Testes automatizados de controle e proteção de dados financeiros',
+      status: 'Implementado',
       icon: BarChart3
     },
     {
-      regulation: 'CCPA Section 1798.100',
-      requirement: 'Consumer Rights',
-      implementation: 'Data subject request portal and automated response workflows',
-      status: 'Implemented',
+      regulation: 'CCPA Seção 1798.100',
+      requirement: 'Direitos do Consumidor',
+      implementation: 'Portal de solicitações de titulares de dados e fluxos de trabalho automatizados',
+      status: 'Implementado',
       icon: User
     }
   ];
 
   const auditProcess = [
     {
-      phase: 'Planning',
-      description: 'Audit scope definition and evidence collection planning',
-      duration: '1-2 weeks',
+      phase: 'Planejamento',
+      description: 'Definição do escopo da auditoria e planejamento da coleta de evidências',
+      duration: '1-2 semanas',
       icon: Clipboard,
-      activities: ['Scope definition', 'Evidence mapping', 'Timeline planning', 'Resource allocation']
+      activities: ['Definição de escopo', 'Mapeamento de evidências', 'Planejamento de cronograma', 'Alocação de recursos']
     },
     {
-      phase: 'Evidence Collection',
-      description: 'Automated collection of compliance evidence and documentation',
-      duration: '2-3 weeks',
+      phase: 'Coleta de Evidências',
+      description: 'Coleta automatizada de evidências e documentação de conformidade',
+      duration: '2-3 semanas',
       icon: Archive,
-      activities: ['Log extraction', 'Control testing', 'Document review', 'Interview scheduling']
+      activities: ['Extração de logs', 'Testes de controle', 'Revisão de documentos', 'Agendamento de entrevistas']
     },
     {
-      phase: 'Assessment',
-      description: 'Compliance gap analysis and risk evaluation',
-      duration: '1-2 weeks',
+      phase: 'Avaliação',
+      description: 'Análise de lacunas de conformidade e avaliação de riscos',
+      duration: '1-2 semanas',
       icon: Search,
-      activities: ['Gap analysis', 'Risk assessment', 'Control evaluation', 'Finding documentation']
+      activities: ['Análise de lacunas', 'Avaliação de riscos', 'Avaliação de controles', 'Documentação de achados']
     },
     {
-      phase: 'Reporting',
-      description: 'Compliance report generation and remediation planning',
-      duration: '1 week',
+      phase: 'Relatório',
+      description: 'Geração de relatório de conformidade e planejamento de remediação',
+      duration: '1 semana',
       icon: FileText,
-      activities: ['Report generation', 'Finding prioritization', 'Remediation planning', 'Stakeholder review']
+      activities: ['Geração de relatório', 'Priorização de achados', 'Planejamento de remediação', 'Revisão das partes interessadas']
     }
   ];
 
   const complianceMetrics = [
-    { metric: '100%', label: 'Audit Success Rate', icon: Award },
-    { metric: '24/7', label: 'Compliance Monitoring', icon: Eye },
-    { metric: '< 7 Days', label: 'Audit Response Time', icon: Clock },
-    { metric: '99.99%', label: 'Control Effectiveness', icon: Target }
+    { metric: '100%', label: 'Taxa de Sucesso em Auditorias', icon: Award },
+    { metric: '24/7', label: 'Monitoramento de Conformidade', icon: Eye },
+    { metric: '< 7 Dias', label: 'Tempo de Resposta a Auditorias', icon: Clock },
+    { metric: '99.99%', label: 'Efetividade de Controles', icon: Target }
   ];
 
   const dataRights = [
     {
-      right: 'Right to Access',
-      description: 'Request access to personal data we process',
-      implementation: 'Self-service portal with automated data export',
+      right: 'Direito de Acesso',
+      description: 'Solicitar acesso aos dados pessoais que processamos',
+      implementation: 'Portal de autoatendimento com exportação automatizada de dados',
       regulation: 'GDPR Art. 15, CCPA',
       icon: Eye
     },
     {
-      right: 'Right to Rectification',
-      description: 'Correct inaccurate or incomplete personal data',
-      implementation: 'Online correction forms with immediate processing',
+      right: 'Direito de Retificação',
+      description: 'Corrigir dados pessoais imprecisos ou incompletos',
+      implementation: 'Formulários de correção online com processamento imediato',
       regulation: 'GDPR Art. 16, CCPA',
       icon: Settings
     },
     {
-      right: 'Right to Erasure',
-      description: 'Request deletion of personal data',
-      implementation: 'Automated deletion workflows with verification',
+      right: 'Direito de Exclusão',
+      description: 'Solicitar a exclusão de dados pessoais',
+      implementation: 'Fluxos de trabalho automatizados de exclusão com verificação',
       regulation: 'GDPR Art. 17, CCPA',
       icon: AlertCircle
     },
     {
-      right: 'Right to Data Portability',
-      description: 'Receive personal data in structured format',
-      implementation: 'Standardized export formats and secure transfer',
+      right: 'Direito à Portabilidade',
+      description: 'Receber dados pessoais em formato estruturado',
+      implementation: 'Formatos de exportação padronizados e transferência segura',
       regulation: 'GDPR Art. 20, CCPA',
       icon: Download
     }
@@ -294,9 +294,9 @@ export default function ComplianceSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Regulatory{' '}
+                Conformidade{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Compliance
+                  Regulatória
                 </span>
               </h1>
               
@@ -305,11 +305,10 @@ export default function ComplianceSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Comprehensive compliance framework ensuring adherence to global regulations 
-                including GDPR, HIPAA, SOX, and industry-specific requirements. Built-in 
-                compliance{' '}
-                <span className="text-ai-blue font-bold">automation and monitoring</span> for{' '}
-                <span className="text-ai-green font-bold">continuous assurance</span>.
+                Estrutura abrangente de conformidade garantindo aderência a regulamentações globais
+                incluindo GDPR, HIPAA, SOX e requisitos específicos do setor. Automatização e{' '}
+                <span className="text-ai-blue font-bold">monitoramento integrados</span> para{' '}
+                <span className="text-ai-green font-bold">garantia contínua</span>.
               </p>
 
               {/* Compliance Metrics */}
@@ -340,14 +339,14 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Global Compliance{' '}
+                Estruturas de Conformidade{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Frameworks
+                  Globais
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Certified compliance with major international and regional regulations, 
-                ensuring your data and operations meet the highest legal standards.
+                Conformidade certificada com as principais regulamentações internacionais e regionais,
+                garantindo que seus dados e operações atendam aos mais altos padrões legais.
               </p>
             </div>
 
@@ -390,14 +389,14 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Compliance{' '}
+                Capacidades de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Capabilities
+                  Conformidade
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Comprehensive compliance management capabilities built into our platform, 
-                providing automated monitoring, reporting, and evidence collection.
+                Capacidades abrangentes de gerenciamento de conformidade integradas em nossa plataforma,
+                fornecendo monitoramento automatizado, relatórios e coleta de evidências.
               </p>
             </div>
 
@@ -434,18 +433,18 @@ export default function ComplianceSection() {
         </section>
 
         {/* Regulatory Requirements Section */}
-        <section className="py-20 bg-gradient-to-br from-ai-light/20 to-white">
+        {/* <section className="py-20 bg-gradient-to-br from-ai-light/20 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Regulatory{' '}
+                Implementação{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Implementation
+                  Regulatória
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Detailed implementation of specific regulatory requirements with 
-                automated controls and continuous monitoring.
+                Implementação detalhada de requisitos regulatórios específicos com
+                controles automatizados e monitoramento contínuo.
               </p>
             </div>
 
@@ -480,21 +479,21 @@ export default function ComplianceSection() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Data Rights Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Data Subject{' '}
+                Direitos do{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Rights
+                  Titular de Dados
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Comprehensive implementation of data subject rights with automated 
-                request processing and response workflows.
+                Implementação abrangente dos direitos do titular de dados com processamento
+                automatizado de solicitações e fluxos de trabalho de resposta.
               </p>
             </div>
 
@@ -534,14 +533,14 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Compliance{' '}
+                Processo de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Audit Process
+                  Auditoria
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Streamlined audit process with automated evidence collection and 
-                comprehensive compliance reporting.
+                Processo de auditoria simplificado com coleta automatizada de evidências e
+                relatórios abrangentes de conformidade.
               </p>
             </div>
 
@@ -586,36 +585,36 @@ export default function ComplianceSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Compliance{' '}
+              Dúvidas sobre{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Questions?
+                Conformidade?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Our compliance team is ready to assist with audit requests, provide compliance 
-              documentation, or discuss specific regulatory requirements for your industry.
+              Nossa equipe de conformidade está pronta para ajudar com solicitações de auditoria, fornecer
+              documentação de conformidade ou discutir requisitos regulatórios específicos para seu setor.
             </p>
 
             {/* Compliance Team Contact */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
                 {
-                  title: 'Compliance Office',
-                  contact: 'compliance@itcygnus.com',
-                  description: 'General compliance inquiries',
+                  title: 'Escritório de Conformidade',
+                  contact: 'dpo@itcygnus.com',
+                  description: 'Consultas gerais sobre conformidade',
                   icon: Scale
                 },
                 {
-                  title: 'Audit Support',
-                  contact: 'audit@itcygnus.com',
-                  description: 'Audit requests and documentation',
+                  title: 'Suporte a Auditorias',
+                  contact: 'security.info@itcygnus.com',
+                  description: 'Solicitações e documentação de auditoria',
                   icon: FileSearch
                 },
                 {
-                  title: 'Legal Team',
+                  title: 'Equipe Jurídica',
                   contact: 'legal@itcygnus.com',
-                  description: 'Legal and regulatory questions',
+                  description: 'Dúvidas legais e regulatórias',
                   icon: Gavel
                 }
               ].map((contact, index) => {
@@ -635,12 +634,12 @@ export default function ComplianceSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button 
+              {/* <Button 
                 variant="ai_primary" 
                 size="xl" 
                 className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
               >
-                Request Compliance Assessment
+                Solicitar Avaliação de Conformidade
                 <Scale className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
               <Button 
@@ -648,15 +647,15 @@ export default function ComplianceSection() {
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Download Compliance Guide
+                Baixar Guia de Conformidade
                 <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
 
             <p className="text-white/60 text-sm">
-              Need immediate assistance? Call our compliance hotline at{' '}
+              Precisa de assistência imediata? Ligue para nossa linha direta de conformidade{' '}
               <a href="tel:+1-305-555-0123" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (305) 555-0123
+                +55 (11) 5039-4877
               </a>
             </p>
           </div>

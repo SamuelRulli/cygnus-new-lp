@@ -41,10 +41,10 @@ export default function Footer() {
               {[
                 { name: 'AI.OCR', href: '/solutions/ai-ocr' },
                 { name: 'AI.DOC', href: '/solutions/ai-doc' },
-                { name: 'AI.DATA', href: '/solutions/ai-data' },
+                { name: 'AI.SAUDE', href: '/solutions/ai-saude' },
                 { name: 'AI.PRICEINSIGHTS', href: '/solutions/ai-priceinsights' },
                 { name: 'AI.AGENTS', href: '/solutions/ai-agents' },
-                { name: 'Echo AI Hub', href: '/solutions/echo-ai-hub' }
+                // { name: 'Echo AI Hub', href: '/solutions/echo-ai-hub' }
               ].map((item, index) => (
                 <li key={index}>
                   <Link href={item.href} className="text-white/70 hover:text-ai-green transition-colors flex items-center group">
@@ -61,12 +61,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6 text-white">{t('footer.industries')}</h3>
             <ul className="space-y-3">
               {[
-                { name: 'Healthcare', href: '/industries/healthcare' },
-                { name: 'Financial Services', href: '/industries/financial' },
-                { name: 'Insurance', href: '/industries/insurance' },
+                { name: 'Saúde', href: '/industries/healthcare' },
+                { name: 'Financeira', href: '/industries/financial' },
+                { name: 'Seguradoras', href: '/industries/insurance' },
                 // { name: 'Manufacturing', href: '/industries/manufacturing' },
                 // { name: 'Government', href: '/industries/government' },
-                // { name: 'Retail & E-commerce', href: '/industries/retail' }
+                // { name: 'Setor de Varejo e E-commerce', href: '/industries/retail' }
               ].map((item, index) => (
                 <li key={index}>
                   <Link href={item.href} className="text-white/70 hover:text-ai-green transition-colors flex items-center group">
@@ -83,10 +83,10 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6 text-white">{t('footer.company')}</h3>
             <ul className="space-y-3">
               {[
-                { name: 'About Us', href: '/company' },
-                { name: 'Resources', href: '/resources' },
-                { name: 'ROI Calculator', href: '/roi-calculator' },
-                { name: 'Contact', href: '/contact' },
+                { name: 'Sobre Nós', href: '/company' },
+                // { name: 'Resources', href: '/resources' },
+                // { name: 'Calculadora de ROI', href: '/roi-calculator' },
+                { name: 'Contato', href: '/contact' },
                 { name: 'Privacy Policy', href: '/privacy' },
                 { name: 'Terms of Service', href: '/terms' }
               ].map((item, index) => (

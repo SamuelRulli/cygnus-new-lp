@@ -62,7 +62,7 @@ export default function FinancialIndustrySection() {
 
   const keyBenefits = [
     // { icon: ShieldCheck, text: 'Regulatory compliance (Fed, OCC, FDIC)' },
-    { icon: UserCheck, text: 'Automated KYC and onboarding' },
+    // { icon: UserCheck, text: 'Automated KYC and onboarding' },
     { icon: BarChart3, text: 'Real-time credit analysis' },
     { icon: Eye, text: 'Advanced fraud detection' }
   ];
@@ -232,9 +232,9 @@ export default function FinancialIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Financial AI That Accelerates{' '}
+                  IA Financeira que Acelera{' '}
                   <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                    Decisions and Reduces Risk
+                    Decisões e Reduz Riscos
                   </span>
                 </h1>
                 
@@ -243,10 +243,10 @@ export default function FinancialIndustrySection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Automate critical processes for your bank, fintech, or financial institution 
-                  with AI specialized in compliance, credit analysis, and fraud detection.{' '}
-                  <span className="text-blue-600 font-bold">Banking-grade security</span> and{' '}
-                  <span className="text-ai-green font-bold">regulatory compliance</span>.
+                  Automatize processos críticos para seu banco, fintech ou instituição financeira 
+                  com IA especializada em compliance, análise de crédito e detecção de fraudes.{' '}
+                  <span className="text-blue-600 font-bold">Segurança bancária</span> e{' '}
+                  <span className="text-ai-green font-bold">conformidade regulatória</span>.
                 </p>
 
                 {/* Key Benefits */}
@@ -260,7 +260,11 @@ export default function FinancialIndustrySection() {
                     return (
                       <div key={index} className="flex items-center space-x-3 p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-ai-light/50">
                         <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
-                        <span className="text-ai-dark font-medium">{benefit.text}</span>
+                        <span className="text-ai-dark font-medium">{
+                          benefit.text === 'Automated KYC and onboarding' ? 'KYC e onboarding automatizados' :
+                          benefit.text === 'Real-time credit analysis' ? 'Análise de crédito em tempo real' :
+                          'Detecção avançada de fraudes'
+                        }</span>
                       </div>
                     );
                   })}
@@ -273,7 +277,7 @@ export default function FinancialIndustrySection() {
                   }`}
                 >
                   <Button onClick={handleClick} variant="ai_primary" size="xl" className="group shadow-2xl bg-blue-600 hover:bg-blue-700">
-                    Request Banking Demo
+                    Solicitar Demonstração Bancária
                     <Landmark className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
                   {/* <Button variant="ai_outline" size="xl" className="group border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
@@ -375,27 +379,26 @@ export default function FinancialIndustrySection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Financial Sector Complexity</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Complexidade do Setor Financeiro</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Financial institutions operate in a highly regulated environment where precision and speed 
-                    are equally critical. Banks process millions of transactions daily, each requiring compliance 
-                    validation, risk analysis, and possible fraud detection.
+                    Instituições financeiras operam em um ambiente altamente regulado onde precisão e velocidade 
+                    são igualmente críticas. Bancos processam milhões de transações diariamente, cada uma exigindo 
+                    validação de conformidade, análise de risco e possível detecção de fraudes.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Customer onboarding involves validating dozens of documents, background verification, and 
-                    credit capacity analysis - all while maintaining a fluid and secure customer experience. 
-                    Regulations like GDPR, central bank norms, and international requirements make automation 
-                    a complex technical and regulatory challenge.
+                    O onboarding de clientes envolve validação de dezenas de documentos, verificação de antecedentes 
+                    e análise de capacidade de crédito - tudo mantendo uma experiência fluida e segura para o cliente.
+                    Regulamentações como GDPR, normas do banco central e requisitos internacionais tornam a automação 
+                    um desafio técnico e regulatório complexo.
                   </p>
 
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Fintechs face the additional challenge of competing with traditional banks by offering 
-                    more agile and personalized services, but without compromising the security and compliance 
-                    the sector demands.
+                    Fintechs enfrentam o desafio adicional de competir com bancos tradicionais oferecendo serviços 
+                    mais ágeis e personalizados, mas sem comprometer a segurança e conformidade que o setor exige.
                   </p>
 
                   {/* Problem Stats */}
@@ -408,7 +411,11 @@ export default function FinancialIndustrySection() {
                             <Icon className="w-6 h-6 text-red-500" />
                             <div>
                               <div className="text-2xl font-bold text-red-600">{item.stat}</div>
-                              <div className="text-sm text-red-700">{item.label}</div>
+                              <div className="text-sm text-red-700">{
+                                item.label === 'Average loan approval time' ? 'Tempo médio de aprovação de empréstimo' :
+                                item.label === 'Annual fraud losses in banking' ? 'Perdas anuais por fraudes bancárias' :
+                                'Processos manuais em serviços financeiros'
+                              }</div>
                             </div>
                           </div>
                         </div>
@@ -422,21 +429,21 @@ export default function FinancialIndustrySection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Our Financial Expertise</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Expertise Financeira</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    ITCygnus developed solutions specific to the financial sector, with banking-grade security 
-                    architecture and full compliance with national and international regulations. Our AI was 
-                    trained on millions of transactions and financial documents, understanding fraud patterns, 
-                    credit risks, and regulatory requirements.
+                    A ITCygnus desenvolveu soluções específicas para o setor financeiro, com arquitetura de segurança 
+                    bancária e conformidade total com regulamentações nacionais e internacionais. Nossa IA foi treinada 
+                    em milhões de transações e documentos financeiros, compreendendo padrões de fraude, riscos de crédito 
+                    e requisitos regulatórios.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    We work with large banks, innovative fintechs, and credit unions to create solutions that 
-                    accelerate processes without compromising security. Our technology is audited by companies 
-                    specialized in financial security and certified for banking use.
+                    Trabalhamos com grandes bancos, fintechs inovadoras e cooperativas de crédito para criar soluções que 
+                    aceleram processos sem comprometer a segurança. Nossa tecnologia é auditada por empresas especializadas 
+                    em segurança financeira e certificada para uso bancário.
                   </p>
 
                   {/* Solution Benefits */}
@@ -446,7 +453,12 @@ export default function FinancialIndustrySection() {
                       return (
                         <div key={index} className="flex items-center space-x-3 p-3 bg-ai-green/10 rounded-lg">
                           <Icon className="w-5 h-5 text-ai-green" />
-                          <span className="text-ai-dark font-medium">{item.benefit}</span>
+                          <span className="text-ai-dark font-medium">{
+                            item.benefit === 'Banking-grade security and encryption' ? 'Segurança e criptografia bancária' :
+                            item.benefit === 'Full regulatory compliance automation' ? 'Automação completa de conformidade regulatória' :
+                            item.benefit === 'Real-time fraud detection and prevention' ? 'Detecção e prevenção de fraudes em tempo real' :
+                            'Integração perfeita com sistemas bancários centrais'
+                          }</span>
                         </div>
                       );
                     })}
@@ -462,19 +474,19 @@ export default function FinancialIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Advanced Financial{' '}
+                Capacidades Avançadas de{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                  AI Capabilities
+                  IA Financeira
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Comprehensive AI capabilities specifically designed for banking operations, 
-                regulatory compliance, and financial risk management.
+                Capacidades abrangentes de IA projetadas especificamente para operações bancárias,
+                conformidade regulatória e gerenciamento de riscos financeiros.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-              {financialCapabilities.map((capability, index) => {
+                {financialCapabilities.map((capability, index) => {
                 const Icon = capability.icon;
                 return (
                   <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300 group hover:scale-105">
@@ -483,10 +495,19 @@ export default function FinancialIndustrySection() {
                         <Icon className="w-6 h-6 text-blue-600" />
                       </div>
                       <h3 className="text-lg font-bold text-ai-dark mb-2">
-                        {capability.title}
+                        {capability.title === 'Credit Risk Analysis' ? 'Análise de Risco de Crédito' :
+                         capability.title === 'Fraud Detection' ? 'Detecção de Fraudes' :
+                         capability.title === 'Document Processing' ? 'Processamento de Documentos' :
+                         capability.title === 'Anti-Money Laundering' ? 'Prevenção à Lavagem de Dinheiro' :
+                         capability.title === 'Transaction Monitoring' ? 'Monitoramento de Transações' :
+                         'Gestão de Riscos'}
                       </h3>
                       <p className="text-sm text-ai-medium">
-                        {capability.description}
+                        {capability.description === 'AI-powered credit scoring and risk assessment' ? 'Pontuação de crédito e avaliação de risco por IA' :
+                         capability.description === 'Real-time transaction monitoring and fraud prevention' ? 'Monitoramento em tempo real e prevenção de fraudes' :
+                         capability.description === 'Intelligent processing of financial documents' ? 'Processamento inteligente de documentos financeiros' :
+                         capability.description === 'AML screening and suspicious activity detection' ? 'Triagem AML e detecção de atividades suspeitas' :
+                         'Avaliação abrangente de riscos e mitigação'}
                       </p>
                     </CardContent>
                   </Card>
@@ -498,10 +519,10 @@ export default function FinancialIndustrySection() {
             <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 mb-16">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Banking System Integrations
+                  Integrações com Sistemas Bancários
                 </h3>
                 <p className="text-ai-medium">
-                  Native integration with core banking platforms and financial infrastructure
+                  Integração nativa com plataformas bancárias centrais e infraestrutura financeira
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4">
@@ -510,8 +531,18 @@ export default function FinancialIndustrySection() {
                   return (
                     <div key={index} className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
                       <Icon className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                      <div className="font-medium text-ai-dark text-sm mb-1">{item.system}</div>
-                      <div className="text-xs text-ai-medium">{item.description}</div>
+                      <div className="font-medium text-ai-dark text-sm mb-1">{
+                        item.system === 'Core Banking' ? 'Sistema Bancário Central' :
+                        item.system === 'Credit Bureaus' ? 'Bureaus de Crédito' :
+                        item.system === 'Risk Platforms' ? 'Plataformas de Risco' :
+                        'Plataformas Bancárias Digitais'
+                      }</div>
+                      <div className="text-xs text-ai-medium">{
+                        item.description === 'Direct integration with core systems' ? 'Integração direta com sistemas centrais' :
+                        item.description === 'Real-time credit data access' ? 'Acesso em tempo real a dados de crédito' :
+                        item.description === 'Enterprise risk management' ? 'Gestão de riscos corporativos' :
+                        'Plataformas bancárias móveis e web'
+                      }</div>
                     </div>
                   );
                 })}
@@ -545,14 +576,14 @@ export default function FinancialIndustrySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Financial{' '}
+                Soluções de{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                  AI Solutions
+                  IA Financeira
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Specialized AI solutions designed specifically for banking operations, 
-                from customer onboarding to fraud detection and compliance automation.
+                Soluções especializadas em IA projetadas especificamente para operações bancárias,
+                desde onboarding de clientes até detecção de fraudes e automação de conformidade.
               </p>
             </div>
 
@@ -571,24 +602,31 @@ export default function FinancialIndustrySection() {
                             <Icon className="w-8 h-8 text-blue-600" />
                           </div>
                           <div>
-                            <h3 className="text-2xl font-bold text-ai-dark">{solution.title}</h3>
+                            <h3 className="text-2xl font-bold text-ai-dark">{
+                              solution.title === 'Real-Time Credit Analysis & Risk Assessment' ? 'Análise de Crédito e Avaliação de Risco em Tempo Real' :
+                              'Detecção e Prevenção Avançada de Fraudes'
+                            }</h3>
                             <span className="text-sm text-ai-blue font-medium bg-ai-blue/10 px-2 py-1 rounded-full">
                               {solution.product}
                             </span>
                           </div>
                         </div>
                         
-                        <p className="text-lg text-ai-medium leading-relaxed mb-6">
-                          {solution.description}
-                        </p>
-                        
-                        <p className="text-ai-medium leading-relaxed mb-6">
-                          {solution.details}
-                        </p>
+                          <p className="text-lg text-ai-medium leading-relaxed mb-6">{
+                            solution.description === 'Process loan applications with intelligent credit analysis that evaluates traditional and alternative data sources. Our AI assesses credit risk, income verification, and payment capacity in real-time.' ? 
+                            'Processe aplicações de empréstimo com análise de crédito inteligente que avalia fontes de dados tradicionais e alternativas. Nossa IA avalia risco de crédito, verificação de renda e capacidade de pagamento em tempo real.' :
+                            'AI.DATA monitora transações em tempo real, identificando padrões suspeitos e potenciais fraudes antes que ocorram perdas. Nosso sistema aprende com casos históricos de fraude e se adapta a novos vetores de ataque.'
+                          }</p>
+                          
+                          <p className="text-ai-medium leading-relaxed mb-6">{
+                            solution.details === 'Machine learning models analyze bank statements, transaction patterns, and behavioral data to provide accurate credit scoring. Integration with credit bureaus and open banking APIs ensures comprehensive risk assessment.' ?
+                            'Modelos de machine learning analisam extratos bancários, padrões de transação e dados comportamentais para fornecer pontuação de crédito precisa. Integração com bureaus de crédito e APIs de open banking garante avaliação abrangente de risco.' :
+                            'Detecção de fraude em múltiplas camadas analisa velocidade de transações, padrões de comerciantes, anomalias geográficas e impressão digital de dispositivos. Pontuação em tempo real permite decisões instantâneas minimizando falsos positivos.'
+                          }</p>
 
                         <Link href={solution.link}>
                           <Button variant="ai_outline" className="group">
-                            Learn More About {solution.product}
+                            Saiba Mais Sobre {solution.product}
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                           </Button>
                         </Link>
@@ -617,76 +655,6 @@ export default function FinancialIndustrySection() {
           </div>
         </section>
 
-        {/* Use Cases Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Financial Services{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-ai-green bg-clip-text text-transparent">
-                  Success Stories
-                </span>
-              </h2>
-              <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                See how financial institutions are transforming operations and reducing 
-                risk with ITCygnus specialized AI solutions.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {useCases.map((useCase, index) => {
-                const Icon = useCase.icon;
-                
-                return (
-                  <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-all duration-500 group hover:scale-105">
-                    <CardContent className="p-8">
-                      {/* Header */}
-                      <div className="text-center mb-6">
-                        <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-8 h-8 text-blue-600" />
-                        </div>
-                        <span className="text-xs text-ai-blue font-medium bg-ai-blue/10 px-3 py-1 rounded-full">
-                          {useCase.industry}
-                        </span>
-                      </div>
-
-                      {/* Content */}
-                      <h3 className="text-xl font-bold text-ai-dark mb-4 text-center">
-                        {useCase.title}
-                      </h3>
-                      
-                      <p className="text-ai-medium leading-relaxed mb-6">
-                        {useCase.description}
-                      </p>
-
-                      {/* Stats */}
-                      <div className="grid grid-cols-3 gap-2 mb-6">
-                        {Object.entries(useCase.stats).map(([key, value], statIndex) => (
-                          <div key={statIndex} className="text-center p-2 bg-blue-50 rounded-lg">
-                            <div className="text-lg font-bold text-blue-600">{value}</div>
-                            <div className="text-xs text-ai-medium capitalize">{key.replace('_', ' ')}</div>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Results */}
-                      <div className="bg-ai-green/10 rounded-xl p-4 border-l-4 border-ai-green">
-                        <h4 className="font-bold text-ai-green text-sm mb-2 flex items-center">
-                          <Award className="w-4 h-4 mr-2" />
-                          Results Achieved:
-                        </h4>
-                        <p className="text-sm text-ai-dark leading-relaxed">
-                          {useCase.result}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         {/* Final CTA Section */}
         <section className="py-20 bg-gradient-to-br from-ai-dark to-ai-dark/90 relative overflow-hidden">
           {/* Background Pattern */}
@@ -697,25 +665,25 @@ export default function FinancialIndustrySection() {
           </div>
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your{' '}
+              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
+              Pronto para Transformar Suas{' '}
               <span className="bg-gradient-to-r from-blue-400 to-ai-green bg-clip-text text-transparent">
-                Financial Operations?
+                Operações Financeiras?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join leading financial institutions that have already revolutionized their operations 
-              with ITCygnus specialized AI solutions. Start reducing risk while accelerating decisions today.
+              Junte-se às principais instituições financeiras que já revolucionaram suas operações
+              com as soluções especializadas em IA da ITCygnus. Comece a reduzir riscos enquanto acelera decisões hoje mesmo.
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              {[
-                // { icon: ShieldCheck, value: '100%', label: 'Regulatory Compliant' },
-                { icon: Clock, value: '2 hrs', label: 'Loan Approval Time' },
-                { icon: Eye, value: '99.2%', label: 'Fraud Detection' },
-                { icon: Users, value: '100+', label: 'Financial Clients' }
+                {[
+                // { icon: ShieldCheck, value: '100%', label: 'Conformidade Regulatória' },
+                { icon: Clock, value: '1 hrs', label: 'Tempo de Aprovação de Empréstimo' },
+                { icon: Eye, value: '99.2%', label: 'Detecção de Fraudes' },
+                { icon: Users, value: '10+', label: 'Clientes Financeiros' }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -738,7 +706,7 @@ export default function FinancialIndustrySection() {
                 size="xl" 
                 className="bg-blue-600 hover:bg-blue-700 text-white shadow-2xl group"
               >
-                Request Banking Demo
+                Solicitar Demonstração Bancária
                 <Landmark className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
               {/* <Button 
@@ -761,13 +729,13 @@ export default function FinancialIndustrySection() {
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our financial specialists at{' '}
+              Dúvidas? Contate nossos especialistas financeiros pelo{' '}
               <a href="tel:+1-800-123-4567" className="text-blue-400 hover:text-blue-300 transition-colors">
-                +1 (800) 123-4567
+                +55 (11) 5039-4877
               </a>{' '}
-              or{' '}
-              <a href="mailto:financial@itcygnus.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-                financial@itcygnus.com
+              ou{' '}
+              <a href="mailto:contact@itcygnus.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                contact@itcygnus.com
               </a>
             </p>
           </div>

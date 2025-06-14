@@ -17,133 +17,133 @@ export default function ResourcesSection() {
 
   const freeResources = [
     {
-      title: 'Complete Guide: "Implementing AI in 7 Days"',
-      description: 'Step-by-step manual for implementing enterprise AI solutions, from initial assessment to go-live. Includes project templates, validation checklists, and detailed timeline based on our proven methodology.',
-      type: '45-page PDF',
-      downloadType: 'Free Download',
+      title: 'Guia Completo: "Implementando IA em 7 Dias"',
+      description: 'Manual passo a passo para implementar soluções de IA empresarial, desde a avaliação inicial até a implantação. Inclui modelos de projeto, listas de verificação e cronograma detalhado baseado em nossa metodologia comprovada.',
+      type: 'PDF de 45 páginas',
+      downloadType: 'Download Gratuito',
       icon: BookOpen,
       color: 'ai-blue',
       features: [
-        'Project templates and checklists',
-        'Detailed implementation timeline',
-        'Risk assessment frameworks',
-        'Success measurement metrics'
+        'Modelos de projeto e listas de verificação',
+        'Cronograma detalhado de implementação',
+        'Estruturas de avaliação de risco',
+        'Métricas de medição de sucesso'
       ]
     },
     {
-      title: 'Enterprise AI ROI Calculator',
-      description: 'Calculate return on investment specific to your use case. Our calculator considers document volume, labor costs, processing time, and complexity to generate accurate savings projections.',
-      type: 'Interactive Tool',
-      downloadType: 'Free Access',
+      title: 'Calculadora de ROI para IA Empresarial',
+      description: 'Calcule o retorno sobre investimento específico para seu caso de uso. Nossa calculadora considera volume de documentos, custos trabalhistas, tempo de processamento e complexidade para gerar projeções de economia precisas.',
+      type: 'Ferramenta Interativa',
+      downloadType: 'Acesso Gratuito',
       icon: Calculator,
       color: 'ai-green',
       features: [
-        'Customized ROI projections',
-        'Industry-specific calculations',
-        'Detailed cost breakdown',
-        'Implementation timeline estimates'
+        'Projeções de ROI personalizadas',
+        'Cálculos específicos por indústria',
+        'Detalhamento de custos',
+        'Estimativas de cronograma de implementação'
       ]
     },
     {
-      title: 'Template: "Business Case for AI"',
-      description: 'Ready-made presentation to convince your board about AI investments. Includes slides on ROI, risks, timeline, and success metrics, based on real approval cases.',
-      type: 'Editable PowerPoint',
-      downloadType: 'Free Download',
+      title: 'Modelo: "Caso de Negócio para IA"',
+      description: 'Apresentação pronta para convencer sua diretoria sobre investimentos em IA. Inclui slides sobre ROI, riscos, cronograma e métricas de sucesso, baseados em casos reais de aprovação.',
+      type: 'PowerPoint Editável',
+      downloadType: 'Download Gratuito',
       icon: PresentationChart,
       color: 'ai-blue',
       features: [
-        'Executive-ready presentation',
-        'ROI and risk analysis slides',
-        'Real success case examples',
-        'Customizable for your industry'
+        'Apresentação pronta para executivos',
+        'Slides de análise de ROI e riscos',
+        'Exemplos reais de casos de sucesso',
+        'Personalizável para sua indústria'
       ]
     },
     {
-      title: 'Whitepaper: "AI and GDPR - Practical Compliance"',
-      description: 'Technical guide on implementing AI while maintaining full GDPR compliance. Includes audit checklist, consent templates, and examples of necessary documentation.',
-      type: '32-page PDF',
-      downloadType: 'Free Download',
+      title: 'Whitepaper: "IA e GDPR - Conformidade Prática"',
+      description: 'Guia técnico sobre implementação de IA mantendo total conformidade com GDPR. Inclui lista de verificação de auditoria, modelos de consentimento e exemplos de documentação necessária.',
+      type: 'PDF de 32 páginas',
+      downloadType: 'Download Gratuito',
       icon: Shield,
       color: 'ai-green',
       features: [
-        'GDPR compliance checklist',
-        'Legal consent templates',
-        'Data protection guidelines',
-        'Audit documentation examples'
+        'Lista de verificação de conformidade GDPR',
+        'Modelos de consentimento legal',
+        'Diretrizes de proteção de dados',
+        'Exemplos de documentação para auditoria'
       ]
     }
   ];
 
   const resourceCategories = [
     {
-      title: 'Implementation Guides',
-      description: 'Step-by-step guides for successful AI deployment',
+      title: 'Guias de Implementação',
+      description: 'Guias passo a passo para implantação bem-sucedida de IA',
       icon: Rocket,
-      count: '5+ Guides'
+      count: '5+ Guias'
     },
     {
-      title: 'Templates & Checklists',
-      description: 'Ready-to-use templates for project management',
+      title: 'Modelos & Checklists',
+      description: 'Modelos prontos para uso em gestão de projetos',
       icon: FileCheck,
-      count: '12+ Templates'
+      count: '12+ Modelos'
     },
     {
-      title: 'ROI Calculators',
-      description: 'Interactive tools for investment analysis',
+      title: 'Calculadoras de ROI',
+      description: 'Ferramentas interativas para análise de investimento',
       icon: Calculator,
-      count: '3+ Calculators'
+      count: '3+ Calculadoras'
     },
     {
-      title: 'Technical Whitepapers',
-      description: 'Deep-dive technical documentation',
+      title: 'Whitepapers Técnicos',
+      description: 'Documentação técnica detalhada',
       icon: BookOpen,
-      count: '8+ Papers'
+      count: '8+ Documentos'
     },
     {
-      title: 'Webinars & Demos',
-      description: 'Live and recorded educational content',
+      title: 'Webinars & Demonstrações',
+      description: 'Conteúdo educacional gravado e ao vivo',
       icon: Video,
-      count: '20+ Videos'
+      count: '20+ Vídeos'
     },
     {
-      title: 'Success Stories',
-      description: 'Detailed case studies and results',
+      title: 'Casos de Sucesso',
+      description: 'Estudos de caso detalhados e resultados',
       icon: Award,
-      count: '15+ Cases'
+      count: '15+ Casos'
     }
   ];
 
   const contactMethods = [
     {
-      title: 'Personalized Demo',
-      description: 'See our AI platform tailored to your specific industry and use cases',
-      duration: '30 minutes',
+      title: 'Demonstração Personalizada',
+      description: 'Veja nossa plataforma de IA adaptada ao seu setor e casos de uso',
+      duration: '30 minutos',
       icon: Play,
-      action: 'Schedule Demo',
+      action: 'Agendar Demonstração',
       link: '/demo'
     },
     {
-      title: 'Free Consulting',
-      description: 'Strategic consultation with our AI transformation experts',
-      duration: '1 hour',
+      title: 'Consultoria Gratuita',
+      description: 'Consulta estratégica com nossos especialistas em transformação por IA',
+      duration: '1 hora',
       icon: MessageSquare,
-      action: 'Book Consultation',
+      action: 'Agendar Consulta',
       link: '#'
     },
+    // {
+    //   title: 'Análise de ROI',
+    //   description: 'Análise detalhada de retorno sobre investimento para seu caso específico',
+    //   duration: 'Sem compromisso',
+    //   icon: BarChart3,
+    //   action: 'Calcular ROI',
+    //   link: '/roi-calculator'
+    // },
     {
-      title: 'ROI Analysis',
-      description: 'Detailed return on investment analysis for your specific case',
-      duration: 'No commitment',
-      icon: BarChart3,
-      action: 'Calculate ROI',
-      link: '/roi-calculator'
-    },
-    {
-      title: 'Technical Support',
-      description: 'Round-the-clock technical assistance and expert guidance',
+      title: 'Suporte Técnico',
+      description: 'Assistência técnica 24 horas e orientação de especialistas',
       duration: '24/7',
       icon: Headphones,
-      action: 'Contact Support',
+      action: 'Contatar Suporte',
       link: '#'
     }
   ];
@@ -152,17 +152,17 @@ export default function ResourcesSection() {
     {
       name: 'São Paulo Office',
       type: 'Headquarters',
-      address: 'Av. Paulista, 1.374 - 12th floor',
+      address: 'Av. Paulista, 726',
       city: 'Bela Vista, São Paulo - SP',
       zip: 'ZIP: 01310-100, Brazil',
-      phone: '+55 (11) 3456-7890',
-      email: 'contato@itcygnus.com',
+      phone: '+55 (11) 5039-4877 / +1 (619) 306-9274',
+      email: 'contact@itcygnus.com',
       flag: '🇧🇷'
     },
     {
       name: 'Orlando Office',
       type: 'International Operations',
-      address: '1395 Brickell Ave, Suite 800',
+      address: '1395 Brickell Ave',
       city: 'Orlando, FL 33131, USA',
       zip: '',
       phone: '+1 (305) 555-0123',
@@ -198,9 +198,9 @@ export default function ResourcesSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Resources to Accelerate Your{' '}
+                Recursos para Acelerar Sua{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Digital Transformation
+                  Transformação Digital
                 </span>
               </h1>
               
@@ -209,10 +209,10 @@ export default function ResourcesSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Access our specialized guides, templates, calculators, and tools developed to help 
-                business leaders successfully implement AI. All resources are{' '}
-                <span className="text-ai-green font-bold">completely free</span> and based on{' '}
-                <span className="text-ai-blue font-bold">proven methodologies</span> from 100+ successful implementations.
+                Acesse nossos guias especializados, modelos, calculadoras e ferramentas desenvolvidos para ajudar 
+                líderes empresariais a implementar IA com sucesso. Todos os recursos são{' '}
+                <span className="text-ai-green font-bold">totalmente gratuitos</span> e baseados em{' '}
+                <span className="text-ai-blue font-bold">metodologias comprovadas</span> de mais de 100 implementações bem-sucedidas.
               </p>
 
               {/* Resource Categories Overview */}
@@ -244,14 +244,14 @@ export default function ResourcesSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Featured{' '}
+                Recursos{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Free Resources
+                  Gratuitos em Destaque
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Download our most popular resources, used by thousands of business leaders 
-                to successfully implement AI in their organizations.
+                Baixe nossos recursos mais populares, utilizados por milhares de líderes empresariais 
+                para implementar IA com sucesso em suas organizações.
               </p>
             </div>
 
@@ -293,7 +293,7 @@ export default function ResourcesSection() {
 
                         {/* Features */}
                         <div className="space-y-2 mb-6">
-                          <h4 className="text-sm font-semibold text-ai-dark mb-3">What's Included:</h4>
+                          <h4 className="text-sm font-semibold text-ai-dark mb-3">O que está incluído:</h4>
                           {resource.features.map((feature, featureIndex) => (
                             <div key={featureIndex} className="flex items-center space-x-2">
                               <CheckCircle2 className={`w-4 h-4 text-${resource.color} flex-shrink-0`} />
@@ -308,7 +308,7 @@ export default function ResourcesSection() {
                           size="lg"
                         >
                           <Download className="w-5 h-5 mr-2 group-hover:translate-y-1 transition-transform" />
-                          Download Now - Free
+                          Baixar Agora - Grátis
                         </Button>
                       </div>
                     </CardContent>
@@ -321,19 +321,19 @@ export default function ResourcesSection() {
             <div className="text-center mt-16">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-ai-light/50 max-w-4xl mx-auto">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Access Our Complete Resource Library
+                  Acesse Nossa Biblioteca Completa de Recursos
                 </h3>
                 <p className="text-ai-medium mb-6 leading-relaxed">
-                  Get access to our full collection of implementation guides, industry-specific templates, 
-                  technical documentation, and exclusive webinar recordings.
+                  Tenha acesso à nossa coleção completa de guias de implementação, modelos específicos por setor,
+                  documentação técnica e gravações exclusivas de webinars.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="ai_primary" size="lg" className="group">
-                    Browse All Resources
+                    Explorar Todos os Recursos
                     <ExternalLink className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
                   <Button variant="ai_outline" size="lg" className="group">
-                    Subscribe for Updates
+                    Assinar para Atualizações
                     <Mail className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
                 </div>
@@ -347,14 +347,14 @@ export default function ResourcesSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Let's Transform Your{' '}
+                Vamos Transformar Sua{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Company Together
+                  Empresa Juntos
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Contact our specialists to discover how AI can revolutionize your processes. 
-                We offer free consulting and personalized demos for your industry.
+                Fale com nossos especialistas para descobrir como a IA pode revolucionar seus processos.
+                Oferecemos consultoria gratuita e demonstrações personalizadas para seu setor.
               </p>
             </div>
 
@@ -430,28 +430,28 @@ export default function ResourcesSection() {
             {/* Business Hours */}
             <div className="mt-12 bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
               <div className="text-center">
-                <h3 className="text-xl font-bold text-ai-dark mb-6">Business Hours & Support</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                    <Calendar className="w-6 h-6 text-ai-blue mx-auto mb-2" />
-                    <div className="font-semibold text-ai-dark">Business Hours</div>
-                    <div className="text-sm text-ai-medium">Monday to Friday: 8am to 6pm (EST)</div>
-                  </div>
-                  <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                    <Headphones className="w-6 h-6 text-ai-green mx-auto mb-2" />
-                    <div className="font-semibold text-ai-dark">Technical Support</div>
-                    <div className="text-sm text-ai-medium">Available 24/7</div>
-                  </div>
-                  <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                    <AlertCircle className="w-6 h-6 text-red-500 mx-auto mb-2" />
-                    <div className="font-semibold text-ai-dark">Emergencies</div>
-                    <div className="text-sm text-ai-medium">
-                      <a href="tel:+1-305-555-0199" className="text-red-500 hover:text-red-600 transition-colors">
-                        +1 (305) 555-0199
-                      </a>
-                    </div>
+              <h3 className="text-xl font-bold text-ai-dark mb-6">Horários de Atendimento & Suporte</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
+                  <Calendar className="w-6 h-6 text-ai-blue mx-auto mb-2" />
+                  <div className="font-semibold text-ai-dark">Horário Comercial</div>
+                  <div className="text-sm text-ai-medium">Segunda a Sexta: 8h às 18h (EST)</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
+                  <Headphones className="w-6 h-6 text-ai-green mx-auto mb-2" />
+                  <div className="font-semibold text-ai-dark">Suporte Técnico</div>
+                  <div className="text-sm text-ai-medium">Disponível 24/7</div>
+                </div>
+                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
+                  <AlertCircle className="w-6 h-6 text-red-500 mx-auto mb-2" />
+                  <div className="font-semibold text-ai-dark">Emergências</div>
+                  <div className="text-sm text-ai-medium">
+                    <a href="tel:+1-305-555-0199" className="text-red-500 hover:text-red-600 transition-colors">
+                      +1 (305) 555-0199
+                    </a>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -468,24 +468,24 @@ export default function ResourcesSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Start Your{' '}
+              Pronto para Começar Sua{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                AI Journey?
+                Jornada de IA?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Download our free resources, schedule a personalized demo, or speak directly with our 
-              specialists. We're here to help you succeed with AI transformation.
+              Baixe nossos recursos gratuitos, agende uma demonstração personalizada ou fale diretamente com nossos
+              especialistas. Estamos aqui para ajudá-lo a ter sucesso com a transformação por IA.
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-              {[
-                { icon: Download, value: '50K+', label: 'Resources Downloaded' },
-                { icon: Users, value: '100+', label: 'Successful Implementations' },
-                { icon: Star, value: '4.9/5', label: 'Customer Satisfaction' },
-                { icon: Headphones, value: '24/7', label: 'Expert Support' }
+                {[
+                  { icon: Download, value: '50K+', label: 'Recursos Baixados' },
+                  { icon: Users, value: '100+', label: 'Implementações Bem-sucedidas' },
+                  { icon: Star, value: '4.9/5', label: 'Satisfação do Cliente' },
+                  { icon: Headphones, value: '24/7', label: 'Suporte Especializado' }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -508,7 +508,7 @@ export default function ResourcesSection() {
                   size="xl" 
                   className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
                 >
-                  Schedule Demo
+                  Agendar Demonstração
                   <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </Link>
@@ -517,7 +517,7 @@ export default function ResourcesSection() {
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Download Resources
+                Baixar Recursos
                 <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
               </Button>
               <Button 
@@ -525,18 +525,18 @@ export default function ResourcesSection() {
                 size="xl" 
                 className="text-white hover:bg-white/10 group"
               >
-                Contact Specialist
+                Falar com Especialista
                 <MessageSquare className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
             </div>
 
             {/* Contact Info */}
-            <p className="text-white/60 text-sm">
-              Questions? Contact us at{' '}
+              <p className="text-white/60 text-sm">
+              Dúvidas? Fale conosco pelo{' '}
               <a href="tel:+1-305-555-0123" className="text-ai-green hover:text-ai-green/80 transition-colors">
                 +1 (305) 555-0123
               </a>{' '}
-              or{' '}
+              ou{' '}
               <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
                 contact@itcygnus.com
               </a>

@@ -94,11 +94,11 @@ export default function ContactSection() {
       type: 'Global Headquarters',
       country: 'Brazil',
       flag: '🇧🇷',
-      address: 'Av. Paulista, 1.374 - 12th floor',
+      address: 'Av. Paulista, 726',
       city: 'Bela Vista, São Paulo - SP',
       zip: 'ZIP: 01310-100, Brazil',
-      phone: '+55 (11) 3456-7890',
-      email: 'contato@itcygnus.com',
+      phone: '+55 (11) 5039-4877 / +1 (619) 306-9274',
+      email: 'contact@itcygnus.com',
       description: 'Main development hub with 80+ engineers and data scientists',
       hours: 'Mon-Fri: 8AM-6PM BRT',
       specialties: ['AI Development', 'Technical Support', 'R&D']
@@ -108,7 +108,7 @@ export default function ContactSection() {
       type: 'Americas Operations',
       country: 'USA',
       flag: '🇺🇸',
-      address: '1395 Brickell Ave, Suite 800',
+      address: '1395 Brickell Ave',
       city: 'Orlando, FL 33131, USA',
       zip: '',
       phone: '+1 (305) 555-0123',
@@ -125,7 +125,7 @@ export default function ContactSection() {
       address: '501 W Broadway Suite 800',
       city: 'San Diego, CA, 92101, USA',
       zip: '',
-      phone: '+1 (619) 555-0142',
+      phone: '+1 (619) 559-4405',
       email: 'contact@itcygnus.us',
       description: 'Advanced AI research and emerging technologies development',
       hours: 'Mon-Fri: 9AM-5PM PST',
@@ -434,11 +434,11 @@ export default function ContactSection() {
                               <SelectValue placeholder="Select industry" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="healthcare">Healthcare</SelectItem>
-                              <SelectItem value="financial">Financial Services</SelectItem>
-                              <SelectItem value="insurance">Insurance</SelectItem>
-                              <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                              <SelectItem value="government">Government</SelectItem>
+                              <SelectItem value="healthcare">Saúde</SelectItem>
+                              {/* <SelectItem value="financial">Financial Services</SelectItem> */}
+                              <SelectItem value="insurance">Seguradoras</SelectItem>
+                              {/* <SelectItem value="manufacturing">Manufacturing</SelectItem> */}
+                              {/* <SelectItem value="government">Government</SelectItem> */}
                               <SelectItem value="retail">Retail & E-commerce</SelectItem>
                               <SelectItem value="education">Education</SelectItem>
                               <SelectItem value="other">Other</SelectItem>

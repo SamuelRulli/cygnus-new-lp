@@ -2,45 +2,32 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent} from '@/components/ui/card';
 import { 
   Heart,
   CheckCircle,
   ArrowRight,
-  Play,
   Shield,
   Zap,
   Activity,
   FileText,
   Brain,
-  Cpu,
   Database,
-  Hospital,
   Building2,
   Stethoscope,
-  TrendingUp,
   Clock,
   Users,
   Award,
-  Phone,
-  Mail,
-  Download,
-  Star,
-  AlertTriangle,
-  Lightbulb,
   BarChart3,
   Lock,
   Globe,
-  DollarSign,
-  Target,
   Workflow,
   Search
 } from 'lucide-react';
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export default function AIDATASection() {
+export default function AISAUDESection() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -48,106 +35,106 @@ export default function AIDATASection() {
   }, []);
 
   const keyBenefits = [
-    { icon: Activity, text: 'Automatic claims processing' },
-    { icon: Shield, text: 'Real-time fraud detection' },
-    { icon: Globe, text: 'Integration with payers and providers' },
-    { icon: Lock, text: 'Full regulatory compliance' }
+    { icon: Activity, text: 'Processamento automático de sinistros' },
+    { icon: Shield, text: 'Detecção de fraude em tempo real' },
+    { icon: Globe, text: 'Integração com operadoras e prestadores' },
+    { icon: Lock, text: 'Conformidade regulatória completa' }
   ];
 
   const features = [
     {
-      title: 'Medical AI Specialization',
-      description: 'AI.DATA was developed based on millions of real medical documents, trained to understand medical terminology, procedure codes, ICD-10, and specific healthcare system procedures. Our AI recognizes complex medical patterns that generic solutions cannot process.',
-      details: 'The system automatically validates procedure eligibility, checks compatibility between diagnoses and treatments, and identifies inconsistencies that may indicate errors or fraud. This ensures only legitimate claims are approved, protecting your organization from financial losses.',
+      title: 'Especialização em IA Médica',
+      description: 'O AI.SAUDE foi desenvolvido com base em milhões de documentos médicos reais, treinado para entender terminologia médica, códigos de procedimentos, CID-10 e procedimentos específicos do sistema de saúde brasileiro. Nossa IA reconhece padrões médicos complexos que soluções genéricas não conseguem processar.',
+      details: 'O sistema valida automaticamente a elegibilidade de procedimentos, verifica compatibilidade entre diagnósticos e tratamentos, e identifica inconsistências que podem indicar erros ou fraudes. Isso garante que apenas reembolsos legítimos sejam aprovados, protegendo sua organização de perdas financeiras.',
       icon: Brain
     },
     {
-      title: 'Healthcare Ecosystem Integration',
-      description: 'Our solution connects natively with payer systems, service providers, laboratories, and pharmacies, creating an automated information flow that eliminates rework and accelerates approvals.',
-      details: 'We integrate with major hospital systems (Epic, Cerner, Allscripts) and payers (Anthem, Aetna, UnitedHealth), ensuring implementation is fast and without operational interruptions.',
+      title: 'Integração com Ecossistema de Saúde',
+      description: 'Nossa solução se conecta nativamente com sistemas de operadoras, prestadores de serviços, laboratórios e farmácias, criando um fluxo automatizado de informações que elimina retrabalho e acelera aprovações.',
+      details: 'Integramos com os principais sistemas hospitalares brasileiros e operadoras de saúde, garantindo implementação rápida e sem interrupções operacionais. Suporte completo para padrões TISS e integração com ANS.',
       icon: Database
     },
     {
-      title: 'Advanced Fraud Detection',
-      description: 'Real-time analysis of claim patterns using machine learning algorithms that detect anomalies, duplicate submissions, and suspicious billing patterns before they become costly problems.',
-      details: 'Our fraud detection system analyzes provider behavior, patient history, and claim patterns across multiple data points, flagging potentially fraudulent activities with 99.2% accuracy while minimizing false positives.',
+      title: 'Detecção Avançada de Fraudes',
+      description: 'Análise em tempo real de padrões de reembolso usando algoritmos de machine learning que detectam anomalias, submissões duplicadas e padrões suspeitos de cobrança antes que se tornem problemas custosos.',
+      details: 'Nosso sistema de detecção de fraudes analisa comportamento de prestadores, histórico de pacientes e padrões de reembolso em múltiplos pontos de dados, sinalizando atividades potencialmente fraudulentas com 99,2% de precisão minimizando falsos positivos.',
       icon: Search
     },
     {
-      title: 'Automated Workflow Engine',
-      description: 'Intelligent routing and processing of claims based on complexity, value, and risk factors. Automated approvals for routine claims while flagging complex cases for human review.',
-      details: 'Configurable business rules engine allows customization of approval workflows, escalation procedures, and exception handling. Complete audit trails ensure regulatory compliance and transparency.',
+      title: 'Motor de Fluxo de Trabalho Automatizado',
+      description: 'Roteamento inteligente e processamento de reembolsos baseado em complexidade, valor e fatores de risco. Aprovações automáticas para casos rotineiros enquanto sinaliza casos complexos para revisão humana.',
+      details: 'Motor de regras de negócio configurável permite personalização de fluxos de aprovação, procedimentos de escalação e tratamento de exceções. Trilhas de auditoria completas garantem conformidade regulatória e transparência.',
       icon: Workflow
     }
   ];
 
   const useCases = [
     {
-      title: 'Large Health Insurance Provider',
-      description: 'A major health insurer processing 2 million claims monthly implemented AI.DATA to automate their entire claims workflow. The system processes routine claims in under 2 minutes while maintaining rigorous fraud detection protocols.',
-      result: 'Reduced claims processing time by 85%, from 7 days to 2 hours average. Detected $12M in fraudulent claims annually while reducing operational costs by $8M. Achieved 99.8% accuracy in automated decisions.',
-      icon: Building2,
-      industry: 'Health Insurance',
-      stats: { time: '85%', savings: '$8M', accuracy: '99.8%' }
+      title: 'Porto Seguro Saúde',
+      description: 'Implementação completa do AI.SAUDE para automatização de processos de reembolso e validação de notas fiscais, garantindo maior eficiência e redução de fraudes no sistema de saúde.',
+      result: 'Automatização de 98% dos processos de reembolso, economia de mais de R$ 5 milhões anuais e precisão de 99% na validação de documentos médicos.',
+      logo: 'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-saude.png',
+      industry: 'Operadora de Saúde',
+      stats: { automation: '98%', savings: 'R$ 5M+', accuracy: '99%' }
     },
     {
-      title: 'Regional Hospital Network',
-      description: 'A 15-hospital network integrated AI.DATA with their Epic system to automate pre-authorization requests and claims submissions. The AI validates medical necessity and ensures proper coding before submission.',
-      result: 'Increased first-pass approval rate from 78% to 95%, reducing resubmission costs by $2.3M annually. Accelerated reimbursement cycles from 45 days to 12 days average.',
-      icon: Hospital,
-      industry: 'Hospital Network',
-      stats: { approval: '95%', cycle: '12 days', savings: '$2.3M' }
+      title: 'Porto Seguro Ocupacional',
+      description: 'Solução AI.SAUDE implementada para gestão completa de saúde ocupacional, automatizando validações de exames, atestados e processos de reembolso relacionados à medicina do trabalho.',
+      result: 'Alcançou 100% de automatização nos processos de validação ocupacional, com economia significativa de recursos e 99% de precisão na análise de documentos.',
+      logo: 'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
+      industry: 'Saúde Ocupacional',
+      stats: { automation: '100%', savings: 'R$ 3M+', accuracy: '99%' }
     },
     {
-      title: 'Specialty Medical Practice',
-      description: 'A multi-specialty practice with complex procedures implemented AI.DATA to handle prior authorizations and claims for specialized treatments including oncology, cardiology, and orthopedic procedures.',
-      result: 'Reduced administrative overhead by 60%, allowing clinical staff to focus on patient care. Improved cash flow with 40% faster reimbursements and 25% reduction in claim denials.',
-      icon: Stethoscope,
-      industry: 'Specialty Practice',
-      stats: { overhead: '60%', reimbursement: '40%', denials: '25%' }
+      title: 'Itaú Saúde',
+      description: 'Implementação estratégica do AI.SAUDE para otimização de processos de reembolso médico, validação automática de notas fiscais e detecção inteligente de fraudes no sistema de saúde corporativo.',
+      result: 'Automatização de 98% dos processos de reembolso, economia substancial de recursos operacionais e 99% de precisão na validação de documentos médicos.',
+      logo: 'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/itau-saude.png',
+      industry: 'Saúde Corporativa',
+      stats: { automation: '98%', savings: 'R$ 4M+', accuracy: '99%' }
     }
   ];
 
   const medicalCapabilities = [
     {
-      title: 'ICD-10 and CPT Code Validation',
-      description: 'Automatic validation of diagnosis and procedure codes',
+      title: 'Validação de Códigos CID-10 e CBHPM',
+      description: 'Validação automática de códigos de diagnóstico e procedimentos',
       icon: FileText
     },
     {
-      title: 'Medical Necessity Assessment',
-      description: 'AI-powered evaluation of treatment appropriateness',
+      title: 'Avaliação de Necessidade Médica',
+      description: 'Avaliação por IA da adequação do tratamento',
       icon: Stethoscope
     },
     {
-      title: 'Prior Authorization Automation',
-      description: 'Streamlined pre-approval process for treatments',
+      title: 'Automação de Pré-Autorização',
+      description: 'Processo simplificado de pré-aprovação de tratamentos',
       icon: CheckCircle
     },
     {
-      title: 'Drug Interaction Checking',
-      description: 'Automated validation of prescription combinations',
+      title: 'Verificação de Interações Medicamentosas',
+      description: 'Validação automática de combinações de prescrições',
       icon: Activity
     },
     {
-      title: 'Provider Credentialing Verification',
-      description: 'Real-time validation of healthcare provider credentials',
+      title: 'Verificação de Credenciais de Prestadores',
+      description: 'Validação em tempo real de credenciais de profissionais de saúde',
       icon: Shield
     },
     {
-      title: 'Claims Adjudication Rules',
-      description: 'Intelligent application of payer-specific rules',
+      title: 'Regras de Adjudicação de Sinistros',
+      description: 'Aplicação inteligente de regras específicas de operadoras',
       icon: Brain
     }
   ];
 
   const complianceFeatures = [
-    'HIPAA Compliant Processing',
-    'SOC 2 Type II Certified',
-    'HL7 FHIR Integration',
-    'CMS Compliance Ready',
-    'Real-time Audit Trails',
-    '256-bit Encryption'
+    'Processamento Conforme LGPD',
+    // 'Certificação SOC 2 Tipo II',
+    'Integração HL7 FHIR',
+    'Conformidade ANS',
+    'Trilhas de Auditoria em Tempo Real',
+    'Criptografia 256-bit'
   ];
 
   return (
@@ -182,9 +169,9 @@ export default function AIDATASection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  AI.DATA: Healthcare Claims{' '}
+                  AI.SAUDE: Revolução no{' '}
                   <span className="bg-gradient-ai bg-clip-text text-transparent">
-                    Processing Revolution
+                    Processamento de Reembolsos
                   </span>
                 </h1>
                 
@@ -193,10 +180,10 @@ export default function AIDATASection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Completely automate your claims process with specialized medical AI. 
-                  Reduce processing time from{' '}
-                  <span className="text-ai-green font-bold">weeks to hours</span>, with{' '}
-                  <span className="text-ai-blue font-bold">99.8% accuracy</span> and automatic fraud detection.
+                  Automatize completamente seu processo de reembolsos com IA médica especializada. 
+                  Reduza o tempo de processamento de{' '}
+                  <span className="text-ai-green font-bold">semanas para horas</span>, com{' '}
+                  <span className="text-ai-blue font-bold">99,8% de precisão</span> e detecção automática de fraudes.
                 </p>
 
                 {/* Key Benefits */}
@@ -222,12 +209,12 @@ export default function AIDATASection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  <Button variant="ai_primary" size="xl" className="group shadow-2xl">
-                    Request Medical Demo
+                  {/* <Button variant="ai_primary" size="xl" className="group shadow-2xl">
+                    Solicitar Demo Médico
                     <Stethoscope className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
+                  </Button> */}
                   <Button variant="ai_outline" size="xl" className="group">
-                    Calculate Savings
+                    Calcular Economia
                     <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
                 </div>
@@ -310,19 +297,131 @@ export default function AIDATASection() {
           </div>
         </section>
 
+        {/* Brazil Leadership Section */}
+        <section className="py-20 bg-gradient-to-br from-ai-blue/5 to-ai-green/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-ai rounded-2xl mb-6">
+                <Building2 className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
+                Líder no{' '}
+                <span className="bg-gradient-ai bg-clip-text text-transparent">
+                  Setor Público Brasileiro
+                </span>
+              </h2>
+              <p className="text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed">
+                Somos o <span className="font-bold text-ai-blue">maior portal integrador de prefeituras do Brasil</span>, 
+                com mais de <span className="font-bold text-ai-green">350 prefeituras</span> validando notas fiscais 
+                e combatendo fraude no processo de reembolso através da nossa tecnologia AI.SAUDE.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <Card className="text-center p-8 shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-ai-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="w-8 h-8 text-ai-blue" />
+                </div>
+                <div className="text-3xl font-bold text-ai-blue mb-2">350+</div>
+                <div className="text-lg font-semibold text-ai-dark mb-2">Prefeituras Conectadas</div>
+                <p className="text-ai-medium">
+                  Maior rede de integração municipal do país para validação de reembolsos médicos
+                </p>
+              </Card>
+
+              <Card className="text-center p-8 shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-ai-green/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-ai-green" />
+                </div>
+                <div className="text-3xl font-bold text-ai-green mb-2">99,2%</div>
+                <div className="text-lg font-semibold text-ai-dark mb-2">Detecção de Fraudes</div>
+                <p className="text-ai-medium">
+                  Taxa de precisão na identificação de fraudes em processos de reembolso
+                </p>
+              </Card>
+
+              <Card className="text-center p-8 shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-ai-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-8 h-8 text-ai-blue" />
+                </div>
+                <div className="text-3xl font-bold text-ai-blue mb-2">R$ 2,8B</div>
+                <div className="text-lg font-semibold text-ai-dark mb-2">Notas Validadas</div>
+                <p className="text-ai-medium">
+                  Volume anual de notas fiscais processadas e validadas pela nossa IA
+                </p>
+              </Card>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-ai-light/50">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-ai-dark mb-4">
+                    Transformando Seu Processo Mais Seguro com Dados de Gestão Pública
+                  </h3>
+                  <p className="text-ai-medium leading-relaxed mb-6">
+                    Nossa plataforma AI.SAUDE revoluciona como as prefeituras brasileiras gerenciam 
+                    reembolsos médicos, garantindo transparência, eficiência e combate à fraude em 
+                    escala nacional.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
+                      <span className="text-ai-dark">Integração direta com sistemas municipais</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
+                      <span className="text-ai-dark">Validação automática de notas fiscais</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
+                      <span className="text-ai-dark">Detecção inteligente de irregularidades</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
+                      <span className="text-ai-dark">Relatórios de auditoria em tempo real</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-ai-blue/10 to-ai-green/10 rounded-2xl p-8">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                        <div className="text-2xl font-bold text-ai-blue mb-1">27</div>
+                        <div className="text-xs text-ai-medium">Estados</div>
+                      </div>
+                      <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                        <div className="text-2xl font-bold text-ai-green mb-1">5</div>
+                        <div className="text-xs text-ai-medium">Regiões</div>
+                      </div>
+                      <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                        <div className="text-2xl font-bold text-ai-blue mb-1">15M</div>
+                        <div className="text-xs text-ai-medium">Cidadãos</div>
+                      </div>
+                      <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                        <div className="text-2xl font-bold text-ai-green mb-1">24/7</div>
+                        <div className="text-xs text-ai-medium">Operação</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Medical Specialization Section */}
         <section className="py-20 bg-gradient-to-br from-ai-light/20 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                AI Specifically Trained for{' '}
+                IA Especializada para{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Healthcare
+                  Saúde
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Unlike generic solutions, AI.DATA was built from the ground up to understand 
-                the complexities of medical claims processing and healthcare regulations.
+                Diferente de soluções genéricas, o AI.SAUDE foi construído do zero para entender 
+                as complexidades do processamento de reembolsos médicos e regulamentações de saúde.
               </p>
             </div>
 
@@ -351,13 +450,13 @@ export default function AIDATASection() {
             <div className="mt-16 bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-ai-light/50">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Full Regulatory Compliance
+                  Conformidade Regulatória Completa
                 </h3>
                 <p className="text-ai-medium">
-                  Built to meet the highest healthcare industry standards and regulations
+                  Construído para atender aos mais altos padrões e regulamentações da indústria de saúde
                 </p>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 {complianceFeatures.map((feature, index) => (
                   <div key={index} className="text-center p-3 bg-ai-green/10 rounded-lg">
                     <CheckCircle className="w-5 h-5 text-ai-green mx-auto mb-2" />
@@ -374,14 +473,14 @@ export default function AIDATASection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Advanced Healthcare{' '}
+                Recursos Avançados de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  AI Features
+                  IA para Saúde
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Specialized capabilities designed specifically for the healthcare industry's 
-                unique requirements and regulatory environment.
+                Capacidades especializadas projetadas especificamente para os requisitos únicos 
+                da indústria de saúde e ambiente regulatório brasileiro.
               </p>
             </div>
 
@@ -439,28 +538,31 @@ export default function AIDATASection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Healthcare{' '}
+                Casos de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Success Stories
+                  Sucesso em Saúde
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                See how healthcare organizations are revolutionizing their claims processing 
-                with AI.DATA's specialized medical AI.
+                Veja como organizações de saúde estão revolucionando seu processamento de reembolsos 
+                com a IA médica especializada do AI.SAUDE.
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {useCases.map((useCase, index) => {
-                const Icon = useCase.icon;
                 
                 return (
                   <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-all duration-500 group hover:scale-105">
                     <CardContent className="p-8">
                       {/* Header */}
                       <div className="text-center mb-6">
-                        <div className="w-16 h-16 bg-ai-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-8 h-8 text-ai-blue" />
+                        <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg border border-ai-light/50">
+                          <img 
+                            src={useCase.logo} 
+                            alt={`${useCase.title} Logo`}
+                            className="w-16 h-16 object-contain"
+                          />
                         </div>
                         <span className="text-xs text-ai-green font-medium bg-ai-green/10 px-3 py-1 rounded-full">
                           {useCase.industry}
@@ -515,15 +617,15 @@ export default function AIDATASection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Revolutionize Your{' '}
+              Pronto para Revolucionar Seu{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Claims Processing?
+                Processamento de Reembolsos?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join leading healthcare organizations that have already transformed their claims processing 
-              with AI.DATA. Start reducing costs and improving accuracy today.
+              Junte-se às principais organizações de saúde que já transformaram seu processamento de reembolsos 
+              com o AI.SAUDE. Comece a reduzir custos e melhorar a precisão hoje mesmo.
             </p>
 
             {/* Trust Indicators */}
@@ -549,41 +651,41 @@ export default function AIDATASection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button 
+              {/* <Button 
                 variant="ai_primary" 
                 size="xl" 
                 className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
               >
-                Request Medical Demo
+                Solicitar Demo Médico
                 <Stethoscope className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button>
+              </Button> */}
               <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Calculate Savings
+                Calcular Economia
                 <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 size="xl" 
                 className="text-white hover:bg-white/10 group"
               >
-                Download Healthcare Guide
+                Baixar Guia de Saúde
                 <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our healthcare specialists at{' '}
-              <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (800) 123-4567
+              Dúvidas? Entre em contato com nossos especialistas em saúde pelo{' '}
+              <a href="tel:+55-11-3456-7890" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                +55 (11) 5039-4877 / +1 (619) 306-9274
               </a>{' '}
-              or{' '}
-              <a href="mailto:healthcare@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                healthcare@itcygnus.com
+              ou{' '}
+              <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                contact@itcygnus.com
               </a>
             </p>
           </div>

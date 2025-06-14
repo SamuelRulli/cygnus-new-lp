@@ -41,54 +41,54 @@ export default function AIOCRSection() {
   }, []);
 
   const keyBenefits = [
-    { icon: Target, text: '99.9% guaranteed accuracy' },
-    { icon: Zap, text: '50x faster processing' },
-    { icon: Globe, text: '40+ language support' },
-    { icon: Shield, text: 'Integration with any system' }
+    { icon: Target, text: '99,9% de precisão garantida' },
+    { icon: Zap, text: 'Processamento 50x mais rápido' },
+    { icon: Globe, text: 'Suporte a mais de 40 idiomas' },
+    { icon: Shield, text: 'Integração com qualquer sistema' }
   ];
 
   const features = [
     {
-      title: 'Intelligent Context Recognition',
-      description: 'Our AI doesn\'t just identify individual characters but understands the contextual meaning of each word and phrase. This enables automatic error correction, data validation, and intelligent information structuring, even in poor-quality documents or complex handwriting.',
-      details: 'The system recognizes specific patterns like SSNs, tax IDs, dates, monetary values, and codes, applying automatic validation and standardized formatting. This eliminates common typing errors and ensures consistency in extracted data.',
+      title: 'Reconhecimento Inteligente de Contexto',
+      description: 'Nossa IA não apenas identifica caracteres individuais, mas entende o significado contextual de cada palavra e frase. Isso permite correção automática de erros, validação de dados e estruturação inteligente de informações, mesmo em documentos de baixa qualidade ou caligrafia complexa.',
+      details: 'O sistema reconhece padrões específicos como CPFs, CNPJs, datas, valores monetários e códigos, aplicando validação automática e formatação padronizada. Isso elimina erros comuns de digitação e garante consistência nos dados extraídos.',
       icon: Brain
     },
     {
-      title: 'Complex Document Processing',
-      description: 'Unlike basic solutions that fail with non-standardized layouts, AI.OCR processes complex tables, multi-column forms, handwritten documents, and even low-quality images with exceptional accuracy.',
-      details: 'Our intelligent segmentation technology automatically identifies different document sections, extracting relevant information and organizing it into useful data structures for your downstream systems.',
+      title: 'Processamento de Documentos Complexos',
+      description: 'Diferente de soluções básicas que falham com layouts não padronizados, o AI.OCR processa tabelas complexas, formulários multi-coluna, documentos manuscritos e até imagens de baixa qualidade com precisão excepcional.',
+      details: 'Nossa tecnologia de segmentação inteligente identifica automaticamente diferentes seções do documento, extraindo informações relevantes e organizando-as em estruturas de dados úteis para seus sistemas downstream.',
       icon: FileText
     },
     {
-      title: 'Native Integration and Robust APIs',
-      description: 'AI.OCR integrates seamlessly with your existing systems through RESTful APIs, webhooks, and pre-built connectors for popular ERPs like SAP, Oracle, and Microsoft Dynamics.',
-      details: 'Our microservices architecture enables gradual implementation, starting with specific use cases and expanding as you prove value. We support both batch and real-time processing, adapting to your operational needs.',
+      title: 'Integração Nativa e APIs Robustas',
+      description: 'O AI.OCR se integra perfeitamente com seus sistemas existentes através de APIs RESTful, webhooks e conectores pré-construídos para ERPs populares como SAP, Oracle e Microsoft Dynamics.',
+      details: 'Nossa arquitetura de microsserviços permite implementação gradual, começando com casos de uso específicos e expandindo conforme você comprova o valor. Suportamos processamento em lote e tempo real, adaptando-se às suas necessidades operacionais.',
       icon: Cpu
     }
   ];
 
   const useCases = [
     {
-      title: 'Healthcare Transformation',
-      description: 'Hospitals and clinics use AI.OCR to digitize medical records, process exam results, and automate data entry into hospital systems. Our technology recognizes medical handwriting with 98% accuracy, including prescriptions and clinical notes.',
-      result: 'A 500-bed hospital saved $240,000 annually by automating the processing of 8,000 medical documents monthly, reducing result availability time from 24 hours to 15 minutes.',
+      title: 'Transformação na Saúde',
+      description: 'Hospitais e clínicas usam o AI.OCR para digitalizar prontuários médicos, processar resultados de exames e automatizar entrada de dados em sistemas hospitalares. Nossa tecnologia reconhece caligrafia médica com 98% de precisão, incluindo prescrições e anotações clínicas.',
+      result: 'Um hospital de 500 leitos economizou R$ 1,2M anualmente automatizando o processamento de 8.000 documentos médicos mensais, reduzindo o tempo de disponibilidade de resultados de 24 horas para 15 minutos.',
       icon: Hospital,
-      industry: 'Healthcare'
+      industry: 'Saúde'
     },
     {
-      title: 'Financial Sector Revolution',
-      description: 'Banks and insurers process contracts, policies, and KYC documents automatically, accelerating approvals and reducing operational risks. Our solution extracts critical data like values, due dates, and customer information with banking-grade accuracy.',
-      result: 'An insurance company reduced claims processing time from 5 days to 2 hours, automatically processing 15,000 documents monthly and saving $180,000 in operational costs.',
+      title: 'Revolução no Setor Financeiro',
+      description: 'Bancos e seguradoras processam contratos, apólices e documentos KYC automaticamente, acelerando aprovações e reduzindo riscos operacionais. Nossa solução extrai dados críticos como valores, datas de vencimento e informações de clientes com precisão bancária.',
+      result: 'Uma seguradora reduziu o tempo de processamento de sinistros de 5 dias para 2 horas, processando automaticamente 15.000 documentos mensais e economizando R$ 900.000 em custos operacionais.',
       icon: Building2,
-      industry: 'Financial Services'
+      industry: 'Serviços Financeiros'
     },
     {
-      title: 'Public Sector Modernization',
-      description: 'Government agencies digitize historical archives, process citizen forms, and automate administrative protocols. Our technology processes documents with superior accuracy, including handwritten forms and official stamps.',
-      result: 'A city government digitized 500,000 historical documents in 6 months, creating a searchable digital archive that improved citizen service and reduced storage costs by 70%.',
+      title: 'Modernização do Setor Público',
+      description: 'Órgãos governamentais digitalizam arquivos históricos, processam formulários de cidadãos e automatizam protocolos administrativos. Nossa tecnologia processa documentos com precisão superior, incluindo formulários manuscritos e carimbos oficiais.',
+      result: 'Uma prefeitura digitalizou 500.000 documentos históricos em 6 meses, criando um arquivo digital pesquisável que melhorou o atendimento ao cidadão e reduziu custos de armazenamento em 70%.',
       icon: Landmark,
-      industry: 'Government'
+      industry: 'Governo'
     }
   ];
 
@@ -124,9 +124,9 @@ export default function AIOCRSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  AI.OCR: Transform Any Document into{' '}
+                  AI.OCR: Transforme Qualquer Documento em{' '}
                   <span className="bg-gradient-ai bg-clip-text text-transparent">
-                    Structured Data
+                    Dados Estruturados
                   </span>
                 </h1>
                 
@@ -135,10 +135,10 @@ export default function AIOCRSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  The most accurate optical character recognition solution in the market. 
-                  Process contracts, invoices, medical reports, and forms with{' '}
-                  <span className="text-ai-green font-bold">99.9% accuracy</span>,{' '}
-                  <span className="text-ai-blue font-bold">50x faster</span> than manual typing.
+                  A solução de reconhecimento óptico de caracteres mais precisa do mercado. 
+                  Processe contratos, faturas, relatórios médicos e formulários com{' '}
+                  <span className="text-ai-green font-bold">99,9% de precisão</span>,{' '}
+                  <span className="text-ai-blue font-bold">50x mais rápido</span> que digitação manual.
                 </p>
 
                 {/* Key Benefits */}
@@ -165,13 +165,13 @@ export default function AIOCRSection() {
                   }`}
                 >
                   <Button variant="ai_primary" size="xl" className="group shadow-2xl">
-                    Try Free for 7 Days
+                    Teste Grátis por 7 Dias
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                  <Button variant="ai_outline" size="xl" className="group">
-                    Watch Live Demo
+                  {/* <Button variant="ai_outline" size="xl" className="group">
+                    Assistir Demo ao Vivo
                     <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
 
@@ -233,29 +233,29 @@ export default function AIOCRSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">The Problem You Face</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">O Problema Que Você Enfrenta</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Your company processes thousands of documents monthly, but still relies on manual typing 
-                    or inaccurate OCR solutions that generate more work than savings. Transcription errors cost 
-                    time, money, and credibility, while your team wastes hours on repetitive tasks that could be automated.
+                    Sua empresa processa milhares de documentos mensalmente, mas ainda depende de digitação manual 
+                    ou soluções OCR imprecisas que geram mais trabalho do que economia. Erros de transcrição custam 
+                    tempo, dinheiro e credibilidade, enquanto sua equipe desperdiça horas em tarefas repetitivas que poderiam ser automatizadas.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Handwritten documents, complex forms, and non-standardized layouts are nightmares for traditional 
-                    OCR solutions. You need technology that understands context, automatically corrects errors, 
-                    and adapts to your specific documents, not the other way around.
+                    Documentos manuscritos, formulários complexos e layouts não padronizados são pesadelos para soluções 
+                    OCR tradicionais. Você precisa de tecnologia que entenda contexto, corrija erros automaticamente 
+                    e se adapte aos seus documentos específicos, não o contrário.
                   </p>
 
                   {/* Problem Stats */}
                   <div className="bg-red-50 rounded-2xl p-6 border-l-4 border-red-400">
-                    <h4 className="font-bold text-red-800 mb-4">Current Challenges:</h4>
+                    <h4 className="font-bold text-red-800 mb-4">Desafios Atuais:</h4>
                     <ul className="space-y-2 text-red-700">
-                      <li className="flex items-center"><Clock className="w-4 h-4 mr-2" />Hours wasted on manual data entry</li>
-                      <li className="flex items-center"><AlertTriangle className="w-4 h-4 mr-2" />High error rates costing credibility</li>
-                      <li className="flex items-center"><TrendingUp className="w-4 h-4 mr-2" />Rising operational costs</li>
+                      <li className="flex items-center"><Clock className="w-4 h-4 mr-2" />Horas desperdiçadas em entrada manual de dados</li>
+                      <li className="flex items-center"><AlertTriangle className="w-4 h-4 mr-2" />Altas taxas de erro custando credibilidade</li>
+                      <li className="flex items-center"><TrendingUp className="w-4 h-4 mr-2" />Custos operacionais crescentes</li>
                     </ul>
                   </div>
                 </div>
@@ -265,29 +265,29 @@ export default function AIOCRSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Our Revolutionary Solution</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Solução Revolucionária</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    AI.OCR uses advanced neural networks trained on millions of documents to recognize text 
-                    with human accuracy but superhuman speed. Our AI doesn't just read characters - 
-                    it understands context, validates information, and structures data automatically.
+                    O AI.OCR usa redes neurais avançadas treinadas em milhões de documentos para reconhecer texto 
+                    com precisão humana, mas velocidade sobre-humana. Nossa IA não apenas lê caracteres - 
+                    ela entende contexto, valida informações e estrutura dados automaticamente.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Unlike generic solutions, our system learns from your specific documents, continuously 
-                    improving accuracy for your use cases. Whether medical handwriting, government forms, 
-                    or legal contracts, AI.OCR adapts and evolves.
+                    Diferente de soluções genéricas, nosso sistema aprende com seus documentos específicos, melhorando 
+                    continuamente a precisão para seus casos de uso. Seja caligrafia médica, formulários governamentais 
+                    ou contratos legais, o AI.OCR se adapta e evolui.
                   </p>
 
                   {/* Solution Benefits */}
                   <div className="bg-ai-green/10 rounded-2xl p-6 border-l-4 border-ai-green">
-                    <h4 className="font-bold text-ai-green mb-4">AI.OCR Advantages:</h4>
+                    <h4 className="font-bold text-ai-green mb-4">Vantagens do AI.OCR:</h4>
                     <ul className="space-y-2 text-ai-dark">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-ai-green" />Human-level accuracy with machine speed</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-ai-green" />Context-aware processing</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-ai-green" />Continuous learning and improvement</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-ai-green" />Precisão humana com velocidade de máquina</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-ai-green" />Processamento consciente de contexto</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-ai-green" />Aprendizado contínuo e melhoria</li>
                     </ul>
                   </div>
                 </div>
@@ -301,14 +301,14 @@ export default function AIOCRSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Advanced Technical{' '}
+                Recursos Técnicos{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Features
+                  Avançados
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Discover the cutting-edge technology that makes AI.OCR the most accurate 
-                and reliable document processing solution available.
+                Descubra a tecnologia de ponta que torna o AI.OCR a solução de processamento 
+                de documentos mais precisa e confiável disponível.
               </p>
             </div>
 
@@ -366,13 +366,13 @@ export default function AIOCRSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Real-World{' '}
+                Casos de Sucesso{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Success Stories
+                  do Mundo Real
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                See how organizations across industries are transforming their operations with AI.OCR.
+                Veja como organizações de diversos setores estão transformando suas operações com o AI.OCR.
               </p>
             </div>
 
@@ -431,15 +431,15 @@ export default function AIOCRSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your{' '}
+              Pronto para Transformar Seu{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Document Processing?
+                Processamento de Documentos?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join thousands of organizations that have already revolutionized their operations with AI.OCR. 
-              Start your free trial today and experience the future of document processing.
+              Junte-se a milhares de organizações que já revolucionaram suas operações com o AI.OCR. 
+              Comece seu teste gratuito hoje e experimente o futuro do processamento de documentos.
             </p>
 
             {/* Trust Indicators */}
@@ -470,36 +470,36 @@ export default function AIOCRSection() {
                 size="xl" 
                 className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
               >
-                Try Free for 7 Days
+                Teste Grátis por 7 Dias
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
+              {/* <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Watch Live Demo
+                Assistir Demo ao Vivo
                 <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button>
-              <Button 
+              </Button> */}
+              {/* <Button 
                 variant="ghost" 
                 size="xl" 
                 className="text-white hover:bg-white/10 group"
               >
-                Download Datasheet
+                Baixar Ficha Técnica
                 <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our AI specialists at{' '}
-              <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (800) 123-4567
+              Dúvidas? Entre em contato com nossos especialistas em IA pelo{' '}
+              <a href="tel:+55-11-3456-7890" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                +55 (11) 5039-4877 / +1 (619) 306-9274
               </a>{' '}
-              or{' '}
-              <a href="mailto:ai-ocr@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                ai-ocr@itcygnus.com
+              ou{' '}
+              <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                contact@itcygnus.com
               </a>
             </p>
           </div>

@@ -682,7 +682,7 @@ export default function EchoAIHubSection() {
             <p className="text-white/60 text-sm">
               Questions? Contact our contact center specialists at{' '}
               <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (800) 123-4567
+                +55 (11) 5039-4877
               </a>{' '}
               or{' '}
               <a href="mailto:contactcenter@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">

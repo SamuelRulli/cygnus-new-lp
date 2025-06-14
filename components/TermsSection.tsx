@@ -126,7 +126,7 @@ export default function TermsSection() {
               >
                 ITCygnus{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Terms of Service
+                  Termos de Serviço
                 </span>
               </h1>
               
@@ -135,7 +135,7 @@ export default function TermsSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                <strong>Last updated: June 8, 2025</strong>
+                <strong>Última atualização: 13 de Junho de 2025</strong>
               </p>
 
               <p 
@@ -143,8 +143,8 @@ export default function TermsSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                These terms govern the use of our services and platform. By using our services, 
-                you agree to these terms and our privacy policy.
+                Estes termos regem o uso de nossos serviços e plataforma. Ao utilizar nossos serviços,
+                você concorda com estes termos e com nossa política de privacidade.
               </p>
             </div>
           </div>
@@ -157,12 +157,12 @@ export default function TermsSection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <FileText className="w-8 h-8 text-ai-blue mr-4" />
-                Service Description
+                Descrição do Serviço
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                ITCygnus provides enterprise artificial intelligence solutions, including document processing, 
-                intelligent data management, and process automation. Our services are provided through APIs, 
-                web interfaces, and custom integrations.
+                A ITCygnus fornece soluções de inteligência artificial empresarial, incluindo processamento de documentos,
+                gestão inteligente de dados e automação de processos. Nossos serviços são disponibilizados através de APIs,
+                interfaces web e integrações personalizadas, em conformidade com as normas brasileiras.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -187,16 +187,16 @@ export default function TermsSection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <User className="w-8 h-8 text-ai-green mr-4" />
-                Customer Responsibilities
+                Responsabilidades do Cliente
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                The customer is responsible for providing accurate data, maintaining security of access 
-                credentials, using services according to provided documentation, and complying with all 
-                applicable laws regarding processed data.
+                O cliente é responsável por fornecer dados precisos, manter a segurança das credenciais de acesso,
+                utilizar os serviços de acordo com a documentação fornecida e cumprir todas as leis aplicáveis
+                relativas aos dados processados, incluindo a LGPD.
               </p>
 
               <div className="bg-ai-light/20 rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-ai-dark mb-6">Your Responsibilities Include:</h3>
+                <h3 className="text-xl font-bold text-ai-dark mb-6">Suas responsabilidades incluem:</h3>
                 <div className="space-y-3">
                   {customerResponsibilities.map((responsibility, index) => (
                     <div key={index} className="flex items-start space-x-3">
@@ -212,12 +212,12 @@ export default function TermsSection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <Award className="w-8 h-8 text-ai-blue mr-4" />
-                Warranties and Limitations
+                Garantias e Limitações
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                We guarantee 99.9% uptime for our services, minimum 99% accuracy in document processing, 
-                and 24/7 technical support. Our liability is limited to the amount paid for services 
-                in the 12-month period.
+                Garantimos 99.9% de disponibilidade dos nossos serviços, no mínimo 99% de precisão no processamento de documentos,
+                e suporte técnico 24/7. Nossa responsabilidade é limitada ao valor pago pelos serviços
+                no período de 12 meses, conforme legislação brasileira aplicável.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -245,20 +245,20 @@ export default function TermsSection() {
               <div>
                 <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                   <Shield className="w-6 h-6 text-ai-blue mr-3" />
-                  Acceptable Use Policy
+                  Política de Uso Aceitável
                 </h3>
                 <p className="text-ai-medium leading-relaxed mb-6">
-                  You agree to use our services only for lawful purposes and in accordance with these Terms. 
-                  Prohibited uses include, but are not limited to:
+                  Você concorda em utilizar nossos serviços apenas para fins legais e de acordo com estes Termos.
+                  Usos proibidos incluem, mas não se limitam a:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
-                    'Processing illegal or harmful content',
-                    'Attempting to breach system security',
-                    'Interfering with service availability',
-                    'Violating intellectual property rights',
-                    'Sharing access credentials with unauthorized users',
-                    'Using services for competitive intelligence'
+                    'Processar conteúdo ilegal ou prejudicial',
+                    'Tentar violar a segurança do sistema',
+                    'Interferir na disponibilidade do serviço',
+                    'Violar direitos de propriedade intelectual',
+                    'Compartilhar credenciais de acesso com usuários não autorizados',
+                    'Usar os serviços para inteligência competitiva'
                   ].map((prohibition, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <AlertCircle className="w-4 h-4 text-red-500 flex-shrink-0" />
@@ -272,19 +272,19 @@ export default function TermsSection() {
               <div className="bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                   <Lock className="w-6 h-6 text-ai-green mr-3" />
-                  Data Protection and Privacy
+                  Proteção de Dados e Privacidade
                 </h3>
                 <p className="text-ai-medium leading-relaxed mb-4">
-                  We are committed to protecting your data and maintaining compliance with applicable privacy laws:
+                  Estamos comprometidos em proteger seus dados e manter conformidade com as leis de privacidade aplicáveis:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
-                    'GDPR and CCPA compliance',
-                    'SOC 2 Type II certification',
-                    'End-to-end data encryption',
-                    'Regular security audits',
-                    'Data residency options',
-                    'Right to data portability'
+                    'Conformidade com LGPD e GDPR',
+                    'Certificação SOC 2 Tipo II',
+                    'Criptografia de ponta a ponta',
+                    'Auditorias regulares de segurança',
+                    'Opções de residência de dados',
+                    'Direito à portabilidade de dados'
                   ].map((protection, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-ai-green flex-shrink-0" />
@@ -298,13 +298,13 @@ export default function TermsSection() {
               <div>
                 <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                   <Book className="w-6 h-6 text-ai-blue mr-3" />
-                  Intellectual Property
+                  Propriedade Intelectual
                 </h3>
                 <p className="text-ai-medium leading-relaxed">
-                  All rights, title, and interest in and to the services, including all intellectual property 
-                  rights, remain with ITCygnus. You retain ownership of your data and content processed 
-                  through our services. We grant you a limited, non-exclusive license to use our services 
-                  in accordance with these Terms.
+                  Todos os direitos, títulos e interesses nos serviços, incluindo todos os direitos de propriedade
+                  intelectual, permanecem com a ITCygnus. Você mantém a propriedade de seus dados e conteúdo
+                  processados através de nossos serviços. Nós concedemos a você uma licença limitada, não exclusiva
+                  para usar nossos serviços de acordo com estes Termos.
                 </p>
               </div>
 
@@ -312,12 +312,13 @@ export default function TermsSection() {
               <div>
                 <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                   <AlertCircle className="w-6 h-6 text-ai-green mr-3" />
-                  Termination
+                  Rescisão
                 </h3>
                 <p className="text-ai-medium leading-relaxed">
-                  Either party may terminate this agreement with 7 Days written notice. We may immediately 
-                  terminate or suspend access for violations of these Terms or non-payment. Upon termination, 
-                  you will have 90 days to export your data before it is permanently deleted.
+                  Qualquer uma das partes pode rescindir este acordo com 7 dias de aviso prévio por escrito. Podemos
+                  imediatamente rescindir ou suspender o acesso por violações destes Termos ou não pagamento. Após a rescisão,
+                  você terá 90 dias para exportar seus dados antes que sejam permanentemente excluídos, conforme previsto
+                  na LGPD.
                 </p>
               </div>
 
@@ -325,13 +326,13 @@ export default function TermsSection() {
               <div>
                 <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                   <DollarSign className="w-6 h-6 text-ai-blue mr-3" />
-                  Limitation of Liability
+                  Limitação de Responsabilidade
                 </h3>
                 <p className="text-ai-medium leading-relaxed">
-                  To the maximum extent permitted by law, ITCygnus's total liability for any claims arising 
-                  from or related to the services shall not exceed the amount paid by you for the services 
-                  in the 12 months preceding the incident. We are not liable for indirect, incidental, 
-                  or consequential damages.
+                  Na máxima extensão permitida por lei, a responsabilidade total da ITCygnus por quaisquer reclamações
+                  decorrentes ou relacionadas aos serviços não excederá o valor pago por você pelos serviços
+                  nos 12 meses anteriores ao incidente. Não somos responsáveis por danos indiretos, incidentais
+                  ou consequenciais, conforme previsto no Código Civil Brasileiro.
                 </p>
               </div>
 
@@ -339,12 +340,12 @@ export default function TermsSection() {
               <div>
                 <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                   <Calendar className="w-6 h-6 text-ai-green mr-3" />
-                  Updates to Terms
+                  Atualizações dos Termos
                 </h3>
                 <p className="text-ai-medium leading-relaxed">
-                  We may update these Terms from time to time. If we make material changes, we will notify 
-                  you at least 7 Days before the changes take effect. Your continued use of the services 
-                  after the effective date constitutes acceptance of the updated Terms.
+                  Podemos atualizar estes Termos periodicamente. Se fizermos alterações significativas, iremos notificá-lo
+                  com pelo menos 7 dias de antecedência antes que as mudanças entrem em vigor. O uso contínuo dos serviços
+                  após a data de vigência constitui aceitação dos Termos atualizados.
                 </p>
               </div>
             </div>
@@ -353,17 +354,17 @@ export default function TermsSection() {
             <div className="mt-16 bg-ai-dark rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Mail className="w-6 h-6 text-ai-green mr-3" />
-                Questions About These Terms?
+                Dúvidas sobre estes Termos?
               </h3>
               <p className="text-white/80 mb-6 leading-relaxed">
-                If you have any questions about these Terms of Service or need clarification 
-                on any provisions, please contact our legal team:
+                Se tiver qualquer dúvida sobre estes Termos de Serviço ou precisar de esclarecimentos
+                sobre qualquer disposição, entre em contato com nosso time jurídico:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-ai-green flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">Email</div>
+                    <div className="font-semibold">E-mail</div>
                     <a href="mailto:legal@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
                       legal@itcygnus.com
                     </a>
@@ -372,9 +373,9 @@ export default function TermsSection() {
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-ai-blue flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">Phone</div>
-                    <a href="tel:+1-305-555-0123" className="text-ai-blue hover:text-ai-blue/80 transition-colors">
-                      +1 (305) 555-0123
+                    <div className="font-semibold">Telefone</div>
+                    <a href="tel:+55-11-98765-4321" className="text-ai-blue hover:text-ai-blue/80 transition-colors">
+                      +55 (11) 5039-4877
                     </a>
                   </div>
                 </div>

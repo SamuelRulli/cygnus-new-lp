@@ -112,82 +112,82 @@ export default function CompanySection() {
   ];
 
   const stats = [
-    { icon: Users, value: '100+', label: 'Organizations Trust Us', color: 'ai-blue' },
-    { icon: Globe, value: '4', label: 'Countries Served', color: 'ai-green' },
-    { icon: Flag, value: '40+', label: 'Languages Supported', color: 'ai-blue' },
-    // { icon: Briefcase, value: '150+', label: 'Team Members', color: 'ai-green' }
+    { icon: Users, value: '10+', label: 'Organizações que Confiam', color: 'ai-blue' },
+    { icon: Globe, value: '2', label: 'Países Atendidos', color: 'ai-green' },
+    { icon: Flag, value: '40+', label: 'Tipos de Documentos', color: 'ai-blue' },
+    { icon: Briefcase, value: '20+', label: 'Team Members', color: 'ai-green' }
   ];
 
   const offices = [
     {
       city: 'São Paulo',
       country: 'Brazil',
-      description: 'Global Headquarters & Development Center',
+      description: 'Sede Global & Centro de Desenvolvimento',
       icon: Building2,
-      details: 'Main development hub with 80+ engineers and data scientists'
+      details: 'Principal centro de desenvolvimento com 80+ engenheiros e cientistas de dados'
     },
     {
       city: 'Orlando',
       country: 'USA',
-      description: 'Americas Operations Center',
+      description: 'Centro de Operações das Américas',
       icon: Building2,
-      details: 'North American sales, support and customer success operations'
+      details: 'Vendas, suporte e operações de sucesso do cliente na América do Norte'
     },
     {
       city: 'San Diego',
       country: 'USA',
-      description: 'Innovation & Research Lab',
+      description: 'Laboratório de Inovação & Pesquisa',
       icon: Building2,
-      details: 'Advanced AI research and emerging technologies development'
+      details: 'Pesquisa avançada em IA e desenvolvimento de tecnologias emergentes'
     }
   ];
 
   const values = [
     {
-      title: 'Enterprise-First Approach',
-      description: 'Born from working with large enterprises, we understand the complexity and scale requirements that true enterprise solutions demand.',
+      title: 'Abordagem Empresarial',
+      description: 'Nascida do trabalho com grandes empresas, entendemos a complexidade e requisitos de escala que soluções empresariais reais demandam.',
       icon: Building2
     },
     {
-      title: 'Results-Driven Innovation',
-      description: 'We believe AI should solve real business problems, not just impress with technology. Every solution we build delivers measurable results.',
+      title: 'Inovação Orientada a Resultados',
+      description: 'Acreditamos que a IA deve resolver problemas reais de negócios, não apenas impressionar com tecnologia. Cada solução que construímos entrega resultados mensuráveis.',
       icon: Target
     },
     {
-      title: 'Rapid Implementation',
-      description: 'Speed matters in business. Our proven methodologies from 12 years of enterprise work ensure you see value quickly without compromising quality.',
+      title: 'Implementação Rápida',
+      description: 'Velocidade é crucial nos negócios. Nossas metodologias comprovadas de 13 anos de trabalho empresarial garantem que você veja valor rapidamente sem comprometer a qualidade.',
       icon: Zap
     },
     {
-      title: 'Deep Specialization',
-      description: 'Generic solutions fail in complex industries. We develop vertical AI that understands your specific sector and regulations.',
+      title: 'Especialização Profunda',
+      description: 'Soluções genéricas falham em indústrias complexas. Desenvolvemos IA vertical que entende seu setor específico e regulamentações.',
       icon: Brain
     }
   ];
 
   const team = [
     {
-      role: 'Data Scientists',
-      count: '45+',
-      description: 'PhD-level AI researchers and machine learning experts',
+      role: 'Cientistas de Dados',
+      count: '6+',
+      description: 'Pesquisadores de IA com PhD e especialistas em machine learning',
       icon: GraduationCap
     },
     {
-      role: 'Software Engineers',
-      count: '60+',
-      description: 'Full-stack developers and platform architects',
+      role: 'Engenheiros de Software',
+      count: '10+',
+      description: 'Desenvolvedores full-stack e arquitetos de plataforma',
       icon: Code
     },
     {
-      role: 'Enterprise Architects',
-      count: '25+',
-      description: 'Former big corp specialists with deep enterprise knowledge',
+      role: 'Arquitetos Empresariais',
+      count: '4+',
+      description: 'Ex-especialistas de grandes corporações com conhecimento profundo em ambientes empresariais',
       icon: Network
     },
     {
-      role: 'Implementation Consultants',
-      count: '20+',
-      description: 'Digital transformation and change management experts',
+      role: 'Consultores de Implementação',
+      count: '50+',
+      description: 'Especialistas em transformação digital e gestão de mudanças',
       icon: Settings
     }
   ];
@@ -219,9 +219,9 @@ export default function CompanySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Pioneers in{' '}
+                Pioneiros em{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Enterprise AI
+                  IA Empresarial
                 </span>
               </h1>
               
@@ -230,9 +230,9 @@ export default function CompanySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Since 2012, ITCygnus has accelerated digital transformation for large enterprises with 
-                cutting-edge technology solutions. From software acceleration to AI-driven innovation, 
-                <span className="text-ai-green font-bold"> leading brands rely on us</span> to automate and revolutionize their most critical business processes.
+                Desde 2012, a ITCygnus acelera a transformação digital de grandes empresas com 
+                soluções tecnológicas de ponta. Da aceleração de software à inovação baseada em IA, 
+                <span className="text-ai-green font-bold"> marcas líderes confiam em nós</span> para automatizar e revolucionar seus processos de negócios mais críticos.
               </p>
 
               {/* Mission Statement */}
@@ -241,18 +241,18 @@ export default function CompanySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                <h2 className="text-2xl font-bold text-ai-dark mb-4">Our Mission</h2>
+                <h2 className="text-2xl font-bold text-ai-dark mb-4">Nossa Missão</h2>
                 <p className="text-lg text-ai-medium leading-relaxed">
-                  <span className="text-ai-blue font-semibold">Democratize access to enterprise artificial intelligence</span>, 
-                  making advanced technologies accessible to organizations of all sizes, always focusing on{' '}
-                  <span className="text-ai-green font-semibold">measurable results</span> and{' '}
-                  <span className="text-ai-blue font-semibold">rapid implementation</span>.
+                  <span className="text-ai-blue font-semibold">Democratizar o acesso à inteligência artificial empresarial</span>, 
+                  tornando tecnologias avançadas acessíveis a organizações de todos os tamanhos, sempre com foco em{' '}
+                  <span className="text-ai-green font-semibold">resultados mensuráveis</span> e{' '}
+                  <span className="text-ai-blue font-semibold">implementação rápida</span>.
                 </p>
               </div>
 
               {/* Company Stats */}
               <div 
-                className={`grid grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-1000 delay-600 ${
+                className={`grid grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-1000 delay-600 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
@@ -278,45 +278,45 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Our{' '}
+                Nossa{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Journey
+                  Jornada
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                From enterprise software acceleration to AI innovation - 12 years of transforming 
-                how large organizations work.
+                Da aceleração de software empresarial à inovação em IA - 13 anos transformando 
+                a forma como grandes organizações trabalham.
               </p>
             </div>
 
             {/* Story Content */}
             <div className="grid lg:grid-cols-2 gap-16 mb-20">
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6">Enterprise Software Acceleration Legacy</h3>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6">Legado de Aceleração de Software Empresarial</h3>
                 <div className="space-y-6 text-lg text-ai-medium leading-relaxed">
                   <p>
-                    ITCygnus was founded in <span className="text-ai-blue font-semibold">2012 as software acceleration specialists</span> for large Brazilian enterprises. We helped Fortune 500 companies optimize legacy systems, modernize critical processes, and accelerate their digital transformation journey.
+                    A ITCygnus foi fundada em <span className="text-ai-blue font-semibold">2012 como especialista em aceleração de software</span> para grandes empresas brasileiras. Ajudamos empresas Fortune 500 a otimizar sistemas legados, modernizar processos críticos e acelerar sua jornada de transformação digital.
                   </p>
                   <p>
-                    Working closely with enterprise clients, we developed deep expertise in understanding complex organizational needs, regulatory requirements, and the scale challenges that only large corporations face.
+                    Trabalhando de perto com clientes empresariais, desenvolvemos profunda expertise em entender necessidades organizacionais complexas, requisitos regulatórios e desafios de escala que apenas grandes corporações enfrentam.
                   </p>
                   <p>
-                    This enterprise-first foundation became our DNA, shaping how we approach every solution - always thinking about <span className="text-ai-green font-semibold">scale, security, and seamless integration</span>.
+                    Essa base focada em empresas tornou-se nosso DNA, moldando como abordamos cada solução - sempre pensando em <span className="text-ai-green font-semibold">escala, segurança e integração perfeita</span>.
                   </p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6">Evolution to AI Leadership</h3>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6">Evolução para Liderança em IA</h3>
                 <div className="space-y-6 text-lg text-ai-medium leading-relaxed">
                   <p>
-                    In 2018, we identified a massive opportunity: <span className="text-ai-blue font-semibold">applying artificial intelligence to solve the document and process automation challenges</span> we'd been tackling manually for years.
+                    Em 2018, identificamos uma grande oportunidade: <span className="text-ai-blue font-semibold">aplicar inteligência artificial para resolver os desafios de automação de documentos e processos</span> que estávamos enfrentando manualmente há anos.
                   </p>
                   <p>
-                    Our first AI product, AI.OCR, was born from months of research in hospitals and offices, observing how professionals lost hours on tasks that could be automated.
+                    Nosso primeiro produto de IA, o AI.OCR, nasceu de meses de pesquisa em hospitais e escritórios, observando como profissionais perdiam horas em tarefas que poderiam ser automatizadas.
                   </p>
                   <p>
-                    Today, we process documents in <span className="text-ai-green font-semibold">over 40 languages</span> and serve clients in <span className="text-ai-blue font-semibold">4 countries</span>, with a team that grew from 5 to over 150 specialists.
+                    Hoje, processamos documentos em <span className="text-ai-green font-semibold">mais de 40 padrões</span> e atendemos clientes em <span className="text-ai-blue font-semibold">2 países</span>, com uma equipe que cresceu de 5 para mais de 20 especialistas.
                   </p>
                 </div>
               </div>
@@ -324,7 +324,7 @@ export default function CompanySection() {
 
             {/* Timeline */}
             <div className="relative">
-              <h3 className="text-2xl font-bold text-ai-dark mb-12 text-center">12 Years of Innovation</h3>
+              <h3 className="text-2xl font-bold text-ai-dark mb-12 text-center">13 Anos de Inovação</h3>
               
               {/* Desktop Timeline */}
               <div className="hidden lg:block">
@@ -389,14 +389,14 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Our{' '}
+                Nossos{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Values
+                  Valores
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                The principles forged through 12 years of enterprise work that guide everything we do 
-                and shape how we build AI solutions for transformation.
+                Os princípios forjados em 13 anos de trabalho empresarial que guiam tudo o que fazemos
+                e moldam como construímos soluções de IA para transformação.
               </p>
             </div>
 
@@ -424,14 +424,14 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Our{' '}
+                Nossa{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Expert Team
+                  Equipe Especializada
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                150+ professionals including data scientists, enterprise architects, and transformation 
-                specialists with deep experience in large-scale implementations.
+                20+ profissionais incluindo cientistas de dados, arquitetos empresariais e especialistas
+                em transformação com vasta experiência em implementações em larga escala.
               </p>
             </div>
 
@@ -460,14 +460,14 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Global{' '}
+                Presença{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Presence
+                  Global
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Strategic locations in key markets across the Americas, enabling us to serve enterprise 
-                clients with local expertise and global scale.
+                Localizações estratégicas em mercados-chave nas Américas, permitindo-nos atender clientes 
+                empresariais com expertise local e escala global.
               </p>
             </div>
 
@@ -494,29 +494,29 @@ export default function CompanySection() {
             <div className="mt-16 bg-gradient-to-br from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Strategically Located Across the Americas
+                  Localizados Estrategicamente nas Américas
                 </h3>
                 <p className="text-ai-medium max-w-2xl mx-auto">
-                  Our three strategic locations enable 24/7 operations and provide comprehensive coverage 
-                  for clients across both North and South American markets.
+                  Nossas três localizações estratégicas permitem operações 24/7 e fornecem cobertura abrangente
+                  para clientes nos mercados da América do Norte e do Sul.
                 </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center p-4 bg-white rounded-xl shadow-sm">
                   <MapPin className="w-6 h-6 text-ai-blue mx-auto mb-2" />
-                  <div className="font-bold text-ai-dark">São Paulo Hub</div>
-                  <div className="text-sm text-ai-medium">Main development & engineering center</div>
+                  <div className="font-bold text-ai-dark">Hub São Paulo</div>
+                  <div className="text-sm text-ai-medium">Centro principal de desenvolvimento e engenharia</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-xl shadow-sm">
                   <MapPin className="w-6 h-6 text-ai-green mx-auto mb-2" />
-                  <div className="font-bold text-ai-dark">Orlando Operations</div>
-                  <div className="text-sm text-ai-medium">Customer success & business operations</div>
+                  <div className="font-bold text-ai-dark">Operações Orlando</div>
+                  <div className="text-sm text-ai-medium">Sucesso do cliente e operações comerciais</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-xl shadow-sm">
                   <MapPin className="w-6 h-6 text-ai-blue mx-auto mb-2" />
-                  <div className="font-bold text-ai-dark">San Diego Innovation</div>
-                  <div className="text-sm text-ai-medium">AI research & emerging technologies</div>
+                  <div className="font-bold text-ai-dark">Inovação San Diego</div>
+                  <div className="text-sm text-ai-medium">Pesquisa em IA e tecnologias emergentes</div>
                 </div>
               </div>
             </div>
@@ -533,16 +533,16 @@ export default function CompanySection() {
           </div>
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Join Our{' '}
+              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
+              Pronto para fazer parte da nossa{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Success Story?
+                História de Sucesso?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join the trusted brands already transforming their operations with IT Cygnus. 
-              Let's build the future of enterprise AI together.
+              Junte-se às marcas que já estão transformando suas operações com a IT Cygnus.
+              Vamos construir o futuro da IA empresarial juntos.
             </p>
 
             {/* CTA Buttons */}
@@ -553,7 +553,7 @@ export default function CompanySection() {
                   size="xl" 
                   className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
                 >
-                  Request Demo
+                  Solicitar Demonstração
                   <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </Link>
@@ -562,7 +562,7 @@ export default function CompanySection() {
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Contact Our Team
+                Fale com Nossa Equipe
                 <Phone className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
               {/* <Button 
@@ -577,13 +577,13 @@ export default function CompanySection() {
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact us at{' '}
+              Dúvidas? Entre em contato conosco pelo{' '}
               <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (800) 123-4567
+                +55 (11) 5039-4877
               </a>{' '}
-              or{' '}
-              <a href="mailto:info@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                info@itcygnus.com
+              ou{' '}
+              <a href="mailto:contato@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                contato@itcygnus.com
               </a>
             </p>
           </div>

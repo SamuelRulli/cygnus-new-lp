@@ -47,35 +47,35 @@ export default function AIPRICEINSIGHTSSection() {
   }, []);
 
   const keyBenefits = [
-    { icon: Activity, text: 'Real-time market analysis' },
-    { icon: Target, text: '95% accurate demand forecasting' },
-    { icon: TrendingUp, text: 'Automatic margin optimization' },
-    { icon: Bell, text: 'Pricing opportunity alerts' }
+    { icon: Activity, text: 'Análise de mercado em tempo real' },
+    { icon: Target, text: '95% de precisão na previsão de demanda' },
+    { icon: TrendingUp, text: 'Otimização automática de margem' },
+    { icon: Bell, text: 'Alertas de oportunidades de preço' }
   ];
 
   const features = [
     {
-      title: 'Dynamic Pricing Intelligence',
-      description: 'Our AI continuously monitors market conditions, competitor pricing, and demand patterns to recommend optimal prices that maximize both revenue and profit margins. The system adapts to seasonal trends, market volatility, and competitive movements in real-time.',
-      details: 'Advanced machine learning algorithms analyze over 200 pricing factors including competitor movements, seasonal patterns, inventory levels, and customer behavior to generate pricing recommendations that increase profitability by an average of 18%.',
+      title: 'Inteligência de Precificação Dinâmica',
+      description: 'Nossa IA monitora continuamente condições de mercado, preços da concorrência e padrões de demanda para recomendar preços ótimos que maximizam tanto receita quanto margens de lucro. O sistema se adapta a tendências sazonais, volatilidade do mercado e movimentos competitivos em tempo real.',
+      details: 'Algoritmos avançados de machine learning analisam mais de 200 fatores de precificação incluindo movimentos da concorrência, padrões sazonais, níveis de estoque e comportamento do cliente para gerar recomendações de preços que aumentam a lucratividade em média 18%.',
       icon: Brain
     },
     {
-      title: 'Competitive Market Analysis',
-      description: 'Track competitor pricing across all channels and platforms automatically. Our system monitors price changes, promotional activities, and market positioning to ensure your pricing strategy remains competitive while protecting margins.',
-      details: 'Real-time competitor monitoring across e-commerce platforms, retail stores, and B2B channels. Automated alerts when competitors change prices, launch promotions, or enter new market segments.',
+      title: 'Análise Competitiva de Mercado',
+      description: 'Rastreie preços da concorrência em todos os canais e plataformas automaticamente. Nosso sistema monitora mudanças de preços, atividades promocionais e posicionamento de mercado para garantir que sua estratégia de preços permaneça competitiva protegendo margens.',
+      details: 'Monitoramento de concorrentes em tempo real através de plataformas de e-commerce, lojas físicas e canais B2B. Alertas automatizados quando concorrentes mudam preços, lançam promoções ou entram em novos segmentos de mercado.',
       icon: Search
     },
     {
-      title: 'Demand Forecasting Engine',
-      description: 'Predict customer demand with 95% accuracy using historical data, market trends, and external factors. Our AI identifies optimal price points that maximize sales volume while maintaining healthy profit margins.',
-      details: 'Multi-variate forecasting models incorporate seasonality, economic indicators, weather patterns, and consumer behavior data to predict demand at different price points with unprecedented accuracy.',
+      title: 'Motor de Previsão de Demanda',
+      description: 'Preveja demanda do cliente com 95% de precisão usando dados históricos, tendências de mercado e fatores externos. Nossa IA identifica pontos de preço ótimos que maximizam volume de vendas mantendo margens de lucro saudáveis.',
+      details: 'Modelos de previsão multivariados incorporam sazonalidade, indicadores econômicos, padrões climáticos e dados de comportamento do consumidor para prever demanda em diferentes pontos de preço com precisão sem precedentes.',
       icon: LineChart
     },
     {
-      title: 'Automated Price Optimization',
-      description: 'Set pricing rules and let our AI automatically adjust prices based on your business objectives. Whether maximizing revenue, profit, or market share, the system continuously optimizes pricing strategies.',
-      details: 'Flexible optimization algorithms that balance multiple objectives including revenue growth, profit maximization, inventory turnover, and competitive positioning. Complete control over pricing constraints and business rules.',
+      title: 'Otimização Automatizada de Preços',
+      description: 'Defina regras de precificação e deixe nossa IA ajustar preços automaticamente baseado em seus objetivos de negócio. Seja maximizando receita, lucro ou participação de mercado, o sistema otimiza continuamente estratégias de precificação.',
+      details: 'Algoritmos de otimização flexíveis que equilibram múltiplos objetivos incluindo crescimento de receita, maximização de lucro, rotatividade de estoque e posicionamento competitivo. Controle completo sobre restrições de preços e regras de negócio.',
       icon: Cpu
     }
   ];
@@ -108,47 +108,47 @@ export default function AIPRICEINSIGHTSSection() {
   ];
 
   const problemStats = [
-    { icon: TrendingUp, stat: '87%', label: 'Of companies struggle with pricing decisions' },
-    { icon: Clock, stat: '40%', label: 'Revenue lost to suboptimal pricing' },
-    { icon: AlertTriangle, stat: '60%', label: 'Pricing decisions based on gut feeling' }
+    { icon: TrendingUp, stat: '87%', label: 'Das empresas lutam com decisões de precificação' },
+    { icon: Clock, stat: '40%', label: 'Receita perdida por precificação subótima' },
+    { icon: AlertTriangle, stat: '60%', label: 'Decisões de preço baseadas em intuição' }
   ];
 
   const solutionBenefits = [
-    { icon: CheckCircle, benefit: 'Real-time competitor price monitoring' },
-    { icon: CheckCircle, benefit: 'AI-powered demand forecasting' },
-    { icon: CheckCircle, benefit: 'Automated margin optimization' },
-    { icon: CheckCircle, benefit: 'Dynamic pricing rule engine' }
+    { icon: CheckCircle, benefit: 'Monitoramento de preços da concorrência em tempo real' },
+    { icon: CheckCircle, benefit: 'Previsão de demanda alimentada por IA' },
+    { icon: CheckCircle, benefit: 'Otimização automática de margem' },
+    { icon: CheckCircle, benefit: 'Motor de regras de precificação dinâmica' }
   ];
 
   const pricingCapabilities = [
     {
-      title: 'Competitive Intelligence',
-      description: 'Monitor competitor pricing across all channels',
+      title: 'Inteligência Competitiva',
+      description: 'Monitore preços da concorrência em todos os canais',
       icon: Search
     },
     {
-      title: 'Demand Analytics',
-      description: 'Predict customer demand at different price points',
+      title: 'Análise de Demanda',
+      description: 'Preveja demanda do cliente em diferentes pontos de preço',
       icon: BarChart3
     },
     {
-      title: 'Margin Optimization',
-      description: 'Maximize profit margins while staying competitive',
+      title: 'Otimização de Margem',
+      description: 'Maximize margens de lucro mantendo competitividade',
       icon: Percent
     },
     {
-      title: 'Price Elasticity Analysis',
-      description: 'Understand how price changes affect demand',
+      title: 'Análise de Elasticidade de Preço',
+      description: 'Entenda como mudanças de preço afetam a demanda',
       icon: Activity
     },
     {
-      title: 'Promotional Planning',
-      description: 'Optimize discount strategies and timing',
+      title: 'Planejamento Promocional',
+      description: 'Otimize estratégias de desconto e timing',
       icon: Target
     },
     {
-      title: 'Market Segmentation',
-      description: 'Tailor pricing for different customer segments',
+      title: 'Segmentação de Mercado',
+      description: 'Personalize preços para diferentes segmentos de clientes',
       icon: PieChart
     }
   ];
@@ -181,9 +181,9 @@ export default function AIPRICEINSIGHTSSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  AI.PRICEINSIGHTS: Pricing Intelligence That{' '}
+                  AI.PRICEINSIGHTS: Inteligência de Preços que{' '}
                   <span className="bg-gradient-ai bg-clip-text text-transparent">
-                    Maximizes Profits
+                    Maximiza Lucros
                   </span>
                 </h1>
                 
@@ -192,10 +192,10 @@ export default function AIPRICEINSIGHTSSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Optimize your pricing strategy with advanced predictive AI. 
-                  Monitor market, competition, and demand in{' '}
-                  <span className="text-ai-green font-bold">real-time</span> to set prices that maximize both{' '}
-                  <span className="text-ai-blue font-bold">margin and competitiveness</span>.
+                  Otimize sua estratégia de preços com IA preditiva avançada. 
+                  Monitore mercado, concorrência e demanda em{' '}
+                  <span className="text-ai-green font-bold">tempo real</span> para definir preços que maximizam{' '}
+                  <span className="text-ai-blue font-bold">margem e competitividade</span>.
                 </p>
 
                 {/* Key Benefits */}
@@ -221,14 +221,20 @@ export default function AIPRICEINSIGHTSSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  <Button variant="ai_primary" size="xl" className="group shadow-2xl">
+                  {/* <Button variant="ai_primary" size="xl" className="group shadow-2xl">
                     Test Price Optimization
                     <Calculator className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
-                  <Button variant="ai_outline" size="xl" className="group">
+                  </Button> */}
+                  {/* <Button variant="ai_outline" size="xl" className="group">
                     View Market Analysis
                     <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
+                  </Button> */}
+                  <Link href="/demo">
+                    <Button variant="ai_primary" size="xl" className="group shadow-2xl">
+                      Agendar Demonstração
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
 
@@ -253,20 +259,20 @@ export default function AIPRICEINSIGHTSSection() {
                         ))}
                       </div>
                       <div className="flex justify-between text-xs text-ai-medium mt-2">
-                        <span>Price</span>
-                        <span>Margin</span>
-                        <span>Competition</span>
+                        <span>Preço</span>
+                        <span>Margem</span>
+                        <span>Concorrência</span>
                       </div>
                     </div>
 
                     {/* Pricing Metrics */}
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                        <div className="text-xs text-ai-medium mb-1">Optimal Price</div>
-                        <div className="text-lg font-bold text-ai-green">$47.99</div>
+                        <div className="text-xs text-ai-medium mb-1">Preço Ótimo</div>
+                        <div className="text-lg font-bold text-ai-green">R$ 47,99</div>
                       </div>
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                        <div className="text-xs text-ai-medium mb-1">Margin</div>
+                        <div className="text-xs text-ai-medium mb-1">Margem</div>
                         <div className="text-lg font-bold text-ai-blue">23%</div>
                       </div>
                     </div>
@@ -290,6 +296,256 @@ export default function AIPRICEINSIGHTSSection() {
           </div>
         </section>
 
+        {/* Brazilian Pharmaceutical Pricing Tables Section */}
+        <section className="py-20 bg-gradient-to-br from-ai-green/5 to-ai-blue/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-ai rounded-2xl mb-6">
+                <Database className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
+                Tabelas de Precificação de{' '}
+                <span className="bg-gradient-ai bg-clip-text text-transparent">
+                  Medicamentos no Brasil
+                </span>
+              </h2>
+              <p className="text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed">
+                No Brasil, as tabelas de precificação de medicamentos são definidas e reguladas por órgãos governamentais, 
+                principalmente pela <span className="font-bold text-ai-blue">CMED (Câmara de Regulação do Mercado de Medicamentos)</span>, 
+                vinculada à Anvisa.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
+              {/* CMED/Anvisa */}
+              <Card className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mr-4">
+                      <Database className="w-6 h-6 text-ai-blue" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-ai-dark">Lista de Preços CMED</h3>
+                      <span className="text-xs text-ai-green font-medium bg-ai-green/10 px-2 py-1 rounded-full">
+                        Anvisa/CMED
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-ai-medium mb-4">
+                    Publicada mensalmente, traz os preços máximos autorizados para comercialização.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">PMC (Preço Máximo ao Consumidor)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">PF (Preço Fábrica)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Genéricos, Similares, Referência</span>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" 
+                    target="_blank"
+                    className="text-ai-blue hover:text-ai-blue/80 text-sm font-medium"
+                  >
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* ABC Farma */}
+              <Card className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-ai-green/10 rounded-xl flex items-center justify-center mr-4">
+                      <Building2 className="w-6 h-6 text-ai-green" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-ai-dark">ABC Farma</h3>
+                      <span className="text-xs text-ai-blue font-medium bg-ai-blue/10 px-2 py-1 rounded-full">
+                        Associação Brasileira
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-ai-medium mb-4">
+                    Publica mensalmente a revista GUIA DA FARMÁCIA, com preços praticados pelo mercado.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Informações comerciais</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Preços médios e margem de lucro</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Usado por farmácias e drogarias</span>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.abcfarma.org.br/" 
+                    target="_blank"
+                    className="text-ai-blue hover:text-ai-blue/80 text-sm font-medium"
+                  >
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Brasíndice */}
+              <Card className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mr-4">
+                      <BarChart3 className="w-6 h-6 text-ai-blue" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-ai-dark">Brasíndice</h3>
+                      <span className="text-xs text-ai-green font-medium bg-ai-green/10 px-2 py-1 rounded-full">
+                        Tabela Privada
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-ai-medium mb-4">
+                    Tabela privada muito utilizada em hospitais e convênios médicos.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Código Brasíndice</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Medicamentos e materiais hospitalares</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Preço unitário e total</span>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://brasindice.com.br/" 
+                    target="_blank"
+                    className="text-ai-blue hover:text-ai-blue/80 text-sm font-medium"
+                  >
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Simpro */}
+              <Card className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-ai-green/10 rounded-xl flex items-center justify-center mr-4">
+                      <Activity className="w-6 h-6 text-ai-green" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-ai-dark">Simpro</h3>
+                      <span className="text-xs text-ai-blue font-medium bg-ai-blue/10 px-2 py-1 rounded-full">
+                        Hospitais e Convênios
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-ai-medium mb-4">
+                    Semelhante ao Brasíndice, também utilizado em hospitais e convênios.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Referência para negociação</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Medicamentos e insumos médicos</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Ambiente hospitalar</span>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://simpro.com.br/" 
+                    target="_blank"
+                    className="text-ai-blue hover:text-ai-blue/80 text-sm font-medium"
+                  >
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* BPS */}
+              <Card className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300 lg:col-span-2 xl:col-span-1">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mr-4">
+                      <Globe className="w-6 h-6 text-ai-blue" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-ai-dark">BPS</h3>
+                      <span className="text-xs text-ai-green font-medium bg-ai-green/10 px-2 py-1 rounded-full">
+                        Ministério da Saúde
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-ai-medium mb-4">
+                    Banco de Preços em Saúde - preços de medicamentos e insumos adquiridos por órgãos públicos.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Compras governamentais</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Controle e análise</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-ai-green" />
+                      <span className="text-sm text-ai-dark">Órgãos públicos</span>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://consultapublica.saude.gov.br/bps/" 
+                    target="_blank"
+                    className="text-ai-blue hover:text-ai-blue/80 text-sm font-medium"
+                  >
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-ai-light/50">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-ai-dark mb-4">
+                  AI.PRICEINSIGHTS para o Mercado Farmacêutico Brasileiro
+                </h3>
+                <p className="text-ai-medium leading-relaxed">
+                  Nossa plataforma integra todas essas fontes de dados oficiais e privadas para fornecer 
+                  inteligência de preços completa e atualizada para o setor farmacêutico brasileiro.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center p-4 bg-ai-blue/10 rounded-lg">
+                  <div className="text-2xl font-bold text-ai-blue mb-2">5+</div>
+                  <div className="text-sm font-medium text-ai-dark">Fontes Integradas</div>
+                </div>
+                <div className="text-center p-4 bg-ai-green/10 rounded-lg">
+                  <div className="text-2xl font-bold text-ai-green mb-2">Real-time</div>
+                  <div className="text-sm font-medium text-ai-dark">Atualizações</div>
+                </div>
+                <div className="text-center p-4 bg-ai-blue/10 rounded-lg">
+                  <div className="text-2xl font-bold text-ai-blue mb-2">100%</div>
+                  <div className="text-sm font-medium text-ai-dark">Conformidade</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Problem/Solution Section */}
         <section className="py-20 bg-gradient-to-br from-ai-light/20 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -298,20 +554,20 @@ export default function AIPRICEINSIGHTSSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">The Pricing Challenge</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">O Desafio da Precificação</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Most companies struggle with pricing decisions, often relying on outdated spreadsheets, 
-                    gut feelings, or simple cost-plus models. Meanwhile, competitors adjust prices dynamically, 
-                    markets shift rapidly, and opportunities for profit optimization slip away daily.
+                    A maioria das empresas luta com decisões de precificação, frequentemente dependendo de planilhas 
+                    desatualizadas, intuição ou modelos simples de custo-mais-margem. Enquanto isso, concorrentes ajustam 
+                    preços dinamicamente, mercados mudam rapidamente e oportunidades de otimização de lucro escapam diariamente.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Manual pricing processes can't keep up with modern market dynamics. By the time you 
-                    analyze competitor movements and adjust your prices, the opportunity has already passed. 
-                    You need intelligent, automated pricing that works 24/7.
+                    Processos manuais de precificação não conseguem acompanhar a dinâmica moderna do mercado. Quando você 
+                    analisa movimentos da concorrência e ajusta seus preços, a oportunidade já passou. Você precisa de 
+                    precificação inteligente e automatizada que funciona 24/7.
                   </p>
 
                   {/* Problem Stats */}
@@ -338,20 +594,20 @@ export default function AIPRICEINSIGHTSSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Our Pricing Intelligence Revolution</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Revolução em Inteligência de Preços</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    AI.PRICEINSIGHTS transforms pricing from guesswork into science. Our AI continuously 
-                    monitors market conditions, competitor movements, and demand patterns to recommend 
-                    optimal prices that maximize both revenue and profit margins.
+                    O AI.PRICEINSIGHTS transforma precificação de adivinhação em ciência. Nossa IA monitora 
+                    continuamente condições de mercado, movimentos da concorrência e padrões de demanda para 
+                    recomendar preços ótimos que maximizam tanto receita quanto margens de lucro.
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    With 95% accurate demand forecasting and real-time market analysis, you'll always 
-                    price competitively while protecting margins. Our automated system works around the 
-                    clock, identifying opportunities and adjusting prices faster than any human team could.
+                    Com 95% de precisão na previsão de demanda e análise de mercado em tempo real, você sempre 
+                    precificará competitivamente protegendo margens. Nosso sistema automatizado funciona 24 horas 
+                    por dia, identificando oportunidades e ajustando preços mais rápido que qualquer equipe humana.
                   </p>
 
                   {/* Solution Benefits */}
@@ -377,14 +633,14 @@ export default function AIPRICEINSIGHTSSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Advanced Pricing{' '}
+                Recursos Avançados de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Capabilities
+                  Precificação
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Comprehensive pricing intelligence tools designed to optimize every aspect 
-                of your pricing strategy and maximize profitability.
+                Ferramentas abrangentes de inteligência de preços projetadas para otimizar 
+                todos os aspectos da sua estratégia de precificação e maximizar a lucratividade.
               </p>
             </div>
 
@@ -416,14 +672,14 @@ export default function AIPRICEINSIGHTSSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Intelligent Pricing{' '}
+                Recursos Inteligentes de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Features
+                  Precificação
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Discover the advanced AI capabilities that transform pricing decisions 
-                from reactive guesswork into proactive profit optimization.
+                Descubra as capacidades avançadas de IA que transformam decisões de precificação 
+                de adivinhação reativa em otimização proativa de lucros.
               </p>
             </div>
 
@@ -476,76 +732,6 @@ export default function AIPRICEINSIGHTSSection() {
           </div>
         </section>
 
-        {/* Use Cases Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Pricing{' '}
-                <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Success Stories
-                </span>
-              </h2>
-              <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                See how companies across industries are maximizing profits with 
-                AI.PRICEINSIGHTS intelligent pricing optimization.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {useCases.map((useCase, index) => {
-                const Icon = useCase.icon;
-                
-                return (
-                  <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-all duration-500 group hover:scale-105">
-                    <CardContent className="p-8">
-                      {/* Header */}
-                      <div className="text-center mb-6">
-                        <div className="w-16 h-16 bg-ai-green/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-8 h-8 text-ai-green" />
-                        </div>
-                        <span className="text-xs text-ai-blue font-medium bg-ai-blue/10 px-3 py-1 rounded-full">
-                          {useCase.industry}
-                        </span>
-                      </div>
-
-                      {/* Content */}
-                      <h3 className="text-xl font-bold text-ai-dark mb-4 text-center">
-                        {useCase.title}
-                      </h3>
-                      
-                      <p className="text-ai-medium leading-relaxed mb-6">
-                        {useCase.description}
-                      </p>
-
-                      {/* Stats */}
-                      <div className="grid grid-cols-3 gap-2 mb-6">
-                        {Object.entries(useCase.stats).map(([key, value], statIndex) => (
-                          <div key={statIndex} className="text-center p-2 bg-ai-green/10 rounded-lg">
-                            <div className="text-lg font-bold text-ai-green">{value}</div>
-                            <div className="text-xs text-ai-medium capitalize">{key}</div>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Results */}
-                      <div className="bg-ai-blue/10 rounded-xl p-4 border-l-4 border-ai-blue">
-                        <h4 className="font-bold text-ai-blue text-sm mb-2 flex items-center">
-                          <Award className="w-4 h-4 mr-2" />
-                          Results Achieved:
-                        </h4>
-                        <p className="text-sm text-ai-dark leading-relaxed">
-                          {useCase.result}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         {/* Final CTA Section */}
         <section className="py-20 bg-gradient-to-br from-ai-dark to-ai-dark/90 relative overflow-hidden">
           {/* Background Pattern */}
@@ -557,24 +743,24 @@ export default function AIPRICEINSIGHTSSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Maximize Your{' '}
+              Pronto para Maximizar Seus{' '}
               <span className="bg-gradient-to-r from-ai-green to-ai-blue bg-clip-text text-transparent">
-                Pricing Profits?
+                Lucros de Precificação?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join leading companies that have already revolutionized their pricing strategies 
-              with AI.PRICEINSIGHTS. Start optimizing for maximum profitability today.
+              Junte-se às empresas líderes que já revolucionaram suas estratégias de precificação 
+              com o AI.PRICEINSIGHTS. Comece a otimizar para máxima lucratividade hoje mesmo.
             </p>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
-                { icon: Target, value: '95%', label: 'Forecast Accuracy' },
-                { icon: TrendingUp, value: '23%', label: 'Average Margin Increase' },
-                { icon: Zap, value: 'Real-time', label: 'Price Optimization' },
-                { icon: Users, value: '200+', label: 'Companies Optimized' }
+                { icon: Target, value: '95%', label: 'Precisão de Previsão' },
+                { icon: TrendingUp, value: '23%', label: 'Aumento Médio de Margem' },
+                { icon: Zap, value: 'Tempo Real', label: 'Otimização de Preços' },
+                // { icon: Users, value: '200+', label: 'Empresas Otimizadas' }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -591,15 +777,13 @@ export default function AIPRICEINSIGHTSSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button 
-                variant="ai_primary" 
-                size="xl" 
-                className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
-              >
-                Test Price Optimization
-                <Calculator className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
+              <Link href="/demo">
+              <Button variant="ai_primary" size="xl" className="group shadow-2xl">
+                Agendar Demonstração
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
+            </Link>
+              {/* <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
@@ -614,18 +798,18 @@ export default function AIPRICEINSIGHTSSection() {
               >
                 Download Pricing Guide
                 <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our pricing specialists at{' '}
-              <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (800) 123-4567
+              Dúvidas? Entre em contato com nossos especialistas em precificação pelo{' '}
+              <a href="tel:+55-11-3456-7890" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                +55 (11) 5039-4877
               </a>{' '}
-              or{' '}
-              <a href="mailto:pricing@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                pricing@itcygnus.com
+              ou{' '}
+              <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+                contact@itcygnus.com
               </a>
             </p>
           </div>

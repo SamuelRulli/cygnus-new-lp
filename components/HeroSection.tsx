@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, BarChart3, Zap, Shield, Users } from 'lucide-react';
+import { ArrowRight, CheckCircle, BarChart3, Zap, Shield, Users, Heart, Activity, Stethoscope, FileText, Brain, Database, Lock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HeroSection() {
@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div className="text-center lg:text-left">
             {/* Main Headline */}
             <h1 
-              className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-ai-dark leading-tight mb-6 transition-all duration-1000 ${
+              className={`text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-ai-dark leading-tight mb-6 transition-all duration-1000 ${
                 isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
               }`}
             >
@@ -82,6 +82,7 @@ export default function HeroSection() {
             </div>
 
             {/* CTAs */}
+            <br />
             <div 
               className={`flex flex-col sm:flex-row gap-4 justify-center lg:justify-start transition-all duration-1000 delay-600 ${
                 isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
@@ -90,13 +91,13 @@ export default function HeroSection() {
               <Button 
                 variant="ai_primary" 
                 size="xl" 
-                className="group shadow-2xl"
-                onClick={() => window.location.href = '/demo'}
+                className="group"
+                onClick={() => window.location.href = '/solutions'}
               >
-                {t('hero.cta.requestDemo')}
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                {t('hero.cta.exploreSolutions')}
+                <Zap className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
-              <Button 
+              {/* <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="group"
@@ -104,7 +105,7 @@ export default function HeroSection() {
               >
                 {t('hero.cta.calculateROI')}
                 <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -119,24 +120,38 @@ export default function HeroSection() {
               <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-ai-light/50">
                 {/* AI Processing Visualization */}
                 <div className="grid grid-cols-3 gap-4 mb-6">
-                  {[...Array(9)].map((_, i) => (
-                    <div 
-                      key={i}
-                      className="aspect-square bg-gradient-ai rounded-lg opacity-80 animate-pulse-slow"
-                      style={{ animationDelay: `${i * 0.2}s` }}
-                    ></div>
-                  ))}
-                </div>
+                      {[
+                        { icon: Heart, color: 'text-red-500' },
+                        { icon: Activity, color: 'text-ai-blue' },
+                        { icon: Stethoscope, color: 'text-ai-green' },
+                        { icon: FileText, color: 'text-ai-blue' },
+                        { icon: Shield, color: 'text-ai-green' },
+                        { icon: Brain, color: 'text-ai-blue' },
+                        { icon: Database, color: 'text-ai-green' },
+                        { icon: Lock, color: 'text-ai-blue' },
+                        { icon: CheckCircle, color: 'text-ai-green' }
+                      ].map((item, i) => {
+                        const Icon = item.icon;
+                        return (
+                          <div 
+                            key={i}
+                            className="aspect-square rounded-lg p-3 flex items-center justify-center bg-gradient-to-br from-ai-blue/10 to-ai-green/10"
+                          >
+                            <Icon className={`w-6 h-6 ${item.color}`} />
+                          </div>
+                        );
+                      })}
+                    </div>
 
                 {/* Metrics Display */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-ai-blue/10 rounded-xl p-4 text-center">
                     <div className="text-2xl font-bold text-ai-blue mb-1">75%</div>
-                    <div className="text-sm text-ai-medium">Time Reduction</div>
+                    <div className="text-sm text-ai-medium">Redução de tempo</div>
                   </div>
                   <div className="bg-ai-green/10 rounded-xl p-4 text-center">
                     <div className="text-2xl font-bold text-ai-green mb-1">99.9%</div>
-                    <div className="text-sm text-ai-medium">Accuracy</div>
+                    <div className="text-sm text-ai-medium">Acurácia</div>
                   </div>
                 </div>
 
@@ -145,6 +160,7 @@ export default function HeroSection() {
                   100+ Companies
                 </div>
               </div>
+              <br />
 
               {/* Additional Floating Elements */}
               <div className="absolute -top-8 -left-8 w-16 h-16 bg-ai-blue/20 rounded-full animate-pulse-slow"></div>

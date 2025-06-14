@@ -15,285 +15,482 @@ import {
   Brain,
   CheckCircle,
   ArrowRight,
-  Heart
+  Heart,
+  Star,
+  Calendar,
+  FileText,
+  Search,
+  Network,
+  DollarSign,
+  Building2,
+  Stethoscope,
+  Activity
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 
 const solutions = [
   {
     id: 'ai-ocr',
-    icon: Eye,
     title: 'AI.OCR',
-    subtitle: 'Intelligent Recognition',
-    description: 'Transform any physical or digital document into structured data with over 99.9% accuracy. Our AI-powered OCR technology processes contracts, invoices, medical reports, and forms in seconds, eliminating human errors and reducing operational costs.',
-    benefits: [
-      '50x faster processing than manual typing',
-      'Native integration with ERP and CRM systems',
-      'Support for 40+ languages',
-      'Automatic validation of extracted data'
-    ],
+    subtitle: 'Reconhecimento Óptico Inteligente',
+    description: 'Transforme qualquer documento em dados estruturados com 99,9% de precisão. Processe contratos, faturas, relatórios médicos e formulários 50x mais rápido que digitação manual.',
+    icon: Eye,
     color: 'ai-blue',
-    gradient: 'from-ai-blue/20 to-ai-blue/5',
+    features: [
+      'Reconhecimento de contexto inteligente',
+      'Suporte a mais de 40 idiomas',
+      'Processamento de documentos complexos',
+      'Integração nativa com APIs robustas'
+    ],
+    benefits: [
+      '99,9% de precisão garantida',
+      '50x mais rápido que digitação manual',
+      'Redução de 85% em erros de transcrição',
+      'ROI positivo em menos de 3 meses'
+    ],
+    industries: ['Saúde', 'Financeiro', 'Governo', 'Seguros'],
     link: '/solutions/ai-ocr'
   },
   {
     id: 'ai-doc',
-    icon: FolderOpen,
     title: 'AI.DOC',
-    subtitle: 'Intelligent Document Management',
-    description: 'Organize, classify, and manage millions of documents automatically. Our solution uses machine learning to categorize, index, and make critical information available when you need it, transforming document chaos into structured knowledge.',
-    benefits: [
-      'Automatic classification by type and content',
-      'Advanced semantic search',
-      'Complete version control and audit trail',
-      'Automated approval workflows'
-    ],
+    subtitle: 'Gestão Inteligente de Documentos',
+    description: 'Organize, classifique e encontre qualquer documento em segundos. Nossa IA transforma o caos documental em conhecimento estruturado com busca semântica avançada.',
+    icon: FolderOpen,
     color: 'ai-green',
-    gradient: 'from-ai-green/20 to-ai-green/5',
+    features: [
+      'Classificação automática por IA',
+      'Busca semântica instantânea',
+      'Fluxos de aprovação automatizados',
+      'Controle de versão e colaboração'
+    ],
+    benefits: [
+      '85% mais rápido na busca de documentos',
+      '100% de organização automática',
+      'Redução de 70% no tempo de auditoria',
+      'Conformidade garantida'
+    ],
+    industries: ['Jurídico', 'Saúde', 'Financeiro', 'Governo'],
     link: '/solutions/ai-doc'
   },
   {
-    id: 'ai-data',
+    id: 'ai-saude',
+    title: 'AI.SAÚDE',
+    subtitle: 'Inteligência Artificial para Saúde',
+    description: 'Revolucione o atendimento médico com IA especializada em saúde. Análise de glosas, processamento de prontuários e otimização de fluxos hospitalares.',
     icon: Heart,
-    title: 'AI.DATA',
-    subtitle: 'Healthcare Claims Processing',
-    description: 'Revolutionize your healthcare claims process with complete automation. From document receipt to final approval, our AI analyzes, validates, and processes claims with medical precision, reducing processing time from weeks to hours.',
-    benefits: [
-      'Automatic eligibility analysis',
-      'Real-time fraud detection',
-      'Integration with payers and providers',
-      'Full regulatory compliance'
+    color: 'red-500',
+    features: [
+      'Análise automática de glosas médicas',
+      'Automatização de fluxo reembolso',
+      'Mais de 300 prefeituras integradas para validação',
     ],
-    color: 'ai-blue',
-    gradient: 'from-ai-blue/20 to-ai-blue/5',
-    link: '/solutions/ai-data'
+    benefits: [
+      'Redução de 60% no tempo de análise de glosas',
+      'Aumento de 40% na recuperação de valores',
+      'Melhoria de 50% na eficiência operacional',
+      'Conformidade 100% com regulamentações'
+    ],
+    industries: ['Hospitais', 'Clínicas', 'Operadoras', 'Laboratórios'],
+    link: '/solutions/ai-saude'
   },
   {
     id: 'ai-priceinsights',
-    icon: TrendingUp,
     title: 'AI.PRICEINSIGHTS',
-    subtitle: 'Pricing Intelligence',
-    description: 'Optimize your pricing strategy with advanced predictive analytics. Our AI monitors market, competition, and demand in real-time, suggesting optimal prices that maximize both margin and competitiveness simultaneously.',
-    benefits: [
-      'Real-time market analysis',
-      '95% accurate demand forecasting',
-      'Automatic margin optimization',
-      'Pricing opportunity alerts'
-    ],
+    subtitle: 'Inteligência de Preços Avançada',
+    description: 'Otimize sua estratégia de preços com IA que analisa mercado, concorrência e demanda em tempo real. Maximize receita e competitividade.',
+    icon: DollarSign,
     color: 'ai-green',
-    gradient: 'from-ai-green/20 to-ai-green/5',
+    features: [
+      'Análise de mercado em tempo real',
+      'Monitoramento de concorrência',
+      'Otimização dinâmica de preços',
+      'Previsão de demanda inteligente'
+    ],
+    benefits: [
+      'Aumento de 25% na margem de lucro',
+      'Redução de 40% no tempo de análise',
+      'Melhoria de 30% na competitividade',
+      'ROI de 300% em 6 meses'
+    ],
+    industries: ['Saúde'],
     link: '/solutions/ai-priceinsights'
   },
   {
     id: 'ai-agents',
-    icon: Bot,
     title: 'AI.AGENTS',
-    subtitle: 'Autonomous Agents',
-    description: 'Deploy virtual assistants that actually work. Our AI agents execute complex tasks, make decisions based on business rules, and interact naturally with customers and systems, operating 24/7 without supervision.',
-    benefits: [
-      '24/7 automated service',
-      'Autonomous task processing',
-      'Infinite scalability',
-      'Continuous learning'
-    ],
+    subtitle: 'Agentes Inteligentes Autônomos',
+    description: 'Agentes de IA que executam tarefas complexas de forma autônoma. Automatize processos de negócio com inteligência artificial conversacional.',
+    icon: Bot,
     color: 'ai-blue',
-    gradient: 'from-ai-blue/20 to-ai-blue/5',
+    features: [
+      'Agentes conversacionais inteligentes',
+      'Automação de processos complexos',
+      'Integração com sistemas empresariais',
+      'Aprendizado contínuo e adaptação'
+    ],
+    benefits: [
+      'Redução de 70% em tarefas manuais',
+      'Disponibilidade 24/7 sem interrupções',
+      'Melhoria de 60% na experiência do cliente',
+      'Economia de 50% em custos operacionais'
+    ],
+    industries: ['Saúde','Financeiro', 'Tecnologia', 'Governo'],
     link: '/solutions/ai-agents'
   },
   {
     id: 'echo-ai-hub',
-    icon: Headphones,
-    title: 'Echo AI Hub',
-    subtitle: 'Intelligent Contact Center',
-    description: 'Transform your customer service with next-generation conversational AI. Our platform integrates voice, text, and data to deliver personalized experiences that resolve 90% of requests automatically.',
-    benefits: [
-      '90% automatic case resolution',
-      'Complete omnichannel integration',
-      'Real-time sentiment analysis',
-      'Intelligent escalation to humans'
+    title: 'ECHO AI HUB',
+    subtitle: 'Plataforma Unificada de IA',
+    description: 'Centralize todas as suas soluções de IA em uma plataforma única. Gerencie, monitore e otimize todos os seus projetos de inteligência artificial.',
+    icon: Network,
+    color: 'purple-500',
+    features: [
+      'Dashboard unificado de IA',
+      'Gerenciamento centralizado de modelos',
+      'Monitoramento em tempo real',
+      'Orquestração de fluxos de trabalho'
     ],
-    color: 'ai-green',
-    gradient: 'from-ai-green/20 to-ai-green/5',
+    benefits: [
+      'Visibilidade completa de projetos de IA',
+      'Redução de 50% no tempo de deployment',
+      'Otimização de recursos e custos',
+      'Governança e compliance centralizados'
+    ],
+    industries: ['Empresas', 'Tecnologia', 'Consultoria', 'Governo'],
     link: '/solutions/echo-ai-hub'
   }
 ];
 
+const trustIndicators = [
+  { icon: Users, value: '5+', label: 'Empresas Atendidas' },
+  { icon: CheckCircle, value: '99.9%', label: 'Precisão Garantida' },
+  { icon: TrendingUp, value: '300%', label: 'ROI Médio' },
+  { icon: Shield, value: '100%', label: 'Conformidade' }
+];
+
 export default function SolutionsSection() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeCard, setActiveCard] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState('all');
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const element = document.getElementById('solutions-section');
-    if (element) observer.observe(element);
-
-    return () => observer.disconnect();
+    setIsVisible(true);
   }, []);
+
+  const filteredSolutions = activeTab === 'all' 
+    ? solutions 
+    : solutions.filter(solution => solution.industries.some(industry => 
+        industry.toLowerCase().includes(activeTab.toLowerCase())
+      ));
 
   return (
     <section id="solutions-section" className="py-20 bg-gradient-to-br from-white via-ai-light/10 to-white relative overflow-hidden">
-      {/* Background Pattern */}
+      {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-96 h-96 bg-ai-blue rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-ai-green rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Header */}
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-6">
-            <div className="w-12 h-12 bg-gradient-ai rounded-2xl flex items-center justify-center mr-4">
-              <Brain className="w-6 h-6 text-white" />
-            </div>
-            <div className="h-px bg-gradient-ai w-24"></div>
-          </div>
-          
-          <h2 className="text-3xl lg:text-5xl font-bold text-ai-dark mb-6">
-            Our Enterprise{' '}
+          <h2 
+            className={`text-4xl lg:text-5xl font-bold text-ai-dark mb-6 transition-all duration-1000 ${
+              isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+            }`}
+          >
+            Nossas{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              AI Solutions
+              Plataformas de IA
             </span>
           </h2>
-          
-          <p className="text-lg lg:text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed">
-            A comprehensive platform that automates everything from document recognition to intelligent 
-            decision-making, tailored to your specific business needs.
+          <p 
+            className={`text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
+              isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+            }`}
+          >
+            Descubra nossa suíte completa de soluções de inteligência artificial, 
+            projetadas para transformar cada aspecto do seu negócio com tecnologia de ponta.
           </p>
         </div>
 
+        {/* Industry Filter Tabs */}
+        <div 
+          className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-1000 delay-400 ${
+            isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          {['all', 'saúde', 'financeiro', 'tecnologia', 'governo'].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                activeTab === tab
+                  ? 'bg-gradient-ai text-white shadow-lg'
+                  : 'bg-white text-ai-medium hover:bg-ai-light/50 border border-ai-light'
+              }`}
+            >
+              {tab === 'all' ? 'Todas as Soluções' : tab.charAt(0).toUpperCase() + tab.slice(1)}
+            </button>
+          ))}
+        </div>
+
         {/* Solutions Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {solutions.map((solution, index) => {
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-20">
+          {filteredSolutions.map((solution, index) => {
             const Icon = solution.icon;
-            const isActive = activeCard === solution.id;
             
             return (
-              <div
+              <Card 
                 key={solution.id}
-                className={`group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 border border-ai-light/50 hover:border-${solution.color}/30 cursor-pointer ${
+                className={`group shadow-xl border-ai-light/50 hover:shadow-2xl transition-all duration-500 hover:scale-105 cursor-pointer transition-all duration-1000 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
-                } ${isActive ? 'scale-105 shadow-2xl' : 'hover:scale-102'}`}
-                style={{ animationDelay: `${index * 150}ms` }}
-                onMouseEnter={() => setActiveCard(solution.id)}
-                onMouseLeave={() => setActiveCard(null)}
+                }`}
+                style={{ animationDelay: `${600 + index * 100}ms` }}
               >
-                {/* Background Gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${solution.gradient} rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-ai rounded-full opacity-20 animate-pulse-slow"></div>
-                <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-ai-green/30 rounded-full animate-float"></div>
-
-                <div className="relative z-10">
+                <CardContent className="p-8">
                   {/* Header */}
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="flex items-center space-x-4">
-                      <div className={`w-16 h-16 bg-${solution.color}/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        <Icon className={`w-8 h-8 text-${solution.color}`} />
-                      </div>
-                      <div>
-                        <h3 className={`text-2xl font-bold text-${solution.color} mb-1 group-hover:scale-105 transition-transform duration-300`}>
-                          {solution.title}
-                        </h3>
-                        <p className="text-ai-medium font-medium">
-                          {solution.subtitle}
-                        </p>
-                      </div>
+                  <div className="text-center mb-6">
+                    <div className={`w-16 h-16 bg-${solution.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className={`w-8 h-8 text-${solution.color}`} />
                     </div>
-                    <div className={`w-3 h-3 bg-${solution.color} rounded-full animate-pulse-slow`}></div>
+                    <h3 className="text-2xl font-bold text-ai-dark mb-2">
+                      {solution.title}
+                    </h3>
+                    <p className="text-sm text-ai-medium font-medium">
+                      {solution.subtitle}
+                    </p>
                   </div>
 
                   {/* Description */}
-                  <p className="text-ai-medium leading-relaxed mb-6">
+                  <p className="text-ai-medium leading-relaxed mb-6 text-center">
                     {solution.description}
                   </p>
 
-                  {/* Benefits */}
-                  <div className="space-y-3 mb-6">
-                    <h4 className="text-ai-dark font-semibold text-sm uppercase tracking-wide">
-                      Key Benefits
-                    </h4>
+                  {/* Key Features */}
+                  <div className="mb-6">
+                    <h4 className="font-bold text-ai-dark text-sm mb-3">Recursos Principais:</h4>
                     <ul className="space-y-2">
-                      {solution.benefits.map((benefit, benefitIndex) => (
-                        <li 
-                          key={benefitIndex} 
-                          className="flex items-start space-x-3 text-sm text-ai-medium"
-                        >
-                          <CheckCircle className={`w-4 h-4 text-${solution.color} mt-0.5 flex-shrink-0`} />
-                          <span>{benefit}</span>
+                      {solution.features.slice(0, 3).map((feature, idx) => (
+                        <li key={idx} className="flex items-center text-sm text-ai-medium">
+                          <CheckCircle className="w-4 h-4 text-ai-green mr-2 flex-shrink-0" />
+                          {feature}
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  {/* CTA */}
-                  {solution.link !== '#' ? (
-                    <Link href={solution.link}>
-                      <Button 
-                        variant="ghost" 
-                        className={`w-full text-${solution.color} hover:bg-${solution.color}/10 group/btn border border-${solution.color}/20 hover:border-${solution.color}/40`}
-                      >
-                        Learn More About {solution.title}
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                      </Button>
-                    </Link>
-                  ) : (
-                    <Button 
-                      variant="ghost" 
-                      className={`w-full text-${solution.color} hover:bg-${solution.color}/10 group/btn border border-${solution.color}/20 hover:border-${solution.color}/40`}
-                    >
-                      Learn More About {solution.title}
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
-                  )}
-                </div>
+                  {/* Benefits */}
+                  <div className="mb-6">
+                    <h4 className="font-bold text-ai-dark text-sm mb-3">Benefícios:</h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {solution.benefits.slice(0, 2).map((benefit, idx) => (
+                        <div key={idx} className={`text-center p-2 bg-${solution.color}/10 rounded-lg`}>
+                          <div className={`text-lg font-bold text-${solution.color} mb-1`}>
+                            {benefit.split(' ')[0]}
+                          </div>
+                          <div className="text-xs text-ai-medium">
+                            {benefit.split(' ').slice(1).join(' ')}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
-                {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                  {/* Industries */}
+                  <div className="mb-6">
+                    <h4 className="font-bold text-ai-dark text-sm mb-3">Setores:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {solution.industries.slice(0, 3).map((industry, idx) => (
+                        <span 
+                          key={idx}
+                          className="text-xs bg-ai-light/50 text-ai-medium px-2 py-1 rounded-full"
+                        >
+                          {industry}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA */}
+                  <Link href={solution.link}>
+                    <Button 
+                      variant="ai_outline" 
+                      className="w-full group-hover:bg-gradient-ai group-hover:text-white group-hover:border-transparent transition-all duration-300"
+                    >
+                      Saiba Mais
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Trust Indicators */}
+        <div 
+          className={`grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16 transition-all duration-1000 delay-800 ${
+            isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          {trustIndicators.map((indicator, index) => {
+            const Icon = indicator.icon;
+            return (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-ai-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon className="w-8 h-8 text-ai-blue" />
+                </div>
+                <div className="text-3xl font-bold text-ai-dark mb-2">{indicator.value}</div>
+                <div className="text-ai-medium font-medium">{indicator.label}</div>
               </div>
             );
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-ai-light/50 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-ai-dark mb-4">
-              Ready to Transform Your Business Processes?
+        {/* Client Carousel Section */}
+        <div className="mt-24 py-12 bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-3xl overflow-hidden">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-3xl font-bold text-ai-dark mb-12 text-center">
+              Empresas que <span className="bg-gradient-ai bg-clip-text text-transparent">confiam</span> em nós
             </h3>
-            <p className="text-ai-medium mb-6 leading-relaxed">
-              Discover how our AI solutions can be customized for your specific industry and use cases. 
-              Schedule a personalized demo to see the technology in action.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="ai_primary" 
-                size="lg" 
-                className="group"
-                onClick={() => window.location.href = '/demo'}
-              >
-                Schedule Custom Demo
-                <Zap className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button>
-              <Button variant="ai_outline" size="lg" className="group">
-                Download Solution Brief
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+            
+            <div className="relative overflow-hidden">
+              {/* Carousel Container */}
+              <div className="relative h-40">
+                {/* Carousel Track */}
+                <div className="flex absolute top-0 left-0 client-carousel items-center">
+                  {[
+                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/abastece-ai.png',
+                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/itau-saude.png',
+                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
+                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-saude.png',
+                  ].flatMap((logo, i) => [logo, logo]).map((logo, index) => (
+                    <div key={index} className="flex-shrink-0 px-8 w-64">
+                      <img 
+                        src={logo}
+                        alt="Client logo"
+                        className="h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Gradient Overlays */}
+              <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
             </div>
           </div>
         </div>
+
+        {/* Final CTA */}
+        <div 
+          className={`text-center mt-16 transition-all duration-1000 delay-1000 ${
+            isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          <h3 className="text-3xl font-bold text-ai-dark mb-6">
+            Pronto para Transformar Seu Negócio com{' '}
+            <span className="bg-gradient-ai bg-clip-text text-transparent">
+              Inteligência Artificial?
+            </span>
+          </h3>
+          <p className="text-lg text-ai-medium mb-8 max-w-3xl mx-auto">
+            Descubra como nossas soluções de IA podem revolucionar suas operações, 
+            aumentar eficiência e impulsionar resultados extraordinários.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/demo">
+              <Button variant="ai_primary" size="xl" className="group shadow-2xl">
+                Agendar Demonstração
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            {/* <Link href="/roi-calculator">
+              <Button variant="ai_outline" size="xl" className="group">
+                Calcular ROI
+                <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
+              </Button>
+            </Link> */}
+          </div>
+        </div>
       </div>
+
+      {/* CSS for carousel animation */}
+      <style jsx>{`
+        .client-carousel {
+          animation: scroll 30s linear infinite;
+          width: calc(256px * 8); /* 8 logos * 256px width */
+        }
+
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .animate-scale-in {
+          animation: scaleIn 1s ease-out forwards;
+        }
+
+        .animate-pulse-slow {
+          animation: pulse 3s ease-in-out infinite;
+        }
+
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes scaleIn {
+          from {
+            opacity: 0;
+            transform: scale(0.9);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.5;
+          }
+        }
+
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+      `}</style>
     </section>
   );
 }

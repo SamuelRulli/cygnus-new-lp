@@ -66,26 +66,26 @@ export default function SecuritySection() {
 
   const securityPillars = [
     {
-      title: 'Data Protection',
-      description: 'End-to-end encryption and secure data handling',
+      title: 'Proteção de Dados',
+      description: 'Criptografia ponta a ponta e manipulação segura de dados',
       icon: Lock,
       color: 'ai-blue'
     },
     {
-      title: 'Access Control',
-      description: 'Multi-factor authentication and role-based permissions',
+      title: 'Controle de Acesso',
+      description: 'Autenticação multifator e permissões baseadas em funções',
       icon: Key,
       color: 'ai-green'
     },
     {
-      title: 'Infrastructure Security',
-      description: 'Secure cloud architecture with defense in depth',
+      title: 'Segurança de Infraestrutura',
+      description: 'Arquitetura em nuvem segura com defesa em profundidade',
       icon: Server,
       color: 'ai-blue'
     },
     {
-      title: 'Continuous Monitoring',
-      description: '24/7 security monitoring and threat detection',
+      title: 'Monitoramento Contínuo',
+      description: 'Monitoramento de segurança 24/7 e detecção de ameaças',
       icon: Radar,
       color: 'ai-green'
     }
@@ -93,42 +93,42 @@ export default function SecuritySection() {
 
   const securityMeasures = [
     {
-      category: 'Data Encryption',
+      category: 'Criptografia de Dados',
       measures: [
-        'AES-256 encryption for data at rest',
-        'TLS 1.3 for data in transit',
-        'End-to-end encryption for sensitive communications',
-        'Hardware Security Modules (HSM) for key management'
+        'Criptografia AES-256 para dados em repouso',
+        'TLS 1.3 para dados em trânsito',
+        'Criptografia ponta a ponta para comunicações sensíveis',
+        'Módulos de Segurança de Hardware (HSM) para gerenciamento de chaves'
       ],
       icon: Lock
     },
     {
-      category: 'Access Security',
+      category: 'Segurança de Acesso',
       measures: [
-        'Multi-factor authentication (MFA) required',
-        'Role-based access control (RBAC)',
-        'Single sign-on (SSO) integration',
-        'Regular access reviews and deprovisioning'
+        'Autenticação multifator (MFA) obrigatória',
+        'Controle de acesso baseado em funções (RBAC)',
+        'Integração com Single Sign-On (SSO)',
+        'Revisões regulares de acesso e desprovisionamento'
       ],
       icon: Key
     },
     {
-      category: 'Infrastructure Protection',
+      category: 'Proteção de Infraestrutura',
       measures: [
-        'Web Application Firewall (WAF)',
-        'DDoS protection and mitigation',
-        'Intrusion detection and prevention systems',
-        'Network segmentation and micro-segmentation'
+        'Firewall para Aplicações Web (WAF)',
+        'Proteção e mitigação contra DDoS',
+        'Sistemas de detecção e prevenção de intrusões',
+        'Segmentação de rede e micro-segmentação'
       ],
       icon: Shield
     },
     {
-      category: 'Application Security',
+      category: 'Segurança de Aplicações',
       measures: [
-        'Secure code development practices',
-        'Regular penetration testing',
-        'Vulnerability scanning and assessment',
-        'Security code reviews and static analysis'
+        'Práticas de desenvolvimento de código seguro',
+        'Testes de penetração regulares',
+        'Varredura e avaliação de vulnerabilidades',
+        'Revisões de código de segurança e análise estática'
       ],
       icon: Bug
     }
@@ -136,114 +136,114 @@ export default function SecuritySection() {
 
   const certifications = [
     {
-      name: 'SOC 2 Type II',
-      description: 'Comprehensive security controls audit',
+      name: 'SOC 2 Tipo II',
+      description: 'Auditoria abrangente de controles de segurança',
       icon: Award,
-      status: 'Certified',
+      status: 'Certificado',
       color: 'ai-green'
     },
     {
       name: 'ISO 27001',
-      description: 'Information security management system',
+      description: 'Sistema de gestão de segurança da informação',
       icon: Shield,
-      status: 'Certified',
+      status: 'Certificado',
       color: 'ai-blue'
     },
     {
-      name: 'HIPAA Compliant',
-      description: 'Healthcare information protection standards',
+      name: 'Conformidade HIPAA',
+      description: 'Padrões de proteção de informações de saúde',
       icon: FileCheck,
-      status: 'Compliant',
+      status: 'Conforme',
       color: 'ai-green'
     },
     {
-      name: 'GDPR Ready',
-      description: 'European data protection regulation',
+      name: 'Pronto para GDPR',
+      description: 'Regulamento europeu de proteção de dados',
       icon: Globe,
-      status: 'Compliant',
+      status: 'Conforme',
       color: 'ai-blue'
     },
     {
-      name: 'PCI DSS Level 1',
-      description: 'Payment card industry data security',
+      name: 'PCI DSS Nível 1',
+      description: 'Segurança de dados do setor de cartões de pagamento',
       icon: BadgeCheck,
-      status: 'Certified',
+      status: 'Certificado',
       color: 'ai-green'
     },
     {
       name: 'FedRAMP',
-      description: 'Federal risk authorization management',
+      description: 'Gerenciamento federal de autorização de risco',
       icon: Flag,
-      status: 'In Progress',
+      status: 'Em Progresso',
       color: 'orange-500'
     }
   ];
 
   const securityArchitecture = [
     {
-      layer: 'Presentation Layer',
-      description: 'Web application firewall, DDoS protection, SSL/TLS termination',
+      layer: 'Camada de Apresentação',
+      description: 'Firewall para aplicações web, proteção contra DDoS, terminação SSL/TLS',
       icon: Monitor,
-      protections: ['WAF', 'DDoS Protection', 'SSL/TLS', 'Rate Limiting']
+      protections: ['WAF', 'Proteção DDoS', 'SSL/TLS', 'Limitação de Taxa']
     },
     {
-      layer: 'Application Layer',
-      description: 'Secure APIs, authentication, authorization, input validation',
+      layer: 'Camada de Aplicação',
+      description: 'APIs seguras, autenticação, autorização, validação de entrada',
       icon: Cpu,
-      protections: ['API Security', 'OAuth 2.0', 'Input Validation', 'RBAC']
+      protections: ['Segurança de API', 'OAuth 2.0', 'Validação de Entrada', 'RBAC']
     },
     {
-      layer: 'Data Layer',
-      description: 'Encryption at rest, database security, backup protection',
+      layer: 'Camada de Dados',
+      description: 'Criptografia em repouso, segurança de banco de dados, proteção de backup',
       icon: Database,
-      protections: ['AES-256', 'DB Security', 'Backup Encryption', 'Access Logs']
+      protections: ['AES-256', 'Segurança de BD', 'Criptografia de Backup', 'Logs de Acesso']
     },
     {
-      layer: 'Infrastructure Layer',
-      description: 'Network security, host hardening, container security',
+      layer: 'Camada de Infraestrutura',
+      description: 'Segurança de rede, endurecimento de hosts, segurança de containers',
       icon: Server,
-      protections: ['Network Segmentation', 'Host Hardening', 'Container Security', 'IDS/IPS']
+      protections: ['Segmentação de Rede', 'Endurecimento de Hosts', 'Segurança de Containers', 'IDS/IPS']
     }
   ];
 
   const incidentResponse = [
     {
-      phase: 'Detection',
-      description: 'Automated threat detection and alerting systems',
-      duration: '< 5 minutes',
+      phase: 'Detecção',
+      description: 'Sistemas automatizados de detecção e alerta de ameaças',
+      duration: '< 5 minutos',
       icon: Radar
     },
     {
-      phase: 'Assessment',
-      description: 'Initial impact assessment and classification',
-      duration: '< 15 minutes',
+      phase: 'Avaliação',
+      description: 'Avaliação inicial de impacto e classificação',
+      duration: '< 15 minutos',
       icon: Search
     },
     {
-      phase: 'Containment',
-      description: 'Immediate threat containment and isolation',
-      duration: '< 30 minutes',
+      phase: 'Contenção',
+      description: 'Isolamento e contenção imediata da ameaça',
+      duration: '< 30 minutos',
       icon: Shield
     },
     {
-      phase: 'Recovery',
-      description: 'System restoration and service recovery',
-      duration: '< 2 hours',
+      phase: 'Recuperação',
+      description: 'Restauração do sistema e recuperação do serviço',
+      duration: '< 2 horas',
       icon: Activity
     },
     {
-      phase: 'Lessons Learned',
-      description: 'Post-incident analysis and improvements',
-      duration: '24-48 hours',
+      phase: 'Lições Aprendidas',
+      description: 'Análise pós-incidente e implementação de melhorias',
+      duration: '24-48 horas',
       icon: Book
     }
   ];
 
   const securityMetrics = [
-    { metric: '99.99%', label: 'Security Uptime', icon: Clock },
-    { metric: '< 5 min', label: 'Threat Detection', icon: Radar },
-    { metric: '256-bit', label: 'Encryption Standard', icon: Lock },
-    { metric: '24/7', label: 'Security Monitoring', icon: Eye }
+    { metric: '99.99%', label: 'Disponibilidade de Segurança', icon: Clock },
+    { metric: '< 5 min', label: 'Detecção de Ameaças', icon: Radar },
+    { metric: '256-bit', label: 'Padrão de Criptografia', icon: Lock },
+    { metric: '24/7', label: 'Monitoramento de Segurança', icon: Eye }
   ];
 
   return (
@@ -271,9 +271,9 @@ export default function SecuritySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Enterprise-Grade{' '}
+                Segurança em{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Security
+                  Nível Empresarial
                 </span>
               </h1>
               
@@ -282,10 +282,10 @@ export default function SecuritySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Security is not an afterthought—it's built into every layer of our platform. 
-                From end-to-end encryption to continuous monitoring, we protect your data with 
-                the highest industry standards and{' '}
-                <span className="text-ai-blue font-bold">zero-trust architecture</span>.
+                A segurança não é uma reflexão tardia - está incorporada em cada camada de nossa plataforma. 
+                Da criptografia ponta a ponta ao monitoramento contínuo, protegemos seus dados com 
+                os mais altos padrões do setor e{' '}
+                <span className="text-ai-blue font-bold">arquitetura zero trust</span>.
               </p>
 
               {/* Security Metrics */}
@@ -338,14 +338,14 @@ export default function SecuritySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Comprehensive Security{' '}
+                Medidas Abrangentes de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Measures
+                  Segurança
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Multi-layered security approach protecting your data at every level, 
-                from network infrastructure to application endpoints.
+                Abordagem de segurança em múltiplas camadas protegendo seus dados em todos os níveis,
+                desde a infraestrutura de rede até os endpoints de aplicação.
               </p>
             </div>
 
@@ -382,14 +382,14 @@ export default function SecuritySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Security{' '}
+                Arquitetura de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Architecture
+                  Segurança
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Defense-in-depth architecture with multiple security layers providing 
-                comprehensive protection against evolving threats.
+                Arquitetura de defesa em profundidade com múltiplas camadas de segurança
+                fornecendo proteção abrangente contra ameaças em evolução.
               </p>
             </div>
 
@@ -410,7 +410,7 @@ export default function SecuritySection() {
                           <div>
                             <h3 className="text-2xl font-bold text-ai-dark">{layer.layer}</h3>
                             <span className="text-sm text-ai-green font-medium bg-ai-green/10 px-2 py-1 rounded-full">
-                              Layer {index + 1}
+                              Camada {index + 1}
                             </span>
                           </div>
                         </div>
@@ -420,7 +420,7 @@ export default function SecuritySection() {
                         </p>
 
                         <div className="space-y-2">
-                          <h4 className="font-semibold text-ai-dark mb-3">Security Controls:</h4>
+                          <h4 className="font-semibold text-ai-dark mb-3">Controles de Segurança:</h4>
                           <div className="grid grid-cols-2 gap-2">
                             {layer.protections.map((protection, protIndex) => (
                               <div key={protIndex} className="flex items-center space-x-2">
@@ -456,18 +456,18 @@ export default function SecuritySection() {
         </section>
 
         {/* Certifications Section */}
-        <section className="py-20 bg-gradient-to-br from-ai-light/20 to-white">
+        {/* <section className="py-20 bg-gradient-to-br from-ai-light/20 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Security{' '}
+                Certificações de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Certifications
+                  Segurança
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Third-party validated security certifications and compliance frameworks 
-                demonstrating our commitment to the highest security standards.
+                Certificações de segurança validadas por terceiros e estruturas de conformidade
+                demonstrando nosso compromisso com os mais altos padrões de segurança.
               </p>
             </div>
 
@@ -495,21 +495,21 @@ export default function SecuritySection() {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Incident Response Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Incident Response{' '}
+                Processo de{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Process
+                  Resposta a Incidentes
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Structured incident response methodology ensuring rapid detection, 
-                containment, and recovery from security threats.
+                Metodologia estruturada de resposta a incidentes garantindo detecção rápida,
+                contenção e recuperação de ameaças de segurança.
               </p>
             </div>
 
@@ -567,37 +567,37 @@ export default function SecuritySection() {
           </div>
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Security{' '}
+              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
+              Dúvidas sobre{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Questions?
+                Segurança?
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Our security team is available to address your concerns, provide additional 
-              information, or discuss specific security requirements for your organization.
+              Nossa equipe de segurança está disponível para esclarecer suas dúvidas, fornecer
+              informações adicionais ou discutir requisitos específicos de segurança para sua organização.
             </p>
 
             {/* Security Team Contact */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
                 {
-                  title: 'Security Team',
-                  contact: 'security@itcygnus.com',
-                  description: 'General security inquiries',
+                  title: 'Equipe de Segurança',
+                  contact: 'security.info@itcygnus.com',
+                  description: 'Dúvidas gerais sobre segurança',
                   icon: Shield
                 },
                 {
-                  title: 'Incident Response',
-                  contact: '+1 (305) 555-0199',
-                  description: '24/7 security incidents',
+                  title: 'Resposta a Incidentes',
+                  contact: '+55 (11) 5039-4877',
+                  description: 'Incidentes de segurança 24/7',
                   icon: AlertTriangle
                 },
                 {
-                  title: 'Compliance Office',
-                  contact: 'compliance@itcygnus.com',
-                  description: 'Compliance and audit requests',
+                  title: 'Escritório de Conformidade',
+                  contact: 'dpo@itcygnus.com',
+                  description: 'Solicitações de conformidade e auditoria',
                   icon: FileCheck
                 }
               ].map((contact, index) => {
@@ -616,13 +616,13 @@ export default function SecuritySection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button 
                 variant="ai_primary" 
                 size="xl" 
                 className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
               >
-                Request Security Assessment
+                Solicitar Avaliação de Segurança
                 <Shield className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
               <Button 
@@ -630,15 +630,15 @@ export default function SecuritySection() {
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Download Security Whitepaper
+                Baixar Whitepaper de Segurança
                 <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
               </Button>
-            </div>
+            </div> */}
 
             <p className="text-white/60 text-sm">
-              For immediate security concerns, call our 24/7 incident response line at{' '}
+              Para preocupações urgentes de segurança, ligue para nossa linha de resposta a incidentes 24/7 no{' '}
               <a href="tel:+1-305-555-0199" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +1 (305) 555-0199
+                +55 (11) 5039-4877
               </a>
             </p>
           </div>

@@ -16,24 +16,24 @@ export default function CTASection() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-          Ready to Transform Your{' '}
+          Pronto para Transformar Sua{' '}
           <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-            Enterprise?
+            Empresa?
           </span>
         </h2>
         
         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Join 10+ companies that have already revolutionized their business processes 
-          with ITCygnus AI. Start your transformation today.
+          Junte-se a mais de 10 empresas que já revolucionaram seus processos 
+          com a ITCygnus AI. Comece sua transformação hoje.
         </p>
 
         {/* Trust Indicators */}
         <div className="flex flex-wrap justify-center items-center gap-6 mb-10 text-white/60">
           {[
-            'No Setup Fees',
-            'Free Migration',
-            '30-Day Guarantee',
-            'Cancel Anytime'
+            'Sem Taxas de Setup',
+            'Migração Gratuita',
+            'Garantia de 30 Dias',
+            'Cancele Quando Quiser'
           ].map((item, index) => (
             <div key={index} className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-ai-green" />
@@ -50,18 +50,18 @@ export default function CTASection() {
             className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
             onClick={() => window.location.href = '/demo'}
           >
-            Request Free Demo
+            Iniciar Teste Gratuito
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button 
+          {/* <Button 
             variant="ai_outline" 
             size="xl" 
             className="border-white text-white hover:bg-white hover:text-ai-dark group"
             onClick={() => window.location.href = '/roi-calculator'}
           >
-            Calculate My ROI
+            Calcular Meu ROI
             <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-          </Button>
+          </Button> */}
         </div>
 
         {/* Explore More Button */}
@@ -72,7 +72,7 @@ export default function CTASection() {
               size="lg" 
               className="text-white/80 hover:text-white hover:bg-white/10 group border border-white/20 hover:border-white/40"
             >
-              Explore More About Digital Transformation
+              Saiba Mais Sobre Transformação Digital
               <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
             </Button>
           </Link>
@@ -80,13 +80,13 @@ export default function CTASection() {
 
         {/* Contact Info */}
         <p className="text-white/60 text-sm">
-          Questions? Call us at{' '}
+          Dúvidas? Ligue para{' '}
           <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-            +1 (800) 123-4567
+            +55 (11) 5039-4877
           </a>{' '}
-          or email{' '}
-          <a href="mailto:sales@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-            sales@itcygnus.com
+          ou email{' '}
+          <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
+            contact@itcygnus.com
           </a>
         </p>
       </div>

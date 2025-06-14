@@ -2,48 +2,50 @@
 
 import { useEffect, useState } from 'react';
 import { Bot, Shield, Zap, BarChart3, Cog, Users } from 'lucide-react';
-
-const features = [
-  {
-    icon: Bot,
-    title: 'Intelligent Automation',
-    description: 'Advanced AI algorithms that learn and adapt to your business processes, continuously improving efficiency and accuracy.',
-    benefits: ['Self-learning algorithms', 'Process optimization', 'Adaptive workflows']
-  },
-  {
-    icon: Shield,
-    title: 'Enterprise Security',
-    description: 'Bank-level security with full regulatory compliance including SOC 2, HIPAA, and GDPR requirements.',
-    benefits: ['SOC 2 compliant', 'HIPAA certified', 'GDPR ready']
-  },
-  {
-    icon: Zap,
-    title: 'Rapid Deployment',
-    description: 'Get up and running in 7 Days with our proven implementation methodology and dedicated support team.',
-    benefits: ['30-day implementation', 'Dedicated support', 'Zero downtime migration']
-  },
-  {
-    icon: BarChart3,
-    title: 'Real-time Analytics',
-    description: 'Comprehensive dashboards and reporting tools that provide instant insights into your process performance.',
-    benefits: ['Live dashboards', 'Custom reports', 'Performance insights']
-  },
-  {
-    icon: Cog,
-    title: 'Seamless Integration',
-    description: 'Connect with your existing systems through our robust API and pre-built integrations with major platforms.',
-    benefits: ['API-first design', '100+ integrations', 'Custom connectors']
-  },
-  {
-    icon: Users,
-    title: '24/7 Support',
-    description: 'Round-the-clock enterprise support with dedicated account managers and technical experts.',
-    benefits: ['24/7 availability', 'Dedicated managers', 'Expert technical team']
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function FeaturesSection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
+
+  const features = [
+    {
+      icon: Bot,
+      title: t('features.items.automation.title'),
+      description: t('features.items.automation.description'),
+      benefits: t('features.items.automation.benefits') as unknown as string[]
+    },
+    {
+      icon: Shield,
+      title: t('features.items.security.title'),
+      description: t('features.items.security.description'),
+      benefits: t('features.items.security.benefits') as unknown as string[]
+    },
+    {
+      icon: Zap,
+      title: t('features.items.deployment.title'),
+      description: t('features.items.deployment.description'),
+      benefits: t('features.items.deployment.benefits') as unknown as string[]
+    },
+    {
+      icon: BarChart3,
+      title: t('features.items.analytics.title'),
+      description: t('features.items.analytics.description'),
+      benefits: t('features.items.analytics.benefits') as unknown as string[]
+    },
+    {
+      icon: Cog,
+      title: t('features.items.integration.title'),
+      description: t('features.items.integration.description'),
+      benefits: t('features.items.integration.benefits') as unknown as string[]
+    },
+    {
+      icon: Users,
+      title: t('features.items.support.title'),
+      description: t('features.items.support.description'),
+      benefits: t('features.items.support.benefits') as unknown as string[]
+    }
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -68,14 +70,13 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-4">
-            Enterprise-Grade Features Built for{' '}
+            {t('features.title')}{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              Scale
+              {t('features.titleHighlight')}
             </span>
           </h2>
           <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-            Every feature is designed to meet the demanding requirements of enterprise 
-            environments while maintaining the simplicity your teams need.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -109,7 +110,7 @@ export default function FeaturesSection() {
 
                 {/* Benefits List */}
                 <ul className="space-y-2">
-                  {feature.benefits.map((benefit, benefitIndex) => (
+                  {feature.benefits.map((benefit: string, benefitIndex: number) => (
                     <li key={benefitIndex} className="flex items-center text-sm text-ai-medium">
                       <div className="w-2 h-2 bg-ai-green rounded-full mr-3 flex-shrink-0"></div>
                       {benefit}
