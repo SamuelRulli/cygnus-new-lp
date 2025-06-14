@@ -1,0 +1,29 @@
+{
+  "name": "Cygnus IT Services - Inteligência Artificial Empresarial",
+  "short_name": "Cygnus IT",
+  "description": "A única plataforma de IA empresarial que reduz o tempo de processamento manual em 75%, com implementação em 30 dias e ROI comprovado.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#598E71",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/agentpro-cdn/cygnus/logotipo%20cygnus-04.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "https://storage.googleapis.com/agentpro-cdn/cygnus/logotipo%20cygnus-04.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
