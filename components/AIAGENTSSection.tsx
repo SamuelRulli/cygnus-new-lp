@@ -62,31 +62,32 @@ export default function AIAGENTSSection() {
   ];
 
   const features = [
-    {
-      title: 'Conversational AI Excellence',
-      description: 'Our AI agents understand context, maintain conversation flow, and provide human-like interactions across voice, chat, and digital channels. They handle complex customer inquiries with empathy and precision, escalating only when necessary.',
-      details: 'Advanced natural language processing enables agents to understand intent, emotion, and context. Multi-turn conversations maintain state and context across interactions, while sentiment analysis ensures appropriate responses.',
-      icon: MessageSquare
-    },
-    {
-      title: 'Autonomous Task Execution',
-      description: 'AI agents don\'t just answer questions - they complete complex workflows, make decisions based on business rules, and execute multi-step processes without human intervention. From order processing to account management.',
-      details: 'Intelligent workflow engine executes business processes automatically, integrating with CRM, ERP, and other systems. Decision trees and business logic ensure consistent, accurate task completion every time.',
-      icon: Workflow
-    },
-    {
-      title: 'Omnichannel Integration',
-      description: 'Deploy agents across every customer touchpoint - website chat, mobile apps, social media, phone systems, and email. Unified agent intelligence ensures consistent experience regardless of channel.',
-      details: 'Single agent intelligence works across all channels, maintaining conversation history and customer context. Seamless handoffs between channels and to human agents when needed.',
-      icon: Globe
-    },
-    {
-      title: 'Continuous Learning Engine',
-      description: 'Agents improve automatically through every interaction, learning from customer feedback, successful resolutions, and human agent corrections. Performance gets better over time without manual training.',
-      details: 'Machine learning algorithms analyze interaction patterns, success rates, and customer satisfaction to continuously improve responses. Automatic updates ensure agents stay current with business changes.',
-      icon: Brain
-    }
-  ];
+      {
+        title: 'Excelência em IA Conversacional',
+        description: 'Nossos agentes de IA compreendem o contexto, mantêm o fluxo da conversa e oferecem interações com qualidade humana por voz, chat e canais digitais. Eles lidam com solicitações complexas com empatia e precisão, escalando apenas quando necessário.',
+        details: 'O processamento avançado de linguagem natural permite que os agentes entendam intenção, emoção e contexto. Conversas de múltiplas etapas mantêm o estado e a coerência, enquanto a análise de sentimento garante respostas apropriadas.',
+        icon: MessageSquare
+      },
+      {
+        title: 'Execução Autônoma de Tarefas',
+        description: 'Os agentes de IA não apenas respondem perguntas — eles executam fluxos de trabalho complexos, tomam decisões com base em regras de negócio e realizam processos em várias etapas sem intervenção humana. De processamento de pedidos à gestão de contas.',
+        details: 'O motor inteligente de workflows executa processos de negócio automaticamente, integrando-se com CRM, ERP e outros sistemas. Árvores de decisão e lógica empresarial garantem consistência e precisão na execução das tarefas.',
+        icon: Workflow
+      },
+      {
+        title: 'Integração Omnicanal',
+        description: 'Implemente agentes em todos os pontos de contato com o cliente — chat no site, apps móveis, redes sociais, sistemas telefônicos e e-mail. A inteligência unificada garante uma experiência consistente, independentemente do canal.',
+        details: 'Uma única inteligência de agente opera em todos os canais, mantendo o histórico das conversas e o contexto do cliente. Transições suaves entre canais e com agentes humanos, quando necessário.',
+        icon: Globe
+      },
+      {
+        title: 'Mecanismo de Aprendizado Contínuo',
+        description: 'Os agentes evoluem automaticamente a cada interação, aprendendo com feedbacks dos clientes, resoluções bem-sucedidas e correções feitas por agentes humanos. O desempenho melhora com o tempo, sem necessidade de reeducação manual.',
+        details: 'Algoritmos de machine learning analisam padrões de interação, taxas de sucesso e satisfação do cliente para aprimorar continuamente as respostas. Atualizações automáticas mantêm os agentes alinhados às mudanças do negócio.',
+        icon: Brain
+      }
+    ];
+
 
   const useCases = [
     {
@@ -650,16 +651,16 @@ export default function AIAGENTSSection() {
                   size="xl" 
                   className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
                 >
-                  Create My Agent
+                  Ver Agentes em Ação
                   <Bot className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </Link>
-              <a href="tel:+15551234567">
+              {/* <a href="tel:+15551234567">
                 <Button variant="ai_outline" size="xl" className="group">
                   Ver Agentes em Ação
                   <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
-              </a>
+              </a> */}
               {/* <Button 
                 variant="ghost" 
                 size="xl" 
