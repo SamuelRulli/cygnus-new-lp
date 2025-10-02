@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import MetricsSection from '@/components/MetricsSection';
+import NetworkEffectSection from '@/components/NetworkEffectSection';
 import SolutionsSection from '@/components/SolutionsSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import GuaranteesSection from '@/components/GuaranteesSection';
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <MetricsSection />
+        <NetworkEffectSection />
         <SolutionsSection />
         <FeaturesSection />
         <GuaranteesSection />
