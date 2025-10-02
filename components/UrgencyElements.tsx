@@ -47,7 +47,7 @@ export default function UrgencyElements({ type = 'countdown', className = '' }: 
     return () => clearInterval(timer);
   }, []);
 
-  // Simulate spots being taken occasionally
+  //  Simulate spots being taken occasionally
   useEffect(() => {
     const spotsTimer = setInterval(() => {
       if (Math.random() < 0.1 && spotsLeft > 2) { // 10% chance every interval
