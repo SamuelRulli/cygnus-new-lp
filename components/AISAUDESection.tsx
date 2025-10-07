@@ -26,8 +26,10 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function AISAUDESection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -35,106 +37,105 @@ export default function AISAUDESection() {
   }, []);
 
   const keyBenefits = [
-    { icon: Activity, text: 'Processamento automático de sinistros' },
-    { icon: Shield, text: 'Detecção de fraude em tempo real' },
-    { icon: Globe, text: 'Integração com operadoras e prestadores' },
-    { icon: Lock, text: 'Conformidade regulatória completa' }
+    { icon: Activity, text: t('aiSaude.keyBenefits.item1') },
+    { icon: Shield, text: t('aiSaude.keyBenefits.item2') },
+    { icon: Globe, text: t('aiSaude.keyBenefits.item3') },
+    { icon: Lock, text: t('aiSaude.keyBenefits.item4') }
   ];
 
   const features = [
     {
-      title: 'Especialização em IA Médica',
-      description: 'O AI.SAUDE foi desenvolvido com base em milhões de documentos médicos reais, treinado para entender terminologia médica, códigos de procedimentos, CID-10 e procedimentos específicos do sistema de saúde brasileiro. Nossa IA reconhece padrões médicos complexos que soluções genéricas não conseguem processar.',
-      details: 'O sistema valida automaticamente a elegibilidade de procedimentos, verifica compatibilidade entre diagnósticos e tratamentos, e identifica inconsistências que podem indicar erros ou fraudes. Isso garante que apenas reembolsos legítimos sejam aprovados, protegendo sua organização de perdas financeiras.',
+      title: t('aiSaude.features.medicalSpecialization.title'),
+      description: t('aiSaude.features.medicalSpecialization.description'),
+      details: t('aiSaude.features.medicalSpecialization.details'),
       icon: Brain
     },
     {
-      title: 'Integração com Ecossistema de Saúde',
-      description: 'Nossa solução se conecta nativamente com sistemas de operadoras, prestadores de serviços, laboratórios e farmácias, criando um fluxo automatizado de informações que elimina retrabalho e acelera aprovações.',
-      details: 'Integramos com os principais sistemas hospitalares brasileiros e operadoras de saúde, garantindo implementação rápida e sem interrupções operacionais. Suporte completo para padrões TISS e integração com ANS.',
+      title: t('aiSaude.features.ecosystemIntegration.title'),
+      description: t('aiSaude.features.ecosystemIntegration.description'),
+      details: t('aiSaude.features.ecosystemIntegration.details'),
       icon: Database
     },
     {
-      title: 'Detecção Avançada de Fraudes',
-      description: 'Análise em tempo real de padrões de reembolso usando algoritmos de machine learning que detectam anomalias, submissões duplicadas e padrões suspeitos de cobrança antes que se tornem problemas custosos.',
-      details: 'Nosso sistema de detecção de fraudes analisa comportamento de prestadores, histórico de pacientes e padrões de reembolso em múltiplos pontos de dados, sinalizando atividades potencialmente fraudulentas com 99,2% de precisão minimizando falsos positivos.',
+      title: t('aiSaude.features.advancedFraudDetection.title'),
+      description: t('aiSaude.features.advancedFraudDetection.description'),
+      details: t('aiSaude.features.advancedFraudDetection.details'),
       icon: Search
     },
     {
-      title: 'Motor de Fluxo de Trabalho Automatizado',
-      description: 'Roteamento inteligente e processamento de reembolsos baseado em complexidade, valor e fatores de risco. Aprovações automáticas para casos rotineiros enquanto sinaliza casos complexos para revisão humana.',
-      details: 'Motor de regras de negócio configurável permite personalização de fluxos de aprovação, procedimentos de escalação e tratamento de exceções. Trilhas de auditoria completas garantem conformidade regulatória e transparência.',
+      title: t('aiSaude.features.automatedWorkflowEngine.title'),
+      description: t('aiSaude.features.automatedWorkflowEngine.description'),
+      details: t('aiSaude.features.automatedWorkflowEngine.details'),
       icon: Workflow
     }
   ];
 
   const useCases = [
     {
-      title: 'Porto Seguro Saúde',
-      description: 'Implementação completa do AI.SAUDE para automatização de processos de reembolso e validação de notas fiscais, garantindo maior eficiência e redução de fraudes no sistema de saúde.',
-      result: 'Automatização de 98% dos processos de reembolso, economia de mais de R$ 5 milhões anuais e precisão de 99% na validação de documentos médicos.',
+      title: t('aiSaude.useCases.portoSeguroSaude.title'),
+      description: t('aiSaude.useCases.portoSeguroSaude.description'),
+      result: t('aiSaude.useCases.portoSeguroSaude.result'),
       logo: 'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-saude.png',
-      industry: 'Operadora de Saúde',
+      industry: t('aiSaude.useCases.portoSeguroSaude.industry'),
       stats: { automation: '98%', savings: 'R$ 5M+', accuracy: '99%' }
     },
     {
-      title: 'Porto Seguro Ocupacional',
-      description: 'Solução AI.SAUDE implementada para gestão completa de saúde ocupacional, automatizando validações de exames, atestados e processos de reembolso relacionados à medicina do trabalho.',
-      result: 'Alcançou 100% de automatização nos processos de validação ocupacional, com economia significativa de recursos e 99% de precisão na análise de documentos.',
+      title: t('aiSaude.useCases.portoSeguroOcupacional.title'),
+      description: t('aiSaude.useCases.portoSeguroOcupacional.description'),
+      result: t('aiSaude.useCases.portoSeguroOcupacional.result'),
       logo: 'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
-      industry: 'Saúde Ocupacional',
+      industry: t('aiSaude.useCases.portoSeguroOcupacional.industry'),
       stats: { automation: '100%', savings: 'R$ 3M+', accuracy: '99%' }
     },
     {
-      title: 'Itaú Saúde',
-      description: 'Implementação estratégica do AI.SAUDE para otimização de processos de reembolso médico, validação automática de notas fiscais e detecção inteligente de fraudes no sistema de saúde corporativo.',
-      result: 'Automatização de 98% dos processos de reembolso, economia substancial de recursos operacionais e 99% de precisão na validação de documentos médicos.',
+      title: t('aiSaude.useCases.itauSaude.title'),
+      description: t('aiSaude.useCases.itauSaude.description'),
+      result: t('aiSaude.useCases.itauSaude.result'),
       logo: 'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/itau-saude.png',
-      industry: 'Saúde Corporativa',
+      industry: t('aiSaude.useCases.itauSaude.industry'),
       stats: { automation: '98%', savings: 'R$ 4M+', accuracy: '99%' }
     }
   ];
 
   const medicalCapabilities = [
     {
-      title: 'Validação de Códigos CID-10 e CBHPM',
-      description: 'Validação automática de códigos de diagnóstico e procedimentos',
+      title: t('aiSaude.medicalCapabilities.validation.title'),
+      description: t('aiSaude.medicalCapabilities.validation.description'),
       icon: FileText
     },
     {
-      title: 'Avaliação de Necessidade Médica',
-      description: 'Avaliação por IA da adequação do tratamento',
+      title: t('aiSaude.medicalCapabilities.assessment.title'),
+      description: t('aiSaude.medicalCapabilities.assessment.description'),
       icon: Stethoscope
     },
     {
-      title: 'Automação de Pré-Autorização',
-      description: 'Processo simplificado de pré-aprovação de tratamentos',
+      title: t('aiSaude.medicalCapabilities.automation.title'),
+      description: t('aiSaude.medicalCapabilities.automation.description'),
       icon: CheckCircle
     },
     {
-      title: 'Verificação de Interações Medicamentosas',
-      description: 'Validação automática de combinações de prescrições',
+      title: t('aiSaude.medicalCapabilities.verification.title'),
+      description: t('aiSaude.medicalCapabilities.verification.description'),
       icon: Activity
     },
     {
-      title: 'Verificação de Credenciais de Prestadores',
-      description: 'Validação em tempo real de credenciais de profissionais de saúde',
+      title: t('aiSaude.medicalCapabilities.credentials.title'),
+      description: t('aiSaude.medicalCapabilities.credentials.description'),
       icon: Shield
     },
     {
-      title: 'Regras de Adjudicação de Sinistros',
-      description: 'Aplicação inteligente de regras específicas de operadoras',
+      title: t('aiSaude.medicalCapabilities.adjudication.title'),
+      description: t('aiSaude.medicalCapabilities.adjudication.description'),
       icon: Brain
     }
   ];
 
   const complianceFeatures = [
-    'Processamento Conforme LGPD',
-    // 'Certificação SOC 2 Tipo II',
-    'Integração HL7 FHIR',
-    'Conformidade ANS',
-    'Trilhas de Auditoria em Tempo Real',
-    'Criptografia 256-bit'
+    t('aiSaude.complianceFeatures.item1'),
+    t('aiSaude.complianceFeatures.item2'),
+    t('aiSaude.complianceFeatures.item3'),
+    t('aiSaude.complianceFeatures.item4'),
+    t('aiSaude.complianceFeatures.item5')
   ];
 
   return (
@@ -169,9 +170,9 @@ export default function AISAUDESection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  AI.SAUDE: Revolução no{' '}
+                  {t('aiSaude.hero.title')}{' '}
                   <span className="bg-gradient-ai bg-clip-text text-transparent">
-                    Processamento de Reembolsos
+                    {t('aiSaude.hero.titleHighlight')}
                   </span>
                 </h1>
                 
@@ -180,10 +181,9 @@ export default function AISAUDESection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Automatize completamente seu processo de reembolsos com IA médica especializada. 
-                  Reduza o tempo de processamento de{' '}
-                  <span className="text-ai-green font-bold">semanas para horas</span>, com{' '}
-                  <span className="text-ai-blue font-bold">99,8% de precisão</span> e detecção automática de fraudes.
+                  {t('aiSaude.hero.subtitle1')}{' '}
+                  <span className="text-ai-green font-bold">{t('aiSaude.hero.subtitleHighlight1')}</span>, {t('aiSaude.hero.subtitle2')}{' '}
+                  <span className="text-ai-blue font-bold">{t('aiSaude.hero.subtitleHighlight2')}</span> {t('aiSaude.hero.subtitle3')}
                 </p>
 
                 {/* Key Benefits */}
@@ -209,12 +209,8 @@ export default function AISAUDESection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  {/* <Button variant="ai_primary" size="xl" className="group shadow-2xl">
-                    Solicitar Demo Médico
-                    <Stethoscope className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button> */}
                   <Button variant="ai_outline" size="xl" className="group">
-                    Calcular Economia
+                    {t('aiSaude.hero.cta')}
                     <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                   </Button>
                 </div>
@@ -261,14 +257,14 @@ export default function AISAUDESection() {
                           <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <Clock className="w-4 h-4 text-red-500" />
                           </div>
-                          <div className="text-xs text-ai-medium">7 Days</div>
+                          <div className="text-xs text-ai-medium">{t('aiSaude.hero.visual.days')}</div>
                         </div>
                         <ArrowRight className="w-6 h-6 text-ai-blue animate-pulse" />
                         <div className="text-center">
                           <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                             <Zap className="w-4 h-4 text-green-500" />
                           </div>
-                          <div className="text-xs text-ai-medium">2 Hours</div>
+                          <div className="text-xs text-ai-medium">{t('aiSaude.hero.visual.hours')}</div>
                         </div>
                       </div>
                     </div>
@@ -277,11 +273,11 @@ export default function AISAUDESection() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-ai-blue mb-1">99.8%</div>
-                        <div className="text-xs text-ai-medium">Accuracy</div>
+                        <div className="text-xs text-ai-medium">{t('aiSaude.hero.visual.accuracy')}</div>
                       </div>
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-ai-green mb-1">85%</div>
-                        <div className="text-xs text-ai-medium">Faster</div>
+                        <div className="text-xs text-ai-medium">{t('aiSaude.hero.visual.faster')}</div>
                       </div>
                     </div>
 
@@ -305,15 +301,17 @@ export default function AISAUDESection() {
                 <Building2 className="w-8 h-8 text-white" />
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Líder no{' '}
+                {t('aiSaude.leadership.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Setor Público Brasileiro
+                  {t('aiSaude.leadership.titleHighlight')}
                 </span>
               </h2>
               <p className="text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed">
-                Somos o <span className="font-bold text-ai-blue">maior portal integrador de prefeituras do Brasil</span>, 
-                com mais de <span className="font-bold text-ai-green">350 prefeituras</span> validando notas fiscais 
-                e combatendo fraude no processo de reembolso através da nossa tecnologia AI.SAUDE.
+                {t('aiSaude.leadership.subtitle1')}{' '}
+                <span className="font-bold text-ai-blue">{t('aiSaude.leadership.subtitleHighlight1')}</span>, 
+                {t('aiSaude.leadership.subtitle2')}{' '}
+                <span className="font-bold text-ai-green">{t('aiSaude.leadership.subtitleHighlight2')}</span> 
+                {t('aiSaude.leadership.subtitle3')}
               </p>
             </div>
 
@@ -323,9 +321,9 @@ export default function AISAUDESection() {
                   <Building2 className="w-8 h-8 text-ai-blue" />
                 </div>
                 <div className="text-3xl font-bold text-ai-blue mb-2">350+</div>
-                <div className="text-lg font-semibold text-ai-dark mb-2">Prefeituras Conectadas</div>
+                <div className="text-lg font-semibold text-ai-dark mb-2">{t('aiSaude.leadership.stats.municipalities.title')}</div>
                 <p className="text-ai-medium">
-                  Maior rede de integração municipal do país para validação de reembolsos médicos
+                  {t('aiSaude.leadership.stats.municipalities.description')}
                 </p>
               </Card>
 
@@ -334,9 +332,9 @@ export default function AISAUDESection() {
                   <Shield className="w-8 h-8 text-ai-green" />
                 </div>
                 <div className="text-3xl font-bold text-ai-green mb-2">99,2%</div>
-                <div className="text-lg font-semibold text-ai-dark mb-2">Detecção de Fraudes</div>
+                <div className="text-lg font-semibold text-ai-dark mb-2">{t('aiSaude.leadership.stats.fraudDetection.title')}</div>
                 <p className="text-ai-medium">
-                  Taxa de precisão na identificação de fraudes em processos de reembolso
+                  {t('aiSaude.leadership.stats.fraudDetection.description')}
                 </p>
               </Card>
 
@@ -345,9 +343,9 @@ export default function AISAUDESection() {
                   <FileText className="w-8 h-8 text-ai-blue" />
                 </div>
                 <div className="text-3xl font-bold text-ai-blue mb-2">R$ 2,8B</div>
-                <div className="text-lg font-semibold text-ai-dark mb-2">Notas Validadas</div>
+                <div className="text-lg font-semibold text-ai-dark mb-2">{t('aiSaude.leadership.stats.validatedNotes.title')}</div>
                 <p className="text-ai-medium">
-                  Volume anual de notas fiscais processadas e validadas pela nossa IA
+                  {t('aiSaude.leadership.stats.validatedNotes.description')}
                 </p>
               </Card>
             </div>
@@ -356,29 +354,27 @@ export default function AISAUDESection() {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                    Transformando Seu Processo Mais Seguro com Dados de Gestão Pública
+                    {t('aiSaude.leadership.transforming.title')}
                   </h3>
                   <p className="text-ai-medium leading-relaxed mb-6">
-                    Nossa plataforma AI.SAUDE revoluciona como as prefeituras brasileiras gerenciam 
-                    reembolsos médicos, garantindo transparência, eficiência e combate à fraude em 
-                    escala nacional.
+                    {t('aiSaude.leadership.transforming.description')}
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
-                      <span className="text-ai-dark">Integração direta com sistemas municipais</span>
+                      <span className="text-ai-dark">{t('aiSaude.leadership.transforming.item1')}</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
-                      <span className="text-ai-dark">Validação automática de notas fiscais</span>
+                      <span className="text-ai-dark">{t('aiSaude.leadership.transforming.item2')}</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
-                      <span className="text-ai-dark">Detecção inteligente de irregularidades</span>
+                      <span className="text-ai-dark">{t('aiSaude.leadership.transforming.item3')}</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
-                      <span className="text-ai-dark">Relatórios de auditoria em tempo real</span>
+                      <span className="text-ai-dark">{t('aiSaude.leadership.transforming.item4')}</span>
                     </div>
                   </div>
                 </div>
@@ -387,19 +383,19 @@ export default function AISAUDESection() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-white rounded-lg p-4 text-center shadow-sm">
                         <div className="text-2xl font-bold text-ai-blue mb-1">27</div>
-                        <div className="text-xs text-ai-medium">Estados</div>
+                        <div className="text-xs text-ai-medium">{t('aiSaude.leadership.transforming.stats.states')}</div>
                       </div>
                       <div className="bg-white rounded-lg p-4 text-center shadow-sm">
                         <div className="text-2xl font-bold text-ai-green mb-1">5</div>
-                        <div className="text-xs text-ai-medium">Regiões</div>
+                        <div className="text-xs text-ai-medium">{t('aiSaude.leadership.transforming.stats.regions')}</div>
                       </div>
                       <div className="bg-white rounded-lg p-4 text-center shadow-sm">
                         <div className="text-2xl font-bold text-ai-blue mb-1">15M</div>
-                        <div className="text-xs text-ai-medium">Cidadãos</div>
+                        <div className="text-xs text-ai-medium">{t('aiSaude.leadership.transforming.stats.citizens')}</div>
                       </div>
                       <div className="bg-white rounded-lg p-4 text-center shadow-sm">
                         <div className="text-2xl font-bold text-ai-green mb-1">24/7</div>
-                        <div className="text-xs text-ai-medium">Operação</div>
+                        <div className="text-xs text-ai-medium">{t('aiSaude.leadership.transforming.stats.operation')}</div>
                       </div>
                     </div>
                   </div>
@@ -414,14 +410,13 @@ export default function AISAUDESection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                IA Especializada para{' '}
+                {t('aiSaude.specializedAI.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Saúde
+                  {t('aiSaude.specializedAI.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Diferente de soluções genéricas, o AI.SAUDE foi construído do zero para entender 
-                as complexidades do processamento de reembolsos médicos e regulamentações de saúde.
+                {t('aiSaude.specializedAI.subtitle')}
               </p>
             </div>
 
@@ -450,10 +445,10 @@ export default function AISAUDESection() {
             <div className="mt-16 bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-ai-light/50">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Conformidade Regulatória Completa
+                  {t('aiSaude.compliance.title')}
                 </h3>
                 <p className="text-ai-medium">
-                  Construído para atender aos mais altos padrões e regulamentações da indústria de saúde
+                  {t('aiSaude.compliance.subtitle')}
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -473,14 +468,13 @@ export default function AISAUDESection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Recursos Avançados de{' '}
+                {t('aiSaude.advancedFeatures.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  IA para Saúde
+                  {t('aiSaude.advancedFeatures.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Capacidades especializadas projetadas especificamente para os requisitos únicos 
-                da indústria de saúde e ambiente regulatório brasileiro.
+                {t('aiSaude.advancedFeatures.subtitle')}
               </p>
             </div>
 
@@ -538,14 +532,13 @@ export default function AISAUDESection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Casos de{' '}
+                {t('aiSaude.successCases.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Sucesso em Saúde
+                  {t('aiSaude.successCases.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Veja como organizações de saúde estão revolucionando seu processamento de reembolsos 
-                com a IA médica especializada do AI.SAUDE.
+                {t('aiSaude.successCases.subtitle')}
               </p>
             </div>
 
@@ -592,7 +585,7 @@ export default function AISAUDESection() {
                       <div className="bg-ai-green/10 rounded-xl p-4 border-l-4 border-ai-green">
                         <h4 className="font-bold text-ai-green text-sm mb-2 flex items-center">
                           <Award className="w-4 h-4 mr-2" />
-                          Results Achieved:
+                          {t('aiSaude.successCases.resultsTitle')}
                         </h4>
                         <p className="text-sm text-ai-dark leading-relaxed">
                           {useCase.result}
@@ -617,24 +610,23 @@ export default function AISAUDESection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Pronto para Revolucionar Seu{' '}
+              {t('aiSaude.finalCta.title')}{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Processamento de Reembolsos?
+                {t('aiSaude.finalCta.titleHighlight')}
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Junte-se às principais organizações de saúde que já transformaram seu processamento de reembolsos 
-              com o AI.SAUDE. Comece a reduzir custos e melhorar a precisão hoje mesmo.
+              {t('aiSaude.finalCta.subtitle')}
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
               {[
-                { icon: Activity, value: '99.8%', label: 'Processing Accuracy' },
-                { icon: Clock, value: '85%', label: 'Time Reduction' },
-                { icon: Shield, value: '100%', label: 'HIPAA Compliant' },
-                { icon: Users, value: '1000+', label: 'Healthcare Providers' }
+                { icon: Activity, value: '99.8%', label: t('aiSaude.finalCta.trustIndicators.accuracy') },
+                { icon: Clock, value: '85%', label: t('aiSaude.finalCta.trustIndicators.timeReduction') },
+                { icon: Shield, value: '100%', label: t('aiSaude.finalCta.trustIndicators.compliant') },
+                { icon: Users, value: '1000+', label: t('aiSaude.finalCta.trustIndicators.providers') }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -651,41 +643,25 @@ export default function AISAUDESection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              {/* <Button 
-                variant="ai_primary" 
-                size="xl" 
-                className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
-              >
-                Solicitar Demo Médico
-                <Stethoscope className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-              </Button> */}
               <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Calcular Economia
+                {t('aiSaude.finalCta.cta')}
                 <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
-              {/* <Button 
-                variant="ghost" 
-                size="xl" 
-                className="text-white hover:bg-white/10 group"
-              >
-                Baixar Guia de Saúde
-                <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Dúvidas? Entre em contato com nossos especialistas em saúde pelo{' '}
+              {t('aiSaude.finalCta.contact.text1')}{' '}
               <a href="tel:+55-11-3456-7890" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +55 (11) 5039-4877 / +1 (619) 306-9274
+                {t('aiSaude.finalCta.contact.phone')}
               </a>{' '}
-              ou{' '}
+              {t('aiSaude.finalCta.contact.text2')}{' '}
               <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                contact@itcygnus.com
+                {t('aiSaude.finalCta.contact.email')}
               </a>
             </p>
           </div>

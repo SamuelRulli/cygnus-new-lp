@@ -53,198 +53,26 @@ import {
   Bug,
   AlertTriangle
 } from 'lucide-react';
+import * as Icons from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function SecuritySection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const securityPillars = [
-    {
-      title: 'Proteção de Dados',
-      description: 'Criptografia ponta a ponta e manipulação segura de dados',
-      icon: Lock,
-      color: 'ai-blue'
-    },
-    {
-      title: 'Controle de Acesso',
-      description: 'Autenticação multifator e permissões baseadas em funções',
-      icon: Key,
-      color: 'ai-green'
-    },
-    {
-      title: 'Segurança de Infraestrutura',
-      description: 'Arquitetura em nuvem segura com defesa em profundidade',
-      icon: Server,
-      color: 'ai-blue'
-    },
-    {
-      title: 'Monitoramento Contínuo',
-      description: 'Monitoramento de segurança 24/7 e detecção de ameaças',
-      icon: Radar,
-      color: 'ai-green'
-    }
-  ];
-
-  const securityMeasures = [
-    {
-      category: 'Criptografia de Dados',
-      measures: [
-        'Criptografia AES-256 para dados em repouso',
-        'TLS 1.3 para dados em trânsito',
-        'Criptografia ponta a ponta para comunicações sensíveis',
-        'Módulos de Segurança de Hardware (HSM) para gerenciamento de chaves'
-      ],
-      icon: Lock
-    },
-    {
-      category: 'Segurança de Acesso',
-      measures: [
-        'Autenticação multifator (MFA) obrigatória',
-        'Controle de acesso baseado em funções (RBAC)',
-        'Integração com Single Sign-On (SSO)',
-        'Revisões regulares de acesso e desprovisionamento'
-      ],
-      icon: Key
-    },
-    {
-      category: 'Proteção de Infraestrutura',
-      measures: [
-        'Firewall para Aplicações Web (WAF)',
-        'Proteção e mitigação contra DDoS',
-        'Sistemas de detecção e prevenção de intrusões',
-        'Segmentação de rede e micro-segmentação'
-      ],
-      icon: Shield
-    },
-    {
-      category: 'Segurança de Aplicações',
-      measures: [
-        'Práticas de desenvolvimento de código seguro',
-        'Testes de penetração regulares',
-        'Varredura e avaliação de vulnerabilidades',
-        'Revisões de código de segurança e análise estática'
-      ],
-      icon: Bug
-    }
-  ];
-
-  const certifications = [
-    {
-      name: 'SOC 2 Tipo II',
-      description: 'Auditoria abrangente de controles de segurança',
-      icon: Award,
-      status: 'Certificado',
-      color: 'ai-green'
-    },
-    {
-      name: 'ISO 27001',
-      description: 'Sistema de gestão de segurança da informação',
-      icon: Shield,
-      status: 'Certificado',
-      color: 'ai-blue'
-    },
-    {
-      name: 'Conformidade HIPAA',
-      description: 'Padrões de proteção de informações de saúde',
-      icon: FileCheck,
-      status: 'Conforme',
-      color: 'ai-green'
-    },
-    {
-      name: 'Pronto para GDPR',
-      description: 'Regulamento europeu de proteção de dados',
-      icon: Globe,
-      status: 'Conforme',
-      color: 'ai-blue'
-    },
-    {
-      name: 'PCI DSS Nível 1',
-      description: 'Segurança de dados do setor de cartões de pagamento',
-      icon: BadgeCheck,
-      status: 'Certificado',
-      color: 'ai-green'
-    },
-    {
-      name: 'FedRAMP',
-      description: 'Gerenciamento federal de autorização de risco',
-      icon: Flag,
-      status: 'Em Progresso',
-      color: 'orange-500'
-    }
-  ];
-
-  const securityArchitecture = [
-    {
-      layer: 'Camada de Apresentação',
-      description: 'Firewall para aplicações web, proteção contra DDoS, terminação SSL/TLS',
-      icon: Monitor,
-      protections: ['WAF', 'Proteção DDoS', 'SSL/TLS', 'Limitação de Taxa']
-    },
-    {
-      layer: 'Camada de Aplicação',
-      description: 'APIs seguras, autenticação, autorização, validação de entrada',
-      icon: Cpu,
-      protections: ['Segurança de API', 'OAuth 2.0', 'Validação de Entrada', 'RBAC']
-    },
-    {
-      layer: 'Camada de Dados',
-      description: 'Criptografia em repouso, segurança de banco de dados, proteção de backup',
-      icon: Database,
-      protections: ['AES-256', 'Segurança de BD', 'Criptografia de Backup', 'Logs de Acesso']
-    },
-    {
-      layer: 'Camada de Infraestrutura',
-      description: 'Segurança de rede, endurecimento de hosts, segurança de containers',
-      icon: Server,
-      protections: ['Segmentação de Rede', 'Endurecimento de Hosts', 'Segurança de Containers', 'IDS/IPS']
-    }
-  ];
-
-  const incidentResponse = [
-    {
-      phase: 'Detecção',
-      description: 'Sistemas automatizados de detecção e alerta de ameaças',
-      duration: '< 5 minutos',
-      icon: Radar
-    },
-    {
-      phase: 'Avaliação',
-      description: 'Avaliação inicial de impacto e classificação',
-      duration: '< 15 minutos',
-      icon: Search
-    },
-    {
-      phase: 'Contenção',
-      description: 'Isolamento e contenção imediata da ameaça',
-      duration: '< 30 minutos',
-      icon: Shield
-    },
-    {
-      phase: 'Recuperação',
-      description: 'Restauração do sistema e recuperação do serviço',
-      duration: '< 2 horas',
-      icon: Activity
-    },
-    {
-      phase: 'Lições Aprendidas',
-      description: 'Análise pós-incidente e implementação de melhorias',
-      duration: '24-48 horas',
-      icon: Book
-    }
-  ];
-
-  const securityMetrics = [
-    { metric: '99.99%', label: 'Disponibilidade de Segurança', icon: Clock },
-    { metric: '< 5 min', label: 'Detecção de Ameaças', icon: Radar },
-    { metric: '256-bit', label: 'Padrão de Criptografia', icon: Lock },
-    { metric: '24/7', label: 'Monitoramento de Segurança', icon: Eye }
-  ];
+  const securityPillars = t('security.pillars') || [];
+  const securityMeasures = t('security.measures') || [];
+  const certifications = t('security.certifications') || [];
+  const securityArchitecture = t('security.architecture') || [];
+  const incidentResponse = t('security.incidentResponse.timeline') || [];
+  const securityMetrics = t('security.hero.metrics') || [];
 
   return (
     <>
@@ -266,26 +94,24 @@ export default function SecuritySection() {
                 <div className="h-px bg-gradient-ai w-32"></div>
               </div>
 
-              <h1 
+              <h1
                 className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-ai-dark leading-tight mb-8 transition-all duration-1000 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Segurança em{' '}
+                {t('security.hero.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Nível Empresarial
+                  {t('security.hero.titleHighlight')}
                 </span>
               </h1>
               
-              <p 
+              <p
                 className={`text-xl lg:text-2xl text-ai-medium leading-relaxed mb-12 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                A segurança não é uma reflexão tardia - está incorporada em cada camada de nossa plataforma. 
-                Da criptografia ponta a ponta ao monitoramento contínuo, protegemos seus dados com 
-                os mais altos padrões do setor e{' '}
-                <span className="text-ai-blue font-bold">arquitetura zero trust</span>.
+                {t('security.hero.subtitle')}{' '}
+                <span className="text-ai-blue font-bold">{t('security.hero.subtitleHighlight')}</span>.
               </p>
 
               {/* Security Metrics */}
@@ -294,14 +120,14 @@ export default function SecuritySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                {securityMetrics.map((metric, index) => {
-                  const Icon = metric.icon;
+                {Array.isArray(securityMetrics) && securityMetrics.map((metric: { icon: string; value: string; label: string }, index) => {
+                  const Icon = metric.icon ? (Icons as any)[metric.icon] : Shield;
                   return (
                     <div key={index} className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-ai-light/50 text-center">
                       <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-6 h-6 text-ai-blue" />
                       </div>
-                      <div className="text-2xl font-bold text-ai-green mb-2">{metric.metric}</div>
+                      <div className="text-2xl font-bold text-ai-green mb-2">{metric.value}</div>
                       <p className="text-sm text-ai-medium font-medium">{metric.label}</p>
                     </div>
                   );
@@ -314,8 +140,8 @@ export default function SecuritySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                {securityPillars.map((pillar, index) => {
-                  const Icon = pillar.icon;
+                {Array.isArray(securityPillars) && securityPillars.map((pillar: { icon: string; color: string; title: string; description: string }, index) => {
+                  const Icon = pillar.icon ? (Icons as any)[pillar.icon] : Shield;
                   return (
                     <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300 group hover:scale-105">
                       <CardContent className="p-6 text-center">
@@ -338,20 +164,19 @@ export default function SecuritySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Medidas Abrangentes de{' '}
+                {t('security.measuresTitle')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Segurança
+                  {t('security.measuresTitleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Abordagem de segurança em múltiplas camadas protegendo seus dados em todos os níveis,
-                desde a infraestrutura de rede até os endpoints de aplicação.
+                {t('security.measuresSubtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {securityMeasures.map((category, index) => {
-                const Icon = category.icon;
+              {Array.isArray(securityMeasures) && securityMeasures.map((category: { icon: string; title: string; items: string[] }, index) => {
+                const Icon = category.icon ? (Icons as any)[category.icon] : Shield;
                 return (
                   <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-shadow">
                     <CardContent className="p-8">
@@ -359,10 +184,10 @@ export default function SecuritySection() {
                         <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mr-4">
                           <Icon className="w-6 h-6 text-ai-blue" />
                         </div>
-                        <h3 className="text-xl font-bold text-ai-dark">{category.category}</h3>
+                        <h3 className="text-xl font-bold text-ai-dark">{category.title}</h3>
                       </div>
                       <div className="space-y-3">
-                        {category.measures.map((measure, measureIndex) => (
+                        {Array.isArray(category.items) && category.items.map((measure: string, measureIndex: number) => (
                           <div key={measureIndex} className="flex items-start space-x-3">
                             <CheckCircle className="w-4 h-4 text-ai-green mt-1 flex-shrink-0" />
                             <span className="text-sm text-ai-medium">{measure}</span>
@@ -382,20 +207,19 @@ export default function SecuritySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Arquitetura de{' '}
+                {t('security.architecture.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Segurança
+                  {t('security.architecture.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Arquitetura de defesa em profundidade com múltiplas camadas de segurança
-                fornecendo proteção abrangente contra ameaças em evolução.
+                {t('security.architecture.subtitle')}
               </p>
             </div>
 
             <div className="space-y-8">
-              {securityArchitecture.map((layer, index) => {
-                const Icon = layer.icon;
+              {Array.isArray(securityArchitecture) && securityArchitecture.map((layer: { icon: string; title: string; description: string; items: string[] }, index) => {
+                const Icon = layer.icon ? (Icons as any)[layer.icon] : Shield;
                 const isEven = index % 2 === 0;
                 
                 return (
@@ -408,9 +232,9 @@ export default function SecuritySection() {
                             <Icon className="w-8 h-8 text-ai-blue" />
                           </div>
                           <div>
-                            <h3 className="text-2xl font-bold text-ai-dark">{layer.layer}</h3>
+                            <h3 className="text-2xl font-bold text-ai-dark">{layer.title}</h3>
                             <span className="text-sm text-ai-green font-medium bg-ai-green/10 px-2 py-1 rounded-full">
-                              Camada {index + 1}
+                              {t('security.architecture.layer')} {index + 1}
                             </span>
                           </div>
                         </div>
@@ -420,9 +244,9 @@ export default function SecuritySection() {
                         </p>
 
                         <div className="space-y-2">
-                          <h4 className="font-semibold text-ai-dark mb-3">Controles de Segurança:</h4>
+                          <h4 className="font-semibold text-ai-dark mb-3">{t('security.architecture.controls')}:</h4>
                           <div className="grid grid-cols-2 gap-2">
-                            {layer.protections.map((protection, protIndex) => (
+                            {Array.isArray(layer.items) && layer.items.map((protection: string, protIndex: number) => (
                               <div key={protIndex} className="flex items-center space-x-2">
                                 <ShieldCheck className="w-4 h-4 text-ai-green" />
                                 <span className="text-sm text-ai-medium">{protection}</span>
@@ -502,14 +326,13 @@ export default function SecuritySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Processo de{' '}
+                {t('security.incidentResponse.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Resposta a Incidentes
+                  {t('security.incidentResponse.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Metodologia estruturada de resposta a incidentes garantindo detecção rápida,
-                contenção e recuperação de ameaças de segurança.
+                {t('security.incidentResponse.subtitle')}
               </p>
             </div>
 
@@ -517,8 +340,8 @@ export default function SecuritySection() {
               {/* Timeline Line */}
               <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-ai"></div>
               
-              {incidentResponse.map((phase, index) => {
-                const Icon = phase.icon;
+              {Array.isArray(incidentResponse) && incidentResponse.map((phase: { icon: string; duration: string; title: string; description: string }, index) => {
+                const Icon = phase.icon ? (Icons as any)[phase.icon] : Shield;
                 const isEven = index % 2 === 0;
                 
                 return (
@@ -542,7 +365,7 @@ export default function SecuritySection() {
                               {phase.duration}
                             </span>
                           </div>
-                          <h3 className="text-xl font-bold text-ai-dark mb-3">{phase.phase}</h3>
+                          <h3 className="text-xl font-bold text-ai-dark mb-3">{phase.title}</h3>
                           <p className="text-ai-medium leading-relaxed mb-3">{phase.description}</p>
                           <div className="hidden lg:block">
                             <span className="text-sm text-ai-green font-medium bg-ai-green/10 px-3 py-1 rounded-full">
@@ -568,47 +391,27 @@ export default function SecuritySection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Dúvidas sobre{' '}
-              <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Segurança?
-              </span>
-            </h2>
-            
-            <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Nossa equipe de segurança está disponível para esclarecer suas dúvidas, fornecer
-              informações adicionais ou discutir requisitos específicos de segurança para sua organização.
-            </p>
+                {t('security.contact.title')}{' '}
+                <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
+                  {t('security.contact.titleHighlight')}
+                </span>
+              </h2>
+              
+              <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+                {t('security.contact.subtitle')}
+              </p>
 
             {/* Security Team Contact */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              {[
-                {
-                  title: 'Equipe de Segurança',
-                  contact: 'security.info@itcygnus.com',
-                  description: 'Dúvidas gerais sobre segurança',
-                  icon: Shield
-                },
-                {
-                  title: 'Resposta a Incidentes',
-                  contact: '+55 (11) 5039-4877',
-                  description: 'Incidentes de segurança 24/7',
-                  icon: AlertTriangle
-                },
-                {
-                  title: 'Escritório de Conformidade',
-                  contact: 'dpo@itcygnus.com',
-                  description: 'Solicitações de conformidade e auditoria',
-                  icon: FileCheck
-                }
-              ].map((contact, index) => {
-                const Icon = contact.icon;
+              {Array.isArray(t('security.contact.contacts')) && t('security.contact.contacts').map((contact: { icon: string; title: string; value: string; description: string }, index: number) => {
+                const Icon = contact.icon ? (Icons as any)[contact.icon] : Shield;
                 return (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                       <Icon className="w-6 h-6 text-ai-green" />
                     </div>
                     <div className="text-lg font-bold text-white mb-1">{contact.title}</div>
-                    <div className="text-ai-green mb-2">{contact.contact}</div>
+                    <div className="text-ai-green mb-2">{contact.value}</div>
                     <div className="text-white/60 text-sm">{contact.description}</div>
                   </div>
                 );
@@ -636,9 +439,9 @@ export default function SecuritySection() {
             </div> */}
 
             <p className="text-white/60 text-sm">
-              Para preocupações urgentes de segurança, ligue para nossa linha de resposta a incidentes 24/7 no{' '}
-              <a href="tel:+1-305-555-0199" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +55 (11) 5039-4877
+              {t('security.contact.footer')}{' '}
+              <a href={`tel:${t('security.contact.footerPhone')}`} className="text-ai-green hover:text-ai-green/80 transition-colors">
+                {t('security.contact.footerPhone')}
               </a>
             </p>
           </div>

@@ -147,17 +147,17 @@ export default function HeroSection() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-ai-blue/10 rounded-xl p-4 text-center">
                     <div className="text-2xl font-bold text-ai-blue mb-1">75%</div>
-                    <div className="text-sm text-ai-medium">Redução de tempo</div>
+                    <div className="text-sm text-ai-medium">{t('metrics.items.timeReduction.label')}</div>
                   </div>
                   <div className="bg-ai-green/10 rounded-xl p-4 text-center">
                     <div className="text-2xl font-bold text-ai-green mb-1">99.9%</div>
-                    <div className="text-sm text-ai-medium">Acurácia</div>
+                    <div className="text-sm text-ai-medium">{t('metrics.items.accuracy.label')}</div>
                   </div>
                 </div>
 
                 {/* Floating Badge */}
                 <div className="absolute -top-4 -right-4 bg-ai-green text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-float">
-                  100+ Companies
+                  {t('metrics.items.clients.value')} {t('header.company')}
                 </div>
               </div>
               <br />

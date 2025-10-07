@@ -5,7 +5,8 @@
     "resources": "Recursos",
     "company": "Empresa",
     "signIn": "Entrar",
-    "requestDemo": "Solicitar Demo"
+    "requestDemo": "Solicitar Demo",
+    "customDevelopment": "Desenvolvimento Customizado"
   },
   "hero": {
     "title": "Transforme sua",
@@ -51,6 +52,13 @@
         "description": "Empresas confiam em nossa plataforma"
       }
     }
+  },
+  "networkEffect": {
+    "title": "Efeito de",
+    "titleHighlight": "Rede",
+    "subtitle": "Hub de Inteligência Antifraude",
+    "description": "Quanto mais operadoras se conectam, mais poderosa se torna a rede. O AI.DATA transforma o mercado em um ecossistema colaborativo, onde seguradoras compartilham informações críticas em tempo real, detectam fraudes com precisão, atribuem scores de risco e fornecem motivos detalhados para ações imediatas.",
+    "quote": "Sozinhos, combatemos uma fraude. Unidos, eliminamos o problema."
   },
   "solutions": {
     "title": "Nossas Soluções de",
@@ -392,6 +400,1788 @@
     "solutions": "Soluções",
     "industries": "Setores",
     "company": "Empresa",
-    "copyright": "© 2012 CYGNUS IT SERVICE LTDA/LLC. Todos os direitos reservados."
+    "copyright": "© 2012 CYGNUS IT SERVICE LTDA/LLC. Todos os direitos reservados.",
+    "industriesList": {
+      "healthcare": "Saúde",
+      "financial": "Financeira",
+      "insurance": "Seguradoras"
+    },
+    "companyList": {
+      "about": "Sobre Nós",
+      "contact": "Contato",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço"
+    },
+    "bottomLinks": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço",
+      "security": "Segurança",
+      "compliance": "Conformidade"
+    }
+  },
+  "finalCta": {
+    "title": "Pronto para Transformar Sua",
+    "titleHighlight": "Empresa",
+    "subtitle": "Junte-se a mais de 10 empresas que já revolucionaram seus processos com a ITCygnus AI. Comece sua transformação hoje.",
+    "trustIndicators": [
+      "Sem Taxas de Setup",
+      "Migração Gratuita",
+      "Garantia de 30 Dias",
+      "Cancele Quando Quiser"
+    ],
+    "button": "Iniciar Teste Gratuito",
+    "explore": "Saiba Mais Sobre Transformação Digital",
+    "contact": "Dúvidas? Ligue para {phone} ou email {email}"
+  },
+  "chatBubble": {
+    "message": "Olá! Aqui é o Paulo assistente virtual da Cygnus IT Services. Como posso te ajudar hoje?"
+  },
+  "customDevelopment": {
+    "title": "Desenvolvimento Customizado de Aplicações com",
+    "titleHighlight": "Resultados Reais",
+    "subtitle": "Nossa equipe está pronta para construir a aplicação ideal ou modernizar seus sistemas existentes, atendendo às necessidades exclusivas do seu negócio.",
+    "services": [
+      {
+        "title": "Estratégia e Engenharia Técnica",
+        "description": "Impulsione sua estratégia digital ao adotar tecnologias de ponta e orientações especializadas, assegurando conformidade e extraindo o máximo valor dos seus investimentos em TI."
+      },
+      {
+        "title": "Engenharia de Produtos",
+        "description": "Aprimore sua estratégia digital com tecnologias de ponta e a orientação de especialistas, garantindo conformidade e extraindo o máximo valor de seus investimentos em TI."
+      },
+      {
+        "title": "Engenharia de Qualidade e Garantia",
+        "description": "Agilize o desenvolvimento de software com automação de testes de ponta e regressão orientada por IA, garantindo maior confiabilidade e eficiência, totalmente alinhadas às metas da sua empresa."
+      }
+    ],
+    "whyChooseUs": {
+      "title": "Por Que Escolher a Cygnus?",
+      "points": [
+        {
+          "title": "Soluções Sob Medida",
+          "description": "Não acreditamos em soluções de tamanho único. Cada projeto é uma tela em branco, pintada com o código que resolve seus desafios específicos."
+        },
+        {
+          "title": "Parceria Estratégica",
+          "description": "Atuamos como uma extensão da sua equipe, imersos em sua cultura e objetivos para garantir que o produto final seja um verdadeiro reflexo da sua visão."
+        },
+        {
+          "title": "Foco em Resultados",
+          "description": "Nossa métrica de sucesso é o seu sucesso. Desenvolvemos com foco em ROI, escalabilidade e impacto mensurável no seu negócio."
+        }
+      ]
+    },
+    "ourProcess": {
+      "title": "Nosso Processo",
+      "steps": [
+        {
+          "name": "Imersão e Descoberta",
+          "description": "Entendemos profundamente seus desafios e objetivos."
+        },
+        {
+          "name": "Design e Arquitetura",
+          "description": "Desenhamos uma solução robusta, escalável e centrada no usuário."
+        },
+        {
+          "name": "Desenvolvimento Ágil",
+          "description": "Construímos em sprints, com entregas contínuas e validação constante."
+        },
+        {
+          "name": "Qualidade e Testes",
+          "description": "Garantimos a excelência com testes rigorosos e automação."
+        },
+        {
+          "name": "Implantação e Suporte",
+          "description": "Lançamos a solução e oferecemos suporte contínuo para sua evolução."
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Tecnologias que Dominamos"
+    }
+  },
+  "customDevelopmentHero": {
+    "title": "Construindo o Futuro, Bloco por Bloco",
+    "titleHighlight": "com Desenvolvimento Customizado",
+    "subtitle": "Criamos soluções de software sob medida que se encaixam perfeitamente em seus processos de negócios, impulsionando a inovação e a eficiência.",
+    "blocks": {
+      "scalability": "Escalabilidade",
+      "integration": "Integração",
+      "ux": "UX Design",
+      "security": "Segurança",
+      "ai": "IA e ML"
+    },
+    "cta": "Vamos Construir Juntos"
+  },
+  "demoForm": {
+    "customDevelopment": "Desenvolvimento Customizado"
+  },
+  "certifications": {
+    "title": "Nossas Certificações",
+    "subtitle": "Nossa equipe é composta por profissionais certificados nas tecnologias mais avançadas do mercado, garantindo a entrega de soluções de alta qualidade e performance."
+  },
+  "company": {
+    "hero": {
+      "title": "Pioneiros em",
+      "titleHighlight": "IA Empresarial",
+      "subtitle": "Desde 2012, a ITCygnus acelera a transformação digital de grandes empresas com soluções tecnológicas de ponta. Da aceleração de software à inovação baseada em IA, marcas líderes confiam em nós para automatizar e revolucionar seus processos de negócios mais críticos.",
+      "mission": {
+        "title": "Nossa Missão",
+        "text": "Democratizar o acesso à inteligência artificial empresarial, tornando tecnologias avançadas acessíveis a organizações de todos os tamanhos, sempre com foco em resultados mensuráveis e implementação rápida."
+      }
+    },
+    "stats": {
+      "organizations": "Organizações que Confiam",
+      "countries": "Países Atendidos",
+      "documents": "Tipos de Documentos",
+      "team": "Membros da Equipe"
+    },
+    "journey": {
+      "title": "Nossa",
+      "titleHighlight": "Jornada",
+      "subtitle": "Da aceleração de software empresarial à inovação em IA - 13 anos transformando a forma como grandes organizações trabalham.",
+      "legacy": {
+        "title": "Legado de Aceleração de Software Empresarial",
+        "p1": "A ITCygnus foi fundada em 2012 como especialista em aceleração de software para grandes empresas brasileiras. Ajudamos empresas Fortune 500 a otimizar sistemas legados, modernizar processos críticos e acelerar sua jornada de transformação digital.",
+        "p2": "Trabalhando de perto com clientes empresariais, desenvolvemos profunda expertise em entender necessidades organizacionais complexas, requisitos regulatórios e desafios de escala que apenas grandes corporações enfrentam.",
+        "p3": "Essa base focada em empresas tornou-se nosso DNA, moldando como abordamos cada solução - sempre pensando em escala, segurança e integração perfeita."
+      },
+      "evolution": {
+        "title": "Evolução para Liderança em IA",
+        "p1": "Em 2018, identificamos uma grande oportunidade: aplicar inteligência artificial para resolver os desafios de automação de documentos e processos que estávamos enfrentando manualmente há anos.",
+        "p2": "Nosso primeiro produto de IA, o AI.OCR, nasceu de meses de pesquisa em hospitais e escritórios, observando como profissionais perdiam horas em tarefas que poderiam ser automatizadas.",
+        "p3": "Hoje, processamos documentos em mais de 40 padrões e atendemos clientes em 2 países, com uma equipe que cresceu de 5 para mais de 20 especialistas."
+      },
+      "timelineTitle": "13 Anos de Inovação"
+    },
+    "timeline": [
+      {
+        "year": "2012",
+        "title": "Fundação como Aceleradores de Software",
+        "description": "ITCygnus fundada como especialista em aceleração de software para grandes empresas brasileiras. Focada em otimizar sistemas legados e acelerar processos de transformação digital."
+      },
+      {
+        "year": "2015",
+        "title": "Expertise em Otimização Empresarial",
+        "description": "Desenvolveu metodologias proprietárias para aceleração de software empresarial. Trabalhou com empresas Fortune 500 no Brasil para modernizar processos de negócios críticos."
+      },
+      {
+        "year": "2018",
+        "title": "Pesquisa e Desenvolvimento em IA",
+        "description": "Pivotou para a pesquisa em inteligência artificial após identificar oportunidades de automação em processos empresariais. Começou a desenvolver soluções de processamento de documentos com IA."
+      },
+      {
+        "year": "2019",
+        "title": "Lançamento do AI.OCR",
+        "description": "Lançou o AI.OCR após meses de pesquisa em hospitais e escritórios. Primeiro produto de IA focado em resolver problemas de negócios reais com reconhecimento inteligente de documentos."
+      },
+      {
+        "year": "2020",
+        "title": "AI.DOC e Crescimento na Pandemia",
+        "description": "Expandiu a plataforma com gerenciamento inteligente de documentos. A pandemia acelerou as necessidades de digitalização, tornando nossa solução essencial para operações remotas."
+      },
+      {
+        "year": "2021",
+        "title": "Especialização em Saúde",
+        "description": "Entrou no mercado de saúde com o AI.DATA, desenvolvido em parceria com grandes planos de saúde. Tornou-se especialista em IA vertical com profundo conhecimento do setor."
+      },
+      {
+        "year": "2023",
+        "title": "Expansão Internacional",
+        "description": "Expandiu para o mercado americano, adaptando soluções para regulamentações internacionais. Agora atende clientes em 4 países com suporte para mais de 40 idiomas."
+      },
+      {
+        "year": "2024",
+        "title": "Plataforma Completa de IA",
+        "description": "Lançou uma plataforma de IA abrangente com agentes autônomos e IA conversacional. Liderando a transformação empresarial em todo o mundo com um conjunto completo de IA."
+      }
+    ],
+    "values": {
+      "title": "Nossos",
+      "titleHighlight": "Valores",
+      "subtitle": "Os princípios forjados em 13 anos de trabalho empresarial que guiam tudo o que fazemos e moldam como construímos soluções de IA para transformação.",
+      "points": [
+        {
+          "title": "Abordagem Empresarial",
+          "description": "Nascida do trabalho com grandes empresas, entendemos a complexidade e requisitos de escala que soluções empresariais reais demandam."
+        },
+        {
+          "title": "Inovação Orientada a Resultados",
+          "description": "Acreditamos que a IA deve resolver problemas reais de negócios, não apenas impressionar com tecnologia. Cada solução que construímos entrega resultados mensuráveis."
+        },
+        {
+          "title": "Implementação Rápida",
+          "description": "Velocidade é crucial nos negócios. Nossas metodologias comprovadas de 13 anos de trabalho empresarial garantem que você veja valor rapidamente sem comprometer a qualidade."
+        },
+        {
+          "title": "Especialização Profunda",
+          "description": "Soluções genéricas falham em indústrias complexas. Desenvolvemos IA vertical que entende seu setor específico e regulamentações."
+        }
+      ]
+    },
+    "team": {
+      "title": "Nossa",
+      "titleHighlight": "Equipe Especializada",
+      "subtitle": "20+ profissionais incluindo cientistas de dados, arquitetos empresariais e especialistas em transformação com vasta experiência em implementações em larga escala.",
+      "roles": [
+        {
+          "role": "Cientistas de Dados",
+          "count": "6+",
+          "description": "Pesquisadores de IA com PhD e especialistas em machine learning"
+        },
+        {
+          "role": "Engenheiros de Software",
+          "count": "10+",
+          "description": "Desenvolvedores full-stack e arquitetos de plataforma"
+        },
+        {
+          "role": "Arquitetos Empresariais",
+          "count": "4+",
+          "description": "Ex-especialistas de grandes corporações com conhecimento profundo em ambientes empresariais"
+        },
+        {
+          "role": "Consultores de Implementação",
+          "count": "50+",
+          "description": "Especialistas em transformação digital e gestão de mudanças"
+        }
+      ]
+    },
+    "presence": {
+      "title": "Presença",
+      "titleHighlight": "Global",
+      "subtitle": "Localizações estratégicas em mercados-chave nas Américas, permitindo-nos atender clientes empresariais com expertise local e escala global.",
+      "offices": [
+        {
+          "city": "São Paulo",
+          "country": "Brasil",
+          "description": "Sede Global & Centro de Desenvolvimento",
+          "details": "Principal centro de desenvolvimento com 80+ engenheiros e cientistas de dados"
+        },
+        {
+          "city": "Orlando",
+          "country": "EUA",
+          "description": "Centro de Operações das Américas",
+          "details": "Vendas, suporte e operações de sucesso do cliente na América do Norte"
+        },
+        {
+          "city": "San Diego",
+          "country": "EUA",
+          "description": "Laboratório de Inovação & Pesquisa",
+          "details": "Pesquisa avançada em IA e desenvolvimento de tecnologias emergentes"
+        }
+      ],
+      "details": {
+        "title": "Localizados Estrategicamente nas Américas",
+        "subtitle": "Nossas três localizações estratégicas permitem operações 24/7 e fornecem cobertura abrangente para clientes nos mercados da América do Norte e do Sul.",
+        "hubs": [
+          {
+            "name": "Hub São Paulo",
+            "description": "Centro principal de desenvolvimento e engenharia"
+          },
+          {
+            "name": "Operações Orlando",
+            "description": "Sucesso do cliente e operações comerciais"
+          },
+          {
+            "name": "Inovação San Diego",
+            "description": "Pesquisa em IA e tecnologias emergentes"
+          }
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para fazer parte da nossa",
+      "titleHighlight": "História de Sucesso?",
+      "subtitle": "Junte-se às marcas que já estão transformando suas operações com a IT Cygnus. Vamos construir o futuro da IA empresarial juntos.",
+      "buttons": {
+        "demo": "Solicitar Demonstração",
+        "contact": "Fale com Nossa Equipe"
+      },
+      "contact": "Dúvidas? Entre em contato conosco pelo {phone} ou {email}"
+    }
+  },
+  "clientsCarousel": {
+    "title": "Nossos Clientes e Parceiros",
+    "subtitle": "Trabalhamos com empresas líderes de mercado para entregar soluções de alto impacto."
+  },
+  "financialIndustry": {
+    "hero": {
+      "title": "IA Financeira que Acelera",
+      "titleHighlight": "Decisões e Reduz Riscos",
+      "subtitle": "Automatize processos críticos para seu banco, fintech ou instituição financeira com IA especializada em compliance, análise de crédito e detecção de fraudes.",
+      "subtitleEmphasis": "Segurança bancária e conformidade regulatória.",
+      "keyBenefits": [
+        "Análise de crédito em tempo real",
+        "Detecção avançada de fraudes"
+      ],
+      "cta": "Solicitar Demonstração Bancária"
+    },
+    "visual": {
+      "application": "Aplicação",
+      "aiAnalysis": "Análise IA",
+      "approved": "Aprovado",
+      "loanApprovalTime": "2 hrs",
+      "loanApprovalLabel": "Aprovação de Empréstimo",
+      "fraudDetectionRate": "99,2%",
+      "fraudDetectionLabel": "Detecção de Fraude"
+    },
+    "challenges": {
+      "title": "Complexidade do Setor Financeiro",
+      "p1": "Instituições financeiras operam em um ambiente altamente regulado onde precisão e velocidade são igualmente críticas. Bancos processam milhões de transações diariamente, cada uma exigindo validação de conformidade, análise de risco e possível detecção de fraudes.",
+      "p2": "O onboarding de clientes envolve validação de dezenas de documentos, verificação de antecedentes e análise de capacidade de crédito - tudo mantendo uma experiência fluida e segura para o cliente. Regulamentações como GDPR, normas do banco central e requisitos internacionais tornam a automação um desafio técnico e regulatório complexo.",
+      "p3": "Fintechs enfrentam o desafio adicional de competir com bancos tradicionais oferecendo serviços mais ágeis e personalizados, mas sem comprometer a segurança e conformidade que o setor exige.",
+      "problemStats": [
+        { "stat": "72 horas", "label": "Tempo médio de aprovação de empréstimo" },
+        { "stat": "R$ 25B", "label": "Perdas anuais por fraudes bancárias" },
+        { "stat": "65%", "label": "Processos manuais em serviços financeiros" }
+      ]
+    },
+    "solution": {
+      "title": "Nossa Expertise Financeira",
+      "p1": "A ITCygnus desenvolveu soluções específicas para o setor financeiro, com arquitetura de segurança bancária e conformidade total com regulamentações nacionais e internacionais. Nossa IA foi treinada em milhões de transações e documentos financeiros, compreendendo padrões de fraude, riscos de crédito e requisitos regulatórios.",
+      "p2": "Trabalhamos com grandes bancos, fintechs inovadoras e cooperativas de crédito para criar soluções que aceleram processos sem comprometer a segurança. Nossa tecnologia é auditada por empresas especializadas em segurança financeira e certificada para uso bancário.",
+      "benefits": [
+        "Segurança e criptografia bancária",
+        "Automação completa de conformidade regulatória",
+        "Detecção e prevenção de fraudes em tempo real",
+        "Integração perfeita com sistemas bancários centrais"
+      ]
+    },
+    "capabilities": {
+      "title": "Capacidades Avançadas de",
+      "titleHighlight": "IA Financeira",
+      "subtitle": "Capacidades abrangentes de IA projetadas especificamente para operações bancárias, conformidade regulatória e gerenciamento de riscos financeiros.",
+      "items": [
+        { "title": "Análise de Risco de Crédito", "description": "Pontuação de crédito e avaliação de risco por IA" },
+        { "title": "Detecção de Fraudes", "description": "Monitoramento em tempo real e prevenção de fraudes" },
+        { "title": "Processamento de Documentos", "description": "Processamento inteligente de documentos financeiros" },
+        { "title": "Prevenção à Lavagem de Dinheiro", "description": "Triagem AML e detecção de atividades suspeitas" },
+        { "title": "Monitoramento de Transações", "description": "Análise em tempo real de transações de pagamento" },
+        { "title": "Gestão de Riscos", "description": "Avaliação abrangente de riscos e mitigação" }
+      ]
+    },
+    "integrations": {
+      "title": "Integrações com Sistemas Bancários",
+      "subtitle": "Integração nativa com plataformas bancárias centrais e infraestrutura financeira.",
+      "items": [
+        { "system": "Sistema Bancário Central", "description": "Integração direta com sistemas centrais" },
+        { "system": "Bureaus de Crédito", "description": "Acesso em tempo real a dados de crédito" },
+        { "system": "Plataformas de Risco", "description": "Gestão de riscos corporativos" },
+        { "system": "Plataformas Bancárias Digitais", "description": "Plataformas bancárias móveis e web" }
+      ]
+    },
+    "solutions": {
+      "title": "Soluções de",
+      "titleHighlight": "IA Financeira",
+      "subtitle": "Soluções especializadas em IA projetadas especificamente para operações bancárias, desde onboarding de clientes até detecção de fraudes e automação de conformidade.",
+      "items": [
+        {
+          "title": "Análise de Crédito e Avaliação de Risco em Tempo Real",
+          "product": "AI.DATA",
+          "description": "Processe aplicações de empréstimo com análise de crédito inteligente que avalia fontes de dados tradicionais e alternativas. Nossa IA avalia risco de crédito, verificação de renda e capacidade de pagamento em tempo real.",
+          "details": "Modelos de machine learning analisam extratos bancários, padrões de transação e dados comportamentais para fornecer pontuação de crédito precisa. Integração com bureaus de crédito e APIs de open banking garante avaliação abrangente de risco."
+        },
+        {
+          "title": "Detecção e Prevenção Avançada de Fraudes",
+          "product": "AI.DATA",
+          "description": "AI.DATA monitora transações em tempo real, identificando padrões suspeitos e potenciais fraudes antes que ocorram perdas. Nosso sistema aprende com casos históricos de fraude e se adapta a novos vetores de ataque.",
+          "details": "Detecção de fraude em múltiplas camadas analisa velocidade de transações, padrões de comerciantes, anomalias geográficas e impressão digital de dispositivos. Pontuação em tempo real permite decisões instantâneas minimizando falsos positivos."
+        }
+      ],
+      "cta": "Saiba Mais Sobre {product}"
+    },
+    "finalCta": {
+      "title": "Pronto para Transformar Suas",
+      "titleHighlight": "Operações Financeiras?",
+      "subtitle": "Junte-se às principais instituições financeiras que já revolucionaram suas operações com as soluções especializadas em IA da ITCygnus. Comece a reduzir riscos enquanto acelera decisões hoje mesmo.",
+      "trustIndicators": [
+        { "value": "1 h", "label": "Tempo de Aprovação de Empréstimo" },
+        { "value": "99,2%", "label": "Detecção de Fraudes" },
+        { "value": "10+", "label": "Clientes Financeiros" }
+      ],
+      "contact": "Dúvidas? Contate nossos especialistas financeiros pelo {phone} ou {email}"
+    }
+  },
+  "healthcareIndustry": {
+    "hero": {
+      "title": "IA Especializada para",
+      "titleHighlight": "Saúde",
+      "subtitle": "Transforme a eficiência operacional do seu hospital, clínica ou operadora de saúde com soluções de IA desenvolvidas especificamente para o ambiente médico.",
+      "subtitleEmphasis": "Conformidade total com regulamentações de saúde.",
+      "keyBenefits": [
+        "Conformidade total com regulamentações médicas",
+        "Integração com sistemas hospitalares",
+        "Processamento de laudos e prontuários",
+        "Detecção automática de fraudes médicas"
+      ],
+      "cta": "Agendar Demonstração"
+    },
+    "visual": {
+      "documents": "Documentos",
+      "aiProcessing": "Processamento por IA",
+      "automated": "Automatizado",
+      "medicalAccuracy": "99,5%",
+      "medicalAccuracyLabel": "Precisão Médica",
+      "compliance": "LGPD",
+      "complianceLabel": "Conformidade"
+    },
+    "challenges": {
+      "title": "Desafios Únicos da Saúde",
+      "p1": "O setor de saúde enfrenta pressão crescente para reduzir custos enquanto melhora a qualidade do atendimento. Hospitais processam milhares de documentos diariamente - desde prontuários até resultados de exames - mas ainda dependem de processos manuais que consomem tempo precioso dos profissionais de saúde.",
+      "p2": "A complexidade da terminologia médica, a necessidade de precisão absoluta e as rigorosas regulamentações do setor tornam a automação um desafio único. Soluções genéricas de IA simplesmente não entendem o contexto médico, gerando erros que podem ter consequências graves.",
+      "p3": "Operadoras de saúde enfrentam o desafio adicional de processar milhões de reembolsos mensalmente, validando procedimentos, detectando fraudes e garantindo conformidade regulatória.",
+      "problemStats": [
+        { "stat": "40%", "label": "Do tempo dos médicos gasto com burocracia" },
+        { "stat": "R$80B", "label": "Custos administrativos anuais em saúde" },
+        { "stat": "25%", "label": "Reembolsos exigem revisão manual" }
+      ]
+    },
+    "solution": {
+      "title": "Nossa Especialização Médica",
+      "p1": "A ITCygnus desenvolveu soluções específicas para saúde, treinadas em milhões de documentos médicos reais e validadas por profissionais da área. Nossa IA compreende terminologia médica, códigos de procedimento, CID-10 e as particularidades dos sistemas de saúde.",
+      "p2": "Trabalhamos com hospitais de referência, grandes operadoras e clínicas especializadas para criar soluções que não apenas automatizam processos, mas melhoram a qualidade do atendimento e reduzem riscos operacionais. Nossa tecnologia é certificada para uso médico e atende a todas as regulamentações do setor.",
+      "benefits": [
+        "Processamento de IA com conformidade à LGPD",
+        "Integração em tempo real com prontuários eletrônicos",
+        "Interpretação avançada de terminologia médica",
+        "Automação de conformidade regulatória",
+        "Conectividade com mais de 300 prefeituras",
+        "Análise e identificação de glosas em qualquer tipo de documento",
+        "Integração com principais bureaus de dados",
+        "Agentes autônomos executando fluxos completos de análise"
+      ]
+    },
+    "capabilities": {
+      "title": "Capacidades Avançadas de",
+      "titleHighlight": "IA Médica",
+      "subtitle": "Capacidades abrangentes de IA projetadas especificamente para fluxos de trabalho em saúde, terminologia médica e requisitos de conformidade regulatória.",
+      "items": [
+        { "title": "Reconhecimento de Caligrafia Médica", "description": "IA treinada em padrões de escrita de médicos" },
+        { "title": "Validação de Códigos CID-10", "description": "Codificação automática de diagnósticos e procedimentos" },
+        { "title": "Análise de Interações Medicamentosas", "description": "Verificação em tempo real de segurança de prescrições" },
+        { "title": "Integração de Imagens Médicas", "description": "Processamento e análise de arquivos DICOM" },
+        { "title": "Suporte a Decisão Clínica", "description": "Recomendações de tratamento baseadas em evidências" },
+        { "title": "Avaliação de Risco do Paciente", "description": "Análise preditiva de resultados de saúde" },
+        { "title": "Otimização de Agendamentos", "description": "Alocação inteligente de recursos e horários" },
+        { "title": "Monitoramento de Métricas de Qualidade", "description": "Relatórios automatizados de conformidade e qualidade" },
+        { "title": "Automação de Autorizações Prévia", "description": "Processos simplificados de aprovação por operadoras" }
+      ]
+    },
+    "solutions": {
+      "title": "Soluções de",
+      "titleHighlight": "IA para Saúde",
+      "subtitle": "Soluções especializadas de IA projetadas especificamente para fluxos de trabalho em saúde, desde prontuários até processamento de reembolsos e gestão documental.",
+      "items": [
+        {
+          "title": "Processamento Inteligente de Prontuários",
+          "product": "AI.OCR",
+          "description": "Nossa solução AI.OCR especializada processa prontuários, laudos e receitas com mais de 99,5% de precisão, reconhecendo até mesmo caligrafia médica complexa. O sistema valida automaticamente informações críticas como dosagens, alergias e contraindicações.",
+          "details": "A integração nativa com sistemas hospitalares como Epic, Cerner e Allscripts permite que as informações sejam automaticamente inseridas em prontuários eletrônicos, eliminando retrabalho e reduzindo erros de transcrição."
+        },
+        {
+          "title": "Automação de Reembolsos Médicos",
+          "product": "AI.SAUDE",
+          "description": "O AI.SAUDE revoluciona o processamento de reembolsos, analisando automaticamente a elegibilidade de procedimentos, validando códigos e detectando possíveis fraudes em tempo real. Nossa IA compreende as regras complexas de cada plano de saúde.",
+          "details": "O sistema integra-se com provedores, laboratórios e farmácias, criando um fluxo automatizado que reduz o tempo de reembolso de semanas para horas, melhorando a satisfação dos beneficiários."
+        },
+        {
+          "title": "Gestão Inteligente de Documentos Médicos",
+          "product": "AI.DOC",
+          "description": "O AI.DOC organiza e classifica automaticamente milhões de documentos médicos, desde exames de imagem até relatórios cirúrgicos. Nossa busca semântica permite que médicos encontrem rapidamente históricos relevantes e informações críticas.",
+          "details": "O sistema mantém trilhas completas de auditoria de acessos e modificações, garantindo conformidade com regulamentações médicas e facilitando processos de acreditação hospitalar."
+        }
+      ],
+      "cta": "Saiba Mais Sobre {product}"
+    },
+    "useCases": {
+      "title": "Casos de",
+      "titleHighlight": "Sucesso em Saúde",
+      "subtitle": "Veja como organizações de saúde estão transformando operações e melhorando o atendimento ao paciente com nossas soluções especializadas de IA.",
+      "items": [
+        {
+          "title": "Inovação em Operadora de Saúde",
+          "description": "Uma grande operadora com 3M+ beneficiários implementou o AI.SAUDE para automação de reembolsos e detecção de fraudes. A IA processa automaticamente determinações de necessidade médica complexas.",
+          "result": "Detectou mais de R$1M+ em fraudes anualmente enquanto reduzia negativas em 45%. Satisfação dos beneficiários aumentou 40% devido a aprovações mais rápidas e menos atrasos administrativos.",
+          "industry": "Operadora de Saúde",
+          "stats": { "detecção_de_fraude": "R$1M+", "negativas": "45%", "satisfação": "40%" }
+        }
+      ],
+      "resultsTitle": "Resultados Alcançados:"
+    },
+    "finalCta": {
+      "title": "Pronto para Transformar suas",
+      "titleHighlight": "Operações de Saúde?",
+      "subtitle": "Junte-se às principais organizações de saúde que já revolucionaram suas operações com nossas soluções especializadas de IA. Comece a melhorar o atendimento ao paciente enquanto reduz custos hoje.",
+      "trustIndicators": [
+        { "value": "99,5%", "label": "Precisão Médica" },
+        { "value": "LGPD", "label": "Conformidade" },
+        { "value": "75%", "label": "Economia de Tempo" },
+        { "value": "10+", "label": "Provedores de Saúde" }
+      ],
+      "contact": "Dúvidas? Fale com nossos especialistas em saúde pelo {phone} ou {email}"
+    }
+  },
+  "insuranceIndustry": {
+    "hero": {
+      "title": "IA Especializada para",
+      "titleHighlight": "Seguradoras e Corretores",
+      "subtitle": "Revolucione o processamento de sinistros, subscrição de risco e atendimento ao segurado com IA que compreende apólices, detecta fraudes e acelera aprovações.",
+      "subtitleEmphasis": "Eficiência e precisão para o mercado segurador.",
+      "keyBenefits": [
+        "Processamento automático de sinistros",
+        "Detecção avançada de fraudes",
+        "Subscrição de risco automatizada",
+        "Integração com corretores e provedores"
+      ],
+      "cta": "Solicitar Demonstração"
+    },
+    "visual": {
+      "claimFiled": "Sinistro Registrado",
+      "aiAnalysis": "Análise por IA",
+      "settled": "Liquidado",
+      "processingTime": "1h",
+      "processingLabel": "Processamento",
+      "fraudDetectionRate": "95%",
+      "fraudDetectionLabel": "Detecção de Fraude"
+    },
+    "challenges": {
+      "title": "Entendimento Profundo do Mercado Segurador",
+      "p1": "O setor de seguros opera com margens apertadas e riscos complexos, onde cada decisão de subscrição ou sinistro impacta diretamente a lucratividade. Seguradoras processam milhões de apólices e sinistros anualmente, cada um exigindo análise detalhada de risco, validação de cobertura e possível detecção de fraudes.",
+      "p2": "A complexidade dos produtos de seguro, desde seguros de vida até coberturas empresariais especializadas, requer profundo conhecimento de termos técnicos, regulamentações específicas e padrões de risco que soluções genéricas simplesmente não conseguem processar adequadamente.",
+      "problemStats": [
+        { "stat": "15 dias", "label": "Tempo médio de processamento de sinistros" },
+        { "stat": "R$ 200B", "label": "Perdas anuais por fraudes em seguros" },
+        { "stat": "45%", "label": "Processos manuais de subscrição" }
+      ]
+    },
+    "solution": {
+      "title": "Nossa Solução Especializada",
+      "p1": "O AI.DATA foi desenvolvido especificamente para o mercado segurador, treinado em milhões de apólices, sinistros e documentos do setor. Nossa IA compreende a linguagem técnica de seguros, identifica padrões sofisticados de fraude e acelera processos de subscrição mantendo a precisão necessária para proteger a lucratividade das seguradoras.",
+      "p2": "O sistema se integra com corretores, prestadores de serviços e redes credenciadas, criando um ecossistema automatizado que beneficia todos os participantes da cadeia de valor do seguro.",
+      "benefits": [
+        "Compreensão profunda da terminologia de seguros",
+        "Reconhecimento sofisticado de padrões de fraude",
+        "Validação automatizada de apólices e coberturas",
+        "Integração perfeita com corretores e provedores"
+      ]
+    },
+    "capabilities": {
+      "title": "Capacidades Avançadas de",
+      "titleHighlight": "IA para Seguros",
+      "subtitle": "Capacidades abrangentes de IA projetadas especificamente para operações de seguros, desde processamento de sinistros até avaliação de risco e detecção de fraudes.",
+      "items": [
+        { "title": "Recebimento e Processamento de Sinistros", "description": "Notificação automática de sinistro e roteamento de reclamações" },
+        { "title": "Detecção de Fraudes", "description": "Análise em tempo real de padrões suspeitos de sinistros" },
+        { "title": "Avaliação de Risco", "description": "Subscrição abrangente e avaliação de risco" },
+        { "title": "Administração de Apólices", "description": "Gestão e atualizações automatizadas de apólices" },
+        { "title": "Avaliação de Danos", "description": "Avaliação de danos a propriedades e veículos por IA" },
+        { "title": "Análise de Prontuários Médicos", "description": "Processamento inteligente de documentação médica" },
+        { "title": "Gestão de Sub-Rogação", "description": "Processos automatizados de recuperação e sub-rogação" },
+        { "title": "Conformidade Regulatória", "description": "Conformidade automatizada com regulamentações de seguros" },
+        { "title": "Análise Atuarial", "description": "Cálculos avançados de precificação e reservas" }
+      ]
+    },
+    "lines": {
+      "title": "Cobertura de Linhas de Seguro",
+      "subtitle": "Soluções abrangentes de IA para todas as principais linhas de produtos de seguros.",
+      "items": [
+        { "line": "Seguro Automóvel", "description": "Processamento de sinistros e subscrição automotivos" },
+        { "line": "Seguro de Propriedade", "description": "Avaliação de danos e processamento de propriedades" },
+        { "line": "Seguro de Vida", "description": "Automação de sinistros de vida e invalidez" },
+        { "line": "Seguro de Acidentes de Trabalho", "description": "Gestão de sinistros e casos de acidentes" },
+        { "line": "Linhas Comerciais", "description": "Avaliação de riscos comerciais complexos" },
+        { "line": "Seguros Especializados", "description": "Coberturas para aviação, marítimas e especializadas" }
+      ]
+    },
+    "solutions": {
+      "title": "Soluções de",
+      "titleHighlight": "IA para Seguros",
+      "subtitle": "Soluções especializadas em IA projetadas especificamente para operações de seguros, desde processamento de sinistros até subscrição de risco e detecção de fraudes.",
+      "items": [
+        {
+          "title": "Processamento Inteligente de Sinistros",
+          "product": "AI.DATA",
+          "description": "Nossa IA processa sinistros desde a primeira notificação até a liquidação, validando automaticamente coberturas, avaliando danos e detectando possíveis fraudes. O sistema compreende termos da apólice, exclusões e limites de cobertura.",
+          "details": "A avaliação avançada de danos usa visão computacional e sistemas especialistas para avaliar danos a propriedades, acidentes veiculares e sinistros de responsabilidade. A integração com redes de reparos e provedores médicos permite estimativa de custos automatizada e recomendações de liquidação."
+        },
+        {
+          "title": "Detecção Avançada de Fraudes",
+          "product": "AI.DATA",
+          "description": "O AI.DATA analisa padrões de sinistros, comportamento de segurados e fontes de dados externas para identificar esquemas sofisticados de fraude. Nosso sistema detecta acidentes simulados, sinistros inflacionados e quadrilhas de fraude antes que ocorram perdas.",
+          "details": "Modelos de machine learning treinados em milhões de casos de fraude identificam padrões suspeitos incluindo frequência de sinistros, anomalias de tempo e conexões entre reclamantes, provedores e advogados."
+        },
+        {
+          "title": "Subscrição de Risco Automatizada",
+          "product": "AI.DOC + AI.DATA",
+          "description": "Transforme a subscrição com IA que avalia fatores de risco em múltiplas fontes de dados, desde aplicações tradicionais até imagens de satélite e dados IoT. Nosso sistema fornece avaliação de risco consistente e precisa em escala.",
+          "details": "A pontuação de risco em tempo real integra dados de propriedade, informações de crédito, histórico de sinistros e fatores de risco externos. Diretrizes automatizadas de subscrição garantem aplicação consistente de modelos de precificação e critérios de seleção de risco."
+        }
+      ],
+      "cta": "Saiba Mais Sobre {product}"
+    },
+    "finalCta": {
+      "title": "Pronto para Transformar suas",
+      "titleHighlight": "Operações de Seguros?",
+      "subtitle": "Junte-se às principais seguradoras que já revolucionaram seu processamento de sinistros e subscrição com nossas soluções especializadas de IA. Comece a melhorar sua lucratividade hoje.",
+      "trustIndicators": [
+        { "value": "1 h", "label": "Processamento de Sinistros" },
+        { "value": "95%", "label": "Detecção de Fraudes" },
+        { "value": "30%", "label": "Subscrição Mais Rápida" },
+        { "value": "200+", "label": "Clientes de Seguros" }
+      ],
+      "contact": "Dúvidas? Fale com nossos especialistas em seguros pelo {phone} ou {email}"
+    }
+  },
+  "aiOcr": {
+    "hero": {
+      "title": "AI.OCR: Transforme Qualquer Documento em",
+      "titleHighlight": "Dados Estruturados",
+      "subtitle": "A solução de reconhecimento óptico de caracteres mais precisa do mercado. Processe contratos, faturas, relatórios médicos e formulários com",
+      "subtitleEmphasis1": "99,9% de precisão",
+      "subtitleEmphasis2": "50x mais rápido",
+      "subtitleEnd": "que digitação manual.",
+      "keyBenefits": [
+        "99,9% de precisão garantida",
+        "Processamento 50x mais rápido",
+        "Suporte a mais de 40 idiomas",
+        "Integração com qualquer sistema"
+      ],
+      "cta": "Teste Grátis por 7 Dias"
+    },
+    "visual": {
+      "accuracy": "Precisão",
+      "faster": "Mais Rápido"
+    },
+    "problem": {
+      "title": "O Problema Que Você Enfrenta",
+      "p1": "Sua empresa processa milhares de documentos mensalmente, mas ainda depende de digitação manual ou soluções OCR imprecisas que geram mais trabalho do que economia. Erros de transcrição custam tempo, dinheiro e credibilidade, enquanto sua equipe desperdiça horas em tarefas repetitivas que poderiam ser automatizadas.",
+      "p2": "Documentos manuscritos, formulários complexos e layouts não padronizados são pesadelos para soluções OCR tradicionais. Você precisa de tecnologia que entenda contexto, corrija erros automaticamente e se adapte aos seus documentos específicos, não o contrário.",
+      "challenges": {
+        "title": "Desafios Atuais:",
+        "items": [
+          "Horas desperdiçadas em entrada manual de dados",
+          "Altas taxas de erro custando credibilidade",
+          "Custos operacionais crescentes"
+        ]
+      }
+    },
+    "solution": {
+      "title": "Nossa Solução Revolucionária",
+      "p1": "O AI.OCR usa redes neurais avançadas treinadas em milhões de documentos para reconhecer texto com precisão humana, mas velocidade sobre-humana. Nossa IA não apenas lê caracteres - ela entende contexto, valida informações e estrutura dados automaticamente.",
+      "p2": "Diferente de soluções genéricas, nosso sistema aprende com seus documentos específicos, melhorando continuamente a precisão para seus casos de uso. Seja caligrafia médica, formulários governamentais ou contratos legais, o AI.OCR se adapta e evolui.",
+      "advantages": {
+        "title": "Vantagens do AI.OCR:",
+        "items": [
+          "Precisão humana com velocidade de máquina",
+          "Processamento consciente de contexto",
+          "Aprendizado contínuo e melhoria"
+        ]
+      }
+    },
+    "features": {
+      "title": "Recursos Técnicos",
+      "titleHighlight": "Avançados",
+      "subtitle": "Descubra a tecnologia de ponta que torna o AI.OCR a solução de processamento de documentos mais precisa e confiável disponível.",
+      "items": [
+        {
+          "title": "Reconhecimento Inteligente de Contexto",
+          "description": "Nossa IA não apenas identifica caracteres individuais, mas entende o significado contextual de cada palavra e frase. Isso permite correção automática de erros, validação de dados e estruturação inteligente de informações, mesmo em documentos de baixa qualidade ou caligrafia complexa.",
+          "details": "O sistema reconhece padrões específicos como CPFs, CNPJs, datas, valores monetários e códigos, aplicando validação automática e formatação padronizada. Isso elimina erros comuns de digitação e garante consistência nos dados extraídos."
+        },
+        {
+          "title": "Processamento de Documentos Complexos",
+          "description": "Diferente de soluções básicas que falham com layouts não padronizados, o AI.OCR processa tabelas complexas, formulários multi-coluna, documentos manuscritos e até imagens de baixa qualidade com precisão excepcional.",
+          "details": "Nossa tecnologia de segmentação inteligente identifica automaticamente diferentes seções do documento, extraindo informações relevantes e organizando-as em estruturas de dados úteis para seus sistemas downstream."
+        },
+        {
+          "title": "Integração Nativa e APIs Robustas",
+          "description": "O AI.OCR se integra perfeitamente com seus sistemas existentes através de APIs RESTful, webhooks e conectores pré-construídos para ERPs populares como SAP, Oracle e Microsoft Dynamics.",
+          "details": "Nossa arquitetura de microsserviços permite implementação gradual, começando com casos de uso específicos e expandindo conforme você comprova o valor. Suportamos processamento em lote e tempo real, adaptando-se às suas necessidades operacionais."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Casos de Sucesso",
+      "titleHighlight": "do Mundo Real",
+      "subtitle": "Veja como organizações de diversos setores estão transformando suas operações com o AI.OCR.",
+      "items": [
+        {
+          "title": "Transformação na Saúde",
+          "description": "Hospitais e clínicas usam o AI.OCR para digitalizar prontuários médicos, processar resultados de exames e automatizar entrada de dados em sistemas hospitalares. Nossa tecnologia reconhece caligrafia médica com 98% de precisão, incluindo prescrições e anotações clínicas.",
+          "result": "Um hospital de 500 leitos economizou R$ 1,2M anualmente automatizando o processamento de 8.000 documentos médicos mensais, reduzindo o tempo de disponibilidade de resultados de 24 horas para 15 minutos.",
+          "industry": "Saúde"
+        },
+        {
+          "title": "Revolução no Setor Financeiro",
+          "description": "Bancos e seguradoras processam contratos, apólices e documentos KYC automaticamente, acelerando aprovações e reduzindo riscos operacionais. Nossa solução extrai dados críticos como valores, datas de vencimento e informações de clientes com precisão bancária.",
+          "result": "Uma seguradora reduziu o tempo de processamento de sinistros de 5 dias para 2 horas, processando automaticamente 15.000 documentos mensais e economizando R$ 900.000 em custos operacionais.",
+          "industry": "Serviços Financeiros"
+        },
+        {
+          "title": "Modernização do Setor Público",
+          "description": "Órgãos governamentais digitalizam arquivos históricos, processam formulários de cidadãos e automatizam protocolos administrativos. Nossa tecnologia processa documentos com precisão superior, incluindo formulários manuscritos e carimbos oficiais.",
+          "result": "Uma prefeitura digitalizou 500.000 documentos históricos em 6 meses, criando um arquivo digital pesquisável que melhorou o atendimento ao cidadão e reduziu custos de armazenamento em 70%.",
+          "industry": "Governo"
+        }
+      ],
+      "resultsTitle": "Resultados Alcançados:"
+    },
+    "finalCta": {
+      "title": "Pronto para Transformar Seu",
+      "titleHighlight": "Processamento de Documentos?",
+      "subtitle": "Junte-se a milhares de organizações que já revolucionaram suas operações com o AI.OCR. Comece seu teste gratuito hoje e experimente o futuro do processamento de documentos.",
+      "trustIndicators": [
+        { "value": "99,9%", "label": "Taxa de Precisão" },
+        { "value": "10+", "label": "Clientes Satisfeitos" },
+        { "value": "7 Dias", "label": "Teste Gratuito" },
+        { "value": "24/7", "label": "Suporte" }
+      ],
+      "contact": "Dúvidas? Entre em contato com nossos especialistas em IA pelo {phone} ou {email}"
+    }
+  },
+  "aiDoc": {
+    "hero": {
+      "title": "AI.DOC: Gestão Inteligente de",
+      "titleHighlight": "Documentos Empresariais",
+      "subtitle": "Organize, classifique e encontre qualquer documento em segundos. Nossa IA transforma o caos documental em conhecimento estruturado, com",
+      "subtitleEmphasis1": "busca semântica avançada",
+      "subtitleEmphasis2": "fluxo de trabalho automatizado",
+      "keyBenefits": [
+        "Classificação automática por IA",
+        "Busca semântica instantânea",
+        "Fluxos de aprovação automatizados",
+        "Trilha de auditoria e versionamento completos"
+      ],
+      "cta": "Agendar Demo"
+    },
+    "visual": {
+      "fasterSearch": "Busca Mais Rápida",
+      "organized": "Organizado"
+    },
+    "problem": {
+      "title": "Caos Documental Que Paralisa Empresas",
+      "p1": "Sua organização tem milhares de documentos espalhados por diferentes sistemas, pastas desorganizadas e emails perdidos. Funcionários gastam 30% do tempo procurando informações, versões desatualizadas circulam causando erros, e documentos críticos simplesmente desaparecem quando você mais precisa deles.",
+      "p2": "Sistemas tradicionais de gestão documental são rígidos, exigem classificação manual e falham na busca quando você mais precisa. Conformidade e auditoria se tornam pesadelos quando documentos não são encontrados ou estão desorganizados.",
+      "stats": [
+        { "stat": "30%", "label": "Tempo gasto procurando documentos" },
+        { "stat": "40%", "label": "Aumento no volume de documentos anualmente" },
+        { "stat": "60%", "label": "Trabalho feito com versões desatualizadas" }
+      ]
+    },
+    "solution": {
+      "title": "Nossa Revolução na Gestão Documental",
+      "p1": "O AI.DOC usa inteligência artificial para entender o conteúdo de cada documento, classificando automaticamente por tipo, assunto, importância e relacionamentos. Nossa busca semântica encontra documentos mesmo quando você não lembra das palavras-chave exatas.",
+      "p2": "O sistema aprende com o comportamento da sua equipe, sugerindo classificações, identificando duplicatas e criando conexões inteligentes entre documentos relacionados. Fluxos de trabalho automatizados garantem que documentos sigam processos corretos de aprovação e revisão.",
+      "benefits": [
+        "Classificação automática e marcação de documentos",
+        "Relacionamentos inteligentes baseados em conteúdo",
+        "Aprendizado contínuo e melhoria",
+        "Integração perfeita com sistemas existentes"
+      ]
+    },
+    "features": {
+      "title": "Recursos Avançados de",
+      "titleHighlight": "Gestão Documental",
+      "subtitle": "Descubra os recursos inteligentes que transformam o caos documental em inteligência de negócios organizada, pesquisável e acionável.",
+      "items": [
+        {
+          "title": "Classificação Inteligente de Documentos",
+          "description": "Nossa IA categoriza automaticamente documentos por tipo, conteúdo, importância e contexto empresarial. O sistema entende relacionamentos entre documentos e cria taxonomias inteligentes que evoluem com suas necessidades de negócio.",
+          "details": "Algoritmos de machine learning analisam estrutura de documentos, padrões de conteúdo e metadados para fornecer classificação precisa. O sistema aprende com correções e feedback dos usuários, melhorando continuamente a precisão da classificação."
+        },
+        {
+          "title": "Busca Semântica Avançada",
+          "description": "Encontre qualquer documento usando consultas em linguagem natural, mesmo quando você não lembra das palavras-chave exatas. Nossa busca semântica entende contexto, sinônimos e terminologia empresarial específica do seu setor.",
+          "details": "O mecanismo de busca usa processamento de linguagem natural para entender a intenção do usuário, pesquisando em conteúdo, metadados e relacionamentos entre documentos. Resultados são classificados por relevância, recência e padrões de comportamento do usuário."
+        },
+        {
+          "title": "Motor de Fluxo de Trabalho Automatizado",
+          "description": "Simplifique processos de aprovação de documentos com roteamento inteligente baseado em conteúdo, limites de valor e regras de negócio. Notificações automáticas e escalações garantem que nada passe despercebido.",
+          "details": "Templates de fluxo de trabalho configuráveis se adaptam aos seus processos de negócio, com lógica condicional, aprovações paralelas e integração com sistemas externos. Trilhas de auditoria completas rastreiam cada ação e ponto de decisão."
+        },
+        {
+          "title": "Controle de Versão e Colaboração",
+          "description": "Mantenha gestão completa do ciclo de vida de documentos com versionamento automático, rastreamento de mudanças e capacidades de edição colaborativa. Garanta que equipes sempre trabalhem com as versões aprovadas mais recentes.",
+          "details": "Controle de versão avançado previne conflitos de documentos mantendo históricos detalhados de mudanças. Ferramentas de colaboração em tempo real permitem compartilhamento e edição seguros com controles granulares de permissão."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Casos de Sucesso",
+      "titleHighlight": "do Mundo Real",
+      "subtitle": "Veja como organizações de diversos setores estão transformando suas operações com o AI.DOC.",
+      "items": [
+        {
+          "title": "Gestão de Documentação em Saúde",
+          "description": "Hospitais e consultórios médicos organizam prontuários de pacientes, protocolos médicos e documentos de conformidade com classificação automática e recuperação instantânea. Fluxos de trabalho compatíveis com HIPAA garantem o manuseio seguro de informações sensíveis.",
+          "result": "Um centro médico reduziu o tempo de busca de documentos em 85% e melhorou a preparação para auditorias de conformidade de semanas para horas, garantindo 100% de conformidade com a HIPAA em mais de 50.000 documentos de pacientes.",
+          "industry": "Saúde"
+        },
+        {
+          "title": "Conformidade em Serviços Financeiros",
+          "description": "Bancos e instituições financeiras gerenciam documentos regulatórios, arquivos de clientes e políticas internas com fluxos de trabalho de conformidade automatizados. A classificação baseada em risco garante que documentos críticos recebam a supervisão apropriada.",
+          "result": "Um banco regional automatizou 90% do processamento de documentos de conformidade, reduziu o tempo de preparação regulatória em 70% e alcançou 100% de prontidão para auditorias em todos os requisitos regulatórios.",
+          "industry": "Serviços Financeiros"
+        },
+        {
+          "title": "Gestão de Documentos Jurídicos",
+          "description": "Escritórios de advocacia e departamentos jurídicos organizam contratos, arquivos de casos e pesquisas jurídicas com categorização inteligente e fluxos de trabalho baseados em matéria. Capacidades de busca avançada permitem preparação rápida de casos e pesquisas.",
+          "result": "Um escritório de advocacia aumentou o tempo faturável em 30% através da organização automatizada de documentos, reduziu o tempo de preparação de casos em 60% e melhorou o atendimento ao cliente com acesso instantâneo a documentos.",
+          "industry": "Serviços Jurídicos"
+        }
+      ],
+      "resultsTitle": "Resultados Alcançados:"
+    },
+    "finalCta": {
+      "title": "Pronto para Acabar com o",
+      "titleHighlight": "Caos Documental para Sempre?",
+      "subtitle": "Junte-se a milhares de organizações que transformaram sua gestão documental com o AI.DOC. Comece a organizar, encontrar e colaborar de forma mais eficaz hoje mesmo.",
+      "trustIndicators": [
+        { "value": "85%", "label": "Busca mais rápida" },
+        { "value": "10+", "label": "Empresas organizadas" },
+        { "value": "7 Dias", "label": "Teste gratuito" },
+        { "value": "100%", "label": "Conformidade garantida" }
+      ],
+      "contact": "Dúvidas? Entre em contato com nossos especialistas em gestão documental pelo {phone} ou {email}"
+    }
+  },
+  "aiSaude": {
+    "keyBenefits": {
+      "item1": "Processamento automático de sinistros",
+      "item2": "Detecção de fraude em tempo real",
+      "item3": "Integração com operadoras e prestadores",
+      "item4": "Conformidade regulatória completa"
+    },
+    "features": {
+      "medicalSpecialization": {
+        "title": "Especialização em IA Médica",
+        "description": "O AI.SAUDE foi desenvolvido com base em milhões de documentos médicos reais, treinado para entender terminologia médica, códigos de procedimentos, CID-10 e procedimentos específicos do sistema de saúde brasileiro. Nossa IA reconhece padrões médicos complexos que soluções genéricas não conseguem processar.",
+        "details": "O sistema valida automaticamente a elegibilidade de procedimentos, verifica compatibilidade entre diagnósticos e tratamentos, e identifica inconsistências que podem indicar erros ou fraudes. Isso garante que apenas reembolsos legítimos sejam aprovados, protegendo sua organização de perdas financeiras."
+      },
+      "ecosystemIntegration": {
+        "title": "Integração com Ecossistema de Saúde",
+        "description": "Nossa solução se conecta nativamente com sistemas de operadoras, prestadores de serviços, laboratórios e farmácias, criando um fluxo automatizado de informações que elimina retrabalho e acelera aprovações.",
+        "details": "Integramos com os principais sistemas hospitalares brasileiros e operadoras de saúde, garantindo implementação rápida e sem interrupções operacionais. Suporte completo para padrões TISS e integração com ANS."
+      },
+      "advancedFraudDetection": {
+        "title": "Detecção Avançada de Fraudes",
+        "description": "Análise em tempo real de padrões de reembolso usando algoritmos de machine learning que detectam anomalias, submissões duplicadas e padrões suspeitos de cobrança antes que se tornem problemas custosos.",
+        "details": "Nosso sistema de detecção de fraudes analisa comportamento de prestadores, histórico de pacientes e padrões de reembolso em múltiplos pontos de dados, sinalizando atividades potencialmente fraudulentas com 99,2% de precisão minimizando falsos positivos."
+      },
+      "automatedWorkflowEngine": {
+        "title": "Motor de Fluxo de Trabalho Automatizado",
+        "description": "Roteamento inteligente e processamento de reembolsos baseado em complexidade, valor e fatores de risco. Aprovações automáticas para casos rotineiros enquanto sinaliza casos complexos para revisão humana.",
+        "details": "Motor de regras de negócio configurável permite personalização de fluxos de aprovação, procedimentos de escalação e tratamento de exceções. Trilhas de auditoria completas garantem conformidade regulatória e transparência."
+      }
+    },
+    "useCases": {
+      "portoSeguroSaude": {
+        "title": "Porto Seguro Saúde",
+        "description": "Implementação completa do AI.SAUDE para automatização de processos de reembolso e validação de notas fiscais, garantindo maior eficiência e redução de fraudes no sistema de saúde.",
+        "result": "Automatização de 98% dos processos de reembolso, economia de mais de R$ 5 milhões anuais e precisão de 99% na validação de documentos médicos.",
+        "industry": "Operadora de Saúde"
+      },
+      "portoSeguroOcupacional": {
+        "title": "Porto Seguro Ocupacional",
+        "description": "Solução AI.SAUDE implementada para gestão completa de saúde ocupacional, automatizando validações de exames, atestados e processos de reembolso relacionados à medicina do trabalho.",
+        "result": "Alcançou 100% de automatização nos processos de validação ocupacional, com economia significativa de recursos e 99% de precisão na análise de documentos.",
+        "industry": "Saúde Ocupacional"
+      },
+      "itauSaude": {
+        "title": "Itaú Saúde",
+        "description": "Implementação estratégica do AI.SAUDE para otimização de processos de reembolso médico, validação automática de notas fiscais e detecção inteligente de fraudes no sistema de saúde corporativo.",
+        "result": "Automatização de 98% dos processos de reembolso, economia substancial de recursos operacionais e 99% de precisão na validação de documentos médicos.",
+        "industry": "Saúde Corporativa"
+      }
+    },
+    "medicalCapabilities": {
+      "validation": {
+        "title": "Validação de Códigos CID-10 e CBHPM",
+        "description": "Validação automática de códigos de diagnóstico e procedimentos"
+      },
+      "assessment": {
+        "title": "Avaliação de Necessidade Médica",
+        "description": "Avaliação por IA da adequação do tratamento"
+      },
+      "automation": {
+        "title": "Automação de Pré-Autorização",
+        "description": "Processo simplificado de pré-aprovação de tratamentos"
+      },
+      "verification": {
+        "title": "Verificação de Interações Medicamentosas",
+        "description": "Validação automática de combinações de prescrições"
+      },
+      "credentials": {
+        "title": "Verificação de Credenciais de Prestadores",
+        "description": "Validação em tempo real de credenciais de profissionais de saúde"
+      },
+      "adjudication": {
+        "title": "Regras de Adjudicação de Sinistros",
+        "description": "Aplicação inteligente de regras específicas de operadoras"
+      }
+    },
+    "complianceFeatures": {
+      "item1": "Processamento Conforme LGPD",
+      "item2": "Integração HL7 FHIR",
+      "item3": "Conformidade ANS",
+      "item4": "Trilhas de Auditoria em Tempo Real",
+      "item5": "Criptografia 256-bit"
+    },
+    "hero": {
+      "title": "AI.SAUDE: Revolução no",
+      "titleHighlight": "Processamento de Reembolsos",
+      "subtitle1": "Automatize completamente seu processo de reembolsos com IA médica especializada. Reduza o tempo de processamento de",
+      "subtitleHighlight1": "semanas para horas",
+      "subtitle2": "com",
+      "subtitleHighlight2": "99,8% de precisão",
+      "subtitle3": "e detecção automática de fraudes.",
+      "cta": "Calcular Economia",
+      "visual": {
+        "days": "7 Dias",
+        "hours": "2 Horas",
+        "accuracy": "Precisão",
+        "faster": "Mais Rápido"
+      }
+    },
+    "leadership": {
+      "title": "Líder no",
+      "titleHighlight": "Setor Público Brasileiro",
+      "subtitle1": "Somos o",
+      "subtitleHighlight1": "maior portal integrador de prefeituras do Brasil",
+      "subtitle2": "com mais de",
+      "subtitleHighlight2": "350 prefeituras",
+      "subtitle3": "validando notas fiscais e combatendo fraude no processo de reembolso através da nossa tecnologia AI.SAUDE.",
+      "stats": {
+        "municipalities": {
+          "title": "Prefeituras Conectadas",
+          "description": "Maior rede de integração municipal do país para validação de reembolsos médicos"
+        },
+        "fraudDetection": {
+          "title": "Detecção de Fraudes",
+          "description": "Taxa de precisão na identificação de fraudes em processos de reembolso"
+        },
+        "validatedNotes": {
+          "title": "Notas Validadas",
+          "description": "Volume anual de notas fiscais processadas e validadas pela nossa IA"
+        }
+      },
+      "transforming": {
+        "title": "Transformando Seu Processo Mais Seguro com Dados de Gestão Pública",
+        "description": "Nossa plataforma AI.SAUDE revoluciona como as prefeituras brasileiras gerenciam reembolsos médicos, garantindo transparência, eficiência e combate à fraude em escala nacional.",
+        "item1": "Integração direta com sistemas municipais",
+        "item2": "Validação automática de notas fiscais",
+        "item3": "Detecção inteligente de irregularidades",
+        "item4": "Relatórios de auditoria em tempo real",
+        "stats": {
+          "states": "Estados",
+          "regions": "Regiões",
+          "citizens": "Cidadãos",
+          "operation": "Operação"
+        }
+      }
+    },
+    "specializedAI": {
+      "title": "IA Especializada para",
+      "titleHighlight": "Saúde",
+      "subtitle": "Diferente de soluções genéricas, o AI.SAUDE foi construído do zero para entender as complexidades do processamento de reembolsos médicos e regulamentações de saúde."
+    },
+    "compliance": {
+      "title": "Conformidade Regulatória Completa",
+      "subtitle": "Construído para atender aos mais altos padrões e regulamentações da indústria de saúde"
+    },
+    "advancedFeatures": {
+      "title": "Recursos Avançados de",
+      "titleHighlight": "IA para Saúde",
+      "subtitle": "Capacidades especializadas projetadas especificamente para os requisitos únicos da indústria de saúde e ambiente regulatório brasileiro."
+    },
+    "successCases": {
+      "title": "Casos de",
+      "titleHighlight": "Sucesso em Saúde",
+      "subtitle": "Veja como organizações de saúde estão revolucionando seu processamento de reembolsos com a IA médica especializada do AI.SAUDE.",
+      "resultsTitle": "Resultados Alcançados:"
+    },
+    "finalCta": {
+      "title": "Pronto para Revolucionar Seu",
+      "titleHighlight": "Processamento de Reembolsos?",
+      "subtitle": "Junte-se às principais organizações de saúde que já transformaram seu processamento de reembolsos com o AI.SAUDE. Comece a reduzir custos e melhorar a precisão hoje mesmo.",
+      "trustIndicators": {
+        "accuracy": "Processing Accuracy",
+        "timeReduction": "Time Reduction",
+        "compliant": "HIPAA Compliant",
+        "providers": "Healthcare Providers"
+      },
+      "cta": "Calcular Economia",
+      "contact": {
+        "text1": "Dúvidas? Entre em contato com nossos especialistas em saúde pelo",
+        "phone": "+55 (11) 5039-4877 / +1 (619) 306-9274",
+        "text2": "ou",
+        "email": "contact@itcygnus.com"
+      }
+    }
+  },
+  "aiPriceInsights": {
+    "hero": {
+      "title": "AI.PRICEINSIGHTS: Inteligência de Preços que",
+      "titleHighlight": "Maximiza Lucros",
+      "subtitle": "Otimize sua estratégia de preços com IA preditiva avançada. Monitore mercado, concorrência e demanda em",
+      "subtitleEmphasis1": "tempo real",
+      "subtitleEmphasis2": "para definir preços que maximizam",
+      "subtitleEmphasis3": "margem e competitividade",
+      "keyBenefits": {
+        "benefit1": "Análise de mercado em tempo real",
+        "benefit2": "95% de precisão na previsão de demanda",
+        "benefit3": "Otimização automática de margem",
+        "benefit4": "Alertas de oportunidades de preço"
+      },
+      "cta": "Agendar Demonstração",
+      "visual": {
+        "price": "Preço",
+        "margin": "Margem",
+        "competition": "Concorrência",
+        "optimalPrice": "Preço Ótimo",
+        "liveMarketData": "Dados de Mercado ao Vivo"
+      }
+    },
+    "pricingTables": {
+      "title": "Tabelas de Precificação de",
+      "titleHighlight": "Medicamentos no Brasil",
+      "subtitle": "No Brasil, as tabelas de precificação de medicamentos são definidas e reguladas por órgãos governamentais, principalmente pela",
+      "subtitleEmphasis": "CMED (Câmara de Regulação do Mercado de Medicamentos)",
+      "subtitleEnd": ", vinculada à Anvisa.",
+      "cmed": {
+        "title": "Lista de Preços CMED",
+        "source": "Anvisa/CMED",
+        "description": "Publicada mensalmente, traz os preços máximos autorizados para comercialização.",
+        "item1": "PMC (Preço Máximo ao Consumidor)",
+        "item2": "PF (Preço Fábrica)",
+        "item3": "Genéricos, Similares, Referência"
+      },
+      "abcFarma": {
+        "title": "ABC Farma",
+        "source": "Associação Brasileira",
+        "description": "Publica mensalmente a revista GUIA DA FARMÁCIA, com preços praticados pelo mercado.",
+        "item1": "Informações comerciais",
+        "item2": "Preços médios e margem de lucro",
+        "item3": "Usado por farmácias e drogarias"
+      },
+      "brasindice": {
+        "title": "Brasíndice",
+        "source": "Tabela Privada",
+        "description": "Tabela privada muito utilizada em hospitais e convênios médicos.",
+        "item1": "Código Brasíndice",
+        "item2": "Medicamentos e materiais hospitalares",
+        "item3": "Preço unitário e total"
+      },
+      "simpro": {
+        "title": "Simpro",
+        "source": "Hospitais e Convênios",
+        "description": "Semelhante ao Brasíndice, também utilizado em hospitais e convênios.",
+        "item1": "Referência para negociação",
+        "item2": "Medicamentos e insumos médicos",
+        "item3": "Ambiente hospitalar"
+      },
+      "bps": {
+        "title": "BPS",
+        "source": "Ministério da Saúde",
+        "description": "Banco de Preços em Saúde - preços de medicamentos e insumos adquiridos por órgãos públicos.",
+        "item1": "Compras governamentais",
+        "item2": "Controle e análise",
+        "item3": "Órgãos públicos"
+      },
+      "integration": {
+        "title": "AI.PRICEINSIGHTS para o Mercado Farmacêutico Brasileiro",
+        "description": "Nossa plataforma integra todas essas fontes de dados oficiais e privadas para fornecer inteligência de preços completa e atualizada para o setor farmacêutico brasileiro.",
+        "stat1": "5+ Fontes Integradas",
+        "stat2": "Atualizações em Tempo Real",
+        "stat3": "100% Conformidade"
+      }
+    },
+    "problemSolution": {
+      "problem": {
+        "title": "O Desafio da Precificação",
+        "p1": "A maioria das empresas luta com decisões de precificação, frequentemente dependendo de planilhas desatualizadas, intuição ou modelos simples de custo-mais-margem. Enquanto isso, concorrentes ajustam preços dinamicamente, mercados mudam rapidamente e oportunidades de otimização de lucro escapam diariamente.",
+        "p2": "Processos manuais de precificação não conseguem acompanhar a dinâmica moderna do mercado. Quando você analisa movimentos da concorrência e ajusta seus preços, a oportunidade já passou. Você precisa de precificação inteligente e automatizada que funciona 24/7.",
+        "stats": {
+          "stat1": "87% das empresas lutam com decisões de precificação",
+          "stat2": "40% de receita perdida por precificação subótima",
+          "stat3": "60% das decisões de preço baseadas em intuição"
+        }
+      },
+      "solution": {
+        "title": "Nossa Revolução em Inteligência de Preços",
+        "p1": "O AI.PRICEINSIGHTS transforma precificação de adivinhação em ciência. Nossa IA monitora continuamente condições de mercado, movimentos da concorrência e padrões de demanda para recomendar preços ótimos que maximizam tanto receita quanto margens de lucro.",
+        "p2": "Com 95% de precisão na previsão de demanda e análise de mercado em tempo real, você sempre precificará competitivamente protegendo margens. Nosso sistema automatizado funciona 24 horas por dia, identificando oportunidades e ajustando preços mais rápido que qualquer equipe humana.",
+        "benefits": {
+          "benefit1": "Monitoramento de preços da concorrência em tempo real",
+          "benefit2": "Previsão de demanda alimentada por IA",
+          "benefit3": "Otimização automática de margem",
+          "benefit4": "Motor de regras de precificação dinâmica"
+        }
+      }
+    },
+    "advancedFeatures": {
+      "title": "Recursos Avançados de",
+      "titleHighlight": "Precificação",
+      "subtitle": "Ferramentas abrangentes de inteligência de preços projetadas para otimizar todos os aspectos da sua estratégia de precificação e maximizar a lucratividade."
+    },
+    "pricingCapabilities": {
+      "competitiveIntelligence": {
+        "title": "Inteligência Competitiva",
+        "description": "Monitore preços da concorrência em todos os canais"
+      },
+      "demandAnalysis": {
+        "title": "Análise de Demanda",
+        "description": "Preveja demanda do cliente em diferentes pontos de preço"
+      },
+      "marginOptimization": {
+        "title": "Otimização de Margem",
+        "description": "Maximize margens de lucro mantendo competitividade"
+      },
+      "priceElasticityAnalysis": {
+        "title": "Análise de Elasticidade de Preço",
+        "description": "Entenda como mudanças de preço afetam a demanda"
+      },
+      "promotionalPlanning": {
+        "title": "Planejamento Promocional",
+        "description": "Otimize estratégias de desconto e timing"
+      },
+      "marketSegmentation": {
+        "title": "Segmentação de Mercado",
+        "description": "Personalize preços para diferentes segmentos de clientes"
+      }
+    },
+    "intelligentFeatures": {
+      "title": "Recursos Inteligentes de",
+      "titleHighlight": "Precificação",
+      "subtitle": "Descubra as capacidades avançadas de IA que transformam decisões de precificação de adivinhação reativa em otimização proativa de lucros."
+    },
+    "features": {
+      "dynamicPricing": {
+        "title": "Inteligência de Precificação Dinâmica",
+        "description": "Nossa IA monitora continuamente condições de mercado, preços da concorrência e padrões de demanda para recomendar preços ótimos que maximizam tanto receita quanto margens de lucro. O sistema se adapta a tendências sazonais, volatilidade do mercado e movimentos competitivos em tempo real.",
+        "details": "Algoritmos avançados de machine learning analisam mais de 200 fatores de precificação incluindo movimentos da concorrência, padrões sazonais, níveis de estoque e comportamento do cliente para gerar recomendações de preços que aumentam a lucratividade em média 18%."
+      },
+      "competitiveAnalysis": {
+        "title": "Análise Competitiva de Mercado",
+        "description": "Rastreie preços da concorrência em todos os canais e plataformas automaticamente. Nosso sistema monitora mudanças de preços, atividades promocionais e posicionamento de mercado para garantir que sua estratégia de preços permaneça competitiva protegendo margens.",
+        "details": "Monitoramento de concorrentes em tempo real através de plataformas de e-commerce, lojas físicas e canais B2B. Alertas automatizados quando concorrentes mudam preços, lançam promoções ou entram em novos segmentos de mercado."
+      },
+      "demandForecasting": {
+        "title": "Motor de Previsão de Demanda",
+        "description": "Preveja demanda do cliente com 95% de precisão usando dados históricos, tendências de mercado e fatores externos. Nossa IA identifica pontos de preço ótimos que maximizam volume de vendas mantendo margens de lucro saudáveis.",
+        "details": "Modelos de previsão multivariados incorporam sazonalidade, indicadores econômicos, padrões climáticos e dados de comportamento do consumidor para prever demanda em diferentes pontos de preço com precisão sem precedentes."
+      },
+      "automatedOptimization": {
+        "title": "Otimização Automatizada de Preços",
+        "description": "Defina regras de precificação e deixe nossa IA ajustar preços automaticamente baseado em seus objetivos de negócio. Seja maximizando receita, lucro ou participação de mercado, o sistema otimiza continuamente estratégias de precificação.",
+        "details": "Algoritmos de otimização flexíveis que equilibram múltiplos objetivos incluindo crescimento de receita, maximização de lucro, rotatividade de estoque e posicionamento competitivo. Controle completo sobre restrições de preços e regras de negócio."
+      }
+    },
+    "finalCta": {
+      "title": "Pronto para Maximizar Seus",
+      "titleHighlight": "Lucros de Precificação?",
+      "subtitle": "Junte-se às empresas líderes que já revolucionaram suas estratégias de precificação com o AI.PRICEINSIGHTS. Comece a otimizar para máxima lucratividade hoje mesmo.",
+      "trustIndicators": {
+        "forecastAccuracy": "Precisão de Previsão",
+        "avgMarginIncrease": "Aumento Médio de Margem",
+        "realTimeOptimization": "Otimização de Preços em Tempo Real"
+      },
+      "cta": "Agendar Demonstração",
+      "contact": {
+        "text1": "Dúvidas? Entre em contato com nossos especialistas em precificação pelo",
+        "phone": "+55 (11) 5039-4877",
+        "text2": "ou",
+        "email": "contact@itcygnus.com"
+      }
+    }
+  },
+  "aiAgents": {
+    "keyBenefits": [
+      { "text": "Atendimento automatizado 24/7" },
+      { "text": "Processamento autônomo de tarefas" },
+      { "text": "Escalabilidade infinita" },
+      { "text": "Aprendizado contínuo" }
+    ],
+    "features": [
+      {
+        "title": "Excelência em IA Conversacional",
+        "description": "Nossos agentes de IA compreendem o contexto, mantêm o fluxo da conversa e oferecem interações com qualidade humana por voz, chat e canais digitais. Eles lidam com solicitações complexas com empatia e precisão, escalando apenas quando necessário.",
+        "details": "O processamento avançado de linguagem natural permite que os agentes entendam intenção, emoção e contexto. Conversas de múltiplas etapas mantêm o estado e a coerência, enquanto a análise de sentimento garante respostas apropriadas."
+      },
+      {
+        "title": "Execução Autônoma de Tarefas",
+        "description": "Os agentes de IA não apenas respondem perguntas — eles executam fluxos de trabalho complexos, tomam decisões com base em regras de negócio e realizam processos em várias etapas sem intervenção humana. De processamento de pedidos à gestão de contas.",
+        "details": "O motor inteligente de workflows executa processos de negócio automaticamente, integrando-se com CRM, ERP e outros sistemas. Árvores de decisão e lógica empresarial garantem consistência e precisão na execução das tarefas."
+      },
+      {
+        "title": "Integração Omnicanal",
+        "description": "Implemente agentes em todos os pontos de contato com o cliente — chat no site, apps móveis, redes sociais, sistemas telefônicos e e-mail. A inteligência unificada garante uma experiência consistente, independentemente do canal.",
+        "details": "Uma única inteligência de agente opera em todos os canais, mantendo o histórico das conversas e o contexto do cliente. Transições suaves entre canais e com agentes humanos, quando necessário."
+      },
+      {
+        "title": "Mecanismo de Aprendizado Contínuo",
+        "description": "Os agentes evoluem automaticamente a cada interação, aprendendo com feedbacks dos clientes, resoluções bem-sucedidas e correções feitas por agentes humanos. O desempenho melhora com o tempo, sem necessidade de reeducação manual.",
+        "details": "Algoritmos de machine learning analisam padrões de interação, taxas de sucesso e satisfação do cliente para aprimorar continuamente as respostas. Atualizações automáticas mantêm os agentes alinhados às mudanças do negócio."
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Revolução no Atendimento E-commerce",
+        "description": "Um grande varejista online implantou agentes de IA para lidar com consultas de clientes, rastreamento de pedidos, devoluções e recomendações de produtos. Os agentes processam pedidos, resolvem problemas de envio e fornecem assistência personalizada de compras 24/7.",
+        "result": "Alcançou 87% de satisfação do cliente enquanto reduziu custos de suporte em 65%. Agentes lidam com 90% das consultas automaticamente, com tempo médio de resolução de 2 minutos. Aumentou vendas através de recomendações alimentadas por IA.",
+        "industry": "E-commerce",
+        "stats": { "satisfaction": "87%", "cost_reduction": "65%", "automation": "90%" }
+      },
+      {
+        "title": "Engajamento de Pacientes na Saúde",
+        "description": "Uma rede de saúde usa agentes de IA para agendamento de consultas, renovação de receitas, entrega de resultados de exames e consultas básicas de saúde. Os agentes se integram com sistemas EMR e fornecem interações de pacientes compatíveis com HIPAA.",
+        "result": "Reduziu o tempo de agendamento de consultas em 80% enquanto melhorou as pontuações de satisfação do paciente em 35%. Agentes lidam com 75% das consultas de rotina, liberando equipe médica para cuidados críticos de pacientes.",
+        "industry": "Saúde",
+        "stats": { "time_reduction": "80%", "satisfaction": "35%", "automation": "75%" }
+      },
+      {
+        "title": "Automação de Serviços Financeiros",
+        "description": "Um banco regional implantou agentes de IA para consultas de conta, suporte a transações, solicitações de empréstimo e alertas de fraude. Os agentes fornecem assistência bancária segura e personalizada mantendo conformidade regulatória.",
+        "result": "Aumentou o engajamento do cliente em 45% enquanto reduziu custos operacionais em 50%. Agentes processam 85% das consultas bancárias de rotina com 99,2% de precisão na detecção de fraudes.",
+        "industry": "Serviços Financeiros",
+        "stats": { "engagement": "45%", "cost_savings": "50%", "accuracy": "99,2%" }
+      }
+    ],
+    "problemStats": [
+      { "stat": "24/7", "label": "Expectativa dos clientes por disponibilidade" },
+      { "stat": "70%", "label": "Dos custos de atendimento são mão de obra" },
+      { "stat": "60%", "label": "Dos clientes esperam respostas imediatas" }
+    ],
+    "solutionBenefits": [
+      { "benefit": "Capacidades conversacionais semelhantes às humanas" },
+      { "benefit": "Tomada de decisão autônoma" },
+      { "benefit": "Implantação multicanal" },
+      { "benefit": "Tecnologia de IA que se auto-aprimora" }
+    ],
+    "agentCapabilities": [
+      {
+        "title": "Conversação Natural",
+        "description": "Diálogo semelhante ao humano com compreensão de contexto"
+      },
+      {
+        "title": "Automação de Tarefas",
+        "description": "Execute fluxos de trabalho complexos de múltiplas etapas automaticamente"
+      },
+      {
+        "title": "Tomada de Decisão",
+        "description": "Tome decisões inteligentes baseadas em regras de negócio"
+      },
+      {
+        "title": "Integração de Sistemas",
+        "description": "Conecte com CRM, ERP e sistemas empresariais"
+      },
+      {
+        "title": "Voz e Chat",
+        "description": "Suporte a interações por voz e texto"
+      },
+      {
+        "title": "Analytics e Insights",
+        "description": "Performance em tempo real e insights de clientes"
+      }
+    ],
+    "deploymentChannels": [
+      { "channel": "Chat do Site", "description": "Widgets de chat incorporados" },
+      { "channel": "Apps Mobile", "description": "Assistência no aplicativo" },
+      { "channel": "Sistemas de Voz", "description": "Telefone e assistentes de voz" },
+      { "channel": "Redes Sociais", "description": "Facebook, Twitter, WhatsApp" },
+      { "channel": "Suporte por Email", "description": "Respostas automáticas por email" },
+      { "channel": "Videochamadas", "description": "Assistentes virtuais por vídeo" }
+    ],
+    "hero": {
+      "title": "AI.AGENTS: Assistentes Virtuais que",
+      "highlight": "Realmente Funcionam",
+      "subtitle": "Implante agentes de IA autônomos que executam tarefas complexas, tomam decisões inteligentes e interagem naturalmente com clientes e sistemas, operando",
+      "emphasis": "24/7 sem supervisão"
+    },
+    "cta": {
+      "viewAction": "Ver Agentes em Ação"
+    },
+    "visual": {
+      "helpMessage": "Preciso de ajuda com meu pedido",
+      "agentResponse1": "Ficarei feliz em ajudar! Deixe-me verificar o status do seu pedido...",
+      "agentResponse2": "✅ Pedido encontrado. Enviando hoje!",
+      "agentResponse3": "Alguma outra coisa que eu possa ajudar?",
+      "agentStatus": "Agente Ativo",
+      "availability": "24/7 disponível",
+      "satisfaction": "Satisfação",
+      "avgResponse": "Resposta Média"
+    },
+    "problemSolution": {
+      "problemTitle": "O Desafio do Atendimento ao Cliente",
+      "problemP1": "Clientes esperam suporte instantâneo 24/7 em todos os canais, mas chatbots tradicionais frustram usuários com respostas rígidas e capacidades limitadas. Agentes humanos são caros, não podem escalar infinitamente e precisam dormir, férias e treinamento.",
+      "problemP2": "Automação básica falha em tarefas complexas, conversas nuançadas e compreensão contextual. Você precisa de agentes inteligentes que possam pensar, aprender e agir autonomamente enquanto fornecem experiências genuinamente úteis ao cliente.",
+      "solutionTitle": "Nossa Revolução em Assistentes Virtuais",
+      "solutionP1": "AI.AGENTS implanta assistentes virtuais verdadeiramente inteligentes que compreendem contexto, executam fluxos de trabalho complexos e fornecem interações semelhantes às humanas. Esses agentes trabalham 24/7, escalam infinitamente e melhoram continuamente através de aprendizado de máquina.",
+      "solutionP2": "Diferente de chatbots simples, nossos agentes tomam decisões, completam transações, integram com seus sistemas e lidam com necessidades sofisticadas dos clientes. Eles aprendem com cada interação, tornando-se mais eficazes ao longo do tempo."
+    },
+    "capabilities": {
+      "title": "Capacidades Avançadas dos",
+      "highlight": "Agentes",
+      "subtitle": "",
+      "description": "Capacidades abrangentes de IA que permitem aos agentes lidar com interações complexas de clientes e processos de negócios de forma autônoma."
+    },
+    "deployment": {
+      "title": "Implantação Omnichannel",
+      "description": "Implante agentes inteligentes em todos os pontos de contato com o cliente"
+    },
+    "featuresSection": {
+      "title": "Recursos dos Agentes",
+      "highlight": "Inteligentes",
+      "subtitle": "",
+      "description": "Descubra as capacidades avançadas de IA que tornam nossos assistentes virtuais os agentes autônomos mais eficazes disponíveis."
+    },
+    "useCasesSection": {
+      "title": "Histórias de Sucesso dos",
+      "highlight": "Agentes",
+      "description": "Veja como organizações estão revolucionando a experiência do cliente e operações com assistentes virtuais autônomos AI.AGENTS."
+    },
+    "results": "Resultados Alcançados:",
+    "finalCta": {
+      "title": "Pronto para Implantar",
+      "highlight": "Agentes Inteligentes?",
+      "description": "Junte-se a empresas visionárias que já revolucionaram sua experiência do cliente com AI.AGENTS. Comece a construir sua força de trabalho autônoma hoje.",
+      "stats": [
+        { "value": "24/7", "label": "Sempre Disponível" },
+        { "value": "87%", "label": "Satisfação do Cliente" },
+        { "value": "90%", "label": "Automação de Tarefas" },
+        { "value": "100+", "label": "Agentes Implantados" }
+      ],
+      "contact": "Dúvidas? Contate nossos especialistas em IA em",
+      "phone": "+55 (11) 5039-4877",
+      "or": "ou",
+      "email": "contact@itcygnus.com"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: 13 de Junho de 2025",
+    "intro": "A ITCygnus está comprometida em proteger a privacidade e segurança dos dados pessoais de nossos usuários, clientes e visitantes. Esta política descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, em total conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei 13.709/2018) e GDPR.",
+    "principles": {
+      "transparency": {
+        "title": "Transparência",
+        "description": "Explicamos claramente quais dados coletamos e como os utilizamos"
+      },
+      "minimalCollection": {
+        "title": "Coleta Mínima",
+        "description": "Coletamos apenas os dados necessários para fornecer nossos serviços"
+      },
+      "robustSecurity": {
+        "title": "Segurança Robusta",
+        "description": "Seus dados são protegidos com segurança de nível empresarial"
+      },
+      "yourControl": {
+        "title": "Seu Controle",
+        "description": "Você tem total controle sobre suas informações pessoais"
+      }
+    },
+    "informationWeCollect": {
+      "title": "Informações que Coletamos",
+      "description": "Coletamos apenas informações necessárias para fornecer nossos serviços e melhorar sua experiência. Isso inclui dados fornecidos voluntariamente através de formulários, cookies técnicos para funcionalidade do site, e informações de uso para otimização de desempenho."
+    },
+    "dataTypes": {
+      "provided": {
+        "category": "Informações Fornecidas por Você",
+        "items": [
+          "Informações de contato (nome, e-mail, telefone)",
+          "Informações da empresa e cargo",
+          "Solicitações de demonstração e envios de formulários",
+          "Tickets de suporte e comunicações"
+        ]
+      },
+      "technical": {
+        "category": "Informações Técnicas",
+        "items": [
+          "Endereço IP e informações do navegador",
+          "Padrões de uso e navegação no site",
+          "Dados de desempenho e análises",
+          "Informações de cookies e sessão"
+        ]
+      },
+      "serviceUsage": {
+        "category": "Dados de Uso do Serviço",
+        "items": [
+          "Uso da plataforma e interações com recursos",
+          "Métricas de processamento de documentos",
+          "Chamadas de API e desempenho do sistema",
+          "Logs de erro e informações de diagnóstico"
+        ]
+      }
+    },
+    "howWeUseInformation": {
+      "title": "Como Utilizamos Suas Informações",
+      "description": "Utilizamos seus dados exclusivamente para fornecer nossos serviços, responder a suas solicitações, enviar comunicações relevantes (apenas com seu consentimento) e melhorar nossos produtos e serviços. Nunca vendemos ou compartilhamos dados pessoais com terceiros para fins comerciais.",
+      "purposes": {
+        "title": "Finalidades do Tratamento de Dados:",
+        "items": [
+          "Fornecimento e manutenção de nossos serviços",
+          "Processamento de solicitações de demonstração e consultas",
+          "Suporte ao cliente e assistência técnica",
+          "Melhoria de serviços e desenvolvimento de recursos",
+          "Monitoramento de segurança e prevenção de fraudes",
+          "Conformidade legal e requisitos regulatórios",
+          "Comunicações de marketing (com consentimento)",
+          "Análises e otimização de desempenho"
+        ]
+      }
+    },
+    "yourRights": {
+      "title": "Seus Direitos LGPD",
+      "description": "Conforme a Lei Geral de Proteção de Dados (LGPD), você tem direito a:",
+      "access": {
+        "right": "Acesso aos Dados",
+        "description": "Solicitar confirmação e acesso aos seus dados pessoais"
+      },
+      "correction": {
+        "right": "Correção",
+        "description": "Retificar dados incompletos, inexatos ou desatualizados"
+      },
+      "deletion": {
+        "right": "Exclusão",
+        "description": "Solicitar anonimização, bloqueio ou eliminação de dados desnecessários"
+      },
+      "portability": {
+        "right": "Portabilidade",
+        "description": "Solicitar a transferência dos seus dados para outro fornecedor"
+      },
+      "revoke": {
+        "right": "Revogar Consentimento",
+        "description": "Revogar seu consentimento a qualquer momento"
+      },
+      "info": {
+        "right": "Informação",
+        "description": "Saber com quem compartilhamos seus dados"
+      },
+      "contact": {
+        "prefix": "Para exercer esses direitos, entre em contato com nosso Encarregado de Dados (DPO) em",
+        "email": "lgpd@itcygnus.com"
+      }
+    },
+    "dataSecurity": {
+      "title": "Segurança de Dados",
+      "description": "Implementamos medidas de segurança padrão do setor para proteger suas informações pessoais, incluindo:",
+      "items": [
+        "Criptografia de ponta a ponta para transmissão de dados",
+        "Infraestrutura certificada SOC 2 Tipo II",
+        "Auditorias e avaliações regulares de segurança",
+        "Requisitos de autenticação multifator",
+        "Data centers seguros com proteção física",
+        "Treinamento de funcionários em proteção de dados"
+      ]
+    },
+    "dataRetention": {
+      "title": "Retenção de Dados",
+      "description": "Mantemos as informações pessoais apenas pelo tempo necessário para cumprir os propósitos descritos nesta política de privacidade, cumprir obrigações legais, resolver disputas e fazer valer nossos acordos. Quando os dados não são mais necessários, nós os excluímos ou anonimizamos com segurança de acordo com nosso cronograma de retenção de dados."
+    },
+    "internationalTransfers": {
+      "title": "Transferência Internacional de Dados",
+      "description": "Como operamos globalmente com escritórios no Brasil e nos Estados Unidos, suas informações pessoais podem ser transferidas e processadas em outros países. Garantimos que medidas de proteção adequadas estejam em vigor, incluindo Cláusulas Contratuais Padrão e decisões de adequação, para proteger seus dados durante transferências internacionais, em conformidade com a LGPD."
+    },
+    "cookies": {
+      "title": "Cookies e Rastreamento",
+      "description": "Utilizamos cookies e tecnologias similares para melhorar sua experiência de navegação, analisar tráfego do site e entender preferências dos usuários. Você pode controlar as configurações de cookies através das preferências do seu navegador. Cookies essenciais para funcionalidades básicas não podem ser desativados."
+    },
+    "contact": {
+      "title": "Dúvidas sobre Privacidade?",
+      "description": "Se tiver qualquer dúvida sobre esta Política de Privacidade, precisar exercer seus direitos ou quiser reportar uma preocupação com privacidade, entre em contato com nosso Encarregado de Dados (DPO):",
+      "email": {
+        "label": "E-mail",
+        "value": "lgpd@itcygnus.com"
+      },
+      "phone": {
+        "label": "Telefone",
+        "value": "+55 (11) 5039-4877"
+      }
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "ITCygnus",
+      "titleHighlight": "Termos de Serviço",
+      "lastUpdated": "Última atualização: 13 de Junho de 2025",
+      "subtitle": "Estes termos regem o uso de nossos serviços e plataforma. Ao utilizar nossos serviços, você concorda com estes termos e com nossa política de privacidade."
+    },
+    "serviceDescription": {
+      "title": "Descrição do Serviço",
+      "description": "A ITCygnus fornece soluções de inteligência artificial empresarial, incluindo processamento de documentos, gestão inteligente de dados e automação de processos. Nossos serviços são disponibilizados através de APIs, interfaces web e integrações personalizadas, em conformidade com as normas brasileiras.",
+      "features": {
+        "docProcessing": {
+          "title": "Processamento de Documentos",
+          "description": "OCR com IA e reconhecimento inteligente de documentos"
+        },
+        "dataManagement": {
+          "title": "Gestão de Dados",
+          "description": "Organização inteligente e automação de fluxos de trabalho"
+        },
+        "processAutomation": {
+          "title": "Automação de Processos",
+          "description": "Integrações personalizadas e fluxos de trabalho automatizados"
+        },
+        "apiAccess": {
+          "title": "Acesso via API",
+          "description": "APIs RESTful para integração perfeita"
+        }
+      }
+    },
+    "customerResponsibilities": {
+      "title": "Responsabilidades do Cliente",
+      "description": "O cliente é responsável por fornecer dados precisos, manter a segurança das credenciais de acesso, utilizar os serviços de acordo com a documentação fornecida e cumprir todas as leis aplicáveis relativas aos dados processados, incluindo a LGPD.",
+      "responsibilitiesTitle": "Suas responsabilidades incluem:",
+      "responsibilitiesList": [
+        "Fornecer dados precisos e manter a qualidade dos dados",
+        "Garantir a segurança das credenciais de acesso e gerenciamento de contas de usuário",
+        "Utilizar os serviços de acordo com a documentação fornecida",
+        "Cumprir as leis aplicáveis relativas aos dados processados",
+        "Manter cópias de segurança de dados críticos do negócio",
+        "Relatar prontamente incidentes de segurança ou problemas no sistema"
+      ]
+    },
+    "warranties": {
+      "title": "Garantias e Limitações",
+      "description": "Garantimos 99.9% de disponibilidade dos nossos serviços, no mínimo 99% de precisão no processamento de documentos, e suporte técnico 24/7. Nossa responsabilidade é limitada ao valor pago pelos serviços no período de 12 meses, conforme legislação brasileira aplicável.",
+      "uptime": {
+        "title": "99.9% de Uptime",
+        "description": "Disponibilidade de serviço garantida com proteção SLA"
+      },
+      "accuracy": {
+        "title": "Precisão de Processamento",
+        "description": "Mínimo de 99% de precisão no processamento de documentos"
+      },
+      "support": {
+        "title": "Suporte Técnico",
+        "description": "Assistência técnica 24/7 e orientação especializada"
+      },
+      "response": {
+        "title": "Tempo de Resposta",
+        "description": "Resposta máxima de 2 horas para problemas críticos"
+      }
+    },
+    "acceptableUse": {
+      "title": "Política de Uso Aceitável",
+      "description": "Você concorda em utilizar nossos serviços apenas para fins legais e de acordo com estes Termos. Usos proibidos incluem, mas não se limitam a:",
+      "prohibitions": [
+        "Processar conteúdo ilegal ou prejudicial",
+        "Tentar violar a segurança do sistema",
+        "Interferir na disponibilidade do serviço",
+        "Violar direitos de propriedade intelectual",
+        "Compartilhar credenciais de acesso com usuários não autorizados",
+        "Usar os serviços para inteligência competitiva"
+      ]
+    },
+    "dataProtection": {
+      "title": "Proteção de Dados e Privacidade",
+      "description": "Estamos comprometidos em proteger seus dados e manter conformidade com as leis de privacidade aplicáveis:",
+      "protectionItems": [
+        "Conformidade com LGPD e GDPR",
+        "Certificação SOC 2 Tipo II",
+        "Criptografia de ponta a ponta",
+        "Auditorias regulares de segurança",
+        "Opções de residência de dados",
+        "Direito à portabilidade de dados"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "Propriedade Intelectual",
+      "description": "Todos os direitos, títulos e interesses nos serviços, incluindo todos os direitos de propriedade intelectual, permanecem com a ITCygnus. Você mantém a propriedade de seus dados e conteúdo processados através de nossos serviços. Nós concedemos a você uma licença limitada, não exclusiva para usar nossos serviços de acordo com estes Termos."
+    },
+    "termination": {
+      "title": "Rescisão",
+      "description": "Qualquer uma das partes pode rescindir este acordo com 7 dias de aviso prévio por escrito. Podemos imediatamente rescindir ou suspender o acesso por violações destes Termos ou não pagamento. Após a rescisão, você terá 90 dias para exportar seus dados antes que sejam permanentemente excluídos, conforme previsto na LGPD."
+    },
+    "limitationOfLiability": {
+      "title": "Limitação de Responsabilidade",
+      "description": "Na máxima extensão permitida por lei, a responsabilidade total da ITCygnus por quaisquer reclamações decorrentes ou relacionadas aos serviços não excederá o valor pago por você pelos serviços nos 12 meses anteriores ao incidente. Não somos responsáveis por danos indiretos, incidentais ou consequenciais, conforme previsto no Código Civil Brasileiro."
+    },
+    "updatesToTerms": {
+      "title": "Atualizações dos Termos",
+      "description": "Podemos atualizar estes Termos periodicamente. Se fizermos alterações significativas, iremos notificá-lo com pelo menos 7 dias de antecedência antes que as mudanças entrem em vigor. O uso contínuo dos serviços após a data de vigência constitui aceitação dos Termos atualizados."
+    },
+    "contact": {
+      "title": "Dúvidas sobre estes Termos?",
+      "description": "Se tiver qualquer dúvida sobre estes Termos de Serviço ou precisar de esclarecimentos sobre qualquer disposição, entre em contato com nosso time jurídico:",
+      "emailLabel": "E-mail",
+      "email": "legal@itcygnus.com",
+      "phoneLabel": "Telefone",
+      "phone": "+55 (11) 5039-4877"
+    }
+  },
+  "security": {
+    "hero": {
+      "title": "Segurança de Nível",
+      "titleHighlight": "Empresarial",
+      "subtitle": "A segurança não é um detalhe - está integrada em cada camada da nossa plataforma. Da criptografia de ponta a ponta ao monitoramento contínuo, protegemos seus dados com os mais altos padrões do setor e uma",
+      "subtitleHighlight": "arquitetura de confiança zero",
+      "metrics": [
+        { "value": "99.99%", "label": "Disponibilidade de Segurança", "icon": "Clock" },
+        { "value": "< 5 min", "label": "Detecção de Ameaças", "icon": "Radar" },
+        { "value": "256-bit", "label": "Padrão de Criptografia", "icon": "Lock" },
+        { "value": "24/7", "label": "Monitoramento de Segurança", "icon": "Eye" }
+      ]
+    },
+    "pillars": [
+      { "title": "Proteção de Dados", "description": "Criptografia de ponta a ponta e manuseio seguro de dados", "icon": "Lock", "color": "ai-blue" },
+      { "title": "Controle de Acesso", "description": "Autenticação multifator e permissões baseadas em função", "icon": "Key", "color": "ai-green" },
+      { "title": "Segurança da Infraestrutura", "description": "Arquitetura de nuvem segura com defesa em profundidade", "icon": "Server", "color": "ai-blue" },
+      { "title": "Monitoramento Contínuo", "description": "Monitoramento de segurança 24/7 e detecção de ameaças", "icon": "Radar", "color": "ai-green" }
+    ],
+    "measuresTitle": "Medidas de Segurança",
+    "measuresTitleHighlight": "Abrangentes",
+    "measuresSubtitle": "Uma abordagem de segurança em várias camadas que protege seus dados em todos os níveis, da infraestrutura de rede aos endpoints da aplicação.",
+    "measures": [
+      {
+        "title": "Criptografia de Dados",
+        "items": [
+          "Criptografia AES-256 para dados em repouso",
+          "TLS 1.3 para dados em trânsito",
+          "Criptografia de ponta a ponta para comunicações sensíveis",
+          "Módulos de Segurança de Hardware (HSM) para gerenciamento de chaves"
+        ],
+        "icon": "Lock"
+      },
+      {
+        "title": "Segurança de Acesso",
+        "items": [
+          "Autenticação multifator (MFA) obrigatória",
+          "Controle de acesso baseado em função (RBAC)",
+          "Integração com Single Sign-On (SSO)",
+          "Revisões regulares de acesso e desprovisionamento"
+        ],
+        "icon": "Key"
+      },
+      {
+        "title": "Proteção da Infraestrutura",
+        "items": [
+          "Firewall de Aplicação Web (WAF)",
+          "Proteção e mitigação de DDoS",
+          "Sistemas de detecção e prevenção de intrusão",
+          "Segmentação de rede e microssegmentação"
+        ],
+        "icon": "Shield"
+      },
+      {
+        "title": "Segurança de Aplicações",
+        "items": [
+          "Práticas de desenvolvimento de código seguro",
+          "Testes de penetração regulares",
+          "Varredura e avaliação de vulnerabilidades",
+          "Revisões de código de segurança e análise estática"
+        ],
+        "icon": "Bug"
+      }
+    ],
+    "architecture": {
+      "title": "Arquitetura de",
+      "titleHighlight": "Segurança",
+      "subtitle": "Uma arquitetura de defesa em profundidade com múltiplas camadas de segurança, fornecendo proteção abrangente contra ameaças em evolução.",
+      "layer": "Camada",
+      "controls": "Controles de Segurança",
+      "layers": [
+        { "title": "Camada de Apresentação", "description": "Firewall de aplicação web, proteção contra DDoS, terminação SSL/TLS", "icon": "Monitor", "items": ["WAF", "Proteção DDoS", "SSL/TLS", "Limitação de Taxa"] },
+        { "title": "Camada de Aplicação", "description": "APIs seguras, autenticação, autorização, validação de entrada", "icon": "Cpu", "items": ["Segurança de API", "OAuth 2.0", "Validação de Entrada", "RBAC"] },
+        { "title": "Camada de Dados", "description": "Criptografia em repouso, segurança de banco de dados, proteção de backup", "icon": "Database", "items": ["AES-256", "Segurança de BD", "Criptografia de Backup", "Logs de Acesso"] },
+        { "title": "Camada de Infraestrutura", "description": "Segurança de rede, fortalecimento de hosts, segurança de contêineres", "icon": "Server", "items": ["Segmentação de Rede", "Fortalecimento de Hosts", "Segurança de Contêineres", "IDS/IPS"] }
+      ]
+    },
+    "incidentResponse": {
+      "title": "Processo de Resposta a",
+      "titleHighlight": "Incidentes",
+      "subtitle": "Uma metodologia estruturada de resposta a incidentes que garante detecção, contenção e recuperação rápidas de ameaças de segurança.",
+      "timeline": [
+        { "title": "Detecção", "description": "Sistemas automatizados de detecção e alerta de ameaças", "duration": "< 5 min", "icon": "Radar" },
+        { "title": "Avaliação", "description": "Avaliação inicial de impacto e classificação", "duration": "< 15 min", "icon": "Search" },
+        { "title": "Contenção", "description": "Isolamento e contenção imediata da ameaça", "duration": "< 30 min", "icon": "Shield" },
+        { "title": "Recuperação", "description": "Restauração do sistema e recuperação do serviço", "duration": "< 2 horas", "icon": "Activity" },
+        { "title": "Lições Aprendidas", "description": "Análise pós-incidente e implementação de melhorias", "duration": "24-48 horas", "icon": "Book" }
+      ]
+    },
+    "contact": {
+      "title": "Dúvidas sobre",
+      "titleHighlight": "Segurança?",
+      "subtitle": "Nossa equipe de segurança está disponível para esclarecer suas dúvidas, fornecer informações adicionais ou discutir requisitos de segurança específicos para sua organização.",
+      "contacts": [
+        { "title": "Equipe de Segurança", "value": "security.info@itcygnus.com", "description": "Dúvidas gerais sobre segurança", "icon": "Shield" },
+        { "title": "Resposta a Incidentes", "value": "+55 (11) 5039-4877", "description": "Incidentes de segurança 24/7", "icon": "AlertTriangle" },
+        { "title": "Escritório de Conformidade", "value": "dpo@itcygnus.com", "description": "Solicitações de conformidade e auditoria", "icon": "FileCheck" }
+      ],
+      "footer": "Para preocupações urgentes de segurança, ligue para nossa linha de resposta a incidentes 24/7 em",
+      "footerPhone": "+55 (11) 5039-4877"
+    }
+  },
+  "compliance": {
+    "hero": {
+      "title": "Conformidade",
+      "titleHighlight": "Regulatória",
+      "subtitle": "Uma estrutura de conformidade abrangente que garante a adesão a regulamentações globais, incluindo GDPR, HIPAA, SOX e requisitos específicos do setor. Automação e",
+      "subtitleHighlight1": "monitoramento integrados",
+      "and": "para",
+      "subtitleHighlight2": "garantia contínua",
+      "metrics": [
+        { "value": "100%", "label": "Taxa de Sucesso em Auditorias", "icon": "Award" },
+        { "value": "24/7", "label": "Monitoramento de Conformidade", "icon": "Eye" },
+        { "value": "< 7 Dias", "label": "Tempo de Resposta a Auditorias", "icon": "Clock" },
+        { "value": "99.99%", "label": "Efetividade dos Controles", "icon": "Target" }
+      ]
+    },
+    "frameworks": {
+      "title": "Estruturas de Conformidade",
+      "titleHighlight": "Globais",
+      "subtitle": "Conformidade certificada com as principais regulamentações internacionais e regionais, garantindo que seus dados e operações atendam aos mais altos padrões legais.",
+      "list": [
+        { "name": "GDPR", "fullName": "Regulamento Geral de Proteção de Dados", "region": "União Europeia", "status": "Conforme", "description": "Regulamentação abrangente de proteção de dados e privacidade", "icon": "Globe", "color": "ai-blue", "flag": "🇪🇺" },
+        { "name": "HIPAA", "fullName": "Lei de Portabilidade e Responsabilidade de Seguros de Saúde", "region": "Estados Unidos", "status": "Conforme", "description": "Padrões de privacidade e segurança para informações de saúde", "icon": "Shield", "color": "ai-green", "flag": "🇺🇸" },
+        { "name": "LGPD", "fullName": "Lei Geral de Proteção de Dados", "region": "Brasil", "status": "Conforme", "description": "Lei geral de proteção de dados do Brasil", "icon": "Flag", "color": "ai-blue", "flag": "🇧🇷" }
+      ]
+    },
+    "capabilities": {
+      "title": "Capacidades de",
+      "titleHighlight": "Conformidade",
+      "subtitle": "Capacidades abrangentes de gerenciamento de conformidade integradas em nossa plataforma, fornecendo monitoramento automatizado, relatórios e coleta de evidências.",
+      "featuresTitle": "Principais Características",
+      "list": [
+        { "title": "Governança de Dados", "description": "Classificação, retenção e gerenciamento do ciclo de vida de dados abrangentes", "icon": "Database", "features": ["Classificação automatizada de dados", "Aplicação de políticas de retenção", "Rastreamento de linhagem de dados", "Avaliações de impacto na privacidade"] },
+        { "title": "Gerenciamento de Auditoria", "description": "Trilha de auditoria completa e coleta de evidências para conformidade regulatória", "icon": "Search", "features": ["Logs de auditoria imutáveis", "Coleta automatizada de evidências", "Relatórios de conformidade", "Monitoramento em tempo real"] },
+        { "title": "Avaliação de Risco", "description": "Monitoramento contínuo de riscos de conformidade e estruturas de avaliação", "icon": "AlertTriangle", "features": ["Modelos de pontuação de risco", "Análise de lacunas de conformidade", "Alertas de risco automatizados", "Rastreamento de mitigação"] },
+        { "title": "Gerenciamento de Políticas", "description": "Criação, distribuição e rastreamento de conformidade de políticas centralizadas", "icon": "FileText", "features": ["Versionamento de políticas", "Distribuição automatizada", "Rastreamento de reconhecimento", "Verificação de conformidade"] }
+      ]
+    },
+    "dataRights": {
+      "title": "Direitos dos",
+      "titleHighlight": "Titulares de Dados",
+      "subtitle": "Implementação abrangente dos direitos dos titulares de dados com processamento automatizado de solicitações e fluxos de trabalho de resposta.",
+      "implementation": "Implementação",
+      "rights": [
+        { "title": "Direito de Acesso", "description": "Solicitar acesso aos dados pessoais que processamos", "implementation": "Portal de autoatendimento com exportação automatizada de dados", "regulation": "GDPR Art. 15, CCPA", "icon": "Eye" },
+        { "title": "Direito de Retificação", "description": "Corrigir dados pessoais imprecisos ou incompletos", "implementation": "Formulários de correção online com processamento imediato", "regulation": "GDPR Art. 16, CCPA", "icon": "Settings" },
+        { "title": "Direito de Exclusão", "description": "Solicitar a exclusão de dados pessoais", "implementation": "Fluxos de trabalho de exclusão automatizados com verificação", "regulation": "GDPR Art. 17, CCPA", "icon": "AlertCircle" },
+        { "title": "Direito à Portabilidade", "description": "Receber dados pessoais em um formato estruturado", "implementation": "Formatos de exportação padronizados e transferência segura", "regulation": "GDPR Art. 20, CCPA", "icon": "Download" }
+      ]
+    },
+    "audit": {
+      "title": "Processo de",
+      "titleHighlight": "Auditoria",
+      "subtitle": "Processo de auditoria simplificado com coleta automatizada de evidências e relatórios de conformidade abrangentes.",
+      "process": [
+        { "title": "Planejamento", "description": "Definição do escopo da auditoria e planejamento da coleta de evidências", "duration": "1-2 semanas", "icon": "Clipboard", "activities": ["Definição de escopo", "Mapeamento de evidências", "Planejamento de cronograma", "Alocação de recursos"] },
+        { "title": "Coleta de Evidências", "description": "Coleta automatizada de evidências e documentação de conformidade", "duration": "2-3 semanas", "icon": "Archive", "activities": ["Extração de logs", "Teste de controles", "Revisão de documentos", "Agendamento de entrevistas"] },
+        { "title": "Avaliação", "description": "Análise de lacunas de conformidade e avaliação de riscos", "duration": "1-2 semanas", "icon": "Search", "activities": ["Análise de lacunas", "Avaliação de riscos", "Avaliação de controles", "Documentação de achados"] },
+        { "title": "Relatório", "description": "Geração de relatórios de conformidade e planejamento de remediação", "duration": "1 semana", "icon": "FileText", "activities": ["Geração de relatório", "Priorização de achados", "Planejamento de remediação", "Revisão das partes interessadas"] }
+      ]
+    },
+    "contact": {
+      "title": "Dúvidas sobre",
+      "titleHighlight": "Conformidade?",
+      "subtitle": "Nossa equipe de conformidade está pronta para ajudar com solicitações de auditoria, fornecer documentação de conformidade ou discutir requisitos regulatórios específicos para o seu setor.",
+      "contacts": [
+        { "title": "Escritório de Conformidade", "value": "dpo@itcygnus.com", "description": "Consultas gerais sobre conformidade", "icon": "Scale" },
+        { "title": "Suporte a Auditorias", "value": "security.info@itcygnus.com", "description": "Solicitações e documentação de auditoria", "icon": "FileSearch" },
+        { "title": "Equipe Jurídica", "value": "legal@itcygnus.com", "description": "Dúvidas legais e regulatórias", "icon": "Gavel" }
+      ],
+      "footer": "Precisa de assistência imediata? Ligue para nossa linha direta de conformidade em",
+      "footerPhone": "+55 (11) 5039-4877"
+    }
   }
 }

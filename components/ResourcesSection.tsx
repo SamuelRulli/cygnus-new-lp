@@ -447,7 +447,7 @@ export default function ResourcesSection() {
                   <div className="font-semibold text-ai-dark">Emergências</div>
                   <div className="text-sm text-ai-medium">
                     <a href="tel:+1-305-555-0199" className="text-red-500 hover:text-red-600 transition-colors">
-                      +1 (305) 555-0199
+                      +1 (601) 910 3353
                     </a>
                   </div>
                 </div>

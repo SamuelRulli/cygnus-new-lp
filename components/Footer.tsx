@@ -61,12 +61,9 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6 text-white">{t('footer.industries')}</h3>
             <ul className="space-y-3">
               {[
-                { name: 'Saúde', href: '/industries/healthcare' },
-                { name: 'Financeira', href: '/industries/financial' },
-                { name: 'Seguradoras', href: '/industries/insurance' },
-                // { name: 'Manufacturing', href: '/industries/manufacturing' },
-                // { name: 'Government', href: '/industries/government' },
-                // { name: 'Setor de Varejo e E-commerce', href: '/industries/retail' }
+                { name: t('footer.industriesList.healthcare'), href: '/industries/healthcare' },
+                { name: t('footer.industriesList.financial'), href: '/industries/financial' },
+                { name: t('footer.industriesList.insurance'), href: '/industries/insurance' },
               ].map((item, index) => (
                 <li key={index}>
                   <Link href={item.href} className="text-white/70 hover:text-ai-green transition-colors flex items-center group">
@@ -83,12 +80,10 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6 text-white">{t('footer.company')}</h3>
             <ul className="space-y-3">
               {[
-                { name: 'Sobre Nós', href: '/company' },
-                // { name: 'Resources', href: '/resources' },
-                // { name: 'Calculadora de ROI', href: '/roi-calculator' },
-                { name: 'Contato', href: '/contact' },
-                { name: 'Privacy Policy', href: '/privacy' },
-                { name: 'Terms of Service', href: '/terms' }
+                { name: t('footer.companyList.about'), href: '/company' },
+                { name: t('footer.companyList.contact'), href: '/contact' },
+                { name: t('footer.companyList.privacy'), href: '/privacy' },
+                { name: t('footer.companyList.terms'), href: '/terms' }
               ].map((item, index) => (
                 <li key={index}>
                   <Link href={item.href} className="text-white/70 hover:text-ai-green transition-colors flex items-center group">
@@ -108,10 +103,10 @@ export default function Footer() {
               {t('footer.copyright')}
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link href="/privacy" className="text-white/60 hover:text-white transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="text-white/60 hover:text-white transition-colors">Terms of Service</Link>
-              <Link href="/security" className="text-white/60 hover:text-white transition-colors">Security</Link>
-              <Link href="/compliance" className="text-white/60 hover:text-white transition-colors">Compliance</Link>
+              <Link href="/privacy" className="text-white/60 hover:text-white transition-colors">{t('footer.bottomLinks.privacy')}</Link>
+              <Link href="/terms" className="text-white/60 hover:text-white transition-colors">{t('footer.bottomLinks.terms')}</Link>
+              <Link href="/security" className="text-white/60 hover:text-white transition-colors">{t('footer.bottomLinks.security')}</Link>
+              <Link href="/compliance" className="text-white/60 hover:text-white transition-colors">{t('footer.bottomLinks.compliance')}</Link>
             </div>
           </div>
         </div>

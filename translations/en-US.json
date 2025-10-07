@@ -5,7 +5,8 @@
     "resources": "Resources",
     "company": "Company",
     "signIn": "Sign In",
-    "requestDemo": "Request Demo"
+    "requestDemo": "Request Demo",
+    "customDevelopment": "Custom Development"
   },
   "hero": {
     "title": "Transform Your",
@@ -52,6 +53,13 @@
       }
     }
   },
+  "networkEffect": {
+    "title": "Network",
+    "titleHighlight": "Effect",
+    "subtitle": "Anti-Fraud Intelligence Hub",
+    "description": "The more operators connect, the more powerful the network becomes. AI.SAUDE transforms the market into a collaborative ecosystem where insurers share critical information in real-time, detect fraud with precision, assign risk scores, and provide detailed reasons for immediate action.",
+    "quote": "Alone, we fight a fraud. United, we eliminate the problem."
+  },
   "solutions": {
     "title": "Our Enterprise",
     "titleHighlight": "AI Solutions",
@@ -79,16 +87,25 @@
           "Automated approval workflows"
         ]
       },
-      "aiDATA": {
-        "title": "AI.DATA",
-        "subtitle": "Healthcare Claims Processing",
-        "description": "Revolutionize your healthcare claims process with complete automation. From document receipt to final approval, our AI analyzes, validates, and processes claims with medical precision, reducing processing time from weeks to hours.",
+      "aiSAUDE": {
+        "title": "AI.SAUDE",
+        "subtitle": "Health Reimbursement Processing",
+        "description": "Revolutionize your health reimbursement process with complete automation. We are the largest integrator portal for municipalities in Brazil, with over 350 municipalities validating invoices and combating fraud in the reimbursement process through our AI.SAUDE technology.",
         "benefits": [
-          "Automatic eligibility analysis",
+          "Automatic claims processing",
           "Real-time fraud detection",
-          "Integration with payers and providers",
+          "Integration with carriers and providers",
           "Full regulatory compliance"
-        ]
+        ],
+        "leadership": {
+          "title": "Leader in the Brazilian Public Sector",
+          "description": "We are the largest integrator portal for municipalities in Brazil, with over 350 municipalities validating invoices and combating fraud in the reimbursement process through our AI.SAUDE technology.",
+          "stats": {
+            "municipalities": "350+ Connected Municipalities",
+            "fraudDetection": "99.2% Fraud Detection",
+            "notesValidated": "R$ 2.8B Validated Notes"
+          }
+        }
       },
       "aiPRICEINSIGHTS": {
         "title": "AI.PRICEINSIGHTS",
@@ -381,8 +398,1896 @@
   "footer": {
     "description": "Transforming enterprises with AI-powered automation solutions. Trusted by 100+ companies worldwide.",
     "solutions": "Solutions",
-    "industries": "Industries", 
+    "industries": "Industries",
     "company": "Company",
-    "copyright": "© 2012 CYGNUS IT SERVICE LTDA/LLC. All rights reserved."
+    "copyright": "© 2012 CYGNUS IT SERVICE LTDA/LLC. All rights reserved.",
+    "industriesList": {
+      "healthcare": "Healthcare",
+      "financial": "Financial",
+      "insurance": "Insurance"
+    },
+    "companyList": {
+      "about": "About Us",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "bottomLinks": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "security": "Security",
+      "compliance": "Compliance"
+    }
+  },
+  "finalCta": {
+    "title": "Ready to Transform Your",
+    "titleHighlight": "Enterprise",
+    "subtitle": "Join over 10 companies that have already revolutionized their processes with ITCygnus AI. Start your transformation today.",
+    "trustIndicators": [
+      "No Setup Fees",
+      "Free Migration",
+      "30-Day Guarantee",
+      "Cancel Anytime"
+    ],
+    "button": "Start Free Trial",
+    "explore": "Learn More About Digital Transformation",
+    "contact": "Questions? Call us at {phone} or email {email}"
+  },
+  "chatBubble": {
+    "message": "Hello! This is Paulo, virtual assistant from Cygnus IT Services. How can I help you today?"
+  },
+  "customDevelopment": {
+    "title": "Custom Application Development with",
+    "titleHighlight": "Real Results",
+    "subtitle": "Our team is ready to build the ideal application or modernize your existing systems, meeting the unique needs of your business.",
+    "services": [
+      {
+        "title": "Strategy and Technical Engineering",
+        "description": "Boost your digital strategy by adopting cutting-edge technologies and expert guidance, ensuring compliance and extracting maximum value from your IT investments."
+      },
+      {
+        "title": "Product Engineering",
+        "description": "Enhance your digital strategy with cutting-edge technologies and expert guidance, ensuring compliance and extracting maximum value from your IT investments."
+      },
+      {
+        "title": "Quality Engineering and Assurance",
+        "description": "Streamline software development with cutting-edge test automation and AI-driven regression, ensuring greater reliability and efficiency, fully aligned with your company's goals."
+      }
+    ],
+    "whyChooseUs": {
+      "title": "Why Choose Cygnus?",
+      "points": [
+        {
+          "title": "Tailor-Made Solutions",
+          "description": "We don't believe in one-size-fits-all solutions. Every project is a blank canvas, painted with the code that solves your specific challenges."
+        },
+        {
+          "title": "Strategic Partnership",
+          "description": "We act as an extension of your team, immersing ourselves in your culture and goals to ensure the final product is a true reflection of your vision."
+        },
+        {
+          "title": "Focus on Results",
+          "description": "Our metric for success is your success. We develop with a focus on ROI, scalability, and measurable impact on your business."
+        }
+      ]
+    },
+    "ourProcess": {
+      "title": "Our Process",
+      "steps": [
+        {
+          "name": "Immersion and Discovery",
+          "description": "We deeply understand your challenges and goals."
+        },
+        {
+          "name": "Design and Architecture",
+          "description": "We design a robust, scalable, and user-centric solution."
+        },
+        {
+          "name": "Agile Development",
+          "description": "We build in sprints, with continuous deliveries and constant validation."
+        },
+        {
+          "name": "Quality and Testing",
+          "description": "We guarantee excellence with rigorous testing and automation."
+        },
+        {
+          "name": "Deployment and Support",
+          "description": "We launch the solution and offer ongoing support for its evolution."
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies We Master"
+    }
+  },
+  "customDevelopmentHero": {
+    "title": "Building the Future, Block by Block",
+    "titleHighlight": "with Custom Development",
+    "subtitle": "We create tailor-made software solutions that fit perfectly into your business processes, driving innovation and efficiency.",
+    "blocks": {
+      "scalability": "Scalability",
+      "integration": "Integration",
+      "ux": "UX Design",
+      "security": "Security",
+      "ai": "AI & ML"
+    },
+    "cta": "Let's Build Together"
+  },
+  "demoForm": {
+    "customDevelopment": "Custom Development"
+  },
+  "certifications": {
+    "title": "Our Certifications",
+    "subtitle": "Our team is composed of certified professionals in the most advanced technologies on the market, ensuring the delivery of high-quality and high-performance solutions."
+  },
+  "company": {
+    "hero": {
+      "title": "Pioneers in",
+      "titleHighlight": "Enterprise AI",
+      "subtitle": "Since 2012, ITCygnus has been accelerating the digital transformation of large enterprises with cutting-edge technological solutions. From software acceleration to AI-driven innovation, leading brands trust us to automate and revolutionize their most critical business processes.",
+      "mission": {
+        "title": "Our Mission",
+        "text": "To democratize access to enterprise artificial intelligence, making advanced technologies accessible to organizations of all sizes, always with a focus on measurable results and rapid implementation."
+      }
+    },
+    "stats": {
+      "organizations": "Organizations Trust Us",
+      "countries": "Countries Served",
+      "documents": "Document Types",
+      "team": "Team Members"
+    },
+    "journey": {
+      "title": "Our",
+      "titleHighlight": "Journey",
+      "subtitle": "From enterprise software acceleration to AI innovation - 13 years transforming the way large organizations work.",
+      "legacy": {
+        "title": "Legacy of Enterprise Software Acceleration",
+        "p1": "ITCygnus was founded in 2012 as a software acceleration specialist for large Brazilian companies. We helped Fortune 500 companies optimize legacy systems, modernize critical processes, and accelerate their digital transformation journey.",
+        "p2": "Working closely with enterprise clients, we developed deep expertise in understanding complex organizational needs, regulatory requirements, and scalability challenges that only large corporations face.",
+        "p3": "This enterprise-focused foundation became our DNA, shaping how we approach every solution - always thinking about scale, security, and seamless integration."
+      },
+      "evolution": {
+        "title": "Evolution to AI Leadership",
+        "p1": "In 2018, we identified a major opportunity: to apply artificial intelligence to solve the document and process automation challenges we had been facing manually for years.",
+        "p2": "Our first AI product, AI.OCR, was born from months of research in hospitals and offices, observing how professionals wasted hours on tasks that could be automated.",
+        "p3": "Today, we process documents in over 40 standards and serve clients in 2 countries, with a team that has grown from 5 to over 20 specialists."
+      },
+      "timelineTitle": "13 Years of Innovation"
+    },
+    "timeline": [
+      {
+        "year": "2012",
+        "title": "Foundation as Software Accelerators",
+        "description": "ITCygnus founded as software acceleration specialists for large Brazilian enterprises. Focused on optimizing legacy systems and accelerating digital transformation processes."
+      },
+      {
+        "year": "2015",
+        "title": "Enterprise Optimization Expertise",
+        "description": "Developed proprietary methodologies for enterprise software acceleration. Worked with Fortune 500 companies in Brazil to modernize critical business processes."
+      },
+      {
+        "year": "2018",
+        "title": "AI Research & Development",
+        "description": "Pivoted to artificial intelligence research after identifying automation opportunities in enterprise processes. Started developing AI-powered document processing solutions."
+      },
+      {
+        "year": "2019",
+        "title": "AI.OCR Launch",
+        "description": "Launched AI.OCR after months of research in hospitals and offices. First AI product focused on solving real business problems with intelligent document recognition."
+      },
+      {
+        "year": "2020",
+        "title": "AI.DOC & Pandemic Growth",
+        "description": "Expanded platform with intelligent document management. Pandemic accelerated digitization needs, making our solution essential for remote operations."
+      },
+      {
+        "year": "2021",
+        "title": "Healthcare Specialization",
+        "description": "Entered healthcare market with AI.DATA, developed in partnership with major health plans. Became vertical AI specialists with deep industry expertise."
+      },
+      {
+        "year": "2023",
+        "title": "International Expansion",
+        "description": "Expanded to American market, adapting solutions for international regulations. Now serve clients in 4 countries with 40+ languages supported."
+      },
+      {
+        "year": "2024",
+        "title": "Complete AI Platform",
+        "description": "Launched comprehensive AI platform with autonomous agents and conversational AI. Leading enterprise transformation worldwide with full AI suite."
+      }
+    ],
+    "values": {
+      "title": "Our",
+      "titleHighlight": "Values",
+      "subtitle": "The principles forged in 13 years of enterprise work that guide everything we do and shape how we build AI solutions for transformation.",
+      "points": [
+        {
+          "title": "Enterprise Approach",
+          "description": "Born from working with large companies, we understand the complexity and scale requirements that real enterprise solutions demand."
+        },
+        {
+          "title": "Results-Driven Innovation",
+          "description": "We believe that AI should solve real business problems, not just impress with technology. Every solution we build delivers measurable results."
+        },
+        {
+          "title": "Rapid Implementation",
+          "description": "Speed is crucial in business. Our proven methodologies from 13 years of enterprise work ensure you see value quickly without compromising quality."
+        },
+        {
+          "title": "Deep Specialization",
+          "description": "Generic solutions fail in complex industries. We develop vertical AI that understands your specific industry and regulations."
+        }
+      ]
+    },
+    "team": {
+      "title": "Our",
+      "titleHighlight": "Specialized Team",
+      "subtitle": "20+ professionals including data scientists, enterprise architects, and transformation specialists with vast experience in large-scale implementations.",
+      "roles": [
+        {
+          "role": "Data Scientists",
+          "count": "6+",
+          "description": "AI researchers with PhDs and machine learning specialists"
+        },
+        {
+          "role": "Software Engineers",
+          "count": "10+",
+          "description": "Full-stack developers and platform architects"
+        },
+        {
+          "role": "Enterprise Architects",
+          "count": "4+",
+          "description": "Former specialists from large corporations with deep knowledge of enterprise environments"
+        },
+        {
+          "role": "Implementation Consultants",
+          "count": "50+",
+          "description": "Specialists in digital transformation and change management"
+        }
+      ]
+    },
+    "presence": {
+      "title": "Global",
+      "titleHighlight": "Presence",
+      "subtitle": "Strategic locations in key markets in the Americas, allowing us to serve enterprise clients with local expertise and global scale.",
+      "offices": [
+        {
+          "city": "São Paulo",
+          "country": "Brazil",
+          "description": "Global HQ & Development Center",
+          "details": "Main development center with 80+ engineers and data scientists"
+        },
+        {
+          "city": "Orlando",
+          "country": "USA",
+          "description": "Americas Operations Center",
+          "details": "Sales, support, and customer success operations in North America"
+        },
+        {
+          "city": "San Diego",
+          "country": "USA",
+          "description": "Innovation & Research Lab",
+          "details": "Advanced AI research and development of emerging technologies"
+        }
+      ],
+      "details": {
+        "title": "Strategically Located in the Americas",
+        "subtitle": "Our three strategic locations enable 24/7 operations and provide comprehensive coverage for clients in the North and South American markets.",
+        "hubs": [
+          {
+            "name": "São Paulo Hub",
+            "description": "Main development and engineering center"
+          },
+          {
+            "name": "Orlando Operations",
+            "description": "Customer success and commercial operations"
+          },
+          {
+            "name": "San Diego Innovation",
+            "description": "AI research and emerging technologies"
+          }
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to be part of our",
+      "titleHighlight": "Success Story?",
+      "subtitle": "Join the brands that are already transforming their operations with IT Cygnus. Let's build the future of enterprise AI together.",
+      "buttons": {
+        "demo": "Request Demo",
+        "contact": "Talk to Our Team"
+      },
+      "contact": "Questions? Contact us at {phone} or {email}"
+    }
+  },
+  "clientsCarousel": {
+    "title": "Our Clients and Partners",
+    "subtitle": "We work with market-leading companies to deliver high-impact solutions."
+  },
+  "financialIndustry": {
+    "hero": {
+      "title": "Financial AI that Accelerates",
+      "titleHighlight": "Decisions and Reduces Risks",
+      "subtitle": "Automate critical processes for your bank, fintech, or financial institution with AI specialized in compliance, credit analysis, and fraud detection.",
+      "subtitleEmphasis": "Banking security and regulatory compliance.",
+      "keyBenefits": [
+        "Real-time credit analysis",
+        "Advanced fraud detection"
+      ],
+      "cta": "Request Banking Demo"
+    },
+    "visual": {
+      "application": "Application",
+      "aiAnalysis": "AI Analysis",
+      "approved": "Approved",
+      "loanApprovalTime": "2 hrs",
+      "loanApprovalLabel": "Loan Approval",
+      "fraudDetectionRate": "99.2%",
+      "fraudDetectionLabel": "Fraud Detection"
+    },
+    "challenges": {
+      "title": "Complexity of the Financial Sector",
+      "p1": "Financial institutions operate in a highly regulated environment where accuracy and speed are equally critical. Banks process millions of transactions daily, each requiring compliance validation, risk analysis, and potential fraud detection.",
+      "p2": "Customer onboarding involves validating dozens of documents, background checks, and credit capacity analysis—all while maintaining a fluid and secure customer experience. Regulations like GDPR, central bank rules, and international requirements make automation a complex technical and regulatory challenge.",
+      "p3": "Fintechs face the additional challenge of competing with traditional banks by offering more agile and personalized services, but without compromising the security and compliance the sector demands.",
+      "problemStats": [
+        { "stat": "72 hours", "label": "Average loan approval time" },
+        { "stat": "$4.7B", "label": "Annual fraud losses in banking" },
+        { "stat": "65%", "label": "Manual processes in financial services" }
+      ]
+    },
+    "solution": {
+      "title": "Our Financial Expertise",
+      "p1": "ITCygnus has developed specific solutions for the financial sector, with banking-grade security architecture and full compliance with national and international regulations. Our AI has been trained on millions of financial transactions and documents, understanding fraud patterns, credit risks, and regulatory requirements.",
+      "p2": "We work with large banks, innovative fintechs, and credit unions to create solutions that accelerate processes without compromising security. Our technology is audited by specialized financial security firms and certified for banking use.",
+      "benefits": [
+        "Banking-grade security and encryption",
+        "Full regulatory compliance automation",
+        "Real-time fraud detection and prevention",
+        "Seamless core banking integration"
+      ]
+    },
+    "capabilities": {
+      "title": "Advanced",
+      "titleHighlight": "Financial AI Capabilities",
+      "subtitle": "Comprehensive AI capabilities designed specifically for banking operations, regulatory compliance, and financial risk management.",
+      "items": [
+        { "title": "Credit Risk Analysis", "description": "AI-powered credit scoring and risk assessment" },
+        { "title": "Fraud Detection", "description": "Real-time transaction monitoring and fraud prevention" },
+        { "title": "Document Processing", "description": "Intelligent processing of financial documents" },
+        { "title": "Anti-Money Laundering", "description": "AML screening and suspicious activity detection" },
+        { "title": "Transaction Monitoring", "description": "Real-time analysis of payment transactions" },
+        { "title": "Risk Management", "description": "Comprehensive risk assessment and mitigation" }
+      ]
+    },
+    "integrations": {
+      "title": "Banking System Integrations",
+      "subtitle": "Native integration with core banking platforms and financial infrastructure.",
+      "items": [
+        { "system": "Core Banking", "description": "Direct integration with core systems" },
+        { "system": "Credit Bureaus", "description": "Real-time credit data access" },
+        { "system": "Risk Platforms", "description": "Enterprise risk management" },
+        { "system": "Digital Banking", "description": "Mobile and web banking platforms" }
+      ]
+    },
+    "solutions": {
+      "title": "Financial",
+      "titleHighlight": "AI Solutions",
+      "subtitle": "Specialized AI solutions designed specifically for banking operations, from customer onboarding to fraud detection and compliance automation.",
+      "items": [
+        {
+          "title": "Real-Time Credit Analysis & Risk Assessment",
+          "product": "AI.DATA",
+          "description": "Process loan applications with intelligent credit analysis that evaluates traditional and alternative data sources. Our AI assesses credit risk, income verification, and payment capacity in real-time.",
+          "details": "Machine learning models analyze bank statements, transaction patterns, and behavioral data to provide accurate credit scoring. Integration with credit bureaus and open banking APIs ensures comprehensive risk assessment."
+        },
+        {
+          "title": "Advanced Fraud Detection & Prevention",
+          "product": "AI.DATA",
+          "description": "AI.DATA monitors transactions in real-time, identifying suspicious patterns and potential fraud before losses occur. Our system learns from historical fraud cases and adapts to new attack vectors.",
+          "details": "Multi-layered fraud detection analyzes transaction velocity, merchant patterns, geographic anomalies, and device fingerprinting. Real-time scoring enables instant decisions while minimizing false positives."
+        }
+      ],
+      "cta": "Learn More About {product}"
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your",
+      "titleHighlight": "Financial Operations?",
+      "subtitle": "Join the leading financial institutions that have already revolutionized their operations with ITCygnus's specialized AI solutions. Start reducing risks while accelerating decisions today.",
+      "trustIndicators": [
+        { "value": "1 hr", "label": "Loan Approval Time" },
+        { "value": "99.2%", "label": "Fraud Detection" },
+        { "value": "10+", "label": "Financial Clients" }
+      ],
+      "contact": "Questions? Contact our financial specialists at {phone} or {email}"
+    }
+  },
+  "healthcareIndustry": {
+    "hero": {
+      "title": "Specialized AI for",
+      "titleHighlight": "Healthcare",
+      "subtitle": "Transform the operational efficiency of your hospital, clinic, or healthcare provider with AI solutions developed specifically for the medical environment.",
+      "subtitleEmphasis": "Full compliance with health regulations.",
+      "keyBenefits": [
+        "Full compliance with medical regulations",
+        "Integration with hospital systems",
+        "Processing of reports and medical records",
+        "Automatic detection of medical fraud"
+      ],
+      "cta": "Schedule Demo"
+    },
+    "visual": {
+      "documents": "Documents",
+      "aiProcessing": "AI Processing",
+      "automated": "Automated",
+      "medicalAccuracy": "99.5%",
+      "medicalAccuracyLabel": "Medical Accuracy",
+      "compliance": "LGPD",
+      "complianceLabel": "Compliance"
+    },
+    "challenges": {
+      "title": "Unique Challenges in Healthcare",
+      "p1": "The healthcare sector faces increasing pressure to reduce costs while improving the quality of care. Hospitals process thousands of documents daily—from medical records to exam results—but still rely on manual processes that consume valuable time from healthcare professionals.",
+      "p2": "The complexity of medical terminology, the need for absolute precision, and strict industry regulations make automation a unique challenge. Generic AI solutions simply do not understand the medical context, leading to errors that can have serious consequences.",
+      "p3": "Health insurers face the additional challenge of processing millions of reimbursements monthly, validating procedures, detecting fraud, and ensuring regulatory compliance.",
+      "problemStats": [
+        { "stat": "40%", "label": "Of doctors' time spent on bureaucracy" },
+        { "stat": "$80B", "label": "Annual administrative costs in healthcare" },
+        { "stat": "25%", "label": "Reimbursements require manual review" }
+      ]
+    },
+    "solution": {
+      "title": "Our Medical Expertise",
+      "p1": "ITCygnus has developed specific solutions for healthcare, trained on millions of real medical documents and validated by professionals in the field. Our AI understands medical terminology, procedure codes, ICD-10, and the specifics of healthcare systems.",
+      "p2": "We work with leading hospitals, large insurers, and specialized clinics to create solutions that not only automate processes but also improve the quality of care and reduce operational risks. Our technology is certified for medical use and meets all industry regulations.",
+      "benefits": [
+        "LGPD compliant AI processing",
+        "Real-time integration with electronic medical records",
+        "Advanced interpretation of medical terminology",
+        "Automation of regulatory compliance",
+        "Connectivity with over 300 municipalities",
+        "Analysis and identification of claims in any document type",
+        "Integration with major data bureaus",
+        "Autonomous agents executing complete analysis workflows"
+      ]
+    },
+    "capabilities": {
+      "title": "Advanced",
+      "titleHighlight": "Medical AI Capabilities",
+      "subtitle": "Comprehensive AI capabilities designed specifically for healthcare workflows, medical terminology, and regulatory compliance requirements.",
+      "items": [
+        { "title": "Medical Handwriting Recognition", "description": "AI trained on doctors' writing patterns" },
+        { "title": "ICD-10 Code Validation", "description": "Automatic coding of diagnoses and procedures" },
+        { "title": "Drug Interaction Analysis", "description": "Real-time verification of prescription safety" },
+        { "title": "Medical Image Integration", "description": "Processing and analysis of DICOM files" },
+        { "title": "Clinical Decision Support", "description": "Evidence-based treatment recommendations" },
+        { "title": "Patient Risk Assessment", "description": "Predictive analysis of health outcomes" },
+        { "title": "Appointment Optimization", "description": "Intelligent allocation of resources and schedules" },
+        { "title": "Quality Metrics Monitoring", "description": "Automated compliance and quality reports" },
+        { "title": "Prior Authorization Automation", "description": "Simplified approval processes by insurers" }
+      ]
+    },
+    "solutions": {
+      "title": "AI Solutions for",
+      "titleHighlight": "Healthcare",
+      "subtitle": "Specialized AI solutions designed specifically for healthcare workflows, from medical records to reimbursement processing and document management.",
+      "items": [
+        {
+          "title": "Intelligent Medical Records Processing",
+          "product": "AI.OCR",
+          "description": "Our specialized AI.OCR solution processes medical records, reports, and prescriptions with over 99.5% accuracy, recognizing even complex medical handwriting. The system automatically validates critical information such as dosages, allergies, and contraindications.",
+          "details": "Native integration with hospital systems like Epic, Cerner, and Allscripts allows information to be automatically entered into electronic medical records, eliminating rework and reducing transcription errors."
+        },
+        {
+          "title": "Medical Reimbursement Automation",
+          "product": "AI.SAUDE",
+          "description": "AI.SAUDE revolutionizes reimbursement processing, automatically analyzing procedure eligibility, validating codes, and detecting potential fraud in real-time. Our AI understands the complex rules of each health plan.",
+          "details": "The system integrates with providers, laboratories, and pharmacies, creating an automated flow that reduces reimbursement time from weeks to hours, improving beneficiary satisfaction."
+        },
+        {
+          "title": "Intelligent Medical Document Management",
+          "product": "AI.DOC",
+          "description": "AI.DOC automatically organizes and classifies millions of medical documents, from imaging exams to surgical reports. Our semantic search allows doctors to quickly find relevant histories and critical information.",
+          "details": "The system maintains complete audit trails of access and modifications, ensuring compliance with medical regulations and facilitating hospital accreditation processes."
+        }
+      ],
+      "cta": "Learn More About {product}"
+    },
+    "useCases": {
+      "title": "Success",
+      "titleHighlight": "Cases in Healthcare",
+      "subtitle": "See how healthcare organizations are transforming operations and improving patient care with our specialized AI solutions.",
+      "items": [
+        {
+          "title": "Health Insurer Innovation",
+          "description": "A large insurer with 3M+ beneficiaries implemented AI.SAUDE for reimbursement automation and fraud detection. The AI automatically processes complex medical necessity determinations.",
+          "result": "Detected over R$1M+ in fraud annually while reducing denials by 45%. Beneficiary satisfaction increased by 40% due to faster approvals and fewer administrative delays.",
+          "industry": "Health Insurer",
+          "stats": { "fraud_detection": "R$1M+", "denials": "45%", "satisfaction": "40%" }
+        }
+      ],
+      "resultsTitle": "Achieved Results:"
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your",
+      "titleHighlight": "Healthcare Operations?",
+      "subtitle": "Join the leading healthcare organizations that have already revolutionized their operations with our specialized AI solutions. Start improving patient care while reducing costs today.",
+      "trustIndicators": [
+        { "value": "99.5%", "label": "Medical Accuracy" },
+        { "value": "LGPD", "label": "Compliance" },
+        { "value": "75%", "label": "Time Savings" },
+        { "value": "10+", "label": "Healthcare Providers" }
+      ],
+      "contact": "Questions? Talk to our healthcare specialists at {phone} or {email}"
+    }
+  },
+  "insuranceIndustry": {
+    "hero": {
+      "title": "Specialized AI for",
+      "titleHighlight": "Insurers and Brokers",
+      "subtitle": "Revolutionize claims processing, risk underwriting, and policyholder service with AI that understands policies, detects fraud, and accelerates approvals.",
+      "subtitleEmphasis": "Efficiency and accuracy for the insurance market.",
+      "keyBenefits": [
+        "Automatic claims processing",
+        "Advanced fraud detection",
+        "Automated risk underwriting",
+        "Integration with brokers and providers"
+      ],
+      "cta": "Request Demo"
+    },
+    "visual": {
+      "claimFiled": "Claim Filed",
+      "aiAnalysis": "AI Analysis",
+      "settled": "Settled",
+      "processingTime": "1h",
+      "processingLabel": "Processing",
+      "fraudDetectionRate": "95%",
+      "fraudDetectionLabel": "Fraud Detection"
+    },
+    "challenges": {
+      "title": "Deep Understanding of the Insurance Market",
+      "p1": "The insurance industry operates on tight margins and complex risks, where every underwriting or claim decision directly impacts profitability. Insurers process millions of policies and claims annually, each requiring detailed risk analysis, coverage validation, and potential fraud detection.",
+      "p2": "The complexity of insurance products, from life insurance to specialized business coverages, requires deep knowledge of technical terms, specific regulations, and risk patterns that generic solutions simply cannot process adequately.",
+      "problemStats": [
+        { "stat": "15 days", "label": "Average claims processing time" },
+        { "stat": "$40B", "label": "Annual insurance fraud losses" },
+        { "stat": "45%", "label": "Manual underwriting processes" }
+      ]
+    },
+    "solution": {
+      "title": "Our Specialized Solution",
+      "p1": "AI.DATA was developed specifically for the insurance market, trained on millions of policies, claims, and industry documents. Our AI understands technical insurance language, identifies sophisticated fraud patterns, and accelerates underwriting processes while maintaining the accuracy needed to protect insurers' profitability.",
+      "p2": "The system integrates with brokers, service providers, and credentialed networks, creating an automated ecosystem that benefits all participants in the insurance value chain.",
+      "benefits": [
+        "Deep understanding of insurance terminology",
+        "Sophisticated fraud pattern recognition",
+        "Automated policy and coverage validation",
+        "Seamless broker and provider integration"
+      ]
+    },
+    "capabilities": {
+      "title": "Advanced",
+      "titleHighlight": "AI Capabilities for Insurance",
+      "subtitle": "Comprehensive AI capabilities designed specifically for insurance operations, from claims processing to risk assessment and fraud detection.",
+      "items": [
+        { "title": "Claims Intake and Processing", "description": "Automatic first notice of loss and claim routing" },
+        { "title": "Fraud Detection", "description": "Real-time analysis of suspicious claim patterns" },
+        { "title": "Risk Assessment", "description": "Comprehensive underwriting and risk evaluation" },
+        { "title": "Policy Administration", "description": "Automated policy management and updates" },
+        { "title": "Damage Assessment", "description": "AI-powered property and vehicle damage evaluation" },
+        { "title": "Medical Record Analysis", "description": "Intelligent processing of medical documentation" },
+        { "title": "Subrogation Management", "description": "Automated recovery and subrogation processes" },
+        { "title": "Regulatory Compliance", "description": "Automated compliance with insurance regulations" },
+        { "title": "Actuarial Analysis", "description": "Advanced pricing and reserving calculations" }
+      ]
+    },
+    "lines": {
+      "title": "Insurance Lines Coverage",
+      "subtitle": "Comprehensive AI solutions for all major insurance product lines.",
+      "items": [
+        { "line": "Auto Insurance", "description": "Automotive claims processing and underwriting" },
+        { "line": "Property Insurance", "description": "Property damage assessment and processing" },
+        { "line": "Life Insurance", "description": "Life and disability claims automation" },
+        { "line": "Workers' Compensation", "description": "Claims and case management for accidents" },
+        { "line": "Commercial Lines", "description": "Complex commercial risk assessment" },
+        { "line": "Specialty Insurance", "description": "Aviation, marine, and specialty coverages" }
+      ]
+    },
+    "solutions": {
+      "title": "AI Solutions for",
+      "titleHighlight": "Insurance",
+      "subtitle": "Specialized AI solutions designed specifically for insurance operations, from claims processing to risk underwriting and fraud detection.",
+      "items": [
+        {
+          "title": "Intelligent Claims Processing",
+          "product": "AI.DATA",
+          "description": "Our AI processes claims from first notice of loss to settlement, automatically validating coverages, assessing damages, and detecting potential fraud. The system understands policy terms, exclusions, and coverage limits.",
+          "details": "Advanced damage assessment uses computer vision and expert systems to evaluate property damage, vehicle accidents, and liability claims. Integration with repair networks and medical providers allows for automated cost estimation and settlement recommendations."
+        },
+        {
+          "title": "Advanced Fraud Detection",
+          "product": "AI.DATA",
+          "description": "AI.DATA analyzes claim patterns, policyholder behavior, and external data sources to identify sophisticated fraud schemes. Our system detects staged accidents, inflated claims, and fraud rings before losses occur.",
+          "details": "Machine learning models trained on millions of fraud cases identify suspicious patterns including claim frequency, timing anomalies, and connections between claimants, providers, and attorneys."
+        },
+        {
+          "title": "Automated Risk Underwriting",
+          "product": "AI.DOC + AI.DATA",
+          "description": "Transform underwriting with AI that evaluates risk factors across multiple data sources, from traditional applications to satellite imagery and IoT data. Our system provides consistent and accurate risk assessment at scale.",
+          "details": "Real-time risk scoring integrates property data, credit information, claims history, and external risk factors. Automated underwriting guidelines ensure consistent application of pricing models and risk selection criteria."
+        }
+      ],
+      "cta": "Learn More About {product}"
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your",
+      "titleHighlight": "Insurance Operations?",
+      "subtitle": "Join the leading insurers who have already revolutionized their claims processing and underwriting with our specialized AI solutions. Start improving your profitability today.",
+      "trustIndicators": [
+        { "value": "1 hr", "label": "Claims Processing" },
+        { "value": "95%", "label": "Fraud Detection" },
+        { "value": "30%", "label": "Faster Underwriting" },
+        { "value": "200+", "label": "Insurance Clients" }
+      ],
+      "contact": "Questions? Talk to our insurance specialists at {phone} or {email}"
+    }
+  },
+  "aiOcr": {
+    "hero": {
+      "title": "AI.OCR: Transform Any Document into",
+      "titleHighlight": "Structured Data",
+      "subtitle": "The most accurate optical character recognition solution on the market. Process contracts, invoices, medical reports, and forms with",
+      "subtitleEmphasis1": "99.9% accuracy",
+      "subtitleEmphasis2": "50x faster",
+      "subtitleEnd": "than manual typing.",
+      "keyBenefits": [
+        "99.9% guaranteed accuracy",
+        "50x faster processing",
+        "Support for over 40 languages",
+        "Integration with any system"
+      ],
+      "cta": "Start 7-Day Free Trial"
+    },
+    "visual": {
+      "accuracy": "Accuracy",
+      "faster": "Faster"
+    },
+    "problem": {
+      "title": "The Problem You Face",
+      "p1": "Your company processes thousands of documents monthly but still relies on manual typing or inaccurate OCR solutions that create more work than savings. Transcription errors cost time, money, and credibility, while your team wastes hours on repetitive tasks that could be automated.",
+      "p2": "Handwritten documents, complex forms, and non-standard layouts are nightmares for traditional OCR solutions. You need technology that understands context, corrects errors automatically, and adapts to your specific documents, not the other way around.",
+      "challenges": {
+        "title": "Current Challenges:",
+        "items": [
+          "Hours wasted on manual data entry",
+          "High error rates costing credibility",
+          "Increasing operational costs"
+        ]
+      }
+    },
+    "solution": {
+      "title": "Our Revolutionary Solution",
+      "p1": "AI.OCR uses advanced neural networks trained on millions of documents to recognize text with human-like accuracy but superhuman speed. Our AI doesn't just read characters—it understands context, validates information, and structures data automatically.",
+      "p2": "Unlike generic solutions, our system learns from your specific documents, continuously improving accuracy for your use cases. Whether it's medical handwriting, government forms, or legal contracts, AI.OCR adapts and evolves.",
+      "advantages": {
+        "title": "AI.OCR Advantages:",
+        "items": [
+          "Human accuracy with machine speed",
+          "Context-aware processing",
+          "Continuous learning and improvement"
+        ]
+      }
+    },
+    "features": {
+      "title": "Advanced",
+      "titleHighlight": "Technical Features",
+      "subtitle": "Discover the cutting-edge technology that makes AI.OCR the most accurate and reliable document processing solution available.",
+      "items": [
+        {
+          "title": "Intelligent Context Recognition",
+          "description": "Our AI not only identifies individual characters but understands the contextual meaning of each word and phrase. This allows for automatic error correction, data validation, and intelligent information structuring, even in low-quality documents or complex handwriting.",
+          "details": "The system recognizes specific patterns like CPFs, CNPJs, dates, monetary values, and codes, applying automatic validation and standardized formatting. This eliminates common typing errors and ensures consistency in the extracted data."
+        },
+        {
+          "title": "Complex Document Processing",
+          "description": "Unlike basic solutions that fail with non-standard layouts, AI.OCR processes complex tables, multi-column forms, handwritten documents, and even low-quality images with exceptional accuracy.",
+          "details": "Our intelligent segmentation technology automatically identifies different sections of the document, extracting relevant information and organizing it into useful data structures for your downstream systems."
+        },
+        {
+          "title": "Native Integration and Robust APIs",
+          "description": "AI.OCR integrates seamlessly with your existing systems through RESTful APIs, webhooks, and pre-built connectors for popular ERPs like SAP, Oracle, and Microsoft Dynamics.",
+          "details": "Our microservices architecture allows for gradual implementation, starting with specific use cases and expanding as you prove the value. We support batch and real-time processing, adapting to your operational needs."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Real-World",
+      "titleHighlight": "Success Cases",
+      "subtitle": "See how organizations across various sectors are transforming their operations with AI.OCR.",
+      "items": [
+        {
+          "title": "Healthcare Transformation",
+          "description": "Hospitals and clinics use AI.OCR to digitize medical records, process exam results, and automate data entry into hospital systems. Our technology recognizes medical handwriting with 98% accuracy, including prescriptions and clinical notes.",
+          "result": "A 500-bed hospital saved R$ 1.2M annually by automating the processing of 8,000 medical documents monthly, reducing the availability time of results from 24 hours to 15 minutes.",
+          "industry": "Healthcare"
+        },
+        {
+          "title": "Financial Sector Revolution",
+          "description": "Banks and insurance companies process contracts, policies, and KYC documents automatically, accelerating approvals and reducing operational risks. Our solution extracts critical data such as values, due dates, and customer information with banking-grade accuracy.",
+          "result": "An insurance company reduced claims processing time from 5 days to 2 hours, automatically processing 15,000 documents monthly and saving R$ 900,000 in operational costs.",
+          "industry": "Financial Services"
+        },
+        {
+          "title": "Public Sector Modernization",
+          "description": "Government agencies digitize historical files, process citizen forms, and automate administrative protocols. Our technology processes documents with superior accuracy, including handwritten forms and official stamps.",
+          "result": "A municipality digitized 500,000 historical documents in 6 months, creating a searchable digital archive that improved citizen service and reduced storage costs by 70%.",
+          "industry": "Government"
+        }
+      ],
+      "resultsTitle": "Results Achieved:"
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your",
+      "titleHighlight": "Document Processing?",
+      "subtitle": "Join thousands of organizations that have already revolutionized their operations with AI.OCR. Start your free trial today and experience the future of document processing.",
+      "trustIndicators": [
+        { "value": "99.9%", "label": "Accuracy Rate" },
+        { "value": "10+", "label": "Happy Customers" },
+        { "value": "7 Days", "label": "Free Trial" },
+        { "value": "24/7", "label": "Support" }
+      ],
+      "contact": "Questions? Contact our AI specialists at {phone} or {email}"
+    }
+  },
+  "aiDoc": {
+    "hero": {
+      "title": "AI.DOC: Intelligent Management of",
+      "titleHighlight": "Business Documents",
+      "subtitle": "Organize, classify, and find any document in seconds. Our AI transforms document chaos into structured knowledge, with",
+      "subtitleEmphasis1": "advanced semantic search",
+      "subtitleEmphasis2": "automated workflow",
+      "keyBenefits": [
+        "Automatic classification by AI",
+        "Instant semantic search",
+        "Automated approval workflows",
+        "Complete audit trail and versioning"
+      ],
+      "cta": "Schedule Demo"
+    },
+    "visual": {
+      "fasterSearch": "Faster Search",
+      "organized": "Organized"
+    },
+    "problem": {
+      "title": "Document Chaos That Paralyzes Companies",
+      "p1": "Your organization has thousands of documents scattered across different systems, disorganized folders, and lost emails. Employees spend 30% of their time searching for information, outdated versions circulate causing errors, and critical documents simply disappear when you need them most.",
+      "p2": "Traditional document management systems are rigid, require manual classification, and fail in search when you need them most. Compliance and auditing become nightmares when documents are not found or are disorganized.",
+      "stats": [
+        { "stat": "30%", "label": "Time spent searching for documents" },
+        { "stat": "40%", "label": "Increase in document volume annually" },
+        { "stat": "60%", "label": "Work done with outdated versions" }
+      ]
+    },
+    "solution": {
+      "title": "Our Revolution in Document Management",
+      "p1": "AI.DOC uses artificial intelligence to understand the content of each document, automatically classifying it by type, subject, importance, and relationships. Our semantic search finds documents even when you don't remember the exact keywords.",
+      "p2": "The system learns from your team's behavior, suggesting classifications, identifying duplicates, and creating intelligent connections between related documents. Automated workflows ensure that documents follow correct approval and review processes.",
+      "benefits": [
+        "Automatic document classification and tagging",
+        "Intelligent content-based relationships",
+        "Continuous learning and improvement",
+        "Seamless integration with existing systems"
+      ]
+    },
+    "features": {
+      "title": "Advanced Document",
+      "titleHighlight": "Management Features",
+      "subtitle": "Discover the intelligent features that transform document chaos into organized, searchable, and actionable business intelligence.",
+      "items": [
+        {
+          "title": "Intelligent Document Classification",
+          "description": "Our AI automatically categorizes documents by type, content, importance, and business context. The system understands relationships between documents and creates intelligent taxonomies that evolve with your business needs.",
+          "details": "Machine learning algorithms analyze document structure, content patterns, and metadata to provide accurate classification. The system learns from user corrections and feedback, continuously improving classification accuracy."
+        },
+        {
+          "title": "Advanced Semantic Search",
+          "description": "Find any document using natural language queries, even when you don't remember the exact keywords. Our semantic search understands context, synonyms, and industry-specific business terminology.",
+          "details": "The search engine uses natural language processing to understand user intent, searching across content, metadata, and relationships between documents. Results are ranked by relevance, recency, and user behavior patterns."
+        },
+        {
+          "title": "Automated Workflow Engine",
+          "description": "Simplify document approval processes with intelligent routing based on content, value limits, and business rules. Automatic notifications and escalations ensure nothing falls through the cracks.",
+          "details": "Configurable workflow templates adapt to your business processes, with conditional logic, parallel approvals, and integration with external systems. Complete audit trails track every action and decision point."
+        },
+        {
+          "title": "Version Control and Collaboration",
+          "description": "Maintain complete document lifecycle management with automatic versioning, change tracking, and collaborative editing capabilities. Ensure teams always work with the latest approved versions.",
+          "details": "Advanced version control prevents document conflicts by maintaining detailed change histories. Real-time collaboration tools allow for secure sharing and editing with granular permission controls."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Real-World",
+      "titleHighlight": "Success Cases",
+      "subtitle": "See how organizations across various sectors are transforming their operations with AI.DOC.",
+      "items": [
+        {
+          "title": "Healthcare Documentation Management",
+          "description": "Hospitals and medical practices organize patient records, medical protocols, and compliance documents with automatic classification and instant retrieval. HIPAA-compliant workflows ensure secure handling of sensitive information.",
+          "result": "A medical center reduced document search time by 85% and improved compliance audit preparation from weeks to hours, while ensuring 100% HIPAA compliance across 50,000+ patient documents.",
+          "industry": "Healthcare"
+        },
+        {
+          "title": "Financial Services Compliance",
+          "description": "Banks and financial institutions manage regulatory documents, client files, and internal policies with automated compliance workflows. Risk-based classification ensures critical documents receive appropriate oversight.",
+          "result": "A regional bank automated 90% of compliance document processing, reduced regulatory preparation time by 70%, and achieved 100% audit readiness across all regulatory requirements.",
+          "industry": "Financial Services"
+        },
+        {
+          "title": "Legal Document Management",
+          "description": "Law firms and legal departments organize contracts, case files, and legal research with intelligent categorization and matter-based workflows. Advanced search capabilities enable rapid case preparation and research.",
+          "result": "A law firm increased billable time by 30% through automated document organization, reduced case preparation time by 60%, and improved client service with instant document access.",
+          "industry": "Legal Services"
+        }
+      ],
+      "resultsTitle": "Results Achieved:"
+    },
+    "finalCta": {
+      "title": "Ready to End",
+      "titleHighlight": "Document Chaos Forever?",
+      "subtitle": "Join thousands of organizations that have transformed their document management with AI.DOC. Start organizing, finding, and collaborating more effectively today.",
+      "trustIndicators": [
+        { "value": "85%", "label": "Faster Search" },
+        { "value": "10+", "label": "Organized Companies" },
+        { "value": "7 Days", "label": "Free Trial" },
+        { "value": "100%", "label": "Guaranteed Compliance" }
+      ],
+      "contact": "Questions? Contact our document management specialists at {phone} or {email}"
+    }
+  },
+  "aiDoc": {
+    "hero": {
+      "title": "AI.DOC: Intelligent Management of",
+      "titleHighlight": "Business Documents",
+      "subtitle": "Organize, classify, and find any document in seconds. Our AI transforms document chaos into structured knowledge, with",
+      "subtitleEmphasis1": "advanced semantic search",
+      "subtitleEmphasis2": "automated workflow",
+      "keyBenefits": [
+        "Automatic classification by AI",
+        "Instant semantic search",
+        "Automated approval workflows",
+        "Complete audit trail and versioning"
+      ],
+      "cta": "Schedule Demo"
+    },
+    "visual": {
+      "fasterSearch": "Faster Search",
+      "organized": "Organized"
+    },
+    "problem": {
+      "title": "Document Chaos That Paralyzes Companies",
+      "p1": "Your organization has thousands of documents scattered across different systems, disorganized folders, and lost emails. Employees spend 30% of their time searching for information, outdated versions circulate causing errors, and critical documents simply disappear when you need them most.",
+      "p2": "Traditional document management systems are rigid, require manual classification, and fail in search when you need them most. Compliance and auditing become nightmares when documents are not found or are disorganized.",
+      "stats": [
+        { "stat": "30%", "label": "Time spent searching for documents" },
+        { "stat": "40%", "label": "Increase in document volume annually" },
+        { "stat": "60%", "label": "Work done with outdated versions" }
+      ]
+    },
+    "solution": {
+      "title": "Our Revolution in Document Management",
+      "p1": "AI.DOC uses artificial intelligence to understand the content of each document, automatically classifying it by type, subject, importance, and relationships. Our semantic search finds documents even when you don't remember the exact keywords.",
+      "p2": "The system learns from your team's behavior, suggesting classifications, identifying duplicates, and creating intelligent connections between related documents. Automated workflows ensure that documents follow correct approval and review processes.",
+      "benefits": [
+        "Automatic document classification and tagging",
+        "Intelligent content-based relationships",
+        "Continuous learning and improvement",
+        "Seamless integration with existing systems"
+      ]
+    },
+    "features": {
+      "title": "Advanced Document",
+      "titleHighlight": "Management Features",
+      "subtitle": "Discover the intelligent features that transform document chaos into organized, searchable, and actionable business intelligence.",
+      "items": [
+        {
+          "title": "Intelligent Document Classification",
+          "description": "Our AI automatically categorizes documents by type, content, importance, and business context. The system understands relationships between documents and creates intelligent taxonomies that evolve with your business needs.",
+          "details": "Machine learning algorithms analyze document structure, content patterns, and metadata to provide accurate classification. The system learns from user corrections and feedback, continuously improving classification accuracy."
+        },
+        {
+          "title": "Advanced Semantic Search",
+          "description": "Find any document using natural language queries, even when you don't remember the exact keywords. Our semantic search understands context, synonyms, and industry-specific business terminology.",
+          "details": "The search engine uses natural language processing to understand user intent, searching across content, metadata, and relationships between documents. Results are ranked by relevance, recency, and user behavior patterns."
+        },
+        {
+          "title": "Automated Workflow Engine",
+          "description": "Simplify document approval processes with intelligent routing based on content, value limits, and business rules. Automatic notifications and escalations ensure nothing falls through the cracks.",
+          "details": "Configurable workflow templates adapt to your business processes, with conditional logic, parallel approvals, and integration with external systems. Complete audit trails track every action and decision point."
+        },
+        {
+          "title": "Version Control and Collaboration",
+          "description": "Maintain complete document lifecycle management with automatic versioning, change tracking, and collaborative editing capabilities. Ensure teams always work with the latest approved versions.",
+          "details": "Advanced version control prevents document conflicts by maintaining detailed change histories. Real-time collaboration tools allow for secure sharing and editing with granular permission controls."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Real-World",
+      "titleHighlight": "Success Cases",
+      "subtitle": "See how organizations across various sectors are transforming their operations with AI.DOC.",
+      "items": [
+        {
+          "title": "Healthcare Documentation Management",
+          "description": "Hospitals and medical practices organize patient records, medical protocols, and compliance documents with automatic classification and instant retrieval. HIPAA-compliant workflows ensure secure handling of sensitive information.",
+          "result": "A medical center reduced document search time by 85% and improved compliance audit preparation from weeks to hours, while ensuring 100% HIPAA compliance across 50,000+ patient documents.",
+          "industry": "Healthcare"
+        },
+        {
+          "title": "Financial Services Compliance",
+          "description": "Banks and financial institutions manage regulatory documents, client files, and internal policies with automated compliance workflows. Risk-based classification ensures critical documents receive appropriate oversight.",
+          "result": "A regional bank automated 90% of compliance document processing, reduced regulatory preparation time by 70%, and achieved 100% audit readiness across all regulatory requirements.",
+          "industry": "Financial Services"
+        },
+        {
+          "title": "Legal Document Management",
+          "description": "Law firms and legal departments organize contracts, case files, and legal research with intelligent categorization and matter-based workflows. Advanced search capabilities enable rapid case preparation and research.",
+          "result": "A law firm increased billable time by 30% through automated document organization, reduced case preparation time by 60%, and improved client service with instant document access.",
+          "industry": "Legal Services"
+        }
+      ],
+      "resultsTitle": "Results Achieved:"
+    },
+    "finalCta": {
+      "title": "Ready to End",
+      "titleHighlight": "Document Chaos Forever?",
+      "subtitle": "Join thousands of organizations that have transformed their document management with AI.DOC. Start organizing, finding, and collaborating more effectively today.",
+      "trustIndicators": [
+        { "value": "85%", "label": "Faster Search" },
+        { "value": "10+", "label": "Organized Companies" },
+        { "value": "7 Days", "label": "Free Trial" },
+        { "value": "100%", "label": "Guaranteed Compliance" }
+      ],
+      "contact": "Questions? Contact our document management specialists at {phone} or {email}"
+    }
+  },
+  "aiSaude": {
+    "keyBenefits": {
+      "item1": "Automatic claims processing",
+      "item2": "Real-time fraud detection",
+      "item3": "Integration with carriers and providers",
+      "item4": "Full regulatory compliance"
+    },
+    "features": {
+      "medicalSpecialization": {
+        "title": "Medical AI Specialization",
+        "description": "AI.SAUDE was developed based on millions of real medical documents, trained to understand medical terminology, procedure codes, ICD-10, and specific procedures of the Brazilian healthcare system. Our AI recognizes complex medical patterns that generic solutions cannot process.",
+        "details": "The system automatically validates the eligibility of procedures, checks compatibility between diagnoses and treatments, and identifies inconsistencies that may indicate errors or fraud. This ensures that only legitimate reimbursements are approved, protecting your organization from financial losses."
+      },
+      "ecosystemIntegration": {
+        "title": "Integration with Healthcare Ecosystem",
+        "description": "Our solution connects natively with systems of carriers, service providers, laboratories, and pharmacies, creating an automated flow of information that eliminates rework and accelerates approvals.",
+        "details": "We integrate with the main Brazilian hospital systems and health carriers, ensuring rapid implementation without operational interruptions. Full support for TISS standards and integration with ANS."
+      },
+      "advancedFraudDetection": {
+        "title": "Advanced Fraud Detection",
+        "description": "Real-time analysis of reimbursement patterns using machine learning algorithms that detect anomalies, duplicate submissions, and suspicious billing patterns before they become costly problems.",
+        "details": "Our fraud detection system analyzes provider behavior, patient history, and reimbursement patterns across multiple data points, flagging potentially fraudulent activities with 99.2% accuracy while minimizing false positives."
+      },
+      "automatedWorkflowEngine": {
+        "title": "Automated Workflow Engine",
+        "description": "Intelligent routing and processing of reimbursements based on complexity, value, and risk factors. Automatic approvals for routine cases while flagging complex cases for human review.",
+        "details": "A configurable business rules engine allows for customization of approval workflows, escalation procedures, and exception handling. Complete audit trails ensure regulatory compliance and transparency."
+      }
+    },
+    "useCases": {
+      "portoSeguroSaude": {
+        "title": "Porto Seguro Saúde",
+        "description": "Complete implementation of AI.SAUDE for automating reimbursement processes and validating invoices, ensuring greater efficiency and fraud reduction in the healthcare system.",
+        "result": "Automation of 98% of reimbursement processes, saving over R$ 5 million annually with 99% accuracy in validating medical documents.",
+        "industry": "Health Carrier"
+      },
+      "portoSeguroOcupacional": {
+        "title": "Porto Seguro Ocupacional",
+        "description": "AI.SAUDE solution implemented for complete management of occupational health, automating validation of exams, certificates, and reimbursement processes related to occupational medicine.",
+        "result": "Achieved 100% automation in occupational validation processes, with significant resource savings and 99% accuracy in document analysis.",
+        "industry": "Occupational Health"
+      },
+      "itauSaude": {
+        "title": "Itaú Saúde",
+        "description": "Strategic implementation of AI.SAUDE for optimizing medical reimbursement processes, automatic validation of invoices, and intelligent fraud detection in the corporate health system.",
+        "result": "Automation of 98% of reimbursement processes, substantial savings in operational resources, and 99% accuracy in validating medical documents.",
+        "industry": "Corporate Health"
+      }
+    },
+    "medicalCapabilities": {
+      "validation": {
+        "title": "Validation of ICD-10 and CBHPM Codes",
+        "description": "Automatic validation of diagnosis and procedure codes"
+      },
+      "assessment": {
+        "title": "Medical Necessity Assessment",
+        "description": "AI-powered assessment of treatment appropriateness"
+      },
+      "automation": {
+        "title": "Pre-Authorization Automation",
+        "description": "Simplified process for pre-approving treatments"
+      },
+      "verification": {
+        "title": "Drug Interaction Verification",
+        "description": "Automatic validation of prescription combinations"
+      },
+      "credentials": {
+        "title": "Provider Credential Verification",
+        "description": "Real-time validation of healthcare professional credentials"
+      },
+      "adjudication": {
+        "title": "Claims Adjudication Rules",
+        "description": "Intelligent application of carrier-specific rules"
+      }
+    },
+    "complianceFeatures": {
+      "item1": "LGPD Compliant Processing",
+      "item2": "HL7 FHIR Integration",
+      "item3": "ANS Compliance",
+      "item4": "Real-Time Audit Trails",
+      "item5": "256-bit Encryption"
+    },
+    "hero": {
+      "title": "AI.SAUDE: Revolution in",
+      "titleHighlight": "Reimbursement Processing",
+      "subtitle1": "Completely automate your reimbursement process with specialized medical AI. Reduce processing time from",
+      "subtitleHighlight1": "weeks to hours",
+      "subtitle2": "with",
+      "subtitleHighlight2": "99.8% accuracy",
+      "subtitle3": "and automatic fraud detection.",
+      "cta": "Calculate Savings",
+      "visual": {
+        "days": "7 Days",
+        "hours": "2 Hours",
+        "accuracy": "Accuracy",
+        "faster": "Faster"
+      }
+    },
+    "leadership": {
+      "title": "Leader in the",
+      "titleHighlight": "Brazilian Public Sector",
+      "subtitle1": "We are the",
+      "subtitleHighlight1": "largest integrator portal for municipalities in Brazil",
+      "subtitle2": "with over",
+      "subtitleHighlight2": "350 municipalities",
+      "subtitle3": "validating invoices and combating fraud in the reimbursement process through our AI.SAUDE technology.",
+      "stats": {
+        "municipalities": {
+          "title": "Connected Municipalities",
+          "description": "Largest municipal integration network in the country for validating medical reimbursements"
+        },
+        "fraudDetection": {
+          "title": "Fraud Detection",
+          "description": "Accuracy rate in identifying fraud in reimbursement processes"
+        },
+        "validatedNotes": {
+          "title": "Validated Notes",
+          "description": "Annual volume of invoices processed and validated by our AI"
+        }
+      },
+      "transforming": {
+        "title": "Making Your Process Safer with Public Management Data",
+        "description": "Our AI.SAUDE platform revolutionizes how Brazilian municipalities manage medical reimbursements, ensuring transparency, efficiency, and fraud prevention on a national scale.",
+        "item1": "Direct integration with municipal systems",
+        "item2": "Automatic validation of invoices",
+        "item3": "Intelligent detection of irregularities",
+        "item4": "Real-time audit reports",
+        "stats": {
+          "states": "States",
+          "regions": "Regions",
+          "citizens": "Citizens",
+          "operation": "Operation"
+        }
+      }
+    },
+    "specializedAI": {
+      "title": "Specialized AI for",
+      "titleHighlight": "Healthcare",
+      "subtitle": "Unlike generic solutions, AI.SAUDE was built from the ground up to understand the complexities of medical reimbursement processing and health regulations."
+    },
+    "compliance": {
+      "title": "Complete Regulatory Compliance",
+      "subtitle": "Built to meet the highest standards and regulations of the healthcare industry"
+    },
+    "advancedFeatures": {
+      "title": "Advanced",
+      "titleHighlight": "AI Features for Healthcare",
+      "subtitle": "Specialized capabilities designed specifically for the unique requirements of the healthcare industry and the Brazilian regulatory environment."
+    },
+    "successCases": {
+      "title": "Success",
+      "titleHighlight": "Cases in Healthcare",
+      "subtitle": "See how healthcare organizations are revolutionizing their reimbursement processing with the specialized medical AI of AI.SAUDE.",
+      "resultsTitle": "Results Achieved:"
+    },
+    "finalCta": {
+      "title": "Ready to Revolutionize Your",
+      "titleHighlight": "Reimbursement Processing?",
+      "subtitle": "Join the leading healthcare organizations that have already transformed their reimbursement processing with AI.SAUDE. Start reducing costs and improving accuracy today.",
+      "trustIndicators": {
+        "accuracy": "Processing Accuracy",
+        "timeReduction": "Time Reduction",
+        "compliant": "HIPAA Compliant",
+        "providers": "Healthcare Providers"
+      },
+      "cta": "Calculate Savings",
+      "contact": {
+        "text1": "Questions? Contact our healthcare specialists at",
+        "phone": "+55 (11) 5039-4877 / +1 (619) 306-9274",
+        "text2": "or",
+        "email": "contact@itcygnus.com"
+      }
+    }
+  },
+  "aiPriceInsights": {
+    "hero": {
+      "title": "AI.PRICEINSIGHTS: Pricing Intelligence that",
+      "titleHighlight": "Maximizes Profits",
+      "subtitle": "Optimize your pricing strategy with advanced predictive AI. Monitor the market, competition, and demand in",
+      "subtitleEmphasis1": "real time",
+      "subtitleEmphasis2": "to set prices that maximize",
+      "subtitleEmphasis3": "margin and competitiveness",
+      "keyBenefits": {
+        "benefit1": "Real-time market analysis",
+        "benefit2": "95% demand forecast accuracy",
+        "benefit3": "Automatic margin optimization",
+        "benefit4": "Price opportunity alerts"
+      },
+      "cta": "Schedule Demonstration",
+      "visual": {
+        "price": "Price",
+        "margin": "Margin",
+        "competition": "Competition",
+        "optimalPrice": "Optimal Price",
+        "liveMarketData": "Live Market Data"
+      }
+    },
+    "pricingTables": {
+      "title": "Brazilian",
+      "titleHighlight": "Drug Pricing Tables",
+      "subtitle": "In Brazil, drug pricing tables are defined and regulated by government agencies, mainly by",
+      "subtitleEmphasis": "CMED (Chamber of Regulation of the Drug Market)",
+      "subtitleEnd": ", linked to Anvisa.",
+      "cmed": {
+        "title": "CMED Price List",
+        "source": "Anvisa/CMED",
+        "description": "Published monthly, it brings the maximum authorized prices for commercialization.",
+        "item1": "PMC (Maximum Consumer Price)",
+        "item2": "PF (Factory Price)",
+        "item3": "Generics, Similars, Reference"
+      },
+      "abcFarma": {
+        "title": "ABC Farma",
+        "source": "Brazilian Association",
+        "description": "Publishes the GUIA DA FARMÁCIA magazine monthly, with market prices.",
+        "item1": "Commercial information",
+        "item2": "Average prices and profit margin",
+        "item3": "Used by pharmacies and drugstores"
+      },
+      "brasindice": {
+        "title": "Brasíndice",
+        "source": "Private Table",
+        "description": "Private table widely used in hospitals and health plans.",
+        "item1": "Brasíndice Code",
+        "item2": "Drugs and hospital materials",
+        "item3": "Unit and total price"
+      },
+      "simpro": {
+        "title": "Simpro",
+        "source": "Hospitals and Health Plans",
+        "description": "Similar to Brasíndice, also used in hospitals and health plans.",
+        "item1": "Reference for negotiation",
+        "item2": "Drugs and medical supplies",
+        "item3": "Hospital environment"
+      },
+      "bps": {
+        "title": "BPS",
+        "source": "Ministry of Health",
+        "description": "Health Price Bank - prices of drugs and supplies purchased by public agencies.",
+        "item1": "Government purchases",
+        "item2": "Control and analysis",
+        "item3": "Public agencies"
+      },
+      "integration": {
+        "title": "AI.PRICEINSIGHTS for the Brazilian Pharmaceutical Market",
+        "description": "Our platform integrates all these official and private data sources to provide complete and updated pricing intelligence for the Brazilian pharmaceutical sector.",
+        "stat1": "5+ Integrated Sources",
+        "stat2": "Real-time Updates",
+        "stat3": "100% Compliance"
+      }
+    },
+    "problemSolution": {
+      "problem": {
+        "title": "The Pricing Challenge",
+        "p1": "Most companies struggle with pricing decisions, often relying on outdated spreadsheets, intuition, or simple cost-plus models. Meanwhile, competitors adjust prices dynamically, markets change rapidly, and profit optimization opportunities slip away daily.",
+        "p2": "Manual pricing processes cannot keep up with modern market dynamics. By the time you analyze competitor moves and adjust your prices, the opportunity has passed. You need smart, automated pricing that works 24/7.",
+        "stats": {
+          "stat1": "87% of companies struggle with pricing decisions",
+          "stat2": "40% of revenue lost to suboptimal pricing",
+          "stat3": "60% of pricing decisions based on intuition"
+        }
+      },
+      "solution": {
+        "title": "Our Revolution in Pricing Intelligence",
+        "p1": "AI.PRICEINSIGHTS transforms pricing from guesswork to science. Our AI continuously monitors market conditions, competitor moves, and demand patterns to recommend optimal prices that maximize both revenue and profit margins.",
+        "p2": "With 95% demand forecast accuracy and real-time market analysis, you will always price competitively while protecting margins. Our automated system works around the clock, identifying opportunities and adjusting prices faster than any human team.",
+        "benefits": {
+          "benefit1": "Real-time competitor price monitoring",
+          "benefit2": "AI-powered demand forecasting",
+          "benefit3": "Automatic margin optimization",
+          "benefit4": "Dynamic pricing rules engine"
+        }
+      }
+    },
+    "advancedFeatures": {
+      "title": "Advanced",
+      "titleHighlight": "Pricing Features",
+      "subtitle": "Comprehensive pricing intelligence tools designed to optimize every aspect of your pricing strategy and maximize profitability."
+    },
+    "pricingCapabilities": {
+      "competitiveIntelligence": {
+        "title": "Competitive Intelligence",
+        "description": "Monitor competitor prices across all channels"
+      },
+      "demandAnalysis": {
+        "title": "Demand Analysis",
+        "description": "Forecast customer demand at different price points"
+      },
+      "marginOptimization": {
+        "title": "Margin Optimization",
+        "description": "Maximize profit margins while maintaining competitiveness"
+      },
+      "priceElasticityAnalysis": {
+        "title": "Price Elasticity Analysis",
+        "description": "Understand how price changes affect demand"
+      },
+      "promotionalPlanning": {
+        "title": "Promotional Planning",
+        "description": "Optimize discount strategies and timing"
+      },
+      "marketSegmentation": {
+        "title": "Market Segmentation",
+        "description": "Customize prices for different customer segments"
+      }
+    },
+    "intelligentFeatures": {
+      "title": "Intelligent",
+      "titleHighlight": "Pricing Features",
+      "subtitle": "Discover the advanced AI capabilities that transform pricing decisions from reactive guesswork to proactive profit optimization."
+    },
+    "features": {
+      "dynamicPricing": {
+        "title": "Dynamic Pricing Intelligence",
+        "description": "Our AI continuously monitors market conditions, competitor prices, and demand patterns to recommend optimal prices that maximize both revenue and profit margins. The system adapts to seasonal trends, market volatility, and competitive moves in real time.",
+        "details": "Advanced machine learning algorithms analyze over 200 pricing factors including competitor moves, seasonal patterns, inventory levels, and customer behavior to generate pricing recommendations that increase profitability by an average of 18%."
+      },
+      "competitiveAnalysis": {
+        "title": "Competitive Market Analysis",
+        "description": "Track competitor prices across all channels and platforms automatically. Our system monitors price changes, promotional activities, and market positioning to ensure your pricing strategy remains competitive while protecting margins.",
+        "details": "Real-time competitor monitoring across e-commerce platforms, physical stores, and B2B channels. Automated alerts when competitors change prices, launch promotions, or enter new market segments."
+      },
+      "demandForecasting": {
+        "title": "Demand Forecasting Engine",
+        "description": "Forecast customer demand with 95% accuracy using historical data, market trends, and external factors. Our AI identifies optimal price points that maximize sales volume while maintaining healthy profit margins.",
+        "details": "Multivariate forecasting models incorporate seasonality, economic indicators, weather patterns, and consumer behavior data to predict demand at different price points with unprecedented accuracy."
+      },
+      "automatedOptimization": {
+        "title": "Automated Price Optimization",
+        "description": "Set pricing rules and let our AI adjust prices automatically based on your business objectives. Whether maximizing revenue, profit, or market share, the system continuously optimizes pricing strategies.",
+        "details": "Flexible optimization algorithms that balance multiple objectives including revenue growth, profit maximization, inventory turnover, and competitive positioning. Complete control over pricing constraints and business rules."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Maximize Your",
+      "titleHighlight": "Pricing Profits?",
+      "subtitle": "Join the leading companies that have already revolutionized their pricing strategies with AI.PRICEINSIGHTS. Start optimizing for maximum profitability today.",
+      "trustIndicators": {
+        "forecastAccuracy": "Forecast Accuracy",
+        "avgMarginIncrease": "Avg. Margin Increase",
+        "realTimeOptimization": "Real-Time Price Optimization"
+      },
+      "cta": "Schedule Demonstration",
+      "contact": {
+        "text1": "Questions? Contact our pricing specialists at",
+        "phone": "+55 (11) 5039-4877",
+        "text2": "or",
+        "email": "contact@itcygnus.com"
+      }
+    }
+  },
+  "aiAgents": {
+    "keyBenefits": [
+      { "text": "24/7 automated service" },
+      { "text": "Autonomous task processing" },
+      { "text": "Infinite scalability" },
+      { "text": "Continuous learning" }
+    ],
+    "features": [
+      {
+        "title": "Excellence in Conversational AI",
+        "description": "Our AI agents understand context, maintain conversation flow, and deliver human-quality interactions across voice, chat, and digital channels. They handle complex requests with empathy and precision, escalating only when necessary.",
+        "details": "Advanced natural language processing allows agents to understand intent, emotion, and context. Multi-turn conversations maintain state and coherence, while sentiment analysis ensures appropriate responses."
+      },
+      {
+        "title": "Autonomous Task Execution",
+        "description": "AI agents don't just answer questions—they execute complex workflows, make decisions based on business rules, and perform multi-step processes without human intervention. From order processing to account management.",
+        "details": "The intelligent workflow engine executes business processes automatically, integrating with CRM, ERP, and other systems. Decision trees and business logic ensure consistency and accuracy in task execution."
+      },
+      {
+        "title": "Omnichannel Integration",
+        "description": "Deploy agents across all customer touchpoints—website chat, mobile apps, social media, phone systems, and email. Unified intelligence ensures a consistent experience, regardless of the channel.",
+        "details": "A single agent intelligence operates across all channels, maintaining conversation history and customer context. Smooth transitions between channels and to human agents when needed."
+      },
+      {
+        "title": "Continuous Learning Engine",
+        "description": "Agents automatically evolve with each interaction, learning from customer feedback, successful resolutions, and corrections made by human agents. Performance improves over time, with no need for manual retraining.",
+        "details": "Machine learning algorithms analyze interaction patterns, success rates, and customer satisfaction to continuously improve responses. Automatic updates keep agents aligned with business changes."
+      }
+    ],
+    "useCases": [
+      {
+        "title": "E-commerce Customer Service Revolution",
+        "description": "A major online retailer deployed AI agents to handle customer inquiries, order tracking, returns, and product recommendations. The agents process orders, resolve shipping issues, and provide personalized shopping assistance 24/7.",
+        "result": "Achieved 87% customer satisfaction while reducing support costs by 65%. Agents handle 90% of inquiries automatically, with an average resolution time of 2 minutes. Increased sales through AI-powered recommendations.",
+        "industry": "E-commerce",
+        "stats": { "satisfaction": "87%", "cost_reduction": "65%", "automation": "90%" }
+      },
+      {
+        "title": "Patient Engagement in Healthcare",
+        "description": "A healthcare network uses AI agents for appointment scheduling, prescription renewals, lab result delivery, and basic health inquiries. The agents integrate with EMR systems and provide HIPAA-compliant patient interactions.",
+        "result": "Reduced appointment scheduling time by 80% while improving patient satisfaction scores by 35%. Agents handle 75% of routine inquiries, freeing up medical staff for critical patient care.",
+        "industry": "Healthcare",
+        "stats": { "time_reduction": "80%", "satisfaction": "35%", "automation": "75%" }
+      },
+      {
+        "title": "Financial Services Automation",
+        "description": "A regional bank deployed AI agents for account inquiries, transaction support, loan applications, and fraud alerts. The agents provide secure and personalized banking assistance while maintaining regulatory compliance.",
+        "result": "Increased customer engagement by 45% while reducing operational costs by 50%. Agents process 85% of routine banking inquiries with 99.2% accuracy in fraud detection.",
+        "industry": "Financial Services",
+        "stats": { "engagement": "45%", "cost_savings": "50%", "accuracy": "99.2%" }
+      }
+    ],
+    "problemStats": [
+      { "stat": "24/7", "label": "Customer expectation for availability" },
+      { "stat": "70%", "label": "Of customer service costs are labor" },
+      { "stat": "60%", "label": "Of customers expect immediate responses" }
+    ],
+    "solutionBenefits": [
+      { "benefit": "Human-like conversational capabilities" },
+      { "benefit": "Autonomous decision-making" },
+      { "benefit": "Multi-channel deployment" },
+      { "benefit": "Self-improving AI technology" }
+    ],
+    "agentCapabilities": [
+      {
+        "title": "Natural Conversation",
+        "description": "Human-like dialogue with context understanding"
+      },
+      {
+        "title": "Task Automation",
+        "description": "Execute complex multi-step workflows automatically"
+      },
+      {
+        "title": "Decision Making",
+        "description": "Make intelligent decisions based on business rules"
+      },
+      {
+        "title": "System Integration",
+        "description": "Connect with CRM, ERP, and enterprise systems"
+      },
+      {
+        "title": "Voice and Chat",
+        "description": "Support for voice and text interactions"
+      },
+      {
+        "title": "Analytics and Insights",
+        "description": "Real-time performance and customer insights"
+      }
+    ],
+    "deploymentChannels": [
+      { "channel": "Website Chat", "description": "Embedded chat widgets" },
+      { "channel": "Mobile Apps", "description": "In-app assistance" },
+      { "channel": "Voice Systems", "description": "Phone and voice assistants" },
+      { "channel": "Social Media", "description": "Facebook, Twitter, WhatsApp" },
+      { "channel": "Email Support", "description": "Automated email responses" },
+      { "channel": "Video Calls", "description": "Virtual video assistants" }
+    ],
+    "hero": {
+      "title": "AI.AGENTS: Virtual Assistants that",
+      "highlight": "Actually Work",
+      "subtitle": "Deploy autonomous AI agents that execute complex tasks, make intelligent decisions, and interact naturally with customers and systems, operating",
+      "emphasis": "24/7 without supervision"
+    },
+    "cta": {
+      "viewAction": "See Agents in Action"
+    },
+    "visual": {
+      "helpMessage": "I need help with my order",
+      "agentResponse1": "I'd be happy to help! Let me check your order status...",
+      "agentResponse2": "✅ Order found. Shipping today!",
+      "agentResponse3": "Anything else I can help with?",
+      "agentStatus": "Agent Active",
+      "availability": "24/7 available",
+      "satisfaction": "Satisfaction",
+      "avgResponse": "Avg Response"
+    },
+    "problemSolution": {
+      "problemTitle": "The Customer Service Challenge",
+      "problemP1": "Customers expect instant 24/7 support across all channels, but traditional chatbots frustrate users with rigid responses and limited capabilities. Human agents are expensive, cannot scale infinitely, and need sleep, vacations, and training.",
+      "problemP2": "Basic automation fails at complex tasks, nuanced conversations, and contextual understanding. You need intelligent agents that can think, learn, and act autonomously while providing genuinely helpful customer experiences.",
+      "solutionTitle": "Our Virtual Assistant Revolution",
+      "solutionP1": "AI.AGENTS deploys truly intelligent virtual assistants that understand context, execute complex workflows, and provide human-like interactions. These agents work 24/7, scale infinitely, and continuously improve through machine learning.",
+      "solutionP2": "Unlike simple chatbots, our agents make decisions, complete transactions, integrate with your systems, and handle sophisticated customer needs. They learn from every interaction, becoming more effective over time."
+    },
+    "capabilities": {
+      "title": "Advanced",
+      "highlight": "Agent",
+      "subtitle": "Capabilities",
+      "description": "Comprehensive AI capabilities that enable agents to handle complex customer interactions and business processes autonomously."
+    },
+    "deployment": {
+      "title": "Omnichannel Deployment",
+      "description": "Deploy intelligent agents across all customer touchpoints"
+    },
+    "featuresSection": {
+      "title": "Intelligent",
+      "highlight": "Agent",
+      "subtitle": "Features",
+      "description": "Discover the advanced AI capabilities that make our virtual assistants the most effective autonomous agents available."
+    },
+    "useCasesSection": {
+      "title": "Agent",
+      "highlight": "Success Stories",
+      "description": "See how organizations are revolutionizing customer experience and operations with AI.AGENTS autonomous virtual assistants."
+    },
+    "results": "Achieved Results:",
+    "finalCta": {
+      "title": "Ready to Deploy",
+      "highlight": "Intelligent Agents?",
+      "description": "Join visionary companies that have already revolutionized their customer experience with AI.AGENTS. Start building your autonomous workforce today.",
+      "stats": [
+        { "value": "24/7", "label": "Always Available" },
+        { "value": "87%", "label": "Customer Satisfaction" },
+        { "value": "90%", "label": "Task Automation" },
+        { "value": "100+", "label": "Agents Deployed" }
+      ],
+      "contact": "Questions? Contact our AI specialists at",
+      "phone": "+55 (11) 5039-4877",
+      "or": "or",
+      "email": "contact@itcygnus.com"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 13, 2025",
+    "intro": "ITCygnus is committed to protecting the privacy and security of the personal data of our users, customers, and visitors. This policy describes how we collect, use, store, and protect your personal information, in full compliance with LGPD (General Data Protection Law - Law 13.709/2018) and GDPR.",
+    "principles": {
+      "transparency": {
+        "title": "Transparency",
+        "description": "We clearly explain what data we collect and how we use it"
+      },
+      "minimalCollection": {
+        "title": "Minimal Collection",
+        "description": "We only collect the data necessary to provide our services"
+      },
+      "robustSecurity": {
+        "title": "Robust Security",
+        "description": "Your data is protected with enterprise-level security"
+      },
+      "yourControl": {
+        "title": "Your Control",
+        "description": "You have full control over your personal information"
+      }
+    },
+    "informationWeCollect": {
+      "title": "Information We Collect",
+      "description": "We only collect information necessary to provide our services and improve your experience. This includes data provided voluntarily through forms, technical cookies for site functionality, and usage information for performance optimization."
+    },
+    "dataTypes": {
+      "provided": {
+        "category": "Information Provided by You",
+        "items": [
+          "Contact information (name, email, phone)",
+          "Company and job title information",
+          "Demo requests and form submissions",
+          "Support tickets and communications"
+        ]
+      },
+      "technical": {
+        "category": "Technical Information",
+        "items": [
+          "IP address and browser information",
+          "Website usage and navigation patterns",
+          "Performance and analytics data",
+          "Cookie and session information"
+        ]
+      },
+      "serviceUsage": {
+        "category": "Service Usage Data",
+        "items": [
+          "Platform usage and feature interactions",
+          "Document processing metrics",
+          "API calls and system performance",
+          "Error logs and diagnostic information"
+        ]
+      }
+    },
+    "howWeUseInformation": {
+      "title": "How We Use Your Information",
+      "description": "We use your data exclusively to provide our services, respond to your requests, send relevant communications (only with your consent), and improve our products and services. We never sell or share personal data with third parties for commercial purposes.",
+      "purposes": {
+        "title": "Purposes of Data Processing:",
+        "items": [
+          "Provision and maintenance of our services",
+          "Processing of demo requests and inquiries",
+          "Customer support and technical assistance",
+          "Service improvement and feature development",
+          "Security monitoring and fraud prevention",
+          "Legal compliance and regulatory requirements",
+          "Marketing communications (with consent)",
+          "Analytics and performance optimization"
+        ]
+      }
+    },
+    "yourRights": {
+      "title": "Your LGPD Rights",
+      "description": "Under the General Data Protection Law (LGPD), you have the right to:",
+      "access": {
+        "right": "Access to Data",
+        "description": "Request confirmation and access to your personal data"
+      },
+      "correction": {
+        "right": "Correction",
+        "description": "Rectify incomplete, inaccurate, or outdated data"
+      },
+      "deletion": {
+        "right": "Deletion",
+        "description": "Request anonymization, blocking, or elimination of unnecessary data"
+      },
+      "portability": {
+        "right": "Portability",
+        "description": "Request the transfer of your data to another provider"
+      },
+      "revoke": {
+        "right": "Revoke Consent",
+        "description": "Revoke your consent at any time"
+      },
+      "info": {
+        "right": "Information",
+        "description": "Know with whom we share your data"
+      },
+      "contact": {
+        "prefix": "To exercise these rights, please contact our Data Protection Officer (DPO) at",
+        "email": "lgpd@itcygnus.com"
+      }
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "description": "We implement industry-standard security measures to protect your personal information, including:",
+      "items": [
+        "End-to-end encryption for data transmission",
+        "SOC 2 Type II certified infrastructure",
+        "Regular security audits and assessments",
+        "Multi-factor authentication requirements",
+        "Secure data centers with physical protection",
+        "Employee training on data protection"
+      ]
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "description": "We retain personal information only for as long as necessary to fulfill the purposes described in this privacy policy, comply with legal obligations, resolve disputes, and enforce our agreements. When data is no longer needed, we securely delete or anonymize it according to our data retention schedule."
+    },
+    "internationalTransfers": {
+      "title": "International Data Transfers",
+      "description": "As we operate globally with offices in Brazil and the United States, your personal information may be transferred to and processed in other countries. We ensure that adequate protection measures are in place, including Standard Contractual Clauses and adequacy decisions, to protect your data during international transfers, in compliance with LGPD."
+    },
+    "cookies": {
+      "title": "Cookies and Tracking",
+      "description": "We use cookies and similar technologies to improve your browsing experience, analyze site traffic, and understand user preferences. You can control cookie settings through your browser preferences. Essential cookies for basic functionality cannot be disabled."
+    },
+    "contact": {
+      "title": "Privacy Questions?",
+      "description": "If you have any questions about this Privacy Policy, need to exercise your rights, or want to report a privacy concern, please contact our Data Protection Officer (DPO):",
+      "email": {
+        "label": "Email",
+        "value": "lgpd@itcygnus.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+55 (11) 5039-4877"
+      }
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "ITCygnus",
+      "titleHighlight": "Terms of Service",
+      "lastUpdated": "Last updated: June 13, 2025",
+      "subtitle": "These terms govern the use of our services and platform. By using our services, you agree to these terms and our privacy policy."
+    },
+    "serviceDescription": {
+      "title": "Service Description",
+      "description": "ITCygnus provides enterprise artificial intelligence solutions, including document processing, intelligent data management, and process automation. Our services are available through APIs, web interfaces, and custom integrations, in compliance with Brazilian regulations.",
+      "features": {
+        "docProcessing": {
+          "title": "Document Processing",
+          "description": "AI-powered OCR and intelligent document recognition"
+        },
+        "dataManagement": {
+          "title": "Data Management",
+          "description": "Intelligent organization and workflow automation"
+        },
+        "processAutomation": {
+          "title": "Process Automation",
+          "description": "Custom integrations and automated workflows"
+        },
+        "apiAccess": {
+          "title": "API Access",
+          "description": "RESTful APIs for seamless integration"
+        }
+      }
+    },
+    "customerResponsibilities": {
+      "title": "Customer Responsibilities",
+      "description": "The customer is responsible for providing accurate data, maintaining the security of access credentials, using the services according to the provided documentation, and complying with all applicable laws regarding the processed data, including LGPD.",
+      "responsibilitiesTitle": "Your responsibilities include:",
+      "responsibilitiesList": [
+        "Providing accurate data and maintaining data quality",
+        "Securing access credentials and user account management",
+        "Using services according to provided documentation",
+        "Complying with applicable laws regarding processed data",
+        "Maintaining backup copies of critical business data",
+        "Reporting security incidents or system issues promptly"
+      ]
+    },
+    "warranties": {
+      "title": "Warranties and Limitations",
+      "description": "We guarantee 99.9% availability of our services, a minimum of 99% accuracy in document processing, and 24/7 technical support. Our liability is limited to the amount paid for the services in the 12-month period, as per applicable Brazilian law.",
+      "uptime": {
+        "title": "99.9% Uptime",
+        "description": "Guaranteed service availability with SLA protection"
+      },
+      "accuracy": {
+        "title": "Processing Accuracy",
+        "description": "Minimum 99% accuracy in document processing"
+      },
+      "support": {
+        "title": "Technical Support",
+        "description": "24/7 technical assistance and expert guidance"
+      },
+      "response": {
+        "title": "Response Time",
+        "description": "Maximum 2-hour response for critical issues"
+      }
+    },
+    "acceptableUse": {
+      "title": "Acceptable Use Policy",
+      "description": "You agree to use our services only for lawful purposes and in accordance with these Terms. Prohibited uses include, but are not limited to:",
+      "prohibitions": [
+        "Processing illegal or harmful content",
+        "Attempting to breach system security",
+        "Interfering with service availability",
+        "Violating intellectual property rights",
+        "Sharing access credentials with unauthorized users",
+        "Using the services for competitive intelligence"
+      ]
+    },
+    "dataProtection": {
+      "title": "Data Protection and Privacy",
+      "description": "We are committed to protecting your data and maintaining compliance with applicable privacy laws:",
+      "protectionItems": [
+        "Compliance with LGPD and GDPR",
+        "SOC 2 Type II Certification",
+        "End-to-end encryption",
+        "Regular security audits",
+        "Data residency options",
+        "Right to data portability"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "description": "All rights, titles, and interests in the services, including all intellectual property rights, remain with ITCygnus. You retain ownership of your data and content processed through our services. We grant you a limited, non-exclusive license to use our services in accordance with these Terms."
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "Either party may terminate this agreement with 7 days' written notice. We may immediately terminate or suspend access for violations of these Terms or non-payment. Upon termination, you will have 90 days to export your data before it is permanently deleted, as provided for in the LGPD."
+    },
+    "limitationOfLiability": {
+      "title": "Limitation of Liability",
+      "description": "To the maximum extent permitted by law, ITCygnus's total liability for any claims arising from or related to the services will not exceed the amount paid by you for the services in the 12 months prior to the incident. We are not liable for indirect, incidental, or consequential damages, as provided for in the Brazilian Civil Code."
+    },
+    "updatesToTerms": {
+      "title": "Updates to Terms",
+      "description": "We may update these Terms from time to time. If we make significant changes, we will notify you at least 7 days before the changes take effect. Continued use of the services after the effective date constitutes acceptance of the updated Terms."
+    },
+    "contact": {
+      "title": "Questions about these Terms?",
+      "description": "If you have any questions about these Terms of Service or need clarification on any provision, please contact our legal team:",
+      "emailLabel": "E-mail",
+      "email": "legal@itcygnus.com",
+      "phoneLabel": "Phone",
+      "phone": "+55 (11) 5039-4877"
+    }
+  },
+  "security": {
+    "hero": {
+      "title": "Enterprise-Grade",
+      "titleHighlight": "Security",
+      "subtitle": "Security isn't an afterthought—it's built into every layer of our platform. From end-to-end encryption to continuous monitoring, we protect your data with the highest industry standards and a",
+      "subtitleHighlight": "zero trust architecture",
+      "metrics": [
+        { "value": "99.99%", "label": "Security Availability", "icon": "Clock" },
+        { "value": "< 5 min", "label": "Threat Detection", "icon": "Radar" },
+        { "value": "256-bit", "label": "Encryption Standard", "icon": "Lock" },
+        { "value": "24/7", "label": "Security Monitoring", "icon": "Eye" }
+      ]
+    },
+    "pillars": [
+      { "title": "Data Protection", "description": "End-to-end encryption and secure data handling", "icon": "Lock", "color": "ai-blue" },
+      { "title": "Access Control", "description": "Multi-factor authentication and role-based permissions", "icon": "Key", "color": "ai-green" },
+      { "title": "Infrastructure Security", "description": "Secure cloud architecture with defense-in-depth", "icon": "Server", "color": "ai-blue" },
+      { "title": "Continuous Monitoring", "description": "24/7 security monitoring and threat detection", "icon": "Radar", "color": "ai-green" }
+    ],
+    "measuresTitle": "Comprehensive Security",
+    "measuresTitleHighlight": "Measures",
+    "measuresSubtitle": "A multi-layered security approach protecting your data at every level, from network infrastructure to application endpoints.",
+    "measures": [
+      {
+        "title": "Data Encryption",
+        "items": [
+          "AES-256 encryption for data at rest",
+          "TLS 1.3 for data in transit",
+          "End-to-end encryption for sensitive communications",
+          "Hardware Security Modules (HSM) for key management"
+        ],
+        "icon": "Lock"
+      },
+      {
+        "title": "Access Security",
+        "items": [
+          "Mandatory multi-factor authentication (MFA)",
+          "Role-based access control (RBAC)",
+          "Single Sign-On (SSO) integration",
+          "Regular access reviews and de-provisioning"
+        ],
+        "icon": "Key"
+      },
+      {
+        "title": "Infrastructure Protection",
+        "items": [
+          "Web Application Firewall (WAF)",
+          "DDoS protection and mitigation",
+          "Intrusion detection and prevention systems",
+          "Network segmentation and micro-segmentation"
+        ],
+        "icon": "Shield"
+      },
+      {
+        "title": "Application Security",
+        "items": [
+          "Secure code development practices",
+          "Regular penetration testing",
+          "Vulnerability scanning and assessment",
+          "Security code reviews and static analysis"
+        ],
+        "icon": "Bug"
+      }
+    ],
+    "architecture": {
+      "title": "Security",
+      "titleHighlight": "Architecture",
+      "subtitle": "A defense-in-depth architecture with multiple layers of security providing comprehensive protection against evolving threats.",
+      "layer": "Layer",
+      "controls": "Security Controls",
+      "layers": [
+        { "title": "Presentation Layer", "description": "Web application firewall, DDoS protection, SSL/TLS termination", "icon": "Monitor", "items": ["WAF", "DDoS Protection", "SSL/TLS", "Rate Limiting"] },
+        { "title": "Application Layer", "description": "Secure APIs, authentication, authorization, input validation", "icon": "Cpu", "items": ["API Security", "OAuth 2.0", "Input Validation", "RBAC"] },
+        { "title": "Data Layer", "description": "Encryption at rest, database security, backup protection", "icon": "Database", "items": ["AES-256", "DB Security", "Backup Encryption", "Access Logs"] },
+        { "title": "Infrastructure Layer", "description": "Network security, host hardening, container security", "icon": "Server", "items": ["Network Segmentation", "Host Hardening", "Container Security", "IDS/IPS"] }
+      ]
+    },
+    "incidentResponse": {
+      "title": "Incident Response",
+      "titleHighlight": "Process",
+      "subtitle": "A structured incident response methodology ensuring rapid detection, containment, and recovery from security threats.",
+      "timeline": [
+        { "title": "Detection", "description": "Automated threat detection and alerting systems", "duration": "< 5 min", "icon": "Radar" },
+        { "title": "Assessment", "description": "Initial impact assessment and classification", "duration": "< 15 min", "icon": "Search" },
+        { "title": "Containment", "description": "Immediate threat isolation and containment", "duration": "< 30 min", "icon": "Shield" },
+        { "title": "Recovery", "description": "System restoration and service recovery", "duration": "< 2 hours", "icon": "Activity" },
+        { "title": "Lessons Learned", "description": "Post-incident analysis and implementation of improvements", "duration": "24-48 hours", "icon": "Book" }
+      ]
+    },
+    "contact": {
+      "title": "Questions about",
+      "titleHighlight": "Security?",
+      "subtitle": "Our security team is available to answer your questions, provide additional information, or discuss specific security requirements for your organization.",
+      "contacts": [
+        { "title": "Security Team", "value": "security.info@itcygnus.com", "description": "General security inquiries", "icon": "Shield" },
+        { "title": "Incident Response", "value": "+55 (11) 5039-4877", "description": "24/7 security incidents", "icon": "AlertTriangle" },
+        { "title": "Compliance Office", "value": "dpo@itcygnus.com", "description": "Compliance and audit requests", "icon": "FileCheck" }
+      ],
+      "footer": "For urgent security concerns, call our 24/7 incident response line at",
+      "footerPhone": "+55 (11) 5039-4877"
+    }
+  },
+  "compliance": {
+    "hero": {
+      "title": "Regulatory",
+      "titleHighlight": "Compliance",
+      "subtitle": "A comprehensive compliance framework ensuring adherence to global regulations including GDPR, HIPAA, SOX, and industry-specific requirements. Integrated automation and",
+      "subtitleHighlight1": "monitoring",
+      "and": "for",
+      "subtitleHighlight2": "continuous assurance",
+      "metrics": [
+        { "value": "100%", "label": "Audit Success Rate", "icon": "Award" },
+        { "value": "24/7", "label": "Compliance Monitoring", "icon": "Eye" },
+        { "value": "< 7 Days", "label": "Audit Response Time", "icon": "Clock" },
+        { "value": "99.99%", "label": "Control Effectiveness", "icon": "Target" }
+      ]
+    },
+    "frameworks": {
+      "title": "Global Compliance",
+      "titleHighlight": "Frameworks",
+      "subtitle": "Certified compliance with major international and regional regulations, ensuring your data and operations meet the highest legal standards.",
+      "list": [
+        { "name": "GDPR", "fullName": "General Data Protection Regulation", "region": "European Union", "status": "Compliant", "description": "Comprehensive data protection and privacy regulation", "icon": "Globe", "color": "ai-blue", "flag": "🇪🇺" },
+        { "name": "HIPAA", "fullName": "Health Insurance Portability and Accountability Act", "region": "United States", "status": "Compliant", "description": "Privacy and security standards for health information", "icon": "Shield", "color": "ai-green", "flag": "🇺🇸" },
+        { "name": "LGPD", "fullName": "Lei Geral de Proteção de Dados", "region": "Brazil", "status": "Compliant", "description": "Brazilian general data protection law", "icon": "Flag", "color": "ai-blue", "flag": "🇧🇷" }
+      ]
+    },
+    "capabilities": {
+      "title": "Compliance",
+      "titleHighlight": "Capabilities",
+      "subtitle": "Comprehensive compliance management capabilities integrated into our platform, providing automated monitoring, reporting, and evidence collection.",
+      "featuresTitle": "Key Features",
+      "list": [
+        { "title": "Data Governance", "description": "Comprehensive data classification, retention, and lifecycle management", "icon": "Database", "features": ["Automated data classification", "Retention policy enforcement", "Data lineage tracking", "Privacy impact assessments"] },
+        { "title": "Audit Management", "description": "Complete audit trail and evidence collection for regulatory compliance", "icon": "Search", "features": ["Immutable audit logs", "Automated evidence collection", "Compliance reporting", "Real-time monitoring"] },
+        { "title": "Risk Assessment", "description": "Continuous compliance risk monitoring and assessment frameworks", "icon": "AlertTriangle", "features": ["Risk scoring models", "Compliance gap analysis", "Automated risk alerts", "Mitigation tracking"] },
+        { "title": "Policy Management", "description": "Centralized policy creation, distribution, and compliance tracking", "icon": "FileText", "features": ["Policy versioning", "Automated distribution", "Acknowledgement tracking", "Compliance verification"] }
+      ]
+    },
+    "dataRights": {
+      "title": "Data Subject",
+      "titleHighlight": "Rights",
+      "subtitle": "Comprehensive implementation of data subject rights with automated request processing and response workflows.",
+      "implementation": "Implementation",
+      "rights": [
+        { "title": "Right to Access", "description": "Request access to personal data we process", "implementation": "Self-service portal with automated data export", "regulation": "GDPR Art. 15, CCPA", "icon": "Eye" },
+        { "title": "Right to Rectification", "description": "Correct inaccurate or incomplete personal data", "implementation": "Online correction forms with immediate processing", "regulation": "GDPR Art. 16, CCPA", "icon": "Settings" },
+        { "title": "Right to Erasure", "description": "Request deletion of personal data", "implementation": "Automated deletion workflows with verification", "regulation": "GDPR Art. 17, CCPA", "icon": "AlertCircle" },
+        { "title": "Right to Portability", "description": "Receive personal data in a structured format", "implementation": "Standardized export formats and secure transfer", "regulation": "GDPR Art. 20, CCPA", "icon": "Download" }
+      ]
+    },
+    "audit": {
+      "title": "Audit",
+      "titleHighlight": "Process",
+      "subtitle": "Streamlined audit process with automated evidence collection and comprehensive compliance reporting.",
+      "process": [
+        { "title": "Planning", "description": "Defining audit scope and planning evidence collection", "duration": "1-2 weeks", "icon": "Clipboard", "activities": ["Scope definition", "Evidence mapping", "Timeline planning", "Resource allocation"] },
+        { "title": "Evidence Collection", "description": "Automated evidence collection and compliance documentation", "duration": "2-3 weeks", "icon": "Archive", "activities": ["Log extraction", "Control testing", "Document review", "Interview scheduling"] },
+        { "title": "Assessment", "description": "Compliance gap analysis and risk assessment", "duration": "1-2 weeks", "icon": "Search", "activities": ["Gap analysis", "Risk assessment", "Control evaluation", "Findings documentation"] },
+        { "title": "Reporting", "description": "Compliance report generation and remediation planning", "duration": "1 week", "icon": "FileText", "activities": ["Report generation", "Findings prioritization", "Remediation planning", "Stakeholder review"] }
+      ]
+    },
+    "contact": {
+      "title": "Questions about",
+      "titleHighlight": "Compliance?",
+      "subtitle": "Our compliance team is ready to assist with audit requests, provide compliance documentation, or discuss specific regulatory requirements for your industry.",
+      "contacts": [
+        { "title": "Compliance Office", "value": "dpo@itcygnus.com", "description": "General compliance inquiries", "icon": "Scale" },
+        { "title": "Audit Support", "value": "security.info@itcygnus.com", "description": "Audit requests and documentation", "icon": "FileSearch" },
+        { "title": "Legal Team", "value": "legal@itcygnus.com", "description": "Legal and regulatory questions", "icon": "Gavel" }
+      ],
+      "footer": "Need immediate assistance? Call our compliance hotline at",
+      "footerPhone": "+55 (11) 5039-4877"
+    }
   }
 }

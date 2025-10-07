@@ -237,12 +237,15 @@ export default function Header() {
             <Link href="/company" className="text-white/80 hover:text-ai-green transition-colors font-medium">
               {t('header.company')}
             </Link>
+            <Link href="/custom-development" className="text-white/80 hover:text-ai-green transition-colors font-medium">
+              {t('header.customDevelopment')}
+            </Link>
           </nav>
 
           {/* Desktop CTA & Language Toggle */}
           <div className="hidden lg:flex items-center space-x-4">
-            {/* <LanguageToggle />
-            <Button variant="ghost" className="text-white/80 hover:text-ai-green">
+            <LanguageToggle />
+            {/* <Button variant="ghost" className="text-white/80 hover:text-ai-green">
               {t('header.signIn')}
             </Button> */}
             <Link href="/demo">
@@ -270,11 +273,6 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 bg-ai-dark shadow-lg border-t border-white/10">
             <div className="px-4 py-6 space-y-4">
-              {/* Mobile Language Toggle */}
-              <div className="flex justify-center pb-4 border-b border-white/10">
-                <LanguageToggle />
-              </div>
-
               {/* Mobile Solutions */}
               <div>
                 <div className="text-white font-medium mb-3">{t('header.solutions')}</div>
@@ -323,6 +321,13 @@ export default function Header() {
               >
                 {t('header.company')}
               </Link>
+              <Link
+                href="/custom-development"
+                className="block text-white/80 hover:text-ai-green transition-colors font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.customDevelopment')}
+              </Link>
               
               <div className="pt-4 space-y-3">
                 <Button variant="ghost" className="w-full text-white/80 hover:text-ai-green">
@@ -339,6 +344,10 @@ export default function Header() {
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button> */}
                 </Link>
+              </div>
+              {/* Mobile Language Toggle */}
+              <div className="flex justify-center pt-4 border-t border-white/10">
+                <LanguageToggle />
               </div>
             </div>
           </div>

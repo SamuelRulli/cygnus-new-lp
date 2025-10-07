@@ -1,6 +1,13 @@
+'use client';
+
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import translations from '@/translations';
 
 const NetworkEffectSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].networkEffect;
+
   return (
     <>
       <style>
@@ -22,12 +29,12 @@ const NetworkEffectSection = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
-            Efeito de <span className="bg-gradient-ai bg-clip-text text-transparent">
-              Rede
+            {t.title} <span className="bg-gradient-ai bg-clip-text text-transparent">
+              {t.titleHighlight}
             </span>
           </h2>
         </div>
-        <p className="mt-2 text-sm font-semibold text-center text-gray-700">Hub de Inteligência Antifraude</p>
+        <p className="mt-2 text-sm font-semibold text-center text-gray-700">{t.subtitle}</p>
         <div className="mt-12">
           {/* Placeholder for the graph */}
           <div className="relative flex items-center justify-center">
@@ -95,11 +102,11 @@ const NetworkEffectSection = () => {
         </div>
         <div className="mt-8 text-center">
           <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-            “Quanto mais operadoras se conectam, mais poderosa se torna a rede. O AI.DATA transforma o mercado em um ecossistema colaborativo, onde seguradoras compartilham informações críticas em tempo real, detectam fraudes com precisão, atribuem scores de risco e fornecem motivos detalhados para ações imediatas.”
+            “{t.description}”
           </p>
           <br></br>
           <span className="text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-200 bg-gradient-ai bg-clip-text text-transparent">
-            “Sozinhos, combatemos uma fraude. Unidos, eliminamos o problema.”
+            “{t.quote}”
           </span>
         </div>
       </div>

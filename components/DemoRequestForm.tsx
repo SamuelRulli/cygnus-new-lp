@@ -513,6 +513,7 @@ export default function DemoRequestForm() {
                               <SelectItem value="integration">Integração com sistemas</SelectItem>
                               <SelectItem value="compliance">Conformidade regulatória</SelectItem>
                               <SelectItem value="costs">Custos operacionais</SelectItem>
+                              <SelectItem value="custom-development">Desenvolvimento Customizado</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
