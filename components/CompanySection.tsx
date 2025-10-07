@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
@@ -46,151 +47,77 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function CompanySection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const timeline = [
-    {
-      year: '2012',
-      title: 'Foundation as Software Accelerators',
-      description: 'ITCygnus founded as software acceleration specialists for large Brazilian enterprises. Focused on optimizing legacy systems and accelerating digital transformation processes.',
-      icon: Rocket,
-      color: 'ai-blue'
-    },
-    {
-      year: '2015',
-      title: 'Enterprise Optimization Expertise',
-      description: 'Developed proprietary methodologies for enterprise software acceleration. Worked with Fortune 500 companies in Brazil to modernize critical business processes.',
-      icon: Settings,
-      color: 'ai-green'
-    },
-    {
-      year: '2018',
-      title: 'AI Research & Development',
-      description: 'Pivoted to artificial intelligence research after identifying automation opportunities in enterprise processes. Started developing AI-powered document processing solutions.',
-      icon: Brain,
-      color: 'ai-blue'
-    },
-    {
-      year: '2019',
-      title: 'AI.OCR Launch',
-      description: 'Launched AI.OCR after months of research in hospitals and offices. First AI product focused on solving real business problems with intelligent document recognition.',
-      icon: Eye,
-      color: 'ai-green'
-    },
-    {
-      year: '2020',
-      title: 'AI.DOC & Pandemic Growth',
-      description: 'Expanded platform with intelligent document management. Pandemic accelerated digitization needs, making our solution essential for remote operations.',
-      icon: FolderOpen,
-      color: 'ai-blue'
-    },
-    {
-      year: '2021',
-      title: 'Healthcare Specialization',
-      description: 'Entered healthcare market with AI.DATA, developed in partnership with major health plans. Became vertical AI specialists with deep industry expertise.',
-      icon: Heart,
-      color: 'ai-green'
-    },
-    {
-      year: '2023',
-      title: 'International Expansion',
-      description: 'Expanded to American market, adapting solutions for international regulations. Now serve clients in 4 countries with 40+ languages supported.',
-      icon: Globe,
-      color: 'ai-blue'
-    },
-    {
-      year: '2024',
-      title: 'Complete AI Platform',
-      description: 'Launched comprehensive AI platform with autonomous agents and conversational AI. Leading enterprise transformation worldwide with full AI suite.',
-      icon: Bot,
-      color: 'ai-green'
+  const timeline = t('company.timeline').map((item: any) => {
+    switch (item.year) {
+      case '2012':
+        return { ...item, icon: Rocket, color: 'ai-blue' };
+      case '2015':
+        return { ...item, icon: Settings, color: 'ai-green' };
+      case '2018':
+        return { ...item, icon: Brain, color: 'ai-blue' };
+      case '2019':
+        return { ...item, icon: Eye, color: 'ai-green' };
+      case '2020':
+        return { ...item, icon: FolderOpen, color: 'ai-blue' };
+      case '2021':
+        return { ...item, icon: Heart, color: 'ai-green' };
+      case '2023':
+        return { ...item, icon: Globe, color: 'ai-blue' };
+      case '2024':
+        return { ...item, icon: Bot, color: 'ai-green' };
+      default:
+        return { ...item, icon: Rocket, color: 'ai-blue' };
     }
-  ];
+  });
 
   const stats = [
-    { icon: Users, value: '10+', label: 'Organizações que Confiam', color: 'ai-blue' },
-    { icon: Globe, value: '2', label: 'Países Atendidos', color: 'ai-green' },
-    { icon: Flag, value: '40+', label: 'Tipos de Documentos', color: 'ai-blue' },
-    { icon: Briefcase, value: '20+', label: 'Team Members', color: 'ai-green' }
+    { icon: Users, value: '10+', label: t('company.stats.organizations'), color: 'ai-blue' },
+    { icon: Globe, value: '2', label: t('company.stats.countries'), color: 'ai-green' },
+    { icon: Flag, value: '40+', label: t('company.stats.documents'), color: 'ai-blue' },
+    { icon: Briefcase, value: '20+', label: t('company.stats.team'), color: 'ai-green' }
   ];
 
-  const offices = [
-    {
-      city: 'São Paulo',
-      country: 'Brazil',
-      description: 'Sede Global & Centro de Desenvolvimento',
-      icon: Building2,
-      details: 'Principal centro de desenvolvimento com 80+ engenheiros e cientistas de dados'
-    },
-    {
-      city: 'Orlando',
-      country: 'USA',
-      description: 'Centro de Operações das Américas',
-      icon: Building2,
-      details: 'Vendas, suporte e operações de sucesso do cliente na América do Norte'
-    },
-    {
-      city: 'San Diego',
-      country: 'USA',
-      description: 'Laboratório de Inovação & Pesquisa',
-      icon: Building2,
-      details: 'Pesquisa avançada em IA e desenvolvimento de tecnologias emergentes'
-    }
-  ];
+  const offices = t('company.presence.offices').map((office: any) => ({
+    ...office,
+    icon: Building2,
+  }));
 
-  const values = [
-    {
-      title: 'Abordagem Empresarial',
-      description: 'Nascida do trabalho com grandes empresas, entendemos a complexidade e requisitos de escala que soluções empresariais reais demandam.',
-      icon: Building2
-    },
-    {
-      title: 'Inovação Orientada a Resultados',
-      description: 'Acreditamos que a IA deve resolver problemas reais de negócios, não apenas impressionar com tecnologia. Cada solução que construímos entrega resultados mensuráveis.',
-      icon: Target
-    },
-    {
-      title: 'Implementação Rápida',
-      description: 'Velocidade é crucial nos negócios. Nossas metodologias comprovadas de 13 anos de trabalho empresarial garantem que você veja valor rapidamente sem comprometer a qualidade.',
-      icon: Zap
-    },
-    {
-      title: 'Especialização Profunda',
-      description: 'Soluções genéricas falham em indústrias complexas. Desenvolvemos IA vertical que entende seu setor específico e regulamentações.',
-      icon: Brain
+  const values = t('company.values.points').map((point: any) => {
+    switch (point.title) {
+      case t('company.values.points.0.title'):
+        return { ...point, icon: Building2 };
+      case t('company.values.points.1.title'):
+        return { ...point, icon: Target };
+      case t('company.values.points.2.title'):
+        return { ...point, icon: Zap };
+      case t('company.values.points.3.title'):
+        return { ...point, icon: Brain };
+      default:
+        return { ...point, icon: Building2 };
     }
-  ];
+  });
 
-  const team = [
-    {
-      role: 'Cientistas de Dados',
-      count: '6+',
-      description: 'Pesquisadores de IA com PhD e especialistas em machine learning',
-      icon: GraduationCap
-    },
-    {
-      role: 'Engenheiros de Software',
-      count: '10+',
-      description: 'Desenvolvedores full-stack e arquitetos de plataforma',
-      icon: Code
-    },
-    {
-      role: 'Arquitetos Empresariais',
-      count: '4+',
-      description: 'Ex-especialistas de grandes corporações com conhecimento profundo em ambientes empresariais',
-      icon: Network
-    },
-    {
-      role: 'Consultores de Implementação',
-      count: '50+',
-      description: 'Especialistas em transformação digital e gestão de mudanças',
-      icon: Settings
+  const team = t('company.team.roles').map((role: any) => {
+    switch (role.role) {
+      case t('company.team.roles.0.role'):
+        return { ...role, icon: GraduationCap };
+      case t('company.team.roles.1.role'):
+        return { ...role, icon: Code };
+      case t('company.team.roles.2.role'):
+        return { ...role, icon: Network };
+      case t('company.team.roles.3.role'):
+        return { ...role, icon: Settings };
+      default:
+        return { ...role, icon: Users };
     }
-  ];
+  });
 
   return (
     <>
@@ -219,9 +146,9 @@ export default function CompanySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Pioneiros em{' '}
+                {t('company.hero.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  IA Empresarial
+                  {t('company.hero.titleHighlight')}
                 </span>
               </h1>
               
@@ -230,9 +157,7 @@ export default function CompanySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Desde 2012, a ITCygnus acelera a transformação digital de grandes empresas com 
-                soluções tecnológicas de ponta. Da aceleração de software à inovação baseada em IA, 
-                <span className="text-ai-green font-bold"> marcas líderes confiam em nós</span> para automatizar e revolucionar seus processos de negócios mais críticos.
+                {t('company.hero.subtitle')}
               </p>
 
               {/* Mission Statement */}
@@ -241,12 +166,9 @@ export default function CompanySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                <h2 className="text-2xl font-bold text-ai-dark mb-4">Nossa Missão</h2>
+                <h2 className="text-2xl font-bold text-ai-dark mb-4">{t('company.hero.mission.title')}</h2>
                 <p className="text-lg text-ai-medium leading-relaxed">
-                  <span className="text-ai-blue font-semibold">Democratizar o acesso à inteligência artificial empresarial</span>, 
-                  tornando tecnologias avançadas acessíveis a organizações de todos os tamanhos, sempre com foco em{' '}
-                  <span className="text-ai-green font-semibold">resultados mensuráveis</span> e{' '}
-                  <span className="text-ai-blue font-semibold">implementação rápida</span>.
+                  {t('company.hero.mission.text')}
                 </p>
               </div>
 
@@ -278,60 +200,47 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Nossa{' '}
+                {t('company.journey.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Jornada
+                  {t('company.journey.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Da aceleração de software empresarial à inovação em IA - 13 anos transformando 
-                a forma como grandes organizações trabalham.
+                {t('company.journey.subtitle')}
               </p>
             </div>
 
             {/* Story Content */}
             <div className="grid lg:grid-cols-2 gap-16 mb-20">
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6">Legado de Aceleração de Software Empresarial</h3>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6">{t('company.journey.legacy.title')}</h3>
                 <div className="space-y-6 text-lg text-ai-medium leading-relaxed">
-                  <p>
-                    A ITCygnus foi fundada em <span className="text-ai-blue font-semibold">2012 como especialista em aceleração de software</span> para grandes empresas brasileiras. Ajudamos empresas Fortune 500 a otimizar sistemas legados, modernizar processos críticos e acelerar sua jornada de transformação digital.
-                  </p>
-                  <p>
-                    Trabalhando de perto com clientes empresariais, desenvolvemos profunda expertise em entender necessidades organizacionais complexas, requisitos regulatórios e desafios de escala que apenas grandes corporações enfrentam.
-                  </p>
-                  <p>
-                    Essa base focada em empresas tornou-se nosso DNA, moldando como abordamos cada solução - sempre pensando em <span className="text-ai-green font-semibold">escala, segurança e integração perfeita</span>.
-                  </p>
+                  <p>{t('company.journey.legacy.p1')}</p>
+                  <p>{t('company.journey.legacy.p2')}</p>
+                  <p>{t('company.journey.legacy.p3')}</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-ai-dark mb-6">Evolução para Liderança em IA</h3>
+                <h3 className="text-2xl font-bold text-ai-dark mb-6">{t('company.journey.evolution.title')}</h3>
                 <div className="space-y-6 text-lg text-ai-medium leading-relaxed">
-                  <p>
-                    Em 2018, identificamos uma grande oportunidade: <span className="text-ai-blue font-semibold">aplicar inteligência artificial para resolver os desafios de automação de documentos e processos</span> que estávamos enfrentando manualmente há anos.
-                  </p>
-                  <p>
-                    Nosso primeiro produto de IA, o AI.OCR, nasceu de meses de pesquisa em hospitais e escritórios, observando como profissionais perdiam horas em tarefas que poderiam ser automatizadas.
-                  </p>
-                  <p>
-                    Hoje, processamos documentos em <span className="text-ai-green font-semibold">mais de 40 padrões</span> e atendemos clientes em <span className="text-ai-blue font-semibold">2 países</span>, com uma equipe que cresceu de 5 para mais de 20 especialistas.
-                  </p>
+                  <p>{t('company.journey.evolution.p1')}</p>
+                  <p>{t('company.journey.evolution.p2')}</p>
+                  <p>{t('company.journey.evolution.p3')}</p>
                 </div>
               </div>
             </div>
 
             {/* Timeline */}
             <div className="relative">
-              <h3 className="text-2xl font-bold text-ai-dark mb-12 text-center">13 Anos de Inovação</h3>
+              <h3 className="text-2xl font-bold text-ai-dark mb-12 text-center">{t('company.journey.timelineTitle')}</h3>
               
               {/* Desktop Timeline */}
               <div className="hidden lg:block">
                 <div className="relative">
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-ai"></div>
                   
-                  {timeline.map((item, index) => {
+                  {timeline.map((item: any, index: number) => {
                     const Icon = item.icon;
                     const isEven = index % 2 === 0;
                     
@@ -362,7 +271,7 @@ export default function CompanySection() {
 
               {/* Mobile Timeline */}
               <div className="lg:hidden space-y-8">
-                {timeline.map((item, index) => {
+                {timeline.map((item: any, index: number) => {
                   const Icon = item.icon;
                   return (
                     <Card key={index} className="shadow-lg border-ai-light/50">
@@ -389,19 +298,18 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Nossos{' '}
+                {t('company.values.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Valores
+                  {t('company.values.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Os princípios forjados em 13 anos de trabalho empresarial que guiam tudo o que fazemos
-                e moldam como construímos soluções de IA para transformação.
+                {t('company.values.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {values.map((value, index) => {
+              {values.map((value: any, index: number) => {
                 const Icon = value.icon;
                 return (
                   <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-all duration-500 group hover:scale-105">
@@ -424,19 +332,18 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Nossa{' '}
+                {t('company.team.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Equipe Especializada
+                  {t('company.team.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                20+ profissionais incluindo cientistas de dados, arquitetos empresariais e especialistas
-                em transformação com vasta experiência em implementações em larga escala.
+                {t('company.team.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {team.map((role, index) => {
+              {team.map((role: any, index: number) => {
                 const Icon = role.icon;
                 return (
                   <Card key={index} className="shadow-lg border-ai-light/50 text-center hover:shadow-xl transition-shadow">
@@ -460,19 +367,18 @@ export default function CompanySection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Presença{' '}
+                {t('company.presence.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Global
+                  {t('company.presence.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Localizações estratégicas em mercados-chave nas Américas, permitindo-nos atender clientes 
-                empresariais com expertise local e escala global.
+                {t('company.presence.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {offices.map((office, index) => {
+              {offices.map((office: any, index: number) => {
                 const Icon = office.icon;
                 return (
                   <Card key={index} className="shadow-lg border-ai-light/50 text-center hover:shadow-xl transition-all duration-300 group hover:scale-105">
@@ -494,30 +400,21 @@ export default function CompanySection() {
             <div className="mt-16 bg-gradient-to-br from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Localizados Estrategicamente nas Américas
+                  {t('company.presence.details.title')}
                 </h3>
                 <p className="text-ai-medium max-w-2xl mx-auto">
-                  Nossas três localizações estratégicas permitem operações 24/7 e fornecem cobertura abrangente
-                  para clientes nos mercados da América do Norte e do Sul.
+                  {t('company.presence.details.subtitle')}
                 </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                  <MapPin className="w-6 h-6 text-ai-blue mx-auto mb-2" />
-                  <div className="font-bold text-ai-dark">Hub São Paulo</div>
-                  <div className="text-sm text-ai-medium">Centro principal de desenvolvimento e engenharia</div>
-                </div>
-                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                  <MapPin className="w-6 h-6 text-ai-green mx-auto mb-2" />
-                  <div className="font-bold text-ai-dark">Operações Orlando</div>
-                  <div className="text-sm text-ai-medium">Sucesso do cliente e operações comerciais</div>
-                </div>
-                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                  <MapPin className="w-6 h-6 text-ai-blue mx-auto mb-2" />
-                  <div className="font-bold text-ai-dark">Inovação San Diego</div>
-                  <div className="text-sm text-ai-medium">Pesquisa em IA e tecnologias emergentes</div>
-                </div>
+                {t('company.presence.details.hubs').map((hub: any, index: number) => (
+                  <div key={index} className="text-center p-4 bg-white rounded-xl shadow-sm">
+                    <MapPin className="w-6 h-6 text-ai-blue mx-auto mb-2" />
+                    <div className="font-bold text-ai-dark">{hub.name}</div>
+                    <div className="text-sm text-ai-medium">{hub.description}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -534,15 +431,14 @@ export default function CompanySection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Pronto para fazer parte da nossa{' '}
+              {t('company.cta.title')}{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                História de Sucesso?
+                {t('company.cta.titleHighlight')}
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Junte-se às marcas que já estão transformando suas operações com a IT Cygnus.
-              Vamos construir o futuro da IA empresarial juntos.
+              {t('company.cta.subtitle')}
             </p>
 
             {/* CTA Buttons */}
@@ -553,7 +449,7 @@ export default function CompanySection() {
                   size="xl" 
                   className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
                 >
-                  Solicitar Demonstração
+                  {t('company.cta.buttons.demo')}
                   <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </Link>
@@ -562,29 +458,14 @@ export default function CompanySection() {
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Fale com Nossa Equipe
+                {t('company.cta.buttons.contact')}
                 <Phone className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
-              {/* <Button 
-                variant="ghost" 
-                size="xl" 
-                className="text-white hover:bg-white/10 group"
-              >
-                Download Company Overview
-                <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Dúvidas? Entre em contato conosco pelo{' '}
-              <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +55 (11) 5039-4877
-              </a>{' '}
-              ou{' '}
-              <a href="mailto:contato@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                contato@itcygnus.com
-              </a>
+              {t('company.cta.contact').replace('{phone}', '+55 (11) 5039-4877').replace('{email}', 'contato@itcygnus.com')}
             </p>
           </div>
         </section>

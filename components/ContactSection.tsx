@@ -191,7 +191,7 @@ export default function ContactSection() {
               
               <p className="text-lg lg:text-xl text-ai-medium mb-8 leading-relaxed max-w-3xl mx-auto">
                 Thank you for contacting ITCygnus. Our team will respond within 2 hours during business hours. 
-                For urgent matters, please call our emergency line at +1 (305) 555-0199.
+                For urgent matters, please call our emergency line at +1 (601) 910 3353.
               </p>
 
               <div className="bg-white rounded-2xl p-8 shadow-xl border border-ai-light/50 mb-8">
@@ -456,6 +456,7 @@ export default function ContactSection() {
                             <SelectValue placeholder="Select contact type" />
                           </SelectTrigger>
                           <SelectContent>
+                            <SelectItem value="custom-development">Desenvolvimento Customizado</SelectItem>
                             <SelectItem value="demo">Request a personalized demo</SelectItem>
                             <SelectItem value="consulting">Free strategic consulting</SelectItem>
                             <SelectItem value="support">Technical support</SelectItem>
@@ -615,7 +616,7 @@ export default function ContactSection() {
                     <div className="flex items-center space-x-2">
                       <Phone className="w-4 h-4 text-red-500" />
                       <a href="tel:+1-305-555-0199" className="text-red-600 font-semibold hover:text-red-800 transition-colors">
-                        +1 (305) 555-0199
+                        +1 (601) 910 3353
                       </a>
                     </div>
                   </CardContent>

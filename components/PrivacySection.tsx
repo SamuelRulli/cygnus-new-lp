@@ -26,8 +26,10 @@ import {
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function PrivacySection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -36,87 +38,72 @@ export default function PrivacySection() {
 
   const privacyPrinciples = [
     {
-      title: 'Transparência',
-      description: 'Explicamos claramente quais dados coletamos e como os utilizamos',
+      title: t('privacy.principles.transparency.title'),
+      description: t('privacy.principles.transparency.description'),
       icon: Eye
     },
     {
-      title: 'Coleta Mínima',
-      description: 'Coletamos apenas os dados necessários para fornecer nossos serviços',
+      title: t('privacy.principles.minimalCollection.title'),
+      description: t('privacy.principles.minimalCollection.description'),
       icon: Database
     },
     {
-      title: 'Segurança Robusta',
-      description: 'Seus dados são protegidos com segurança de nível empresarial',
+      title: t('privacy.principles.robustSecurity.title'),
+      description: t('privacy.principles.robustSecurity.description'),
       icon: Lock
     },
     {
-      title: 'Seu Controle',
-      description: 'Você tem total controle sobre suas informações pessoais',
+      title: t('privacy.principles.yourControl.title'),
+      description: t('privacy.principles.yourControl.description'),
       icon: Settings
     }
   ];
 
   const dataTypes = [
     {
-      category: 'Informações Fornecidas por Você',
-      items: [
-        'Informações de contato (nome, e-mail, telefone)',
-        'Informações da empresa e cargo',
-        'Solicitações de demonstração e envios de formulários',
-        'Tickets de suporte e comunicações'
-      ]
+      category: t('privacy.dataTypes.provided.category'),
+      items: t('privacy.dataTypes.provided.items')
     },
     {
-      category: 'Informações Técnicas',
-      items: [
-        'Endereço IP e informações do navegador',
-        'Padrões de uso e navegação no site',
-        'Dados de desempenho e análises',
-        'Informações de cookies e sessão'
-      ]
+      category: t('privacy.dataTypes.technical.category'),
+      items: t('privacy.dataTypes.technical.items')
     },
     {
-      category: 'Dados de Uso do Serviço',
-      items: [
-        'Uso da plataforma e interações com recursos',
-        'Métricas de processamento de documentos',
-        'Chamadas de API e desempenho do sistema',
-        'Logs de erro e informações de diagnóstico'
-      ]
+      category: t('privacy.dataTypes.serviceUsage.category'),
+      items: t('privacy.dataTypes.serviceUsage.items')
     }
   ];
 
   const yourRights = [
     {
-      right: 'Access Your Data',
-      description: 'Request a copy of all personal data we hold about you',
+      right: t('privacy.yourRights.access.right'),
+      description: t('privacy.yourRights.access.description'),
       icon: Eye
     },
     {
-      right: 'Correct Information',
-      description: 'Update or correct any inaccurate personal information',
+      right: t('privacy.yourRights.correction.right'),
+      description: t('privacy.yourRights.correction.description'),
       icon: Settings
     },
     {
-      right: 'Delete Data',
-      description: 'Request deletion of your personal data (right to be forgotten)',
+      right: t('privacy.yourRights.deletion.right'),
+      description: t('privacy.yourRights.deletion.description'),
       icon: AlertCircle
     },
     {
-      right: 'Data Portability',
-      description: 'Receive your data in a structured, machine-readable format',
+      right: t('privacy.yourRights.portability.right'),
+      description: t('privacy.yourRights.portability.description'),
       icon: Download
     },
     {
-      right: 'Restrict Processing',
-      description: 'Limit how we process your personal information',
-      icon: Lock
+      right: t('privacy.yourRights.revoke.right'),
+      description: t('privacy.yourRights.revoke.description'),
+      icon: User
     },
     {
-      right: 'Withdraw Consent',
-      description: 'Revoke consent for data processing at any time',
-      icon: User
+      right: t('privacy.yourRights.info.right'),
+      description: t('privacy.yourRights.info.description'),
+      icon: Info
     }
   ];
 
@@ -147,7 +134,7 @@ export default function PrivacySection() {
               >
                 ITCygnus{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Política de Privacidade
+                  {t('privacy.title')}
                 </span>
               </h1>
               
@@ -156,7 +143,7 @@ export default function PrivacySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                <strong>Última atualização: 13 de Junho de 2025</strong>
+                <strong>{t('privacy.lastUpdated')}</strong>
               </p>
 
               <p 
@@ -164,9 +151,7 @@ export default function PrivacySection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                A ITCygnus está comprometida em proteger a privacidade e segurança dos dados pessoais de nossos 
-                usuários, clientes e visitantes. Esta política descreve como coletamos, usamos, armazenamos e 
-                protegemos suas informações pessoais, em total conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei 13.709/2018) e GDPR.
+                {t('privacy.intro')}
               </p>
             </div>
 
@@ -201,49 +186,19 @@ export default function PrivacySection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <Database className="w-8 h-8 text-ai-blue mr-4" />
-                Informações que Coletamos
+                {t('privacy.informationWeCollect.title')}
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                Coletamos apenas informações necessárias para fornecer nossos serviços e melhorar sua experiência. 
-                Isso inclui dados fornecidos voluntariamente através de formulários, cookies técnicos para funcionalidade do site, 
-                e informações de uso para otimização de desempenho.
+                {t('privacy.informationWeCollect.description')}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    category: 'Informações Fornecidas por Você',
-                    items: [
-                      'Informações de contato (nome, e-mail, telefone)',
-                      'Informações da empresa e cargo',
-                      'Solicitações de demonstração e envios de formulários',
-                      'Tickets de suporte e comunicações'
-                    ]
-                  },
-                  {
-                    category: 'Informações Técnicas',
-                    items: [
-                      'Endereço IP e informações do navegador',
-                      'Padrões de uso e navegação no site',
-                      'Dados de desempenho e análises',
-                      'Informações de cookies e sessão'
-                    ]
-                  },
-                  {
-                    category: 'Dados de Uso do Serviço',
-                    items: [
-                      'Uso da plataforma e interações com recursos',
-                      'Métricas de processamento de documentos',
-                      'Chamadas de API e desempenho do sistema',
-                      'Logs de erro e informações de diagnóstico'
-                    ]
-                  }
-                ].map((type, index) => (
+                {dataTypes.map((type, index) => (
                   <Card key={index} className="shadow-lg border-ai-light/50">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-bold text-ai-dark mb-4">{type.category}</h3>
                       <ul className="space-y-2">
-                        {type.items.map((item, itemIndex) => (
+                        {type.items.map((item: string, itemIndex: number) => (
                           <li key={itemIndex} className="flex items-start space-x-2">
                             <CheckCircle className="w-4 h-4 text-ai-green mt-1 flex-shrink-0" />
                             <span className="text-sm text-ai-medium">{item}</span>
@@ -260,27 +215,16 @@ export default function PrivacySection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <Settings className="w-8 h-8 text-ai-green mr-4" />
-                Como Utilizamos Suas Informações
+                {t('privacy.howWeUseInformation.title')}
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                Utilizamos seus dados exclusivamente para fornecer nossos serviços, responder a suas solicitações, enviar comunicações 
-                relevantes (apenas com seu consentimento) e melhorar nossos produtos e serviços. Nunca vendemos 
-                ou compartilhamos dados pessoais com terceiros para fins comerciais.
+                {t('privacy.howWeUseInformation.description')}
               </p>
 
               <div className="bg-ai-light/20 rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-ai-dark mb-6">Finalidades do Tratamento de Dados:</h3>
+                <h3 className="text-xl font-bold text-ai-dark mb-6">{t('privacy.howWeUseInformation.purposes.title')}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {[
-                    'Fornecimento e manutenção de nossos serviços',
-                    'Processamento de solicitações de demonstração e consultas',
-                    'Suporte ao cliente e assistência técnica',
-                    'Melhoria de serviços e desenvolvimento de recursos',
-                    'Monitoramento de segurança e prevenção de fraudes',
-                    'Conformidade legal e requisitos regulatórios',
-                    'Comunicações de marketing (com consentimento)',
-                    'Análises e otimização de desempenho'
-                  ].map((purpose, index) => (
+                  {t('privacy.howWeUseInformation.purposes.items').map((purpose: string, index: number) => (
                     <div key={index} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-ai-green flex-shrink-0" />
                       <span className="text-ai-dark">{purpose}</span>
@@ -294,45 +238,14 @@ export default function PrivacySection() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-ai-dark mb-8 flex items-center">
                 <User className="w-8 h-8 text-ai-blue mr-4" />
-                Seus Direitos LGPD
+                {t('privacy.yourRights.title')}
               </h2>
               <p className="text-lg text-ai-medium leading-relaxed mb-8">
-                Conforme a Lei Geral de Proteção de Dados (LGPD), você tem direito a:
+                {t('privacy.yourRights.description')}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[
-                  {
-                    right: 'Acesso aos Dados',
-                    description: 'Solicitar confirmação e acesso aos seus dados pessoais',
-                    icon: Eye
-                  },
-                  {
-                    right: 'Correção',
-                    description: 'Retificar dados incompletos, inexatos ou desatualizados',
-                    icon: Settings
-                  },
-                  {
-                    right: 'Exclusão',
-                    description: 'Solicitar anonimização, bloqueio ou eliminação de dados desnecessários',
-                    icon: AlertCircle
-                  },
-                  {
-                    right: 'Portabilidade',
-                    description: 'Solicitar a transferência dos seus dados para outro fornecedor',
-                    icon: Download
-                  },
-                  {
-                    right: 'Revogar Consentimento',
-                    description: 'Revogar seu consentimento a qualquer momento',
-                    icon: User
-                  },
-                  {
-                    right: 'Informação',
-                    description: 'Saber com quem compartilhamos seus dados',
-                    icon: Info
-                  }
-                ].map((right, index) => {
+                {yourRights.map((right, index) => {
                   const Icon = right.icon;
                   return (
                     <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-shadow">
@@ -348,7 +261,7 @@ export default function PrivacySection() {
                 })}
               </div>
               <p className="text-lg text-ai-medium leading-relaxed mt-8">
-                Para exercer esses direitos, entre em contato com nosso Encarregado de Dados (DPO) em <a href="mailto:lgpd@itcygnus.com" className="text-ai-blue hover:text-ai-blue/80 transition-colors">lgpd@itcygnus.com</a>.
+                {t('privacy.yourRights.contact.prefix')} <a href="mailto:lgpd@itcygnus.com" className="text-ai-blue hover:text-ai-blue/80 transition-colors">{t('privacy.yourRights.contact.email')}</a>.
               </p>
             </div>
 
@@ -358,20 +271,13 @@ export default function PrivacySection() {
               <div className="bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                 <Lock className="w-6 h-6 text-ai-blue mr-3" />
-                Segurança de Dados
+                {t('privacy.dataSecurity.title')}
               </h3>
               <p className="text-ai-medium leading-relaxed mb-4">
-                Implementamos medidas de segurança padrão do setor para proteger suas informações pessoais, incluindo:
+                {t('privacy.dataSecurity.description')}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  'Criptografia de ponta a ponta para transmissão de dados',
-                  'Infraestrutura certificada SOC 2 Tipo II',
-                  'Auditorias e avaliações regulares de segurança',
-                  'Requisitos de autenticação multifator',
-                  'Data centers seguros com proteção física',
-                  'Treinamento de funcionários em proteção de dados'
-                ].map((measure, index) => (
+                {t('privacy.dataSecurity.items').map((measure: string, index: number) => (
                   <div key={index} className="flex items-center space-x-3">
                     <Shield className="w-4 h-4 text-ai-green flex-shrink-0" />
                     <span className="text-ai-dark text-sm">{measure}</span>
@@ -384,12 +290,10 @@ export default function PrivacySection() {
               <div>
               <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                 <Calendar className="w-6 h-6 text-ai-green mr-3" />
-                Retenção de Dados
+                {t('privacy.dataRetention.title')}
               </h3>
               <p className="text-ai-medium leading-relaxed">
-                Mantemos as informações pessoais apenas pelo tempo necessário para cumprir os propósitos descritos 
-                nesta política de privacidade, cumprir obrigações legais, resolver disputas e fazer valer nossos acordos. 
-                Quando os dados não são mais necessários, nós os excluímos ou anonimizamos com segurança de acordo com nosso cronograma de retenção de dados.
+                {t('privacy.dataRetention.description')}
               </p>
               </div>
 
@@ -397,13 +301,10 @@ export default function PrivacySection() {
               <div>
               <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                 <Globe className="w-6 h-6 text-ai-blue mr-3" />
-                Transferência Internacional de Dados
+                {t('privacy.internationalTransfers.title')}
               </h3>
               <p className="text-ai-medium leading-relaxed">
-                Como operamos globalmente com escritórios no Brasil e nos Estados Unidos, suas informações pessoais 
-                podem ser transferidas e processadas em outros países. Garantimos que medidas de proteção adequadas 
-                estejam em vigor, incluindo Cláusulas Contratuais Padrão e decisões de adequação, 
-                para proteger seus dados durante transferências internacionais, em conformidade com a LGPD.
+                {t('privacy.internationalTransfers.description')}
               </p>
               </div>
 
@@ -411,12 +312,10 @@ export default function PrivacySection() {
               <div>
               <h3 className="text-2xl font-bold text-ai-dark mb-6 flex items-center">
                 <Settings className="w-6 h-6 text-ai-green mr-3" />
-                Cookies e Rastreamento
+                {t('privacy.cookies.title')}
               </h3>
               <p className="text-ai-medium leading-relaxed">
-                Utilizamos cookies e tecnologias similares para melhorar sua experiência de navegação, analisar tráfego 
-                do site e entender preferências dos usuários. Você pode controlar as configurações de cookies através 
-                das preferências do seu navegador. Cookies essenciais para funcionalidades básicas não podem ser desativados.
+                {t('privacy.cookies.description')}
               </p>
               </div>
             </div>
@@ -425,28 +324,27 @@ export default function PrivacySection() {
             <div className="mt-16 bg-ai-dark rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Mail className="w-6 h-6 text-ai-green mr-3" />
-                Dúvidas sobre Privacidade?
+                {t('privacy.contact.title')}
               </h3>
               <p className="text-white/80 mb-6 leading-relaxed">
-                Se tiver qualquer dúvida sobre esta Política de Privacidade, precisar exercer seus direitos
-                ou quiser reportar uma preocupação com privacidade, entre em contato com nosso Encarregado de Dados (DPO):
+                {t('privacy.contact.description')}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-ai-green flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">E-mail</div>
+                    <div className="font-semibold">{t('privacy.contact.email.label')}</div>
                     <a href="mailto:lgpd@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                      lgpd@itcygnus.com
+                      {t('privacy.contact.email.value')}
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-ai-blue flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">Telefone</div>
+                    <div className="font-semibold">{t('privacy.contact.phone.label')}</div>
                     <a href="tel:+55-11-98765-4321" className="text-ai-blue hover:text-ai-blue/80 transition-colors">
-                      +55 (11) 5039-4877
+                      {t('privacy.contact.phone.value')}
                     </a>
                   </div>
                 </div>

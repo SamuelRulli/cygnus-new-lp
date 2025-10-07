@@ -2,40 +2,43 @@
 
 import { useEffect, useState } from 'react';
 import { TrendingUp, Clock, Target, Users } from 'lucide-react';
-
-const metrics = [
-  {
-    icon: TrendingUp,
-    value: '75%',
-    label: 'Redução do Tempo de Processamento',
-    description: 'Redução média no tempo de processamento manual',
-    color: 'ai-green'
-  },
-  {
-    icon: Clock,
-    value: '30',
-    label: 'Dias de Implementação',
-    description: 'Da configuração à implantação completa',
-    color: 'ai-blue'
-  },
-  {
-    icon: Target,
-    value: '99.9%',
-    label: 'Taxa de Precisão',
-    description: 'Precisão garantida para todos os processos',
-    color: 'ai-green'
-  },
-  {
-    icon: Users,
-    value: '10+',
-    label: 'Clientes Empresariais',
-    description: 'Empresas confiam em nossa plataforma',
-    color: 'ai-blue'
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function MetricsSection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
+
+  const metrics = [
+    {
+      icon: TrendingUp,
+      value: t('metrics.items.timeReduction.value'),
+      label: t('metrics.items.timeReduction.label'),
+      description: t('metrics.items.timeReduction.description'),
+      color: 'ai-green'
+    },
+    {
+      icon: Clock,
+      value: t('metrics.items.implementation.value'),
+      label: t('metrics.items.implementation.label'),
+      description: t('metrics.items.implementation.description'),
+      color: 'ai-blue'
+    },
+    {
+      icon: Target,
+      value: t('metrics.items.accuracy.value'),
+      label: t('metrics.items.accuracy.label'),
+      description: t('metrics.items.accuracy.description'),
+      color: 'ai-green'
+    },
+    {
+      icon: Users,
+      value: t('metrics.items.clients.value'),
+      label: t('metrics.items.clients.label'),
+      description: t('metrics.items.clients.description'),
+      color: 'ai-blue'
+    }
+  ];
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,14 +63,13 @@ export default function MetricsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-4">
-            Resultados Comprovados que Impulsionam{' '}
+            {t('metrics.title')}{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              o Crescimento dos Negócios
+              {t('metrics.titleHighlight')}
             </span>
           </h2>
           <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-            Nossa plataforma de IA entrega resultados mensuráveis que transformam como as empresas 
-            lidam com seus processos mais críticos.
+            {t('metrics.subtitle')}
           </p>
         </div>
 

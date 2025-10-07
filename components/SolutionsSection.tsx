@@ -29,151 +29,127 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
-
-const solutions = [
-  {
-    id: 'ai-ocr',
-    title: 'AI.OCR',
-    subtitle: 'Reconhecimento Óptico Inteligente',
-    description: 'Transforme qualquer documento em dados estruturados com 99,9% de precisão. Processe contratos, faturas, relatórios médicos e formulários 50x mais rápido que digitação manual.',
-    icon: Eye,
-    color: 'ai-blue',
-    features: [
-      'Reconhecimento de contexto inteligente',
-      'Suporte a mais de 40 idiomas',
-      'Processamento de documentos complexos',
-      'Integração nativa com APIs robustas'
-    ],
-    benefits: [
-      '99,9% de precisão garantida',
-      '50x mais rápido que digitação manual',
-      'Redução de 85% em erros de transcrição',
-      'ROI positivo em menos de 3 meses'
-    ],
-    industries: ['Saúde', 'Financeiro', 'Governo', 'Seguros'],
-    link: '/solutions/ai-ocr'
-  },
-  {
-    id: 'ai-doc',
-    title: 'AI.DOC',
-    subtitle: 'Gestão Inteligente de Documentos',
-    description: 'Organize, classifique e encontre qualquer documento em segundos. Nossa IA transforma o caos documental em conhecimento estruturado com busca semântica avançada.',
-    icon: FolderOpen,
-    color: 'ai-green',
-    features: [
-      'Classificação automática por IA',
-      'Busca semântica instantânea',
-      'Fluxos de aprovação automatizados',
-      'Controle de versão e colaboração'
-    ],
-    benefits: [
-      '85% mais rápido na busca de documentos',
-      '100% de organização automática',
-      'Redução de 70% no tempo de auditoria',
-      'Conformidade garantida'
-    ],
-    industries: ['Jurídico', 'Saúde', 'Financeiro', 'Governo'],
-    link: '/solutions/ai-doc'
-  },
-  {
-    id: 'ai-saude',
-    title: 'AI.SAÚDE',
-    subtitle: 'Inteligência Artificial para Saúde',
-    description: 'Revolucione o atendimento médico com IA especializada em saúde. Análise de glosas, processamento de prontuários e otimização de fluxos hospitalares.',
-    icon: Heart,
-    color: 'red-500',
-    features: [
-      'Análise automática de glosas médicas',
-      'Automatização de fluxo reembolso',
-      'Mais de 300 prefeituras integradas para validação',
-    ],
-    benefits: [
-      'Redução de 60% no tempo de análise de glosas',
-      'Aumento de 40% na recuperação de valores',
-      'Melhoria de 50% na eficiência operacional',
-      'Conformidade 100% com regulamentações'
-    ],
-    industries: ['Hospitais', 'Clínicas', 'Operadoras', 'Laboratórios'],
-    link: '/solutions/ai-saude'
-  },
-  {
-    id: 'ai-priceinsights',
-    title: 'AI.PRICEINSIGHTS',
-    subtitle: 'Inteligência de Preços Avançada',
-    description: 'Otimize sua estratégia de preços com IA que analisa mercado, concorrência e demanda em tempo real. Maximize receita e competitividade.',
-    icon: DollarSign,
-    color: 'ai-green',
-    features: [
-      'Análise de mercado em tempo real',
-      'Monitoramento de concorrência',
-      'Otimização dinâmica de preços',
-      'Previsão de demanda inteligente'
-    ],
-    benefits: [
-      'Aumento de 25% na margem de lucro',
-      'Redução de 40% no tempo de análise',
-      'Melhoria de 30% na competitividade',
-      'ROI de 300% em 6 meses'
-    ],
-    industries: ['Saúde'],
-    link: '/solutions/ai-priceinsights'
-  },
-  {
-    id: 'ai-agents',
-    title: 'AI.AGENTS',
-    subtitle: 'Agentes Inteligentes Autônomos',
-    description: 'Agentes de IA que executam tarefas complexas de forma autônoma. Automatize processos de negócio com inteligência artificial conversacional.',
-    icon: Bot,
-    color: 'ai-blue',
-    features: [
-      'Agentes conversacionais inteligentes',
-      'Automação de processos complexos',
-      'Integração com sistemas empresariais',
-      'Aprendizado contínuo e adaptação'
-    ],
-    benefits: [
-      'Redução de 70% em tarefas manuais',
-      'Disponibilidade 24/7 sem interrupções',
-      'Melhoria de 60% na experiência do cliente',
-      'Economia de 50% em custos operacionais'
-    ],
-    industries: ['Saúde','Financeiro', 'Tecnologia', 'Governo'],
-    link: '/solutions/ai-agents'
-  },
-  {
-    id: 'echo-ai-hub',
-    title: 'ECHO AI HUB',
-    subtitle: 'Plataforma Unificada de IA',
-    description: 'Centralize todas as suas soluções de IA em uma plataforma única. Gerencie, monitore e otimize todos os seus projetos de inteligência artificial.',
-    icon: Network,
-    color: 'purple-500',
-    features: [
-      'Dashboard unificado de IA',
-      'Gerenciamento centralizado de modelos',
-      'Monitoramento em tempo real',
-      'Orquestração de fluxos de trabalho'
-    ],
-    benefits: [
-      'Visibilidade completa de projetos de IA',
-      'Redução de 50% no tempo de deployment',
-      'Otimização de recursos e custos',
-      'Governança e compliance centralizados'
-    ],
-    industries: ['Empresas', 'Tecnologia', 'Consultoria', 'Governo'],
-    link: '/solutions/echo-ai-hub'
-  }
-];
-
-const trustIndicators = [
-  { icon: Users, value: '5+', label: 'Empresas Atendidas' },
-  { icon: CheckCircle, value: '99.9%', label: 'Precisão Garantida' },
-  { icon: TrendingUp, value: '300%', label: 'ROI Médio' },
-  { icon: Shield, value: '100%', label: 'Conformidade' }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function SolutionsSection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
+
+  const solutions = [
+    {
+      id: 'ai-ocr',
+      title: 'AI.OCR',
+      subtitle: t('solutions.items.aiOCR.subtitle'),
+      description: t('solutions.items.aiOCR.description'),
+      icon: Eye,
+      color: 'ai-blue',
+      features: Array.isArray(t('solutions.items.aiOCR.benefits')) ? t('solutions.items.aiOCR.benefits') : [t('solutions.items.aiOCR.benefits')],
+      benefits: [
+        '99.9% ' + t('metrics.items.accuracy.label'),
+        '50x ' + t('solutions.items.aiOCR.benefits')[0],
+        t('solutions.items.aiOCR.benefits')[1],
+        t('solutions.items.aiOCR.benefits')[2]
+      ],
+      industries: [t('header.industries'), t('footer.industries')],
+      link: '/solutions/ai-ocr'
+    },
+    {
+      id: 'ai-doc',
+      title: 'AI.DOC',
+      subtitle: t('solutions.items.aiDOC.subtitle'),
+      description: t('solutions.items.aiDOC.description'),
+      icon: FolderOpen,
+      color: 'ai-green',
+      features: Array.isArray(t('solutions.items.aiDOC.benefits')) ? t('solutions.items.aiDOC.benefits') : [t('solutions.items.aiDOC.benefits')],
+      benefits: [
+        '85% ' + t('solutions.items.aiDOC.benefits')[0],
+        '100% ' + t('solutions.items.aiDOC.benefits')[1],
+        t('solutions.items.aiDOC.benefits')[2],
+        t('solutions.items.aiDOC.benefits')[3]
+      ],
+      industries: [t('header.industries'), t('footer.industries')],
+      link: '/solutions/ai-doc'
+    },
+    {
+      id: 'ai-saude',
+      title: 'AI.SAUDE',
+      subtitle: t('solutions.items.aiSAUDE.subtitle'),
+      description: t('solutions.items.aiSAUDE.description'),
+      icon: Heart,
+      color: 'red-500',
+      features: Array.isArray(t('solutions.items.aiSAUDE.benefits')) 
+        ? t('solutions.items.aiSAUDE.benefits').slice(0, 3) 
+        : [t('solutions.items.aiSAUDE.benefits')],
+      benefits: [
+        '60% ' + t('solutions.items.aiSAUDE.benefits')[0],
+        '40% ' + t('solutions.items.aiSAUDE.benefits')[1],
+        '50% ' + t('solutions.items.aiSAUDE.benefits')[2],
+        '100% ' + t('solutions.items.aiSAUDE.benefits')[3]
+      ],
+      industries: [t('header.industries'), t('footer.industries')],
+      link: '/solutions/ai-saude'
+    },
+    {
+      id: 'ai-priceinsights',
+      title: 'AI.PRICEINSIGHTS',
+      subtitle: t('solutions.items.aiPRICEINSIGHTS.subtitle'),
+      description: t('solutions.items.aiPRICEINSIGHTS.description'),
+      icon: DollarSign,
+      color: 'ai-green',
+      features: Array.isArray(t('solutions.items.aiPRICEINSIGHTS.benefits')) ? t('solutions.items.aiPRICEINSIGHTS.benefits') : [t('solutions.items.aiPRICEINSIGHTS.benefits')],
+      benefits: [
+        '25% ' + t('solutions.items.aiPRICEINSIGHTS.benefits')[0],
+        '40% ' + t('solutions.items.aiPRICEINSIGHTS.benefits')[1],
+        '30% ' + t('solutions.items.aiPRICEINSIGHTS.benefits')[2],
+        '300% ' + t('solutions.items.aiPRICEINSIGHTS.benefits')[3]
+      ],
+      industries: [t('header.industries')],
+      link: '/solutions/ai-priceinsights'
+    },
+    {
+      id: 'ai-agents',
+      title: 'AI.AGENTS',
+      subtitle: t('solutions.items.aiAGENTS.subtitle'),
+      description: t('solutions.items.aiAGENTS.description'),
+      icon: Bot,
+      color: 'ai-blue',
+      features: Array.isArray(t('solutions.items.aiAGENTS.benefits')) ? t('solutions.items.aiAGENTS.benefits') : [t('solutions.items.aiAGENTS.benefits')],
+      benefits: [
+        '70% ' + t('solutions.items.aiAGENTS.benefits')[0],
+        '24/7 ' + t('solutions.items.aiAGENTS.benefits')[1],
+        '60% ' + t('solutions.items.aiAGENTS.benefits')[2],
+        '50% ' + t('solutions.items.aiAGENTS.benefits')[3]
+      ],
+      industries: [t('header.industries'), t('footer.industries')],
+      link: '/solutions/ai-agents'
+    },
+    {
+      id: 'echo-ai-hub',
+      title: 'ECHO AI HUB',
+      subtitle: t('solutions.items.echoAIHub.subtitle'),
+      description: t('solutions.items.echoAIHub.description'),
+      icon: Network,
+      color: 'purple-500',
+      features: Array.isArray(t('solutions.items.echoAIHub.benefits')) ? t('solutions.items.echoAIHub.benefits') : [t('solutions.items.echoAIHub.benefits')],
+      benefits: [
+        '100% ' + t('solutions.items.echoAIHub.benefits')[0],
+        '50% ' + t('solutions.items.echoAIHub.benefits')[1],
+        t('solutions.items.echoAIHub.benefits')[2],
+        t('solutions.items.echoAIHub.benefits')[3]
+      ],
+      industries: [t('header.company'), t('header.industries')],
+      link: '/solutions/echo-ai-hub'
+    }
+  ];
+
+  const trustIndicators = [
+    { icon: Users, value: '5+', label: t('metrics.items.clients.label') },
+    { icon: CheckCircle, value: '99.9%', label: t('metrics.items.accuracy.label') },
+    { icon: TrendingUp, value: '300%', label: 'ROI' },
+    { icon: Shield, value: '100%', label: t('hero.benefits.compliance') }
+  ];
+
 
   useEffect(() => {
     setIsVisible(true);
@@ -201,9 +177,9 @@ export default function SolutionsSection() {
               isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
             }`}
           >
-            Nossas{' '}
+            {t('solutions.title')}{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              Plataformas de IA
+              {t('solutions.titleHighlight')}
             </span>
           </h2>
           <p 
@@ -211,8 +187,7 @@ export default function SolutionsSection() {
               isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
             }`}
           >
-            Descubra nossa suíte completa de soluções de inteligência artificial, 
-            projetadas para transformar cada aspecto do seu negócio com tecnologia de ponta.
+            {t('solutions.subtitle')}
           </p>
         </div>
 
@@ -222,7 +197,7 @@ export default function SolutionsSection() {
             isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
           }`}
         >
-          {['all', 'saúde', 'financeiro', 'tecnologia', 'governo'].map((tab) => (
+          {['all', 'healthcare', 'financial', 'technology', 'government'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -232,7 +207,7 @@ export default function SolutionsSection() {
                   : 'bg-white text-ai-medium hover:bg-ai-light/50 border border-ai-light'
               }`}
             >
-              {tab === 'all' ? 'Todas as Soluções' : tab.charAt(0).toUpperCase() + tab.slice(1)}
+              {tab === 'all' ? t('solutions.cta.title') : tab.charAt(0).toUpperCase() + tab.slice(1)}
             </button>
           ))}
         </div>
@@ -271,9 +246,9 @@ export default function SolutionsSection() {
 
                   {/* Key Features */}
                   <div className="mb-6">
-                    <h4 className="font-bold text-ai-dark text-sm mb-3">Recursos Principais:</h4>
+                    <h4 className="font-bold text-ai-dark text-sm mb-3">{t('features.title')}:</h4>
                     <ul className="space-y-2">
-                      {solution.features.slice(0, 3).map((feature, idx) => (
+                      {Array.isArray(solution.features) && solution.features.slice(0, 3).map((feature: string, idx: number) => (
                         <li key={idx} className="flex items-center text-sm text-ai-medium">
                           <CheckCircle className="w-4 h-4 text-ai-green mr-2 flex-shrink-0" />
                           {feature}
@@ -284,7 +259,7 @@ export default function SolutionsSection() {
 
                   {/* Benefits */}
                   <div className="mb-6">
-                    <h4 className="font-bold text-ai-dark text-sm mb-3">Benefícios:</h4>
+                    <h4 className="font-bold text-ai-dark text-sm mb-3">{t('metrics.title')}:</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {solution.benefits.slice(0, 2).map((benefit, idx) => (
                         <div key={idx} className={`text-center p-2 bg-${solution.color}/10 rounded-lg`}>
@@ -301,7 +276,7 @@ export default function SolutionsSection() {
 
                   {/* Industries */}
                   <div className="mb-6">
-                    <h4 className="font-bold text-ai-dark text-sm mb-3">Setores:</h4>
+                    <h4 className="font-bold text-ai-dark text-sm mb-3">{t('header.industries')}:</h4>
                     <div className="flex flex-wrap gap-2">
                       {solution.industries.slice(0, 3).map((industry, idx) => (
                         <span 
@@ -320,7 +295,7 @@ export default function SolutionsSection() {
                       variant="ai_outline" 
                       className="w-full group-hover:bg-gradient-ai group-hover:text-white group-hover:border-transparent transition-all duration-300"
                     >
-                      Saiba Mais
+                      {t('solutions.cta.customDemo')}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -354,7 +329,7 @@ export default function SolutionsSection() {
         <div className="mt-24 py-12 bg-gradient-to-r from-ai-blue/5 to-ai-green/5 rounded-3xl overflow-hidden">
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 className="text-3xl font-bold text-ai-dark mb-12 text-center">
-              Empresas que <span className="bg-gradient-ai bg-clip-text text-transparent">confiam</span> em nós
+              {t('metrics.items.clients.label')} <span className="bg-gradient-ai bg-clip-text text-transparent">{t('metrics.title')}</span>
             </h3>
             
             <div className="relative overflow-hidden">
@@ -393,25 +368,24 @@ export default function SolutionsSection() {
           }`}
         >
           <h3 className="text-3xl font-bold text-ai-dark mb-6">
-            Pronto para Transformar Seu Negócio com{' '}
+            {t('solutions.cta.title')}{' '}
             <span className="bg-gradient-ai bg-clip-text text-transparent">
-              Inteligência Artificial?
+              {t('solutions.titleHighlight')}?
             </span>
           </h3>
           <p className="text-lg text-ai-medium mb-8 max-w-3xl mx-auto">
-            Descubra como nossas soluções de IA podem revolucionar suas operações, 
-            aumentar eficiência e impulsionar resultados extraordinários.
+            {t('solutions.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/demo">
               <Button variant="ai_primary" size="xl" className="group shadow-2xl">
-                Agendar Demonstração
+                {t('solutions.cta.customDemo')}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             {/* <Link href="/roi-calculator">
               <Button variant="ai_outline" size="xl" className="group">
-                Calcular ROI
+                {t('hero.cta.calculateROI')}
                 <BarChart3 className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
             </Link> */}

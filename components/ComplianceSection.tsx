@@ -51,223 +51,23 @@ import {
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
+import * as Icons from 'lucide-react';
 
 export default function ComplianceSection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const complianceFrameworks = [
-    {
-      name: 'GDPR',
-      fullName: 'Regulamento Geral de Proteção de Dados',
-      region: 'União Europeia',
-      status: 'Conforme',
-      description: 'Regulamentação abrangente de proteção de dados e privacidade',
-      icon: Globe,
-      color: 'ai-blue',
-      flag: '🇪🇺'
-    },
-    {
-      name: 'HIPAA',
-      fullName: 'Lei de Portabilidade e Responsabilidade de Seguros de Saúde',
-      region: 'Estados Unidos',
-      status: 'Conforme',
-      description: 'Padrões de privacidade e segurança de informações de saúde',
-      icon: Shield,
-      color: 'ai-green',
-      flag: '🇺🇸'
-    },
-    // {
-    //   name: 'SOX',
-    //   fullName: 'Lei Sarbanes-Oxley',
-    //   region: 'Estados Unidos',
-    //   status: 'Conforme',
-    //   description: 'Padrões de relatórios financeiros e governança corporativa',
-    //   icon: BarChart3,
-    //   color: 'ai-blue',
-    //   flag: '🇺🇸'
-    // },
-    // {
-    //   name: 'CCPA',
-    //   fullName: 'Lei de Privacidade do Consumidor da Califórnia',
-    //   region: 'Califórnia, EUA',
-    //   status: 'Conforme',
-    //   description: 'Direitos de privacidade do consumidor e proteção de dados',
-    //   icon: User,
-    //   color: 'ai-green',
-    //   flag: '🇺🇸'
-    // },
-    {
-      name: 'LGPD',
-      fullName: 'Lei Geral de Proteção de Dados',
-      region: 'Brasil',
-      status: 'Conforme',
-      description: 'Lei brasileira de proteção geral de dados',
-      icon: Flag,
-      color: 'ai-blue',
-      flag: '🇧🇷'
-    },
-    // {
-    //   name: 'ISO 27001',
-    //   fullName: 'Gestão de Segurança da Informação',
-    //   region: 'Internacional',
-    //   status: 'Certificado',
-    //   description: 'Padrão de sistema de gestão de segurança da informação',
-    //   icon: Award,
-    //   color: 'ai-green',
-    //   flag: '🌍'
-    // }
-  ];
-
-  const complianceCapabilities = [
-    {
-      title: 'Governança de Dados',
-      description: 'Classificação abrangente de dados, retenção e gerenciamento do ciclo de vida',
-      icon: Database,
-      features: [
-        'Classificação automatizada de dados',
-        'Aplicação de políticas de retenção',
-        'Rastreamento de linhagem de dados',
-        'Avaliações de impacto à privacidade'
-      ]
-    },
-    {
-      title: 'Gestão de Auditoria',
-      description: 'Rastreamento completo de auditoria e coleta de evidências para conformidade regulatória',
-      icon: Search,
-      features: [
-        'Logs de auditoria imutáveis',
-        'Coleta automatizada de evidências',
-        'Relatórios de conformidade',
-        'Monitoramento em tempo real'
-      ]
-    },
-    {
-      title: 'Avaliação de Riscos',
-      description: 'Monitoramento contínuo de riscos de conformidade e estruturas de avaliação',
-      icon: AlertTriangle,
-      features: [
-        'Modelos de pontuação de risco',
-        'Análise de lacunas de conformidade',
-        'Alertas automatizados de risco',
-        'Acompanhamento de mitigação'
-      ]
-    },
-    {
-      title: 'Gestão de Políticas',
-      description: 'Criação centralizada de políticas, distribuição e acompanhamento de conformidade',
-      icon: FileText,
-      features: [
-        'Versionamento de políticas',
-        'Distribuição automatizada',
-        'Acompanhamento de reconhecimento',
-        'Verificação de conformidade'
-      ]
-    }
-  ];
-
-  const regulatoryRequirements = [
-    {
-      regulation: 'GDPR Artigo 32',
-      requirement: 'Segurança do Processamento',
-      implementation: 'Criptografia ponta a ponta, controles de acesso e avaliações regulares de segurança',
-      status: 'Implementado',
-      icon: Lock
-    },
-    {
-      regulation: 'HIPAA 164.312',
-      requirement: 'Proteções Técnicas',
-      implementation: 'Autenticação multifator, logs de auditoria e controles de integridade de dados',
-      status: 'Implementado',
-      icon: Shield
-    },
-    {
-      regulation: 'SOX Seção 404',
-      requirement: 'Controles Internos',
-      implementation: 'Testes automatizados de controle e proteção de dados financeiros',
-      status: 'Implementado',
-      icon: BarChart3
-    },
-    {
-      regulation: 'CCPA Seção 1798.100',
-      requirement: 'Direitos do Consumidor',
-      implementation: 'Portal de solicitações de titulares de dados e fluxos de trabalho automatizados',
-      status: 'Implementado',
-      icon: User
-    }
-  ];
-
-  const auditProcess = [
-    {
-      phase: 'Planejamento',
-      description: 'Definição do escopo da auditoria e planejamento da coleta de evidências',
-      duration: '1-2 semanas',
-      icon: Clipboard,
-      activities: ['Definição de escopo', 'Mapeamento de evidências', 'Planejamento de cronograma', 'Alocação de recursos']
-    },
-    {
-      phase: 'Coleta de Evidências',
-      description: 'Coleta automatizada de evidências e documentação de conformidade',
-      duration: '2-3 semanas',
-      icon: Archive,
-      activities: ['Extração de logs', 'Testes de controle', 'Revisão de documentos', 'Agendamento de entrevistas']
-    },
-    {
-      phase: 'Avaliação',
-      description: 'Análise de lacunas de conformidade e avaliação de riscos',
-      duration: '1-2 semanas',
-      icon: Search,
-      activities: ['Análise de lacunas', 'Avaliação de riscos', 'Avaliação de controles', 'Documentação de achados']
-    },
-    {
-      phase: 'Relatório',
-      description: 'Geração de relatório de conformidade e planejamento de remediação',
-      duration: '1 semana',
-      icon: FileText,
-      activities: ['Geração de relatório', 'Priorização de achados', 'Planejamento de remediação', 'Revisão das partes interessadas']
-    }
-  ];
-
-  const complianceMetrics = [
-    { metric: '100%', label: 'Taxa de Sucesso em Auditorias', icon: Award },
-    { metric: '24/7', label: 'Monitoramento de Conformidade', icon: Eye },
-    { metric: '< 7 Dias', label: 'Tempo de Resposta a Auditorias', icon: Clock },
-    { metric: '99.99%', label: 'Efetividade de Controles', icon: Target }
-  ];
-
-  const dataRights = [
-    {
-      right: 'Direito de Acesso',
-      description: 'Solicitar acesso aos dados pessoais que processamos',
-      implementation: 'Portal de autoatendimento com exportação automatizada de dados',
-      regulation: 'GDPR Art. 15, CCPA',
-      icon: Eye
-    },
-    {
-      right: 'Direito de Retificação',
-      description: 'Corrigir dados pessoais imprecisos ou incompletos',
-      implementation: 'Formulários de correção online com processamento imediato',
-      regulation: 'GDPR Art. 16, CCPA',
-      icon: Settings
-    },
-    {
-      right: 'Direito de Exclusão',
-      description: 'Solicitar a exclusão de dados pessoais',
-      implementation: 'Fluxos de trabalho automatizados de exclusão com verificação',
-      regulation: 'GDPR Art. 17, CCPA',
-      icon: AlertCircle
-    },
-    {
-      right: 'Direito à Portabilidade',
-      description: 'Receber dados pessoais em formato estruturado',
-      implementation: 'Formatos de exportação padronizados e transferência segura',
-      regulation: 'GDPR Art. 20, CCPA',
-      icon: Download
-    }
-  ];
+  const complianceFrameworks = t('compliance.frameworks.list') || [];
+  const complianceCapabilities = t('compliance.capabilities.list') || [];
+  const regulatoryRequirements = t('compliance.requirements.list') || [];
+  const auditProcess = t('compliance.audit.process') || [];
+  const complianceMetrics = t('compliance.hero.metrics') || [];
+  const dataRights = t('compliance.dataRights.rights') || [];
 
   return (
     <>
@@ -289,26 +89,26 @@ export default function ComplianceSection() {
                 <div className="h-px bg-gradient-ai w-32"></div>
               </div>
 
-              <h1 
+              <h1
                 className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-ai-dark leading-tight mb-8 transition-all duration-1000 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Conformidade{' '}
+                {t('compliance.hero.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Regulatória
+                  {t('compliance.hero.titleHighlight')}
                 </span>
               </h1>
               
-              <p 
+              <p
                 className={`text-xl lg:text-2xl text-ai-medium leading-relaxed mb-12 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                Estrutura abrangente de conformidade garantindo aderência a regulamentações globais
-                incluindo GDPR, HIPAA, SOX e requisitos específicos do setor. Automatização e{' '}
-                <span className="text-ai-blue font-bold">monitoramento integrados</span> para{' '}
-                <span className="text-ai-green font-bold">garantia contínua</span>.
+                {t('compliance.hero.subtitle')}{' '}
+                <span className="text-ai-blue font-bold">{t('compliance.hero.subtitleHighlight1')}</span>{' '}
+                {t('compliance.hero.and')}{' '}
+                <span className="text-ai-green font-bold">{t('compliance.hero.subtitleHighlight2')}</span>.
               </p>
 
               {/* Compliance Metrics */}
@@ -317,14 +117,14 @@ export default function ComplianceSection() {
                   isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                 }`}
               >
-                {complianceMetrics.map((metric, index) => {
-                  const Icon = metric.icon;
+                {Array.isArray(complianceMetrics) && complianceMetrics.map((metric, index) => {
+                  const Icon = (Icons as any)[metric.icon] || Shield;
                   return (
                     <div key={index} className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-ai-light/50 text-center">
                       <div className="w-12 h-12 bg-ai-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-6 h-6 text-ai-blue" />
                       </div>
-                      <div className="text-2xl font-bold text-ai-green mb-2">{metric.metric}</div>
+                      <div className="text-2xl font-bold text-ai-green mb-2">{metric.value}</div>
                       <p className="text-sm text-ai-medium font-medium">{metric.label}</p>
                     </div>
                   );
@@ -339,20 +139,19 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Estruturas de Conformidade{' '}
+                {t('compliance.frameworks.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Globais
+                  {t('compliance.frameworks.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Conformidade certificada com as principais regulamentações internacionais e regionais,
-                garantindo que seus dados e operações atendam aos mais altos padrões legais.
+                {t('compliance.frameworks.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {complianceFrameworks.map((framework, index) => {
-                const Icon = framework.icon;
+              {Array.isArray(complianceFrameworks) && complianceFrameworks.map((framework, index) => {
+                const Icon = (Icons as any)[framework.icon] || Shield;
                 return (
                   <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300 group hover:scale-105">
                     <CardContent className="p-6">
@@ -389,20 +188,19 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Capacidades de{' '}
+                {t('compliance.capabilities.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Conformidade
+                  {t('compliance.capabilities.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Capacidades abrangentes de gerenciamento de conformidade integradas em nossa plataforma,
-                fornecendo monitoramento automatizado, relatórios e coleta de evidências.
+                {t('compliance.capabilities.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {complianceCapabilities.map((capability, index) => {
-                const Icon = capability.icon;
+              {Array.isArray(complianceCapabilities) && complianceCapabilities.map((capability, index) => {
+                const Icon = (Icons as any)[capability.icon] || Shield;
                 return (
                   <Card key={index} className="shadow-xl border-ai-light/50 hover:shadow-2xl transition-shadow">
                     <CardContent className="p-8">
@@ -416,8 +214,8 @@ export default function ComplianceSection() {
                       <p className="text-ai-medium leading-relaxed mb-6">{capability.description}</p>
                       
                       <div className="space-y-3">
-                        <h4 className="font-semibold text-ai-dark">Key Features:</h4>
-                        {capability.features.map((feature, featureIndex) => (
+                        <h4 className="font-semibold text-ai-dark">{t('compliance.capabilities.featuresTitle')}:</h4>
+                        {capability.features.map((feature: string, featureIndex: number) => (
                           <div key={featureIndex} className="flex items-start space-x-3">
                             <CheckCircle className="w-4 h-4 text-ai-green mt-1 flex-shrink-0" />
                             <span className="text-sm text-ai-medium">{feature}</span>
@@ -486,20 +284,19 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Direitos do{' '}
+                {t('compliance.dataRights.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Titular de Dados
+                  {t('compliance.dataRights.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Implementação abrangente dos direitos do titular de dados com processamento
-                automatizado de solicitações e fluxos de trabalho de resposta.
+                {t('compliance.dataRights.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {dataRights.map((right, index) => {
-                const Icon = right.icon;
+              {Array.isArray(dataRights) && dataRights.map((right, index) => {
+                const Icon = (Icons as any)[right.icon] || Shield;
                 return (
                   <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-shadow">
                     <CardContent className="p-6">
@@ -508,7 +305,7 @@ export default function ComplianceSection() {
                           <Icon className="w-6 h-6 text-ai-green" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-lg font-bold text-ai-dark mb-2">{right.right}</h3>
+                          <h3 className="text-lg font-bold text-ai-dark mb-2">{right.title}</h3>
                           <p className="text-sm text-ai-medium mb-3">{right.description}</p>
                           <div className="text-xs text-ai-blue bg-ai-blue/10 px-2 py-1 rounded-full inline-block">
                             {right.regulation}
@@ -517,7 +314,7 @@ export default function ComplianceSection() {
                       </div>
                       
                       <div className="bg-ai-light/20 rounded-lg p-4">
-                        <h4 className="font-semibold text-ai-dark mb-2">Implementation:</h4>
+                        <h4 className="font-semibold text-ai-dark mb-2">{t('compliance.dataRights.implementation')}:</h4>
                         <p className="text-sm text-ai-medium">{right.implementation}</p>
                       </div>
                     </CardContent>
@@ -533,20 +330,19 @@ export default function ComplianceSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Processo de{' '}
+                {t('compliance.audit.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Auditoria
+                  {t('compliance.audit.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Processo de auditoria simplificado com coleta automatizada de evidências e
-                relatórios abrangentes de conformidade.
+                {t('compliance.audit.subtitle')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {auditProcess.map((phase, index) => {
-                const Icon = phase.icon;
+              {Array.isArray(auditProcess) && auditProcess.map((phase, index) => {
+                const Icon = (Icons as any)[phase.icon] || Shield;
                 return (
                   <Card key={index} className="shadow-lg border-ai-light/50 hover:shadow-xl transition-all duration-300 group hover:scale-105">
                     <CardContent className="p-6 text-center">
@@ -558,11 +354,11 @@ export default function ComplianceSection() {
                         {phase.duration}
                       </div>
                       
-                      <h3 className="text-lg font-bold text-ai-dark mb-3">{phase.phase}</h3>
+                      <h3 className="text-lg font-bold text-ai-dark mb-3">{phase.title}</h3>
                       <p className="text-sm text-ai-medium mb-4">{phase.description}</p>
                       
                       <div className="space-y-2">
-                        {phase.activities.map((activity, actIndex) => (
+                        {phase.activities.map((activity: string, actIndex: number) => (
                           <div key={actIndex} className="text-xs text-ai-medium bg-ai-light/20 px-2 py-1 rounded">
                             {activity}
                           </div>
@@ -585,47 +381,27 @@ export default function ComplianceSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Dúvidas sobre{' '}
+              {t('compliance.contact.title')}{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Conformidade?
+                {t('compliance.contact.titleHighlight')}
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Nossa equipe de conformidade está pronta para ajudar com solicitações de auditoria, fornecer
-              documentação de conformidade ou discutir requisitos regulatórios específicos para seu setor.
+              {t('compliance.contact.subtitle')}
             </p>
 
             {/* Compliance Team Contact */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              {[
-                {
-                  title: 'Escritório de Conformidade',
-                  contact: 'dpo@itcygnus.com',
-                  description: 'Consultas gerais sobre conformidade',
-                  icon: Scale
-                },
-                {
-                  title: 'Suporte a Auditorias',
-                  contact: 'security.info@itcygnus.com',
-                  description: 'Solicitações e documentação de auditoria',
-                  icon: FileSearch
-                },
-                {
-                  title: 'Equipe Jurídica',
-                  contact: 'legal@itcygnus.com',
-                  description: 'Dúvidas legais e regulatórias',
-                  icon: Gavel
-                }
-              ].map((contact, index) => {
-                const Icon = contact.icon;
+              {Array.isArray(t('compliance.contact.contacts')) && t('compliance.contact.contacts').map((contact: { icon: string; title: string; value: string; description: string }, index: number) => {
+                const Icon = (Icons as any)[contact.icon] || Shield;
                 return (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                       <Icon className="w-6 h-6 text-ai-green" />
                     </div>
                     <div className="text-lg font-bold text-white mb-1">{contact.title}</div>
-                    <div className="text-ai-green mb-2">{contact.contact}</div>
+                    <div className="text-ai-green mb-2">{contact.value}</div>
                     <div className="text-white/60 text-sm">{contact.description}</div>
                   </div>
                 );
@@ -653,9 +429,9 @@ export default function ComplianceSection() {
             </div>
 
             <p className="text-white/60 text-sm">
-              Precisa de assistência imediata? Ligue para nossa linha direta de conformidade{' '}
-              <a href="tel:+1-305-555-0123" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +55 (11) 5039-4877
+              {t('compliance.contact.footer')}{' '}
+              <a href={`tel:${t('compliance.contact.footerPhone')}`} className="text-ai-green hover:text-ai-green/80 transition-colors">
+                {t('compliance.contact.footerPhone')}
               </a>
             </p>
           </div>

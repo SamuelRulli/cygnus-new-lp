@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { 
   FolderOpen,
   CheckCircle,
-  ArrowRight,
   Play,
   Search,
   Workflow,
@@ -14,108 +13,103 @@ import {
   Shield,
   Clock,
   Brain,
-  Cpu,
-  Database,
   Hospital,
   Building2,
   Landmark,
   TrendingUp,
   Users,
-  Award,
-  Phone,
-  Mail,
-  Download,
-  Star,
   AlertTriangle,
   Lightbulb,
   Archive,
   GitBranch,
-  Zap,
-  Target,
-  BookOpen,
-  Settings,
-  Network
 } from 'lucide-react';
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function AIDOCSection() {
+  const { translations } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
+  const t = translations.aiDoc;
+
+  if (!t) {
+    return null;
+  }
+
   const keyBenefits = [
-    { icon: Brain, text: 'Classificação automática por IA' },
-    { icon: Search, text: 'Busca semântica instantânea' },
-    { icon: Workflow, text: 'Fluxos de aprovação automatizados' },
-    { icon: Archive, text: 'Trilha de auditoria e versionamento completos' }
+    { icon: Brain, text: t.hero.keyBenefits[0] },
+    { icon: Search, text: t.hero.keyBenefits[1] },
+    { icon: Workflow, text: t.hero.keyBenefits[2] },
+    { icon: Archive, text: t.hero.keyBenefits[3] }
   ];
 
   const features = [
     {
-      title: 'Classificação Inteligente de Documentos',
-      description: 'Nossa IA categoriza automaticamente documentos por tipo, conteúdo, importância e contexto empresarial. O sistema entende relacionamentos entre documentos e cria taxonomias inteligentes que evoluem com suas necessidades de negócio.',
-      details: 'Algoritmos de machine learning analisam estrutura de documentos, padrões de conteúdo e metadados para fornecer classificação precisa. O sistema aprende com correções e feedback dos usuários, melhorando continuamente a precisão da classificação.',
+      title: t.features.items[0].title,
+      description: t.features.items[0].description,
+      details: t.features.items[0].details,
       icon: Brain
     },
     {
-      title: 'Busca Semântica Avançada',
-      description: 'Encontre qualquer documento usando consultas em linguagem natural, mesmo quando você não lembra das palavras-chave exatas. Nossa busca semântica entende contexto, sinônimos e terminologia empresarial específica do seu setor.',
-      details: 'O mecanismo de busca usa processamento de linguagem natural para entender a intenção do usuário, pesquisando em conteúdo, metadados e relacionamentos entre documentos. Resultados são classificados por relevância, recência e padrões de comportamento do usuário.',
+      title: t.features.items[1].title,
+      description: t.features.items[1].description,
+      details: t.features.items[1].details,
       icon: Search
     },
     {
-      title: 'Motor de Fluxo de Trabalho Automatizado',
-      description: 'Simplifique processos de aprovação de documentos com roteamento inteligente baseado em conteúdo, limites de valor e regras de negócio. Notificações automáticas e escalações garantem que nada passe despercebido.',
-      details: 'Templates de fluxo de trabalho configuráveis se adaptam aos seus processos de negócio, com lógica condicional, aprovações paralelas e integração com sistemas externos. Trilhas de auditoria completas rastreiam cada ação e ponto de decisão.',
+      title: t.features.items[2].title,
+      description: t.features.items[2].description,
+      details: t.features.items[2].details,
       icon: Workflow
     },
     {
-      title: 'Controle de Versão e Colaboração',
-      description: 'Mantenha gestão completa do ciclo de vida de documentos com versionamento automático, rastreamento de mudanças e capacidades de edição colaborativa. Garanta que equipes sempre trabalhem com as versões aprovadas mais recentes.',
-      details: 'Controle de versão avançado previne conflitos de documentos mantendo históricos detalhados de mudanças. Ferramentas de colaboração em tempo real permitem compartilhamento e edição seguros com controles granulares de permissão.',
+      title: t.features.items[3].title,
+      description: t.features.items[3].description,
+      details: t.features.items[3].details,
       icon: GitBranch
     }
   ];
 
   const useCases = [
     {
-      title: 'Healthcare Documentation Management',
-      description: 'Hospitals and medical practices organize patient records, medical protocols, and compliance documents with automatic classification and instant retrieval. HIPAA-compliant workflows ensure secure handling of sensitive information.',
-      result: 'A medical center reduced document search time by 85% and improved compliance audit preparation from weeks to hours, while ensuring 100% HIPAA compliance across 50,000+ patient documents.',
+      title: t.useCases.items[0].title,
+      description: t.useCases.items[0].description,
+      result: t.useCases.items[0].result,
       icon: Hospital,
-      industry: 'Healthcare'
+      industry: t.useCases.items[0].industry
     },
     {
-      title: 'Financial Services Compliance',
-      description: 'Banks and financial institutions manage regulatory documents, client files, and internal policies with automated compliance workflows. Risk-based classification ensures critical documents receive appropriate oversight.',
-      result: 'A regional bank automated 90% of compliance document processing, reduced regulatory preparation time by 70%, and achieved 100% audit readiness across all regulatory requirements.',
+      title: t.useCases.items[1].title,
+      description: t.useCases.items[1].description,
+      result: t.useCases.items[1].result,
       icon: Building2,
-      industry: 'Financial Services'
+      industry: t.useCases.items[1].industry
     },
     {
-      title: 'Legal Document Management',
-      description: 'Law firms and legal departments organize contracts, case files, and legal research with intelligent categorization and matter-based workflows. Advanced search capabilities enable rapid case preparation and research.',
-      result: 'A law firm increased billable time by 30% through automated document organization, reduced case preparation time by 60%, and improved client service with instant document access.',
+      title: t.useCases.items[2].title,
+      description: t.useCases.items[2].description,
+      result: t.useCases.items[2].result,
       icon: Landmark,
-      industry: 'Legal Services'
+      industry: t.useCases.items[2].industry
     }
   ];
 
   const problemStats = [
-    { icon: Clock, stat: '30%', label: 'Tempo gasto procurando documentos' },
-    { icon: TrendingUp, stat: '40%', label: 'Aumento no volume de documentos anualmente' },
-    { icon: AlertTriangle, stat: '60%', label: 'Trabalho feito com versões desatualizadas' }
+    { icon: Clock, stat: t.problem.stats[0].stat, label: t.problem.stats[0].label },
+    { icon: TrendingUp, stat: t.problem.stats[1].stat, label: t.problem.stats[1].label },
+    { icon: AlertTriangle, stat: t.problem.stats[2].stat, label: t.problem.stats[2].label }
   ];
 
   const solutionBenefits = [
-    { icon: CheckCircle, benefit: 'Classificação automática e marcação de documentos' },
-    { icon: CheckCircle, benefit: 'Relacionamentos inteligentes baseados em conteúdo' },
-    { icon: CheckCircle, benefit: 'Aprendizado contínuo e melhoria' },
-    { icon: CheckCircle, benefit: 'Integração perfeita com sistemas existentes' }
+    { icon: CheckCircle, benefit: t.solution.benefits[0] },
+    { icon: CheckCircle, benefit: t.solution.benefits[1] },
+    { icon: CheckCircle, benefit: t.solution.benefits[2] },
+    { icon: CheckCircle, benefit: t.solution.benefits[3] }
   ];
 
   return (
@@ -146,9 +140,9 @@ export default function AIDOCSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  AI.DOC: Gestão Inteligente de{' '}
+                  {t.hero.title}{' '}
                   <span className="bg-gradient-ai bg-clip-text text-transparent">
-                    Documentos Empresariais
+                    {t.hero.titleHighlight}
                   </span>
                 </h1>
                 
@@ -157,10 +151,9 @@ export default function AIDOCSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Organize, classifique e encontre qualquer documento em segundos. Nossa IA transforma 
-                  o caos documental em conhecimento estruturado, com{' '}
-                  <span className="text-ai-green font-bold">busca semântica avançada</span> e{' '}
-                  <span className="text-ai-blue font-bold">fluxo de trabalho automatizado</span>.
+                  {t.hero.subtitle}{' '}
+                  <span className="text-ai-green font-bold">{t.hero.subtitleEmphasis1}</span> e{' '}
+                  <span className="text-ai-blue font-bold">{t.hero.subtitleEmphasis2}</span>.
                 </p>
 
                 {/* Key Benefits */}
@@ -186,21 +179,12 @@ export default function AIDOCSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  {/* <Button 
-                    variant="ai_primary" 
-                    size="xl" 
-                    className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
-                    onClick={() => window.location.href = '/demo'}
-                  >
-                    Iniciar Teste Gratuito
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button> */}
                   <Button 
                     variant="ai_outline" size="xl"
                     className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
                     onClick={() => window.location.href = '/demo'}
                   >
-                    Agendar Demo
+                    {t.hero.cta}
                     <Play className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -243,11 +227,11 @@ export default function AIDOCSection() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-ai-green mb-1">85%</div>
-                        <div className="text-xs text-ai-medium">Faster Search</div>
+                        <div className="text-xs text-ai-medium">{t.visual.fasterSearch}</div>
                       </div>
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-ai-blue mb-1">100%</div>
-                        <div className="text-xs text-ai-medium">Organized</div>
+                        <div className="text-xs text-ai-medium">{t.visual.organized}</div>
                       </div>
                     </div>
 
@@ -269,21 +253,16 @@ export default function AIDOCSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Caos Documental Que Paralisa Empresas</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">{t.problem.title}</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Sua organização tem milhares de documentos espalhados por diferentes sistemas, 
-                    pastas desorganizadas e emails perdidos. Funcionários gastam 30% do tempo procurando 
-                    informações, versões desatualizadas circulam causando erros, e documentos críticos 
-                    simplesmente desaparecem quando você mais precisa deles.
+                    {t.problem.p1}
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Sistemas tradicionais de gestão documental são rígidos, exigem classificação manual 
-                    e falham na busca quando você mais precisa. Conformidade e auditoria se tornam pesadelos 
-                    quando documentos não são encontrados ou estão desorganizados.
+                    {t.problem.p2}
                   </p>
 
                   {/* Problem Stats */}
@@ -310,20 +289,16 @@ export default function AIDOCSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Revolução na Gestão Documental</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">{t.solution.title}</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    O AI.DOC usa inteligência artificial para entender o conteúdo de cada documento, classificando 
-                    automaticamente por tipo, assunto, importância e relacionamentos. Nossa busca semântica encontra 
-                    documentos mesmo quando você não lembra das palavras-chave exatas.
+                    {t.solution.p1}
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    O sistema aprende com o comportamento da sua equipe, sugerindo classificações, identificando 
-                    duplicatas e criando conexões inteligentes entre documentos relacionados. Fluxos de trabalho 
-                    automatizados garantem que documentos sigam processos corretos de aprovação e revisão.
+                    {t.solution.p2}
                   </p>
 
                   {/* Solution Benefits */}
@@ -349,14 +324,13 @@ export default function AIDOCSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Recursos Avançados de{' '}
+                {t.features.title}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Gestão Documental
+                  {t.features.titleHighlight}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Descubra os recursos inteligentes que transformam o caos documental em inteligência 
-                de negócios organizada, pesquisável e acionável.
+                {t.features.subtitle}
               </p>
             </div>
 
@@ -420,24 +394,23 @@ export default function AIDOCSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Pronto para Acabar com o{' '}
+              {t.finalCta.title}{' '}
               <span className="bg-gradient-to-r from-ai-green to-ai-blue bg-clip-text text-transparent">
-                Caos Documental para Sempre?
+                {t.finalCta.titleHighlight}
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Junte-se a milhares de organizações que transformaram sua gestão documental 
-              com o AI.DOC. Comece a organizar, encontrar e colaborar de forma mais eficaz hoje mesmo.
+              {t.finalCta.subtitle}
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
               {[
-                { icon: Search, value: '85%', label: 'Busca mais rápida' },
-                { icon: Users, value: '10+', label: 'Empresas organizadas' },
-                { icon: Clock, value: '7 Dias', label: 'Teste gratuito' },
-                { icon: Shield, value: '100%', label: 'Conformidade garantida' }
+                { icon: Search, value: t.finalCta.trustIndicators[0].value, label: t.finalCta.trustIndicators[0].label },
+                { icon: Users, value: t.finalCta.trustIndicators[1].value, label: t.finalCta.trustIndicators[1].label },
+                { icon: Clock, value: t.finalCta.trustIndicators[2].value, label: t.finalCta.trustIndicators[2].label },
+                { icon: Shield, value: t.finalCta.trustIndicators[3].value, label: t.finalCta.trustIndicators[3].label }
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -454,43 +427,18 @@ export default function AIDOCSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              {/* <Button 
-                variant="ai_primary" 
-                size="xl" 
-                className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
-              >
-                Iniciar Teste Gratuito
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button> */}
               <Button 
                 variant="ai_outline" 
                 size="xl" 
                 className="border-white text-white hover:bg-white hover:text-ai-dark group"
               >
-                Agendar Demo
+                {t.hero.cta}
                 <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
               </Button>
-              {/* <Button 
-                variant="ghost" 
-                size="xl" 
-                className="text-white hover:bg-white/10 group"
-              >
-                Baixar Guia
-                <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button> */}
             </div>
 
             {/* Contact Info */}
-            <p className="text-white/60 text-sm">
-              Dúvidas? Entre em contato com nossos especialistas em gestão documental pelo{' '}
-              <a href="tel:+55-11-3456-7890" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +55 (11) 5039-4877
-              </a>{' '}
-              ou{' '}
-              <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                contact@itcygnus.com
-              </a>
-            </p>
+            <p className="text-white/60 text-sm" dangerouslySetInnerHTML={{ __html: t.finalCta.contact.replace('{phone}', '<a href="tel:+55-11-5039-4877" class="text-ai-green hover:text-ai-green/80 transition-colors">+55 (11) 5039-4877</a>').replace('{email}', '<a href="mailto:contact@itcygnus.com" class="text-ai-green hover:text-ai-green/80 transition-colors">contact@itcygnus.com</a>') }} />
           </div>
         </section>
       </main>

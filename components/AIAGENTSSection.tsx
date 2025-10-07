@@ -46,8 +46,10 @@ import {
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function AIAGENTSSection() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -55,35 +57,35 @@ export default function AIAGENTSSection() {
   }, []);
 
   const keyBenefits = [
-    { icon: Clock, text: 'Atendimento automatizado 24/7' },
-    { icon: Cpu, text: 'Processamento autônomo de tarefas' },
-    { icon: TrendingUp, text: 'Escalabilidade infinita' },
-    { icon: Brain, text: 'Aprendizado contínuo' }
+    { icon: Clock, text: t('aiAgents.keyBenefits.0.text') },
+    { icon: Cpu, text: t('aiAgents.keyBenefits.1.text') },
+    { icon: TrendingUp, text: t('aiAgents.keyBenefits.2.text') },
+    { icon: Brain, text: t('aiAgents.keyBenefits.3.text') }
   ];
 
   const features = [
       {
-        title: 'Excelência em IA Conversacional',
-        description: 'Nossos agentes de IA compreendem o contexto, mantêm o fluxo da conversa e oferecem interações com qualidade humana por voz, chat e canais digitais. Eles lidam com solicitações complexas com empatia e precisão, escalando apenas quando necessário.',
-        details: 'O processamento avançado de linguagem natural permite que os agentes entendam intenção, emoção e contexto. Conversas de múltiplas etapas mantêm o estado e a coerência, enquanto a análise de sentimento garante respostas apropriadas.',
+        title: t('aiAgents.features.0.title'),
+        description: t('aiAgents.features.0.description'),
+        details: t('aiAgents.features.0.details'),
         icon: MessageSquare
       },
       {
-        title: 'Execução Autônoma de Tarefas',
-        description: 'Os agentes de IA não apenas respondem perguntas — eles executam fluxos de trabalho complexos, tomam decisões com base em regras de negócio e realizam processos em várias etapas sem intervenção humana. De processamento de pedidos à gestão de contas.',
-        details: 'O motor inteligente de workflows executa processos de negócio automaticamente, integrando-se com CRM, ERP e outros sistemas. Árvores de decisão e lógica empresarial garantem consistência e precisão na execução das tarefas.',
+        title: t('aiAgents.features.1.title'),
+        description: t('aiAgents.features.1.description'),
+        details: t('aiAgents.features.1.details'),
         icon: Workflow
       },
       {
-        title: 'Integração Omnicanal',
-        description: 'Implemente agentes em todos os pontos de contato com o cliente — chat no site, apps móveis, redes sociais, sistemas telefônicos e e-mail. A inteligência unificada garante uma experiência consistente, independentemente do canal.',
-        details: 'Uma única inteligência de agente opera em todos os canais, mantendo o histórico das conversas e o contexto do cliente. Transições suaves entre canais e com agentes humanos, quando necessário.',
+        title: t('aiAgents.features.2.title'),
+        description: t('aiAgents.features.2.description'),
+        details: t('aiAgents.features.2.details'),
         icon: Globe
       },
       {
-        title: 'Mecanismo de Aprendizado Contínuo',
-        description: 'Os agentes evoluem automaticamente a cada interação, aprendendo com feedbacks dos clientes, resoluções bem-sucedidas e correções feitas por agentes humanos. O desempenho melhora com o tempo, sem necessidade de reeducação manual.',
-        details: 'Algoritmos de machine learning analisam padrões de interação, taxas de sucesso e satisfação do cliente para aprimorar continuamente as respostas. Atualizações automáticas mantêm os agentes alinhados às mudanças do negócio.',
+        title: t('aiAgents.features.3.title'),
+        description: t('aiAgents.features.3.description'),
+        details: t('aiAgents.features.3.details'),
         icon: Brain
       }
     ];
@@ -91,84 +93,84 @@ export default function AIAGENTSSection() {
 
   const useCases = [
     {
-      title: 'Revolução no Atendimento E-commerce',
-      description: 'Um grande varejista online implantou agentes de IA para lidar com consultas de clientes, rastreamento de pedidos, devoluções e recomendações de produtos. Os agentes processam pedidos, resolvem problemas de envio e fornecem assistência personalizada de compras 24/7.',
-      result: 'Alcançou 87% de satisfação do cliente enquanto reduziu custos de suporte em 65%. Agentes lidam com 90% das consultas automaticamente, com tempo médio de resolução de 2 minutos. Aumentou vendas através de recomendações alimentadas por IA.',
+      title: t('aiAgents.useCases.0.title'),
+      description: t('aiAgents.useCases.0.description'),
+      result: t('aiAgents.useCases.0.result'),
       icon: ShoppingCart,
-      industry: 'E-commerce',
+      industry: t('aiAgents.useCases.0.industry'),
       stats: { satisfaction: '87%', cost_reduction: '65%', automation: '90%' }
     },
     {
-      title: 'Engajamento de Pacientes na Saúde',
-      description: 'Uma rede de saúde usa agentes de IA para agendamento de consultas, renovação de receitas, entrega de resultados de exames e consultas básicas de saúde. Os agentes se integram com sistemas EMR e fornecem interações de pacientes compatíveis com HIPAA.',
-      result: 'Reduziu o tempo de agendamento de consultas em 80% enquanto melhorou as pontuações de satisfação do paciente em 35%. Agentes lidam com 75% das consultas de rotina, liberando equipe médica para cuidados críticos de pacientes.',
+      title: t('aiAgents.useCases.1.title'),
+      description: t('aiAgents.useCases.1.description'),
+      result: t('aiAgents.useCases.1.result'),
       icon: Heart,
-      industry: 'Saúde',
+      industry: t('aiAgents.useCases.1.industry'),
       stats: { time_reduction: '80%', satisfaction: '35%', automation: '75%' }
     },
     {
-      title: 'Automação de Serviços Financeiros',
-      description: 'Um banco regional implantou agentes de IA para consultas de conta, suporte a transações, solicitações de empréstimo e alertas de fraude. Os agentes fornecem assistência bancária segura e personalizada mantendo conformidade regulatória.',
-      result: 'Aumentou o engajamento do cliente em 45% enquanto reduziu custos operacionais em 50%. Agentes processam 85% das consultas bancárias de rotina com 99,2% de precisão na detecção de fraudes.',
+      title: t('aiAgents.useCases.2.title'),
+      description: t('aiAgents.useCases.2.description'),
+      result: t('aiAgents.useCases.2.result'),
       icon: Building2,
-      industry: 'Serviços Financeiros',
+      industry: t('aiAgents.useCases.2.industry'),
       stats: { engagement: '45%', cost_savings: '50%', accuracy: '99.2%' }
     }
   ];
 
   const problemStats = [
-    { icon: Clock, stat: '24/7', label: 'Expectativa dos clientes por disponibilidade' },
-    { icon: DollarSign, stat: '70%', label: 'Dos custos de atendimento são mão de obra' },
-    { icon: AlertTriangle, stat: '60%', label: 'Dos clientes esperam respostas imediatas' }
+    { icon: Clock, stat: '24/7', label: t('aiAgents.problemStats.0.label') },
+    { icon: DollarSign, stat: '70%', label: t('aiAgents.problemStats.1.label') },
+    { icon: AlertTriangle, stat: '60%', label: t('aiAgents.problemStats.2.label') }
   ];
 
   const solutionBenefits = [
-    { icon: CheckCircle, benefit: 'Capacidades conversacionais semelhantes às humanas' },
-    { icon: CheckCircle, benefit: 'Tomada de decisão autônoma' },
-    { icon: CheckCircle, benefit: 'Implantação multicanal' },
-    { icon: CheckCircle, benefit: 'Tecnologia de IA que se auto-aprimora' }
+    { icon: CheckCircle, benefit: t('aiAgents.solutionBenefits.0.benefit') },
+    { icon: CheckCircle, benefit: t('aiAgents.solutionBenefits.1.benefit') },
+    { icon: CheckCircle, benefit: t('aiAgents.solutionBenefits.2.benefit') },
+    { icon: CheckCircle, benefit: t('aiAgents.solutionBenefits.3.benefit') }
   ];
 
   const agentCapabilities = [
     {
-      title: 'Conversação Natural',
-      description: 'Diálogo semelhante ao humano com compreensão de contexto',
+      title: t('aiAgents.agentCapabilities.0.title'),
+      description: t('aiAgents.agentCapabilities.0.description'),
       icon: MessageSquare
     },
     {
-      title: 'Automação de Tarefas',
-      description: 'Execute fluxos de trabalho complexos de múltiplas etapas automaticamente',
+      title: t('aiAgents.agentCapabilities.1.title'),
+      description: t('aiAgents.agentCapabilities.1.description'),
       icon: Settings
     },
     {
-      title: 'Tomada de Decisão',
-      description: 'Tome decisões inteligentes baseadas em regras de negócio',
+      title: t('aiAgents.agentCapabilities.2.title'),
+      description: t('aiAgents.agentCapabilities.2.description'),
       icon: Brain
     },
     {
-      title: 'Integração de Sistemas',
-      description: 'Conecte com CRM, ERP e sistemas empresariais',
+      title: t('aiAgents.agentCapabilities.3.title'),
+      description: t('aiAgents.agentCapabilities.3.description'),
       icon: Database
     },
     {
-      title: 'Voz e Chat',
-      description: 'Suporte a interações por voz e texto',
+      title: t('aiAgents.agentCapabilities.4.title'),
+      description: t('aiAgents.agentCapabilities.4.description'),
       icon: Mic
     },
     {
-      title: 'Analytics e Insights',
-      description: 'Performance em tempo real e insights de clientes',
+      title: t('aiAgents.agentCapabilities.5.title'),
+      description: t('aiAgents.agentCapabilities.5.description'),
       icon: BarChart3
     }
   ];
 
   const deploymentChannels = [
-    { channel: 'Chat do Site', icon: Monitor, description: 'Widgets de chat incorporados' },
-    { channel: 'Apps Mobile', icon: Smartphone, description: 'Assistência no aplicativo' },
-    { channel: 'Sistemas de Voz', icon: Mic, description: 'Telefone e assistentes de voz' },
-    { channel: 'Redes Sociais', icon: Globe, description: 'Facebook, Twitter, WhatsApp' },
-    { channel: 'Suporte por Email', icon: Mail, description: 'Respostas automáticas por email' },
-    { channel: 'Videochamadas', icon: Video, description: 'Assistentes virtuais por vídeo' }
+    { channel: t('aiAgents.deploymentChannels.0.channel'), icon: Monitor, description: t('aiAgents.deploymentChannels.0.description') },
+    { channel: t('aiAgents.deploymentChannels.1.channel'), icon: Smartphone, description: t('aiAgents.deploymentChannels.1.description') },
+    { channel: t('aiAgents.deploymentChannels.2.channel'), icon: Mic, description: t('aiAgents.deploymentChannels.2.description') },
+    { channel: t('aiAgents.deploymentChannels.3.channel'), icon: Globe, description: t('aiAgents.deploymentChannels.3.description') },
+    { channel: t('aiAgents.deploymentChannels.4.channel'), icon: Mail, description: t('aiAgents.deploymentChannels.4.description') },
+    { channel: t('aiAgents.deploymentChannels.5.channel'), icon: Video, description: t('aiAgents.deploymentChannels.5.description') }
   ];
 
   return (
@@ -199,9 +201,9 @@ export default function AIAGENTSSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  AI.AGENTS: Assistentes Virtuais que{' '}
+                  {t('aiAgents.hero.title')}{' '}
                   <span className="bg-gradient-ai bg-clip-text text-transparent">
-                    Realmente Funcionam
+                    {t('aiAgents.hero.highlight')}
                   </span>
                 </h1>
                 
@@ -210,9 +212,8 @@ export default function AIAGENTSSection() {
                     isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  Implante agentes de IA autônomos que executam tarefas complexas, tomam 
-                  decisões inteligentes e interagem naturalmente com clientes e sistemas, operando{' '}
-                  <span className="text-ai-green font-bold">24/7 sem supervisão</span>.
+                  {t('aiAgents.hero.subtitle')}{' '}
+                  <span className="text-ai-green font-bold">{t('aiAgents.hero.emphasis')}</span>.
                 </p>
 
                 {/* Key Benefits */}
@@ -244,7 +245,7 @@ export default function AIAGENTSSection() {
                   </Button> */}
                   <a href="tel:+15551234567">
                     <Button variant="ai_outline" size="xl" className="group">
-                      Ver Agentes em Ação
+                      {t('aiAgents.cta.viewAction')}
                       <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                     </Button>
                   </a>
@@ -266,22 +267,22 @@ export default function AIAGENTSSection() {
                       <div className="space-y-3">
                         <div className="flex justify-end">
                           <div className="bg-ai-blue text-white px-4 py-2 rounded-lg text-sm max-w-xs">
-                            Preciso de ajuda com meu pedido
+                            {t('aiAgents.visual.helpMessage')}
                           </div>
                         </div>
                         <div className="flex justify-start">
                           <div className="bg-ai-green/10 text-ai-dark px-4 py-2 rounded-lg text-sm max-w-xs">
-                            Ficarei feliz em ajudar! Deixe-me verificar o status do seu pedido...
+                            {t('aiAgents.visual.agentResponse1')}
                           </div>
                         </div>
                         <div className="flex justify-start">
                           <div className="bg-ai-green/10 text-ai-dark px-4 py-2 rounded-lg text-sm max-w-xs">
-                            ✅ Pedido encontrado. Enviando hoje!
+                            {t('aiAgents.visual.agentResponse2')}
                           </div>
                         </div>
                         <div className="flex justify-start">
                           <div className="bg-ai-green/10 text-ai-dark px-4 py-2 rounded-lg text-sm max-w-xs">
-                            Alguma outra coisa que eu possa ajudar?
+                            {t('aiAgents.visual.agentResponse3')}
                           </div>
                         </div>
                       </div>
@@ -291,20 +292,20 @@ export default function AIAGENTSSection() {
                     <div className="flex items-center justify-between p-3 bg-ai-green/10 rounded-lg mb-4">
                       <div className="flex items-center space-x-2">
                         <div className="w-3 h-3 bg-ai-green rounded-full animate-pulse"></div>
-                        <span className="text-sm font-medium text-ai-dark">Agent Ativo</span>
+                        <span className="text-sm font-medium text-ai-dark">{t('aiAgents.visual.agentStatus')}</span>
                       </div>
-                      <span className="text-xs text-ai-medium">24/7 disponível</span>
+                      <span className="text-xs text-ai-medium">{t('aiAgents.visual.availability')}</span>
                     </div>
 
                     {/* Performance Metrics */}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-ai-blue mb-1">87%</div>
-                        <div className="text-xs text-ai-medium">Satisfaction</div>
+                        <div className="text-xs text-ai-medium">{t('aiAgents.visual.satisfaction')}</div>
                       </div>
                       <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                         <div className="text-2xl font-bold text-ai-green mb-1">2min</div>
-                        <div className="text-xs text-ai-medium">Avg Response</div>
+                        <div className="text-xs text-ai-medium">{t('aiAgents.visual.avgResponse')}</div>
                       </div>
                     </div>
 
@@ -328,20 +329,16 @@ export default function AIAGENTSSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <AlertTriangle className="w-8 h-8 text-red-500 mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">O Desafio do Atendimento ao Cliente</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">{t('aiAgents.problemSolution.problemTitle')}</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Clientes esperam suporte instantâneo 24/7 em todos os canais, mas chatbots tradicionais 
-                    frustram usuários com respostas rígidas e capacidades limitadas. Agentes humanos são 
-                    caros, não podem escalar infinitamente e precisam dormir, férias e treinamento.
+                    {t('aiAgents.problemSolution.problemP1')}
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Automação básica falha em tarefas complexas, conversas nuançadas e compreensão contextual. 
-                    Você precisa de agentes inteligentes que possam pensar, aprender e agir 
-                    autonomamente enquanto fornecem experiências genuinamente úteis ao cliente.
+                    {t('aiAgents.problemSolution.problemP2')}
                   </p>
 
                   {/* Problem Stats */}
@@ -368,20 +365,16 @@ export default function AIAGENTSSection() {
               <div>
                 <div className="flex items-center mb-6">
                   <Lightbulb className="w-8 h-8 text-ai-green mr-4" />
-                  <h2 className="text-3xl font-bold text-ai-dark">Nossa Revolução em Assistentes Virtuais</h2>
+                  <h2 className="text-3xl font-bold text-ai-dark">{t('aiAgents.problemSolution.solutionTitle')}</h2>
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    AI.AGENTS implanta assistentes virtuais verdadeiramente inteligentes que compreendem contexto, 
-                    executam fluxos de trabalho complexos e fornecem interações semelhantes às humanas. Esses agentes 
-                    trabalham 24/7, escalam infinitamente e melhoram continuamente através de aprendizado de máquina.
+                    {t('aiAgents.problemSolution.solutionP1')}
                   </p>
                   
                   <p className="text-lg text-ai-medium leading-relaxed">
-                    Diferente de chatbots simples, nossos agentes tomam decisões, completam transações, 
-                    integram com seus sistemas e lidam com necessidades sofisticadas dos clientes. Eles 
-                    aprendem com cada interação, tornando-se mais eficazes ao longo do tempo.
+                    {t('aiAgents.problemSolution.solutionP2')}
                   </p>
 
                   {/* Solution Benefits */}
@@ -407,14 +400,14 @@ export default function AIAGENTSSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Capacidades Avançadas dos{' '}
+                {t('aiAgents.capabilities.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Agentes
+                  {t('aiAgents.capabilities.highlight')}
                 </span>
+                {t('aiAgents.capabilities.subtitle')}
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Capacidades abrangentes de IA que permitem aos agentes lidar com interações complexas 
-                de clientes e processos de negócios de forma autônoma.
+                {t('aiAgents.capabilities.description')}
               </p>
             </div>
 
@@ -443,10 +436,10 @@ export default function AIAGENTSSection() {
             <div className="bg-gradient-to-br from-ai-blue/5 to-ai-green/5 rounded-2xl p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-ai-dark mb-4">
-                  Implantação Omnichannel
+                  {t('aiAgents.deployment.title')}
                 </h3>
                 <p className="text-ai-medium">
-                  Implante agentes inteligentes em todos os pontos de contato com o cliente
+                  {t('aiAgents.deployment.description')}
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -470,14 +463,14 @@ export default function AIAGENTSSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Recursos dos Agentes{' '}
+                {t('aiAgents.featuresSection.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Inteligentes
+                  {t('aiAgents.featuresSection.highlight')}
                 </span>
+                {t('aiAgents.featuresSection.subtitle')}
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Descubra as capacidades avançadas de IA que tornam nossos assistentes virtuais 
-                os agentes autônomos mais eficazes disponíveis.
+                {t('aiAgents.featuresSection.description')}
               </p>
             </div>
 
@@ -535,14 +528,13 @@ export default function AIAGENTSSection() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-ai-dark mb-6">
-                Histórias de Sucesso dos{' '}
+                {t('aiAgents.useCasesSection.title')}{' '}
                 <span className="bg-gradient-ai bg-clip-text text-transparent">
-                  Agentes
+                  {t('aiAgents.useCasesSection.highlight')}
                 </span>
               </h2>
               <p className="text-lg text-ai-medium max-w-3xl mx-auto">
-                Veja como organizações estão revolucionando a experiência do cliente e operações 
-                com assistentes virtuais autônomos AI.AGENTS.
+                {t('aiAgents.useCasesSection.description')}
               </p>
             </div>
 
@@ -586,7 +578,7 @@ export default function AIAGENTSSection() {
                       <div className="bg-ai-green/10 rounded-xl p-4 border-l-4 border-ai-green">
                         <h4 className="font-bold text-ai-green text-sm mb-2 flex items-center">
                           <Award className="w-4 h-4 mr-2" />
-                          Resultados Alcançados:
+                          {t('aiAgents.results')}
                         </h4>
                         <p className="text-sm text-ai-dark leading-relaxed">
                           {useCase.result}
@@ -611,26 +603,20 @@ export default function AIAGENTSSection() {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Pronto para Implantar{' '}
+              {t('aiAgents.finalCta.title')}{' '}
               <span className="bg-gradient-to-r from-ai-blue to-ai-green bg-clip-text text-transparent">
-                Agentes Inteligentes?
+                {t('aiAgents.finalCta.highlight')}
               </span>
             </h2>
             
             <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Junte-se a empresas visionárias que já revolucionaram sua experiência do cliente 
-              com AI.AGENTS. Comece a construir sua força de trabalho autônoma hoje.
+              {t('aiAgents.finalCta.description')}
             </p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-              {[
-                { icon: Bot, value: '24/7', label: 'Sempre Disponível' },
-                { icon: TrendingUp, value: '87%', label: 'Satisfação do Cliente' },
-                { icon: Zap, value: '90%', label: 'Automação de Tarefas' },
-                { icon: Users, value: '100+', label: 'Agentes Implantados' }
-              ].map((stat, index) => {
-                const Icon = stat.icon;
+              {Array.isArray(t('aiAgents.finalCta.stats')) && t('aiAgents.finalCta.stats').map((stat: { value: string; label: string }, index: number) => {
+                const Icon = [Bot, TrendingUp, Zap, Users][index];
                 return (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-3">
@@ -651,35 +637,21 @@ export default function AIAGENTSSection() {
                   size="xl" 
                   className="bg-white text-ai-dark hover:bg-white/90 shadow-2xl group"
                 >
-                  Ver Agentes em Ação
+                  {t('aiAgents.cta.viewAction')}
                   <Bot className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </Link>
-              {/* <a href="tel:+15551234567">
-                <Button variant="ai_outline" size="xl" className="group">
-                  Ver Agentes em Ação
-                  <Play className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-                </Button>
-              </a> */}
-              {/* <Button 
-                variant="ghost" 
-                size="xl" 
-                className="text-white hover:bg-white/10 group"
-              >
-                Download Agent Guide
-                <Download className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
-              </Button> */}
             </div>
 
             {/* Contact Info */}
             <p className="text-white/60 text-sm">
-              Questions? Contact our AI specialists at{' '}
+              {t('aiAgents.finalCta.contact')}{' '}
               <a href="tel:+1-800-123-4567" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                +55 (11) 5039-4877
+                {t('aiAgents.finalCta.phone')}
               </a>{' '}
-              or{' '}
+              {t('aiAgents.finalCta.or')}{' '}
               <a href="mailto:contact@itcygnus.com" className="text-ai-green hover:text-ai-green/80 transition-colors">
-                contact@itcygnus.com
+                {t('aiAgents.finalCta.email')}
               </a>
             </p>
           </div>
