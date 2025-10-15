@@ -40,7 +40,8 @@ export const metadata: Metadata = {
     'compliance automatizado',
     'segurança de dados',
     'LGPD',
-    'tecnologia brasileira'
+    'tecnologia brasileira',
+    'receita saude validacao'
   ],
   authors: [{ name: 'Cygnus IT Services' }],
   creator: 'Cygnus IT Services',
@@ -122,7 +123,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#598E71" />
-        <link rel="canonical" href="https://cygnusit.com.br" />
+        <link rel="canonical" href="https://itcygnus.com" />
       </head>
       <body className={inter.className}>
         <LanguageProvider>
