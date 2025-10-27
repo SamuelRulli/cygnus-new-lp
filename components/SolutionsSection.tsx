@@ -332,32 +332,50 @@ export default function SolutionsSection() {
               {t('metrics.items.clients.label')} <span className="bg-gradient-ai bg-clip-text text-transparent">{t('metrics.title')}</span>
             </h3>
             
-            <div className="relative overflow-hidden">
-              {/* Carousel Container */}
-              <div className="relative h-40">
-                {/* Carousel Track */}
-                <div className="flex absolute top-0 left-0 client-carousel items-center">
-                  {[
-                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/abastece-ai.png',
-                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/itau-saude.png',
-                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
-                    'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-saude.png',
-                  ].flatMap((logo, i) => [logo, logo]).map((logo, index) => (
-                    <div key={index} className="flex-shrink-0 px-8 w-64">
-                      <img 
-                        src={logo}
-                        alt="Client logo"
-                        className="h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                  ))}
-                </div>
+            <div className="relative h-40 overflow-hidden">
+              <div className="flex items-center gap-16 animate-infinite-scroll">
+                {[
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/abastece-ai.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/itau-saude.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-saude.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/Gft_logo_(2008).svg.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/Logo_Serasa_cinza.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/ecad-logo.png',
+                ].map((logo, index) => (
+                  <div key={index} className="flex-shrink-0 w-48">
+                    <img
+                      src={logo}
+                      alt="Client logo"
+                      className="h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                ))}
+                {/* Duplicação invisível apenas para o loop */}
+                {[
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/abastece-ai.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/itau-saude.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-saude.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/Gft_logo_(2008).svg.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/Logo_Serasa_cinza.png',
+                  'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/ecad-logo.png',
+                ].map((logo, index) => (
+                  <div key={`dup-${index}`} className="flex-shrink-0 w-48 opacity-0 pointer-events-none">
+                    <img
+                      src={logo}
+                      alt="Client logo"
+                      className="h-24 object-contain"
+                    />
+                  </div>
+                ))}
               </div>
 
-              {/* Gradient Overlays */}
+              {/* Gradientes laterais */}
               <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
               <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
             </div>
+
           </div>
         </div>
 
@@ -396,17 +414,23 @@ export default function SolutionsSection() {
       {/* CSS for carousel animation */}
       <style jsx>{`
         .client-carousel {
-          animation: scroll 30s linear infinite;
-          width: calc(256px * 8); /* 8 logos * 256px width */
+          animation: scroll 10s linear infinite;
+          width: calc(256px * 28); /* 14 logos * 4 */
         }
 
-        @keyframes scroll {
+        @keyframes infinite-scroll {
           0% {
             transform: translateX(0);
           }
           100% {
             transform: translateX(-50%);
           }
+        }
+
+        .animate-infinite-scroll {
+          display: flex;
+          width: max-content;
+          animation: infinite-scroll 30s linear infinite;
         }
 
         .animate-fade-in-up {
