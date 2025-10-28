@@ -156,7 +156,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Floating Badge */}
-                <div className="absolute -top-4 -right-4 bg-ai-green text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-float">
+                <div className="absolute -top-4 -right-4 bg-ai-green text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-float">
                   {t('metrics.items.clients.value')} {t('header.company')}
                 </div>
               </div>
