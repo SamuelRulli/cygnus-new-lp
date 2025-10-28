@@ -24,14 +24,25 @@ export default function Footer() {
             <p className="text-white/70 mb-6 leading-relaxed">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/cygnus-it" target="_blank" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ai-blue transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="mailto:contact@itcygnus.com" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ai-blue transition-colors">
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/company/cygnus-it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ai-blue transition-colors"
+                >
+                  <span className="sr-only">LinkedIn da IT Cygnus</span>
+                  <Linkedin className="w-5 h-5" />
+                </a>
+
+                <a
+                  href="mailto:contact@itcygnus.com"
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ai-blue transition-colors"
+                >
+                  <span className="sr-only">Enviar e-mail para IT Cygnus</span>
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
           </div>
 
           {/* Solutions */}
