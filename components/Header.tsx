@@ -157,12 +157,9 @@ export default function Header() {
             <div 
               className="relative"
               onPointerEnter={handleSolutionsMouseEnter}
-              onPointerLeave={handleSolutionsMouseLeave}
               onMouseEnter={handleSolutionsMouseEnter}
-              onMouseLeave={handleSolutionsMouseLeave}
             >
               <button 
-                type="button"
                 className="flex items-center text-white/80 hover:text-ai-green transition-colors font-medium py-3 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-ai-green/40 cursor-pointer"
                 onPointerDown={() => {
                   if (solutionsTimeoutRef.current) {
@@ -197,7 +194,38 @@ export default function Header() {
               </button>
               
               {activeSolutionsDropdown && (
-                <div id="solutions-menu" className="absolute z-50 top-full left-0 mt-1 w-96 bg-white rounded-2xl shadow-2xl border border-ai-light/20 p-6 animate-fade-in-down pointer-events-auto">
+                <div
+                  id="solutions-menu"
+                  className="absolute z-50 top-full left-0 mt-1 w-96 bg-white rounded-2xl shadow-2xl border border-ai-light/20 p-6 animate-fade-in-down pointer-events-auto"
+                  onMouseEnter={() => {
+                    if (solutionsTimeoutRef.current) {
+                      clearTimeout(solutionsTimeoutRef.current);
+                    }
+                    setActiveSolutionsDropdown(true);
+                  }}
+                  onPointerEnter={() => {
+                    if (solutionsTimeoutRef.current) {
+                      clearTimeout(solutionsTimeoutRef.current);
+                    }
+                    setActiveSolutionsDropdown(true);
+                  }}
+                  onMouseLeave={() => {
+                    if (solutionsTimeoutRef.current) {
+                      clearTimeout(solutionsTimeoutRef.current);
+                    }
+                    solutionsTimeoutRef.current = setTimeout(() => {
+                      setActiveSolutionsDropdown(false);
+                    }, 200);
+                  }}
+                  onPointerLeave={() => {
+                    if (solutionsTimeoutRef.current) {
+                      clearTimeout(solutionsTimeoutRef.current);
+                    }
+                    solutionsTimeoutRef.current = setTimeout(() => {
+                      setActiveSolutionsDropdown(false);
+                    }, 200);
+                  }}
+                >
                   <div className="grid grid-cols-1 gap-3">
                     {solutions.map((solution, index) => (
                       <Link
