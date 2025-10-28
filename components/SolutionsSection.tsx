@@ -334,6 +334,7 @@ export default function SolutionsSection() {
             
             <div className="relative h-40 overflow-hidden">
               <div className="flex items-center gap-16 animate-infinite-scroll">
+                {/* Primeiro conjunto de logos */}
                 {[
                   'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/abastece-ai.png',
                   'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
@@ -351,7 +352,7 @@ export default function SolutionsSection() {
                     />
                   </div>
                 ))}
-                {/* Duplicação invisível apenas para o loop */}
+                {/* Duplicação para loop infinito */}
                 {[
                   'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/abastece-ai.png',
                   'https://storage.googleapis.com/agentpro-cdn/cygnus/customers/porto-seguro-ocupacional.png',
@@ -361,19 +362,19 @@ export default function SolutionsSection() {
                   'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/Logo_Serasa_cinza.png',
                   'https://storage.googleapis.com/agentpro-cdn/cygnus/tech/clients/ecad-logo.png',
                 ].map((logo, index) => (
-                  <div key={`dup-${index}`} className="flex-shrink-0 w-48 opacity-0 pointer-events-none">
+                  <div key={`dup-${index}`} className="flex-shrink-0 w-48">
                     <img
                       src={logo}
                       alt="Client logo"
-                      className="h-24 object-contain"
+                      className="h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300"
                     />
                   </div>
                 ))}
               </div>
 
               {/* Gradientes laterais */}
-              <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
-              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
+              <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
             </div>
 
           </div>
