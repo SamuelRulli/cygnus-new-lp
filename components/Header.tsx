@@ -160,8 +160,9 @@ export default function Header() {
               onMouseLeave={handleSolutionsMouseLeave}
             >
               <button 
-                className="flex items-center text-white/80 hover:text-ai-green transition-colors font-medium py-2"
-                onClick={() => {
+                type="button"
+                className="flex items-center text-white/80 hover:text-ai-green transition-colors font-medium py-3 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-ai-green/40"
+                onPointerDown={() => {
                   if (solutionsTimeoutRef.current) {
                     clearTimeout(solutionsTimeoutRef.current);
                   }
@@ -169,13 +170,14 @@ export default function Header() {
                 }}
                 aria-expanded={activeSolutionsDropdown}
                 aria-haspopup="menu"
+                aria-controls="solutions-menu"
               >
                 {t('header.solutions')}
                 <ChevronDown className={`w-4 h-4 ml-1 transition-transform duration-200 ${activeSolutionsDropdown ? 'rotate-180' : ''}`} />
               </button>
               
               {activeSolutionsDropdown && (
-                <div className="absolute top-full left-0 mt-1 w-96 bg-white rounded-2xl shadow-2xl border border-ai-light/20 p-6 animate-fade-in-down">
+                <div id="solutions-menu" className="absolute top-full left-0 mt-1 w-96 bg-white rounded-2xl shadow-2xl border border-ai-light/20 p-6 animate-fade-in-down">
                   <div className="grid grid-cols-1 gap-3">
                     {solutions.map((solution, index) => (
                       <Link
