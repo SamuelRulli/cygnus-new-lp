@@ -159,7 +159,17 @@ export default function Header() {
               onMouseEnter={handleSolutionsMouseEnter}
               onMouseLeave={handleSolutionsMouseLeave}
             >
-              <button className="flex items-center text-white/80 hover:text-ai-green transition-colors font-medium py-2">
+              <button 
+                className="flex items-center text-white/80 hover:text-ai-green transition-colors font-medium py-2"
+                onClick={() => {
+                  if (solutionsTimeoutRef.current) {
+                    clearTimeout(solutionsTimeoutRef.current);
+                  }
+                  setActiveSolutionsDropdown((prev) => !prev);
+                }}
+                aria-expanded={activeSolutionsDropdown}
+                aria-haspopup="menu"
+              >
                 {t('header.solutions')}
                 <ChevronDown className={`w-4 h-4 ml-1 transition-transform duration-200 ${activeSolutionsDropdown ? 'rotate-180' : ''}`} />
               </button>
