@@ -101,11 +101,11 @@ const NetworkEffectSection = () => {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p className="text-lg text-ai-medium max-w-3xl mx-auto">
+          <p className="text-lg text-ai-dark max-w-3xl mx-auto">
             “{t.description}”
           </p>
           <br></br>
-          <span className="text-xl text-ai-medium max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-200 bg-gradient-ai bg-clip-text text-transparent">
+          <span className="text-xl text-ai-dark max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-200 bg-gradient-ai bg-clip-text text-transparent">
             “{t.quote}”
           </span>
         </div>
